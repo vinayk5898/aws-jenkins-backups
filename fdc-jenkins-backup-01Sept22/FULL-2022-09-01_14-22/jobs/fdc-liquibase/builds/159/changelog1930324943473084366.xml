@@ -1,0 +1,54 @@
+commit 13855f8379c85934dae6d2f014d8464b282230d0
+tree 3a0c077dc8accf4be0023741db01108b48769a5f
+parent 70ea506549a0ae93027905b80b6c4de8c260dc0e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:20:02 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:20:02 +0530
+
+    FDC-887 :: changes
+
+
+:100644 100644 32a82fd1efdacbca0b21c87a8014f2035ff008a5 439652e30014ce977ec75453be79f3909142fda1 M	src/main/resources/db/changelog/2022-06-08-74-standard-manifest-dml-changes.yaml
+commit 70ea506549a0ae93027905b80b6c4de8c260dc0e
+tree 93570cb4af63096ad583c3eb2eea4bfc5cb19e6e
+parent eda037fbc79e79247ea32d262472952cfadcf35e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:15:59 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:15:59 +0530
+
+    FDC-887 :: final changes
+
+
+:100644 100644 b59ff60dc6454c09f247d9afbf5dfc6d2b61416f 32a82fd1efdacbca0b21c87a8014f2035ff008a5 M	src/main/resources/db/changelog/2022-06-08-74-standard-manifest-dml-changes.yaml
+:000000 100644 0000000000000000000000000000000000000000 11eb1ef312c71af347b4e7bd7d6a06cbbdff50d1 A	src/main/resources/db/sql/fdc_dev_client_manifest_config.sql
+:000000 100644 0000000000000000000000000000000000000000 dcbd5c4355967d84dfba9d42c823772dceb7959c A	src/main/resources/db/sql/fdc_prod_client_manifest_config.sql
+:100644 100644 9b5bb269543b65d9fe63265ced461caa87de6011 765a7beffb4c95d2a5c275682bd4de232c21abc2 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql
+commit eda037fbc79e79247ea32d262472952cfadcf35e
+tree b03f7146a613bf5f00d0b2563fed8c509a3e9c8c
+parent dbe7df4a928e499d3aad396347b26d585e5bb507
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-30 11:34:33 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-30 11:34:33 +0530
+
+    FDC-758 :: added zipcode check field
+
+
+:100644 100644 af2cb7f63686360fa2e004a0fc9ecb968ad31870 9b5bb269543b65d9fe63265ced461caa87de6011 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql
+commit dbe7df4a928e499d3aad396347b26d585e5bb507
+tree df59f7f07f420cbb3535a3a822a6e3e4bd2dd0b3
+parent 46668152a8ea12291a77660be08ad997d3e05391
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-29 00:44:14 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-29 00:44:14 +0530
+
+    FDC-887 :: final changes
+
+
+:100644 100644 fe36d6b3b081dfb7f37ffa3ed9b2e4cd851674fa b59ff60dc6454c09f247d9afbf5dfc6d2b61416f M	src/main/resources/db/changelog/2022-06-08-74-standard-manifest-dml-changes.yaml
+:100644 100644 89fe5b632dbb3eb1bebf011573cebde5cf3bb151 af2cb7f63686360fa2e004a0fc9ecb968ad31870 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql
+commit 46668152a8ea12291a77660be08ad997d3e05391
+tree c8f218f6006e6e08cc68566b1e6d0e39eb3d0684
+parent da52001ef5b57065ae44c7a7950c1b369eee9901
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-28 11:32:55 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-28 11:32:55 +0530
+
+    FDC-887
+
+
+:100644 100644 3015f7d1e04bd9b18a278d3238354ed7d2a0eda6 89fe5b632dbb3eb1bebf011573cebde5cf3bb151 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql

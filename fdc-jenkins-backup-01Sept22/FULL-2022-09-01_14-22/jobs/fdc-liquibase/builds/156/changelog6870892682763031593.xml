@@ -1,0 +1,43 @@
+commit a7e00b4b5bea3dadce6a71e36932b23e03372925
+tree 46245313b58b6028ab543b508885f39914b944ee
+parent 73dbd21988b9bc1f8cc47a5590142786bf592b2a
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-06-30 12:40:34 +0530
+committer GitHub <noreply@github.com> 2022-06-30 12:40:34 +0530
+
+    Move adapter tables to new schema (#39)
+    
+    * Move adapter tables to new schema
+    
+    * Rename and add some columns of adapter tables
+    
+    * Recreate check constraint to rename column
+
+:000000 100644 0000000000000000000000000000000000000000 00c3e2fe3f679a4b9492f344a751d702a42767ee A	src/main/resources/db/changelog/220627_67_move_adapter_tables_to_new_schema.yaml
+:100644 100644 9d1f4ca75fcfce03f111a111b23b43747e09006e 014dc20b475702d742278a482a142e9bf51f7a78 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 723f944a3c62a8eeb36ee649ba61245720061f65 A	src/main/resources/db/sql/220628_create_fdc_adapter_schema.sql
+:000000 100644 0000000000000000000000000000000000000000 5c52ac310a330f21ae31b2b9a71c70f83a8e435a A	src/main/resources/db/sql/220628_move_adapter_tables_to_new_schema.sql
+commit 73dbd21988b9bc1f8cc47a5590142786bf592b2a
+tree 88b69f2f79c720119603c2c9b8314bc5401a8829
+parent 4dff6d20aafc5f6703d4607a464d95dda69631fb
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-06-28 11:07:13 +0530
+committer GitHub <noreply@github.com> 2022-06-28 11:07:13 +0530
+
+    FDC-885: Insert SFTP mappings for Dell (#37)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 96e044a721fee146ef6ccdee90c42f0b084bf648 A	src/main/resources/db/changelog/2022-06-27-69-insert-sftp-mappings.yaml
+:100644 100644 0d0ac230a82b4d34a7b9a640f587de72c67fb7e7 9d1f4ca75fcfce03f111a111b23b43747e09006e M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 4dff6d20aafc5f6703d4607a464d95dda69631fb
+tree 36d254f7d8ae48ff0b036d87634558312ccf6744
+parent c52cafbf669e1c186c426014cb55ed6bc237f645
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-06-28 11:03:02 +0530
+committer GitHub <noreply@github.com> 2022-06-28 11:03:02 +0530
+
+    FDC-828: Add column for private key passpharse in client_sftp (#35)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 0b1a917d19c8d17e56f0f1478778a7fbdf07812e A	src/main/resources/db/changelog/2022-06-27-66-alter-client-sftp-table.yaml
+:100644 100644 c64435058cd735c4aee438dc6b6a934175e65b4d 0d0ac230a82b4d34a7b9a640f587de72c67fb7e7 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 f239261c3230fbe6aea2368040bc02a0995e6815 A	src/main/resources/db/sql/fdc_client_sftp_key_passphrase.sql

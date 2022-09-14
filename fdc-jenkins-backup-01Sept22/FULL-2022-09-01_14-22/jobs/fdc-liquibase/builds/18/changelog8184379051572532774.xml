@@ -1,0 +1,10 @@
+commit 7df038f100780fdc30da25ffb65f9a97f51b6b63
+tree a062cf34bd865d022f76638e241a64c915c3f5f5
+parent 0bf1d79a9a893e50dcc038f6b404cb08930d372f
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-18 01:04:46 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-18 01:04:46 +0530
+
+    fdc schema setup exclude for dev prod
+
+
+:100644 100644 a9e0fd13dd8ed246010d7e2ab1d4435caea3aa99 869ab39f6fbcfb7cc8f102454e236085183acd49 M	src/main/resources/db/changelog/2022-01-20-fdc-schema-setup.yaml

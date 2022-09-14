@@ -1,0 +1,22 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc_package_status
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No emails were triggered.
+[fdc_package_status] $ /bin/sh -xe /tmp/jenkins12927012146435085954.sh
++ docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=temp-admin --password=******** --database=fdc --execute=SELECT replace(pc.location_name , ' ','') as ParcelCenter, pkg.status as PackageStatus, count(*) as Total FROM fdc.package as pkg INNER JOIN fdc.parcel_center as pc ON pkg.parcel_center_id = pc.id where pkg.delivery_date = date(CONVERT_TZ( current_timestamp() ,'+00:00','-5:00')) GROUP BY pc.location_name, pkg.status ORDER BY pc.location_name, Total DESC;
+Got error: Access denied for user 'root'@'10.10.0.71' (using password: NO)
++ echo ##########################
+##########################
++ cat output.txt
++ column -t
++ echo ##########################
+##########################
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: hourlyreports@frontdoorcorp.com vishnu.manchala@frontdoorcorp.com nitish.kumar@frontdoorcorp.com vinay.kumar@frontdoorcorp.com
+Finished: SUCCESS

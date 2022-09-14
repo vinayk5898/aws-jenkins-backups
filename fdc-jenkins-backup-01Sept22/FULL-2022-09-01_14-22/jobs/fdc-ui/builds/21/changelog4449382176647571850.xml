@@ -1,0 +1,367 @@
+commit de4a2ef732b165b09fa1825258636f3fd7d95b9d
+tree 9e394e5006a60b0f480361b4a1d353b90f5bbc1d
+parent f22f39b0d62557914febe707b3b5a75d05025ca1
+author yauheni <ybutski@gmail.com> 2022-06-07 12:26:49 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-07 12:26:49 +0300
+
+    Update script 'yarn test' to make it able to end in github action
+
+
+:100644 100644 e1e48db3071bcfc200c57c44efd3907cc5788a11 6278ef6b0b3ab98b7ba44a3eb888790d4d31c06a M	package.json
+commit f22f39b0d62557914febe707b3b5a75d05025ca1
+tree 2e2679da3ff945bc8e6a29a25fb5c84abe2dbcb4
+parent 54bfcfbb0b48087b3c17edb815ff4096613f7c5f
+author yauheni <ybutski@gmail.com> 2022-06-07 12:17:22 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-07 12:17:22 +0300
+
+    Add new line
+
+
+:100644 100644 331d6f514f7afd1d722fa2052277ab99ac578a22 fc1864ee40c9d40fbf13af1ac88b2173b2b060b6 M	.github/workflows/tests.yaml
+commit 54bfcfbb0b48087b3c17edb815ff4096613f7c5f
+tree a997b2cd1cf98ed4a8b2a8a7f4d5e51404739d39
+parent feca1f51864cc62870b4c67c5471206ac0a9608e
+author yauheni <ybutski@gmail.com> 2022-06-07 12:00:57 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-07 12:00:57 +0300
+
+    Add Github action to run yarn test for PR
+
+
+:000000 100644 0000000000000000000000000000000000000000 331d6f514f7afd1d722fa2052277ab99ac578a22 A	.github/workflows/tests.yaml
+:100644 100644 1cad0ac99eda11536f1eb95d60bfde0e7adc59f7 065884ba63c1ac623f4574cbac70ad3203a0e990 M	jest.config.ts
+commit 919c6637b2fe86d5c98dd5dd300908b9b706ad77
+tree e5c0776bec184597812e2c0f62e39af997f2c111
+parent 8b9973bb0a32036629fbdbe15215f35b9a6f64f4
+author yauheni <ybutski@gmail.com> 2022-06-06 18:11:48 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-06 18:11:48 +0300
+
+    Add unit tests and define i18n for tests.
+
+
+:100644 100644 9df45d5f6b40d446f0d30b300b471c983962991b ae3ab8268ed12310cd79fdfc3676307e9ec08f17 M	.eslintrc.js
+:100644 000000 977dd828b16eb755168e9f076689b0c33d2e906c 0000000000000000000000000000000000000000 D	src/App.test.tsx
+:000000 100644 0000000000000000000000000000000000000000 6134b80744e3ea55d2cbe8873b38652c0dc1553b A	src/pages/Landing/Welcome/Navigation/Navigation.test.tsx
+:000000 100644 0000000000000000000000000000000000000000 a0117bbbc97fbd4e33f4c84b8d8f58741237270d A	src/utils/i18nForTest.ts
+:100644 100644 b96bf8d47f41c802b6acca94c7e12b2ba1697a4f a60adeb78e1a6bc7a68926117c091d144ec31703 M	src/utils/testUtils.tsx
+commit 8b9973bb0a32036629fbdbe15215f35b9a6f64f4
+tree 4d4aa00e3f3f09fdbc88c2b4dfd2f0ea27d2bdf1
+parent 54fc520f34bdc204dd53738aa40bf2585da024b9
+author yauheni <ybutski@gmail.com> 2022-06-06 16:34:44 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-06 16:34:44 +0300
+
+    Update buttons margin on landing page to correspond design.
+
+
+:100644 100644 e9191190315c75394f74415f3a784855ba8e0953 682ea9a58fbfe17ecfbc6a3ec0ce79c7ebba5e24 M	src/pages/Landing/Welcome/Navigation/Navigation.styles.tsx
+commit 54fc520f34bdc204dd53738aa40bf2585da024b9
+tree 397b37f315cfb4f5bd0891a1aea9056aa5d2a101
+parent c37320a481c4d87eccd1ff8f21abebb78410bc03
+author yauheni <ybutski@gmail.com> 2022-06-06 15:29:02 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-06 15:29:02 +0300
+
+    Fix responsive view on mobile devices
+
+
+:100644 100644 642e773315f2773ec48390d5d36d301aceea1f57 e9191190315c75394f74415f3a784855ba8e0953 M	src/pages/Landing/Welcome/Navigation/Navigation.styles.tsx
+commit ff15a611a4ad14b19717d2771072911422b5e0a8
+tree 078f5517db2a42facdeb2ba16547825c0f3270ec
+parent 4d22de2954dade5ced93d3459422e7801ffaed6e
+author yauheni <ybutski@gmail.com> 2022-06-06 08:39:15 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-06 08:39:15 +0300
+
+    Move buttons text to translation
+
+
+:100644 100644 f80350d6daff8ba7220a59bcdd6693dba4c7678d 34ce1ca4db793602ef525ec793a157e86609ac99 M	public/locales/en/translation.json
+:100644 100644 295dfbfd6f6dab8991077eaba48150b5b65365f1 ea0b6290c0082ef615fd18aa912e04a8169b3a0b M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+commit 4d22de2954dade5ced93d3459422e7801ffaed6e
+tree 80a595bcb44d9d740d47980acdcbddca75f41580
+parent fe478ebb9ce38f2769a6e4d9b3643ce836ed94de
+author yauheni <ybutski@gmail.com> 2022-06-06 01:02:56 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-06 01:02:56 +0300
+
+    Add buttons to landing page
+
+
+:100644 100644 8576789ab7de9e8d6c09fd22630a888fde230efc e1e48db3071bcfc200c57c44efd3907cc5788a11 M	package.json
+:100644 100644 398697240668cace44690e1c02c6739f337602b5 642e773315f2773ec48390d5d36d301aceea1f57 M	src/pages/Landing/Welcome/Navigation/Navigation.styles.tsx
+:100644 100644 97b6b05df09860d72ab782be876aa6f82612a200 295dfbfd6f6dab8991077eaba48150b5b65365f1 M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:000000 100644 0000000000000000000000000000000000000000 9c8e01eb550a56a7b3be293eef898b4edd463342 A	src/shared/button/Button.styles.tsx
+:000000 100644 0000000000000000000000000000000000000000 0aafaf28cc3041c35655666e87d115a63c3d6a4d A	src/shared/button/LinkButton.tsx
+:100644 100644 0e433d07179abe487bb25223c42157a9afd90a6e 65f3cda41ea575b2e79ea48f2141eeadaa3e2e42 M	src/theme/index.ts
+commit fe478ebb9ce38f2769a6e4d9b3643ce836ed94de
+tree fdd2656b1499013c7e444d00921c665d96dd19cf
+parent 02db70fda58282e84d9de821aab556c6e371963c
+author yauheni <ybutski@gmail.com> 2022-06-06 00:21:58 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-06 00:21:58 +0300
+
+    Add text for landing page
+
+
+:100644 100644 a302e3205834aff29836b9c9ff2208fef28a7875 f80350d6daff8ba7220a59bcdd6693dba4c7678d M	public/locales/en/translation.json
+:100644 100644 591c1273d257f602cb7ceb8280acc75a40ccba7c 398697240668cace44690e1c02c6739f337602b5 M	src/pages/Landing/Welcome/Navigation/Navigation.styles.tsx
+:100644 100644 4e2c943ffec44d3b0565290a0b617dbcd1d424db 97b6b05df09860d72ab782be876aa6f82612a200 M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:000000 100644 0000000000000000000000000000000000000000 b5150d019aea783dac1b0da5d450ce9f0d85ca1b A	src/shared/icons/Logo.tsx
+commit 02db70fda58282e84d9de821aab556c6e371963c
+tree 18374ac6decaf9d73cfbd5e9cb26431f28cfe671
+parent 894508ac33eb6afcca68cf000234ee24cf4b6975
+author yauheni <ybutski@gmail.com> 2022-06-03 18:42:30 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-03 18:42:30 +0300
+
+    Update styles for Landing Navigation page.
+
+
+:100644 100644 fa7da4b8b896075e2293ab8abf71eacf59c00383 591c1273d257f602cb7ceb8280acc75a40ccba7c M	src/pages/Landing/Welcome/Navigation/Navigation.styles.tsx
+:100644 100644 7b922b0a9e089dd47d62a03d5c90aa3bcf226840 4e2c943ffec44d3b0565290a0b617dbcd1d424db M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+commit 894508ac33eb6afcca68cf000234ee24cf4b6975
+tree ec94ffdc3bd49d7c54809652ba625d54392448c9
+parent 7b17274f873b6fb2bfa1b550474d1b47e151b77a
+author yauheni <ybutski@gmail.com> 2022-06-03 18:26:50 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-03 18:26:50 +0300
+
+    Move track details into Landing area and update to use as Layout with header
+
+
+:100644 000000 cc2c03159190533526c69665e674d714dcdbde88 0000000000000000000000000000000000000000 D	src/configs/routes/fdc-routes.ts
+:100644 100644 5d13a8119d1f5929d304d56ba32ae528e1944fb3 d1376a28896e1a4a1644204f0b0c52dd9358e162 R092	src/pages/Tracking/Tracking.styles.ts	src/pages/Landing/Tracking/Details/Details.styles.tsx
+:100644 100644 af8b38c04502a5ba1b25e12936f5072779e83a71 39c1512d4eb1498456170ad10539e952eb855665 R091	src/pages/Tracking/index.tsx	src/pages/Landing/Tracking/Details/Details.tsx
+:000000 100644 0000000000000000000000000000000000000000 6c7d955d657216c582a4b84bfc16dfe2f666cbdd A	src/pages/Landing/Tracking/Tracking.styles.tsx
+:000000 100644 0000000000000000000000000000000000000000 bdf7701be302fd6b4ae939fe6e8ab98b86ef796b A	src/pages/Landing/Tracking/Tracking.tsx
+:100644 000000 f02ca5504b2da4b39010a07f79137d4886af970c 0000000000000000000000000000000000000000 D	src/routes/FdcRoutes.tsx
+:100644 100644 676306921f5eadb5f36536e1e6d9f9a449d2f988 4dc73ce2bb749b9e7c65d929b2a1608f7071f282 M	src/routes/LandingRoutes.tsx
+commit 7b17274f873b6fb2bfa1b550474d1b47e151b77a
+tree 64101a13a91b93197d241d508d6d86ad53e4faef
+parent b6677aa50ff2b309803659fa8f1496cfbc095338
+author yauheni <ybutski@gmail.com> 2022-06-03 18:00:22 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-03 18:00:22 +0300
+
+    Add Navigation page to show inside Welcome page.
+
+
+:000000 100644 0000000000000000000000000000000000000000 fa7da4b8b896075e2293ab8abf71eacf59c00383 A	src/pages/Landing/Welcome/Navigation/Navigation.styles.tsx
+:000000 100644 0000000000000000000000000000000000000000 7b922b0a9e089dd47d62a03d5c90aa3bcf226840 A	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:100644 100644 048b8950c9dc9f21f254b445729f530edb7294b3 3e3ac823d4bf1ae209ef2065204c5860557d13ff M	src/pages/Landing/Welcome/Welcome.styles.ts
+:100644 100644 abc2a2ec72d2091b6fd4a346b47692aefdbfe400 676306921f5eadb5f36536e1e6d9f9a449d2f988 M	src/routes/LandingRoutes.tsx
+commit b6677aa50ff2b309803659fa8f1496cfbc095338
+tree c54ba4ff11961dcdc9737c1f7817c47ff8af8d23
+parent 59c1a65fbbb5b33afa43dcc49df4f2222edfc4fc
+author yauheni <ybutski@gmail.com> 2022-06-03 16:23:51 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-03 16:23:51 +0300
+
+    Add image for landing page
+
+
+:100644 000000 daef862636a0a6e2be1c7181b25bee7115120e72 0000000000000000000000000000000000000000 D	src/App.styles.ts
+:100644 100644 089d17629513977b7878d0166ec9259f287aeb58 105dd81960691f97b9def0c60800b483a4fc47a1 M	src/App.tsx
+:000000 100644 0000000000000000000000000000000000000000 eb5cfc91d204b9dff96088088fa4c55944b13056 A	src/assets/img/landing.png
+:000000 100644 0000000000000000000000000000000000000000 1122e617f0c043214dcf669720ac57cdae7a4a39 A	src/components/landingImage/LandingImage.styles.tsx
+:000000 100644 0000000000000000000000000000000000000000 83d7e488285e99e894ba8c359571e2bf80677b59 A	src/components/landingImage/LandingImage.tsx
+:100644 100644 f91565134a8eb55c5b7074073d7225b40aa5b7ee c1e13d107bba774a65d20ce6c49f6fb936d4e9c0 M	src/configs/animations.ts
+:100644 100644 59f044ed268720b1c8b4cb5417c64c27cb6eadcd 048b8950c9dc9f21f254b445729f530edb7294b3 M	src/pages/Landing/Welcome/Welcome.styles.ts
+:100644 100644 2d0e4482405d0c0de650ef8b8acace54db14bb10 b130de179aa9c747573bd1ec6890559b5601bd15 M	src/pages/Landing/Welcome/Welcome.tsx
+:100644 100644 d1376a28896e1a4a1644204f0b0c52dd9358e162 5d13a8119d1f5929d304d56ba32ae528e1944fb3 M	src/pages/Tracking/Tracking.styles.ts
+:100644 100644 e1d73ec523388c2c091500aae351add6fdd28fae abc2a2ec72d2091b6fd4a346b47692aefdbfe400 M	src/routes/LandingRoutes.tsx
+commit 59c1a65fbbb5b33afa43dcc49df4f2222edfc4fc
+tree 08f5f303319cf6138135a28f58f778e0c5dbd679
+parent 57cae3531365b7138e8acda129d6c3ba7109bcab
+author yauheni <ybutski@gmail.com> 2022-06-03 12:36:47 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-03 12:36:47 +0300
+
+    Return Header for Tracking page
+
+
+:100644 100644 1b532e532335d8ea73ab5c6c8732a1eea19cde76 e1d73ec523388c2c091500aae351add6fdd28fae M	src/routes/LandingRoutes.tsx
+commit 57cae3531365b7138e8acda129d6c3ba7109bcab
+tree a1f9d4e243b5ba96bedca46e1c16391e08573e21
+parent 06cc4c479fed355d5b70d1139963330ab9d633c3
+author yauheni <ybutski@gmail.com> 2022-06-03 11:43:10 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-03 11:43:10 +0300
+
+    Create separate page for Landing and show it on main page.
+
+
+:100644 100644 d9880614dff247f466cc56e3cbbc49d138bd9fa9 089d17629513977b7878d0166ec9259f287aeb58 M	src/App.tsx
+:000000 100644 0000000000000000000000000000000000000000 f91565134a8eb55c5b7074073d7225b40aa5b7ee A	src/configs/animations.ts
+:000000 100644 0000000000000000000000000000000000000000 497681594b24a2ba0fc0763300ad6952d5c9b6fe A	src/configs/routes/landing-routes.ts
+:000000 100644 0000000000000000000000000000000000000000 bb54f049ad5a17360b28393c3c4c4788c94bd686 A	src/pages/Landing/LandingPage.tsx
+:000000 100644 0000000000000000000000000000000000000000 59f044ed268720b1c8b4cb5417c64c27cb6eadcd A	src/pages/Landing/Welcome/Welcome.styles.ts
+:000000 100644 0000000000000000000000000000000000000000 2d0e4482405d0c0de650ef8b8acace54db14bb10 A	src/pages/Landing/Welcome/Welcome.tsx
+:000000 100644 0000000000000000000000000000000000000000 1b532e532335d8ea73ab5c6c8732a1eea19cde76 A	src/routes/LandingRoutes.tsx
+:000000 100644 0000000000000000000000000000000000000000 e39ddde2adf3e7ed5273ff0e321dd598de59bdea A	src/theme/breakpoints.ts
+:100644 100644 27b0dfd1aaf0dd6e7c3980258f4072543e53a953 0e433d07179abe487bb25223c42157a9afd90a6e M	src/theme/index.ts
+:000000 100644 0000000000000000000000000000000000000000 2590d7298094b59072c3a3a110e33d06889b71d3 A	src/theme/types.ts
+commit 7e73fde6e23974e228981b4d8ff379c663601784
+tree 080eacb3ede44100826c18059b87dd595ac4356c
+parent 498175a69888bf3e659f6eb2a3c5e344c45d7c95
+author yauheni <ybutski@gmail.com> 2022-05-31 14:21:14 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-31 14:21:14 +0300
+
+    Update references
+
+
+:100644 100644 391159be08566ee18d33a46bc484998998e3c8e4 4daa65ecc07790c99be06c5267ccfd7232c4ca17 M	src/components/errorMessage/ErrorMessage.tsx
+:100644 100644 26332e5e4c1b12c9b77d433061fb5772c1e8a412 1c8185db78f8d67ab7dff399ba80a6be301357f2 M	src/components/header/Header.styles.ts
+:100644 100644 71eb5b7c196b64d40bb9044c0c685fc53af3c993 d88f98de582ac1b21953b917182fd3447ddba275 M	src/components/searchBar/SearchBar.styles.ts
+:100644 100644 b152af8ca2931e841d6ddc9e2095e9cd56d2454c b67b2502dfb2ae1aad267b78043283890ce85579 M	src/components/searchBar/SearchBar.tsx
+:100644 100644 809e98f90a60666fc00a56d44c5c08a615252cae ca5092491c8ad4703f72e2f9a36445ce48a39e42 M	src/components/stepper/ActivityTimeline/ActivityTimeline.styles.ts
+:100644 100644 5c6ecff1322d89d8214a3b88af6dca2e327fd728 562445c913fcda515f6436db4cd7e1c57316f344 M	src/components/stepper/ActivityTimeline/ActivityTimeline.tsx
+:100644 100644 61f06d2cb8825dea714a7e34c69f011fa3481360 38051751ffacb4a8f52d86fa28fe82386e8cd52a M	src/components/stepper/StatusLine/StatusLine.styles.ts
+:100644 100644 a2553bcf833697d8a40ff174424529dc46c41256 681acef71745770bb8277de22465b742e16b130f M	src/components/stepper/StatusLine/StatusLine.tsx
+:100644 100644 daa395fbbb530e5471564dc06e6e9262aa50a5f4 daa395fbbb530e5471564dc06e6e9262aa50a5f4 R100	src/styles/colors.ts	src/theme/colors.ts
+:100644 100644 9dce056d7bff0546ce31f215d0d80a8c034ab3c2 27b0dfd1aaf0dd6e7c3980258f4072543e53a953 M	src/theme/index.ts
+:100644 100644 f5680db4ed6fdc1662df36b14f8f5fdc292fa3f1 f5680db4ed6fdc1662df36b14f8f5fdc292fa3f1 R100	src/theme/typography/index.ts	src/theme/typography.ts
+commit 498175a69888bf3e659f6eb2a3c5e344c45d7c95
+tree 719eb4506e0d2b40d9db847acf753a6469dd97bc
+parent 0ddd32b34f2557ec531a36713ca1d965e137b317
+author yauheni <ybutski@gmail.com> 2022-05-31 14:03:59 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-31 14:03:59 +0300
+
+    Setup paths alias correctly
+
+
+:100644 100644 884944bc825d20ec417b830537bc162e6e73a2d9 1cad0ac99eda11536f1eb95d60bfde0e7adc59f7 M	jest.config.ts
+commit 0ddd32b34f2557ec531a36713ca1d965e137b317
+tree b4a1f560ecfa14df66cba9be70d9cb430d541aad
+parent 25159df6898cfb9f0919c2b12ba53dbd8d861f7d
+author yauheni <ybutski@gmail.com> 2022-05-31 13:56:17 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-31 13:56:17 +0300
+
+    Setup tests correctly
+
+
+:100644 100644 2f236a54dcea166caf40d5883116de4d009aca06 884944bc825d20ec417b830537bc162e6e73a2d9 M	jest.config.ts
+:100644 100644 183a604d751eee3b2168d60e5aec9174ebfe55a4 8576789ab7de9e8d6c09fd22630a888fde230efc M	package.json
+:100644 100644 c4d0a7f5c1ae127b7072bb8da4290f2420c87016 dbbfca43fc7f9e5d53d10e6c5c16802baa76503e M	yarn.lock
+commit 25159df6898cfb9f0919c2b12ba53dbd8d861f7d
+tree f3bc499fc8b93f81f76374d69fa0415c53b6d09c
+parent de391613be56f4a4e4e2dbf1063a87b4e089baff
+author yauheni <ybutski@gmail.com> 2022-05-31 12:22:51 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-31 12:22:51 +0300
+
+    Exclude node_modules folder from tsconfig. Move routes in separate file. Refactoring.
+
+
+:100644 100644 fda245961efa7e6d3c6442e32b50259ffa727961 d9880614dff247f466cc56e3cbbc49d138bd9fa9 M	src/App.tsx
+:100644 100644 bde80b6b4b592149eb24ef40473cd9100784773a a2553bcf833697d8a40ff174424529dc46c41256 M	src/components/stepper/StatusLine/StatusLine.tsx
+:000000 100644 0000000000000000000000000000000000000000 cc2c03159190533526c69665e674d714dcdbde88 A	src/configs/routes/fdc-routes.ts
+:100644 100644 c77f469d847062f8ed4b6d2ae0e252326c01eaf0 d69daf5be81908c8192f9ae16191dabfb23aed02 M	src/configs/statusLineStepsConfig.ts
+:100644 100644 9d4eb1b77a09611ad27e72171600d4903449fc39 9c44f71b4eb40618fe930cfc36d4ffbe228430a4 M	src/i18n.ts
+:000000 100644 0000000000000000000000000000000000000000 f02ca5504b2da4b39010a07f79137d4886af970c A	src/routes/FdcRoutes.tsx
+:100644 100644 931829f5b4ec0d9c3a90578b4d1b1e56f0e6f0e0 4214b2c5c5cf811844b1c8fe9a84f6eaa19efaaa M	tsconfig.json
+commit de391613be56f4a4e4e2dbf1063a87b4e089baff
+tree 4e9e9e92e9ebd88598f1fafaa6fa0778f230e6e2
+parent 5c088daca1b67cd05fc7993a128f695516fa9460
+author yauheni <ybutski@gmail.com> 2022-05-30 17:03:34 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-30 17:03:34 +0300
+
+    Refactor tests to be able to run it.
+
+
+:100644 100644 5b442ccf642a17549e19ca31c4e26fa841b039c3 183a604d751eee3b2168d60e5aec9174ebfe55a4 M	package.json
+:100644 100644 df5f33ce5eb4dee352be4b7981291084838f2e8f 977dd828b16eb755168e9f076689b0c33d2e906c M	src/App.test.tsx
+:100644 100644 a59acddb46aa6102d3e0dcc1075a9d64fc6bab53 b96bf8d47f41c802b6acca94c7e12b2ba1697a4f M	src/utils/testUtils.tsx
+commit 5c088daca1b67cd05fc7993a128f695516fa9460
+tree 2ac65372d5b8e609f8fc4e34fb2264987ba50aff
+parent 71ba3a396fd5251defb7c530e54630ed3622e32e
+author yauheni <ybutski@gmail.com> 2022-05-30 16:33:35 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-30 16:33:35 +0300
+
+    Fix path to theme in testUtils
+
+
+:100644 100644 4e02183e3df5342d09ad2cdbcbbf490aa69964ac a59acddb46aa6102d3e0dcc1075a9d64fc6bab53 M	src/utils/testUtils.tsx
+:100644 100644 f489a7a9559a0753db227b48d84bc2b0d1d76e11 931829f5b4ec0d9c3a90578b4d1b1e56f0e6f0e0 M	tsconfig.json
+commit 71ba3a396fd5251defb7c530e54630ed3622e32e
+tree 8d6f6b73d7dcb3152896b155e57a8e03e4483362
+parent f3a41805906632e9092d4c4cce4a727af38a3162
+author yauheni <ybutski@gmail.com> 2022-05-30 16:06:29 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-30 16:06:29 +0300
+
+    Update custom self path
+
+
+:100644 100644 512da414578e0e42755a80b0a85e39fa6460cf40 d2c8da77302ae82309a0a954b02e34e6d0957a34 M	src/index.tsx
+:100644 100644 b43e0940c0c1a4b6bf51dfc031091acefb30bd55 fb90cb2edd467e13c22282e46e3b36dc50099927 M	src/store/async/types.ts
+:100644 100644 d4372cb8c7178ba1c0ff6f21c3084943d365c1c7 4e02183e3df5342d09ad2cdbcbbf490aa69964ac M	src/utils/testUtils.tsx
+:100644 100644 c6df38a8542a7ff39cd8e64700f0f3581ecc4c55 f489a7a9559a0753db227b48d84bc2b0d1d76e11 M	tsconfig.json
+commit f3a41805906632e9092d4c4cce4a727af38a3162
+tree acc40db4b99b2aaff1403f7aa03cf326823654ac
+parent b7a3af05d992d7ee4b6b3d22ca7bb377eb18e45c
+author yauheni <ybutski@gmail.com> 2022-05-30 16:00:40 +0300
+committer yauheni <ybutski@gmail.com> 2022-05-30 16:00:40 +0300
+
+    Add ThemeProvider for testUtils to fix error during 'yarn test'.
+    Re-organize theme structure.
+
+
+:100644 100644 2cd4af179c97faaccb23010bf5c1c71d819f2c79 9df45d5f6b40d446f0d30b300b471c983962991b M	.eslintrc.js
+:100644 100644 9668e8b029b2a44b8abe1b268058b98e8cfa9e53 fda245961efa7e6d3c6442e32b50259ffa727961 M	src/App.tsx
+:100644 100644 cdefe522ed6129686324124d00190de459ae6414 512da414578e0e42755a80b0a85e39fa6460cf40 M	src/index.tsx
+:100644 100644 909c0496bbcfbf66524f64e12006cdf4e66e8c83 9dce056d7bff0546ce31f215d0d80a8c034ab3c2 R092	src/mui-theme.ts	src/theme/index.ts
+:100644 100644 f5680db4ed6fdc1662df36b14f8f5fdc292fa3f1 f5680db4ed6fdc1662df36b14f8f5fdc292fa3f1 R100	src/themeConfig/typography.ts	src/theme/typography/index.ts
+:100644 100644 dbfbd21fe0bbd36be0cfc4c2b24bfd98fd94278c d4372cb8c7178ba1c0ff6f21c3084943d365c1c7 M	src/utils/testUtils.tsx
+commit 69f32a0b20e4b7940e6755917766095e03527c83
+tree 33e3aa22e2c10b1b457a95600b222b95e1126a92
+parent e2cb6334315512a46e765137ee1821b34a60bfba
+author Anastasiya Popova <anastasiyapopova@Anastasiya-MacBook.local> 2022-04-08 12:09:56 +0200
+committer Anastasiya Popova <anastasiyapopova@Anastasiya-MacBook.local> 2022-04-08 12:16:51 +0200
+
+    Update trackService url and API_HOST url
+
+
+:100644 100644 71c8f3ee765f950a38cb53065915723439c655e9 1c83a043a9f81ef205eff0443cfd6bde66618482 M	src/services/API.ts
+:100644 100644 2fccb85efe6eb59e3674ab32b19d69da1e16e356 5c7c2b9eb2a70315abeabdf48eaf61ac02443266 M	src/services/track.service.ts
+commit e2cb6334315512a46e765137ee1821b34a60bfba
+tree 5884646e60fbcee4951670ef86e00c3aa2d2583d
+parent 6b0e3ad37022607df6d2dc93146a4c6bbf36560b
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:29:00 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:29:00 +0530
+
+    Update fdc-svc-ui.yml
+
+:100644 100644 24cdc15b26645dab23a24cd700d0b773bd06f3af f0e4a7c61d2931970b8b46f6d9d5a5adf585621d M	fdc-svc-ui.yml
+commit 6b0e3ad37022607df6d2dc93146a4c6bbf36560b
+tree 90f42680e28a990192f1f938a0e70f9cf8aba78b
+parent 24495bd3fcf6272739af8b914ae19430dda486f6
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:26:46 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:26:46 +0530
+
+    Update fdc-svc-ui-prod-parameter.json
+
+:100644 100644 a5429f5ef43b1ef7089c6f7ce2d19fade90fe4ac f8f42c0fd9b4854cac45866935aa3016fda0ae50 M	fdc-svc-ui-prod-parameter.json
+commit 24495bd3fcf6272739af8b914ae19430dda486f6
+tree 2fa04cc8d427e96c9fcc16da3fb66537b3572837
+parent 2153c15b02804e6fa8db72089619f08509407af8
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:26:08 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:26:08 +0530
+
+    Update fdc-svc-ui-stage-parameter.json
+
+:100644 100644 eababa96c3b79eb58e6b24d523b8eb3d8bb84170 ec6e378af1097d9e933ef70d3f59818cbc6d005e M	fdc-svc-ui-stage-parameter.json
+commit 2153c15b02804e6fa8db72089619f08509407af8
+tree b38bddaab5ca2b6ac9fc6d2f131b8ac8476cc91f
+parent 343c8cd95c034d49642a8244c096a166a2c8eaf9
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:25:54 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:25:54 +0530
+
+    Update fdc-svc-ui-stage-parameter.json
+
+:100644 100644 65ff37b6147718d1da4686f3dac0a46617261d2b eababa96c3b79eb58e6b24d523b8eb3d8bb84170 M	fdc-svc-ui-stage-parameter.json
+commit 343c8cd95c034d49642a8244c096a166a2c8eaf9
+tree 86f55c12e7adf27ee79f4ab53a2e5a2dfd622b76
+parent c1837840f33655ea08958c9a53a3f0ca5ed8ba13
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:25:20 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:25:20 +0530
+
+    Update fdc-svc-ui-dev-parameter.json
+
+:100644 100644 2326fd0bb8b10775d467e071f7c73cb562bd1c15 3376c784289686b09408494501e4305bfa454e10 M	fdc-svc-ui-dev-parameter.json
+commit c1837840f33655ea08958c9a53a3f0ca5ed8ba13
+tree cf27af7eb48c568027ba6dfb768312f34bd9d8a5
+parent 96c0a85e0f24b973da9ca5da618f5e0dc437c0bc
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:23:26 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:23:26 +0530
+
+    Update fdc-svc-ui.yml
+
+:100644 100644 e685de41a2285c6af3ea969ff80f65a812a66ceb 24cdc15b26645dab23a24cd700d0b773bd06f3af M	fdc-svc-ui.yml

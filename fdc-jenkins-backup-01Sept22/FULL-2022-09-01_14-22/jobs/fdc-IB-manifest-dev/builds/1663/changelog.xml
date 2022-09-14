@@ -1,0 +1,397 @@
+commit 2b94c1b2f6756ab414b032f980bb8a3df4930f9d
+tree 409d221c22b03033d563fd0014b375e30ee87dff
+parent 84766ec07687bb18700b69c56df880649210952e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-21 23:34:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-21 23:34:52 +0530
+
+    FDC-893 :: changed the filtering code logic to both daily and weekly logic
+
+
+:100644 100644 de535dfbd3ab3684e815a4b9105df8a4450e9c6f 07dc4cb8d06928fff528297c796287fb09585436 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 800f409a0ae5d6b40589f5604a5f255980f5eaf9 8573ac44549fdd5344ef02d39bf91f79ae03ca6e M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 5d7fccbb7a6ba29700f1ae8b0881cfec7a610e2f 3b4846f274c20c5b3c03bd08ee3a63d4f58d3131 M	python_scripts/Generic_Client_Invoice_stage.py
+commit 84766ec07687bb18700b69c56df880649210952e
+tree c5aed95069319af1861102d5b4d1fcf2ca93026d
+parent 68f10bbf0b4674dfb7cab7d5263331e1f62f2fef
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 19:36:26 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 19:36:26 +0530
+
+    FDC-893 :: changed dell code for prod version
+
+
+:100644 100644 f53aa6bd7ccbd6a6cc1d4f3b4eb0df2c56babf87 800f409a0ae5d6b40589f5604a5f255980f5eaf9 M	python_scripts/Generic_Client_Invoice_prod.py
+commit 68f10bbf0b4674dfb7cab7d5263331e1f62f2fef
+tree 3b3c6f8bec00fadce2ef20588e03fa08a4ed2f45
+parent 7df2f990fb50eb9f452f1027775b992fd59f6bcf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:30:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:30:50 +0530
+
+    FDC-893:: calling stage script
+
+
+:100644 100644 4e0a433ab8d72de91de7c9b88dc00b908bad0f52 5d7fccbb7a6ba29700f1ae8b0881cfec7a610e2f M	python_scripts/Generic_Client_Invoice_stage.py
+commit 7df2f990fb50eb9f452f1027775b992fd59f6bcf
+tree a7ea9eeb21c42f8737f417ae66224f1c4e033c59
+parent 08f5a49dd29b96ae024520f04817fcc453585d5e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:29:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:29:09 +0530
+
+    FDC-893 :: changed credentials for prod and satge accordingly
+
+
+:100644 100644 b590c156832b16ed75b08d8005ac5eebc18244c6 e2073182cfdd4ea3c150fa2ff684451cb5018e80 M	python_scripts/get_dell_invoice_custom_report_generation_prod.py
+:100644 100644 b590c156832b16ed75b08d8005ac5eebc18244c6 b9796e6ac2cf817abda4e6e206bdf3b77b2aaa5f M	python_scripts/get_dell_invoice_custom_report_generation_stage.py
+commit 08f5a49dd29b96ae024520f04817fcc453585d5e
+tree d5340fecf6a974894a4af1def4e2bf1df1086d38
+parent 4e3ef73a586d66a9711a94069e317d78dd797cce
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:26:10 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:26:10 +0530
+
+    FDC-893 :: created dell related script for prod and stage
+
+
+:000000 100644 0000000000000000000000000000000000000000 b590c156832b16ed75b08d8005ac5eebc18244c6 A	python_scripts/get_dell_invoice_custom_report_generation_prod.py
+:000000 100644 0000000000000000000000000000000000000000 b590c156832b16ed75b08d8005ac5eebc18244c6 A	python_scripts/get_dell_invoice_custom_report_generation_stage.py
+commit 4e3ef73a586d66a9711a94069e317d78dd797cce
+tree af6cea66da686e77a3bfb03e37b029aaeb31d036
+parent 6332c2e8156e4f11b30b084e89f502ea818ccfb5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 17:09:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 17:09:41 +0530
+
+    FDC-893 :: applied dell invoice changes for stage script
+
+
+:100644 100644 1219ab199983bfb66e481ff1a296426b1d8edafc 4e0a433ab8d72de91de7c9b88dc00b908bad0f52 M	python_scripts/Generic_Client_Invoice_stage.py
+commit 6332c2e8156e4f11b30b084e89f502ea818ccfb5
+tree edd0a1b6df85b52e4c529ba5451a2e219cf2d158
+parent e36c9a1053a29615622d582cc88ef6b5926ae185
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 16:30:26 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 16:30:26 +0530
+
+    FDC-893
+
+
+:100644 100644 5a5d29dee3854b705db2c7928cef4d7b21c55df8 de535dfbd3ab3684e815a4b9105df8a4450e9c6f M	python_scripts/Generic_Client_Invoice.py
+commit e36c9a1053a29615622d582cc88ef6b5926ae185
+tree 8896fd5f651c93f6613813932117847693e1a0cd
+parent 384f93669c17a165e8a6c886c26d7eb635aad4b3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-14 16:19:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-14 16:19:09 +0530
+
+    FDC-893 :: fixed typo
+
+
+:100644 100644 aacdc916dca87ed7cfa9c52e76cf5bf76fda6a89 b590c156832b16ed75b08d8005ac5eebc18244c6 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 384f93669c17a165e8a6c886c26d7eb635aad4b3
+tree 216fe37c508e559172586f830e9295aaeba0b297
+parent d51b6d3e432f0f955dbe6ef1c2fe2422947f5644
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 11:29:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 11:29:07 +0530
+
+    FDC-893 :: fixed typo
+
+
+:100644 100644 545f7f08fb6c68a139005cdf8ea354c240a18f68 aacdc916dca87ed7cfa9c52e76cf5bf76fda6a89 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit d51b6d3e432f0f955dbe6ef1c2fe2422947f5644
+tree ed33aa4951fafeb593262cce61c96ab681610b8d
+parent 958b4bcc857be1fc2aececafa4ebd56027dc0672
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 00:11:57 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 00:11:57 +0530
+
+    FDC-893 :: changed connection string
+
+
+:100644 100644 6c6fb26aa16b86975c27d95b1242b1e33ae61344 5a5d29dee3854b705db2c7928cef4d7b21c55df8 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 853ba3a141fb52a457a0ad91066cdb38de788e09 545f7f08fb6c68a139005cdf8ea354c240a18f68 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 958b4bcc857be1fc2aececafa4ebd56027dc0672
+tree 67504b4e09710c4f838a92b6f0db570fe1451398
+parent 6e4196ec2aa49cf12166fabfb071465b13191e00
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 15:29:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 15:29:52 +0530
+
+    FDC-893 :: added code for dell specific
+
+
+:100644 100644 3fbb296573a4c2f835d030aa8eb663ba36eeb1fd 6c6fb26aa16b86975c27d95b1242b1e33ae61344 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 d09362e6d0979244fede151d380ed0ede1fa0fdd 853ba3a141fb52a457a0ad91066cdb38de788e09 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 6e4196ec2aa49cf12166fabfb071465b13191e00
+tree f7497309ae3aef15668eb7a2a7656648bf15bc18
+parent 52bf012063f5a8fab304d157760c77ef68694b48
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-09 23:47:51 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-09 23:47:51 +0530
+
+    FDC-893 :: added changes of dell invoice
+
+
+:100644 100644 1f8f9ffc0067cdff7be0a34016817591c54ddf8d 3fbb296573a4c2f835d030aa8eb663ba36eeb1fd M	python_scripts/Generic_Client_Invoice.py
+:000000 100644 0000000000000000000000000000000000000000 d09362e6d0979244fede151d380ed0ede1fa0fdd A	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 3da4771d642d49500f5515abdb9831783bd2d970
+tree cf3cf13d8bd663df693dc1b959130a12703cd6d4
+parent 632297847df19b9b3dbd0c7f4c1f131149c929dd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-05 14:19:51 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-05 14:19:51 +0530
+
+    FDC-758:: fixed typos
+
+
+:100644 100644 8ba6d66e43f8a27eec74ea9eb774d1efe90bbfd8 d7410296fd1298c979029aae01de59dccdaee969 M	python_scripts/call_Manifest_data_alerts_prod.py
+:100644 100644 2c5cfb98501f0854533f96b35e68f5ef22ba82f2 8ae2d2c767356eafa473da72bd9331d508e5bc9d M	python_scripts/call_Manifest_data_alerts_stage.py
+commit 632297847df19b9b3dbd0c7f4c1f131149c929dd
+tree 506385fc013fa7e0cb5da957a2d17dcf9cda9f0a
+parent a79464f8d9c354b37c91b94febc505602ac4de88
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 19:24:34 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 19:24:34 +0530
+
+    FDC-758 :: fixed quote formating issue
+
+
+:100644 100644 af299d81f070af1ad7ba5beef8f19b66e196c243 770f6c34f92db436774e6a0bc8676a8bd9d33be5 M	python_scripts/Manifest_data_alerts.py
+:100644 100644 72e4c32249427fc192a0b58948b83428b5a508f9 72be65232ae6eb89b786920507ea71c1f4a2ff52 M	python_scripts/Manifest_data_alerts_prod.py
+:100644 100644 9a423eb64fd57060e696ba4ad502fff211d745b2 101ffb01832cc0a7e84f9ccf260cdec9ac4631eb M	python_scripts/Manifest_data_alerts_stage.py
+commit a79464f8d9c354b37c91b94febc505602ac4de88
+tree 7fab8cd0135a708953f5f098c9f903d9715a38d4
+parent d557d57aa98b25539abf48efc658cf3611bb0193
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 18:47:21 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 18:47:21 +0530
+
+    FDC-758 :: formating message
+
+
+:100644 100644 13ab32e0eb577f8755f19b804e737915ca3e96be af299d81f070af1ad7ba5beef8f19b66e196c243 M	python_scripts/Manifest_data_alerts.py
+:100644 100644 0c432289e9eb1d6b8704ff66739c2acf2dff9001 72e4c32249427fc192a0b58948b83428b5a508f9 M	python_scripts/Manifest_data_alerts_prod.py
+:100644 100644 5815ff7c0686dbfe33bbcae0b1b14c830ee69012 9a423eb64fd57060e696ba4ad502fff211d745b2 M	python_scripts/Manifest_data_alerts_stage.py
+commit d557d57aa98b25539abf48efc658cf3611bb0193
+tree e43339124402e3c254af22adb152062d7a46dd1a
+parent 98e195841c3f0094cfa3676b7eda0a65fbdf2a6f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:38:14 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:38:14 +0530
+
+    FDC-758 :: added duplicates filtering logic
+
+
+:100644 100644 14be091e64024d83abff64a5238633bdfc13df02 13ab32e0eb577f8755f19b804e737915ca3e96be M	python_scripts/Manifest_data_alerts.py
+:100644 100644 bc1bbbb55f8e9a7d894ea510fd41dbb201c99d17 0c432289e9eb1d6b8704ff66739c2acf2dff9001 M	python_scripts/Manifest_data_alerts_prod.py
+:100644 100644 5e7042d886fa06821e3b3e8288b89a84a7f29092 5815ff7c0686dbfe33bbcae0b1b14c830ee69012 M	python_scripts/Manifest_data_alerts_stage.py
+commit 98e195841c3f0094cfa3676b7eda0a65fbdf2a6f
+tree 898dca9c69aa89f8e1d9bed8fe2a70e161d4c912
+parent 9a7bb8a2092edf9dbd723b050c51bb90eebcce88
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:30:58 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:30:58 +0530
+
+    FDC-758 :: simplified the filtering logic
+
+
+:100644 100644 6522bb00c4d565a67966d614cb82476c0b01f47f fc165fe74400d39b6278cb5c96b53b1cbe25e053 M	python_scripts/call_Manifest_data_alerts.py
+:100644 100644 f1669042fde4d0a338acb9b8523c132d7481e7b3 8ba6d66e43f8a27eec74ea9eb774d1efe90bbfd8 M	python_scripts/call_Manifest_data_alerts_prod.py
+:100644 100644 6d7d79f8a5488cb3793fa3407d08db4d5dcd4429 2c5cfb98501f0854533f96b35e68f5ef22ba82f2 M	python_scripts/call_Manifest_data_alerts_stage.py
+commit 9a7bb8a2092edf9dbd723b050c51bb90eebcce88
+tree ec57a3ead9b5d6e4f26c21e91859edfb2cbad8a9
+parent 2623af0c1a64dd78a45bc13b513e6844c44040c6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:28:27 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:28:27 +0530
+
+    FDC-758 :: changes related to avoiding duplicate records changes are deployed
+
+
+:100644 100644 4d4ed472c1ee3de6ea6e16c22eb86f9984dbae93 aabb798fc2f507391979a5785f40fcae580c5c46 M	python_scripts/standard_client_manifest.py
+:100644 100644 a8d167fcc5b1877a55f2cb6f4eaaa35aa75c8a4a 2af6a9bd31959fdfc66459f0d5dd5c9d42ae1d9a M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 376d6b1c6c8f224df3f41c3dffb2e2d3e219ad88 f5337e03c0cbc9ee38ad08ac74d3f4a7ce514aa6 M	python_scripts/standard_client_manifest_stage.py
+commit 2623af0c1a64dd78a45bc13b513e6844c44040c6
+tree 2cbcff0ef70a62b50071a700fe0e74e0ec8c6384
+parent f89b7587f4b3c3259d7513cd9cbb8a1f4626aef2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:01:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:01:54 +0530
+
+    FDC-758 :: added alerts for duplicate records
+
+
+:100644 100644 11516c6e71f19d1556c41274c18c3eab7b38a647 14be091e64024d83abff64a5238633bdfc13df02 M	python_scripts/Manifest_data_alerts.py
+commit f89b7587f4b3c3259d7513cd9cbb8a1f4626aef2
+tree 7338b0eec6872325f948b3c280bb0a47cb6f282b
+parent 0ef43f0cf572b8973a2cfd895550899d57cff4dd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:01:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 17:01:24 +0530
+
+    FDC-758 :: fixed duplicates
+
+
+:100644 100644 7517a8777d1672501f6df319e20dcbd2e699ded0 4d4ed472c1ee3de6ea6e16c22eb86f9984dbae93 M	python_scripts/standard_client_manifest.py
+commit 0ef43f0cf572b8973a2cfd895550899d57cff4dd
+tree d31eb0959d2b76ef15b6126b623958473942860e
+parent 4461d80fbfa60c663c55c799294b91ca51fca136
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 15:23:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-04 15:23:07 +0530
+
+    FDC-758 :: blocking duplicates
+
+
+:100644 100644 a2b3dabc16e61a3e4e34fef2690f7841f8dbad7b 7517a8777d1672501f6df319e20dcbd2e699ded0 M	python_scripts/standard_client_manifest.py
+commit 4461d80fbfa60c663c55c799294b91ca51fca136
+tree 5c276077beb9ef6c60a061c0f0c3739a314c7580
+parent 9f3285c2120bf7f2e14134ace595b8e42a47482b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:59:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:59:23 +0530
+
+    FDC-758:: used appropriate hostnames for alert call jobs
+
+
+:100644 100644 6522bb00c4d565a67966d614cb82476c0b01f47f f1669042fde4d0a338acb9b8523c132d7481e7b3 M	python_scripts/call_Manifest_data_alerts_prod.py
+:100644 100644 6522bb00c4d565a67966d614cb82476c0b01f47f 6d7d79f8a5488cb3793fa3407d08db4d5dcd4429 M	python_scripts/call_Manifest_data_alerts_stage.py
+commit 9f3285c2120bf7f2e14134ace595b8e42a47482b
+tree 4557c1ccd76747498127db3c5f8e14ebfb8c2e68
+parent 424812f88343db391832a1d580020a4e43460254
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:58:32 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:58:32 +0530
+
+    FDC-758 :: create alert jobs for prod and stage
+
+
+:000000 100644 0000000000000000000000000000000000000000 6522bb00c4d565a67966d614cb82476c0b01f47f A	python_scripts/call_Manifest_data_alerts_prod.py
+:000000 100644 0000000000000000000000000000000000000000 6522bb00c4d565a67966d614cb82476c0b01f47f A	python_scripts/call_Manifest_data_alerts_stage.py
+commit 424812f88343db391832a1d580020a4e43460254
+tree 000661e12b9d5de696c412dd0450b21e0417dd19
+parent 759d09655e6adaec597ac2945898fd46d6ba0e0b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:57:16 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:57:16 +0530
+
+    FDC-758 ::changed hostname according to environment
+
+
+:100644 100644 11516c6e71f19d1556c41274c18c3eab7b38a647 bc1bbbb55f8e9a7d894ea510fd41dbb201c99d17 M	python_scripts/Manifest_data_alerts_prod.py
+:100644 100644 11516c6e71f19d1556c41274c18c3eab7b38a647 5e7042d886fa06821e3b3e8288b89a84a7f29092 M	python_scripts/Manifest_data_alerts_stage.py
+commit 759d09655e6adaec597ac2945898fd46d6ba0e0b
+tree d81f00a25283da99932a1d6acf3a56b6b9a4ce1a
+parent c7d7bfb984d52917dd8f677e7a89fc23276c959b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:56:03 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:56:03 +0530
+
+    FDC-758:: created alert jobs for prod and stage environment
+
+
+:000000 100644 0000000000000000000000000000000000000000 11516c6e71f19d1556c41274c18c3eab7b38a647 A	python_scripts/Manifest_data_alerts_prod.py
+:000000 100644 0000000000000000000000000000000000000000 11516c6e71f19d1556c41274c18c3eab7b38a647 A	python_scripts/Manifest_data_alerts_stage.py
+commit c7d7bfb984d52917dd8f677e7a89fc23276c959b
+tree 19d8c0ba2aae550cdefcb3b56cae582cf154ad3e
+parent 9b5a9c8a6d9d3454f8110bd536692e22e542f46b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:54:47 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:54:47 +0530
+
+    FDC-758:: scheduled alerts for prod and stage versions
+
+
+:100644 100644 a2b3dabc16e61a3e4e34fef2690f7841f8dbad7b a8d167fcc5b1877a55f2cb6f4eaaa35aa75c8a4a M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 a2b3dabc16e61a3e4e34fef2690f7841f8dbad7b 376d6b1c6c8f224df3f41c3dffb2e2d3e219ad88 M	python_scripts/standard_client_manifest_stage.py
+commit 9b5a9c8a6d9d3454f8110bd536692e22e542f46b
+tree 55666982668587de3aff9e68d9f5d9605c35646d
+parent 0c3f93ae5c34de9badb4840035640a61ac2d9d6f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:51:14 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-03 21:51:14 +0530
+
+    FDC-758 :: created prod and stage versions
+
+
+:000000 100644 0000000000000000000000000000000000000000 a2b3dabc16e61a3e4e34fef2690f7841f8dbad7b A	python_scripts/standard_client_manifest_prod.py
+:000000 100644 0000000000000000000000000000000000000000 a2b3dabc16e61a3e4e34fef2690f7841f8dbad7b A	python_scripts/standard_client_manifest_stage.py
+commit 0c3f93ae5c34de9badb4840035640a61ac2d9d6f
+tree eb94643c3ae500eecc92f0d57c59ea7fc13710ac
+parent 568ef487ee1354fff6dbd112097b55839e09789c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 22:12:20 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 22:12:20 +0530
+
+    FDC-758 :: Added connection close
+
+
+:100644 100644 d7d5dc9e0ca60c0ea86d74e9b118ec42f21811ef 11516c6e71f19d1556c41274c18c3eab7b38a647 M	python_scripts/Manifest_data_alerts.py
+:100644 100644 6d0c836d08333b88b94e39481184949215a6c4e4 6522bb00c4d565a67966d614cb82476c0b01f47f M	python_scripts/call_Manifest_data_alerts.py
+:100644 100644 83d635bb1ec0bdf00cbe35878001dec49fe98b85 a2b3dabc16e61a3e4e34fef2690f7841f8dbad7b M	python_scripts/standard_client_manifest.py
+commit 568ef487ee1354fff6dbd112097b55839e09789c
+tree e5f2aa97907102c895bd5c0798abe64e3f0b1f30
+parent 62e8ed68fa35e5b1f44604771b0adb8baa61e2b6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 12:50:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 12:50:50 +0530
+
+    FDC-758 :: Added missing local key word
+
+
+:100644 100644 e5e65b7ec55522097ebd64e225035b0a188510c0 83d635bb1ec0bdf00cbe35878001dec49fe98b85 M	python_scripts/standard_client_manifest.py
+commit 62e8ed68fa35e5b1f44604771b0adb8baa61e2b6
+tree d5c581d9ccb701a30768c91ccc6b6625a0c3099d
+parent 29706ddc7c66c0d951733be202e5a6af80bf87fb
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:55:46 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:55:46 +0530
+
+    FDC-758 :: final changes
+
+
+:100644 100644 1ca6d09bfe787a2c50e60eb0e170e38ad4237770 d7d5dc9e0ca60c0ea86d74e9b118ec42f21811ef M	python_scripts/Manifest_data_alerts.py
+:000000 100644 0000000000000000000000000000000000000000 6d0c836d08333b88b94e39481184949215a6c4e4 A	python_scripts/call_Manifest_data_alerts.py
+:100644 100644 0ee453fefceafad12de5fdd7ee061552f5d208c1 440bd4c5710f2d779e4dbef92feaca0a9569e1ca M	python_scripts/python_dev.conf
+:100644 100644 5ca228bb12e53d7bd2e1dee65ba31462de8d4014 5c83d9a5fcf98c884917e6e562370b5f0efc1f9f M	python_scripts/python_prod.conf
+:100644 100644 7a05bc9e88a9c5c9bbc0ad68fa36e5913c5ee185 6d44b301a09367bd3909eff8360289f6346eba0c M	python_scripts/python_stage.conf
+:100644 100644 a6d8775c67e5327edc1a6c128bbb569f9ed1440e e5e65b7ec55522097ebd64e225035b0a188510c0 M	python_scripts/standard_client_manifest.py
+commit 29706ddc7c66c0d951733be202e5a6af80bf87fb
+tree b6df921a3f9eb961dd5f92473fd952d2967c1a0e
+parent c3cc7041ced66d46cc9194b0f6a9ee7ff8f5de91
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:18:27 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:18:27 +0530
+
+    FDC-758 :: updated token with actual token
+
+
+:100644 100644 be6de610de77fb13b0ab4db477a9dbd7f0f54eda 5ca228bb12e53d7bd2e1dee65ba31462de8d4014 M	python_scripts/python_prod.conf
+:100644 100644 80a6eb52266380b013fe255df54ca982418b9e4a 7a05bc9e88a9c5c9bbc0ad68fa36e5913c5ee185 M	python_scripts/python_stage.conf
+commit c3cc7041ced66d46cc9194b0f6a9ee7ff8f5de91
+tree 7e5ede4c1bf2878a341f2e77153582e446273cfb
+parent d57cba9b61490bfd2098597de9f1c1829318d9cc
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:02:44 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:02:44 +0530
+
+    FDC-758 :: Changed connection string
+
+
+:100644 100644 6fc1da6416e4bbc0714c4001d384679cf05bcea1 1ca6d09bfe787a2c50e60eb0e170e38ad4237770 M	python_scripts/Manifest_data_alerts.py
+:100644 100644 fe348fdb84a4eb8d95163329779526ea105d2564 a6d8775c67e5327edc1a6c128bbb569f9ed1440e M	python_scripts/standard_client_manifest.py
+commit d57cba9b61490bfd2098597de9f1c1829318d9cc
+tree 8f41744105137f58469f26650723a30331a2ad27
+parent f3aedf0ddb751fea02be1073e70db0e24733f87c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 22:58:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 22:58:13 +0530
+
+    FDC-758 :: enhanced job with alerts
+
+
+:000000 100644 0000000000000000000000000000000000000000 6fc1da6416e4bbc0714c4001d384679cf05bcea1 A	python_scripts/Manifest_data_alerts.py
+:000000 100644 0000000000000000000000000000000000000000 0ee453fefceafad12de5fdd7ee061552f5d208c1 A	python_scripts/python_dev.conf
+:000000 100644 0000000000000000000000000000000000000000 be6de610de77fb13b0ab4db477a9dbd7f0f54eda A	python_scripts/python_prod.conf
+:000000 100644 0000000000000000000000000000000000000000 80a6eb52266380b013fe255df54ca982418b9e4a A	python_scripts/python_stage.conf
+:100644 100644 5324e29fb1f48f16a0e684d033f54a7e55226fae fe348fdb84a4eb8d95163329779526ea105d2564 M	python_scripts/standard_client_manifest.py
+commit f3aedf0ddb751fea02be1073e70db0e24733f87c
+tree d529b584df7074058f8bec7b2a2ae6e18530229d
+parent 77287cc19b26334fdf5e73b49078fc3187a78708
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 01:36:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 01:36:31 +0530
+
+    FDC-758 :: ADDED KEYWORD LOCAL
+
+
+:100644 100644 b778f42f10d7da0431879480fff2947177c52784 5324e29fb1f48f16a0e684d033f54a7e55226fae M	python_scripts/standard_client_manifest.py
+commit 77287cc19b26334fdf5e73b49078fc3187a78708
+tree ac4ac31ee397682689da2a4d392f60d666a9433e
+parent ee7e2408e4593b9d09082728329f581318e1ba87
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 01:35:25 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 01:35:25 +0530
+
+    FDC-758 :: changed hostname format
+
+
+:100644 100644 f5d641f00f85b3f160bc5c40e0ad96b607d96c74 b778f42f10d7da0431879480fff2947177c52784 M	python_scripts/standard_client_manifest.py
+commit ee7e2408e4593b9d09082728329f581318e1ba87
+tree f2361e09f404a9aca467f5dc135c7398c5dd674a
+parent baa6d2d87797ddccdadae994f9450bc25a446338
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 01:31:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 01:31:24 +0530
+
+    FDC-758 :: standard manifest script
+
+
+:000000 100644 0000000000000000000000000000000000000000 f5d641f00f85b3f160bc5c40e0ad96b607d96c74 A	python_scripts/standard_client_manifest.py

@@ -1,0 +1,10 @@
+commit 437ce648c19dd5b2a1a3eb782ab28822947f0aae
+tree 324f9d93905ac71ec514814a8adbbffc798d7131
+parent 1132e338e7080de5e8eb772df9df5ab614cceaf0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 22:32:16 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 22:32:16 +0530
+
+    FDC-746 :: changes field names
+
+
+:100644 100644 6f86fa9754f9a9a903ade61acaa8498a1f61550f fb73253e1a3ebbc713a4c2e84b61a6ca81f4b5ea M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

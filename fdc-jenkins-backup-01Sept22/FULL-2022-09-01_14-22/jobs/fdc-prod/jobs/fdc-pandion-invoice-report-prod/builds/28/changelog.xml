@@ -1,0 +1,27 @@
+commit 07b5176139dd10db0898c68c1df9ae4fa7b0cc13
+tree 906de35c4b30adab38f8c60f35fbbfa3340606d9
+parent 46fc0778d00402c7d27e1a8f03c2087beedcc17c
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-08-08 08:53:53 -0700
+committer GitHub <noreply@github.com> 2022-08-08 08:53:53 -0700
+
+    Update Generic_Client_Invoice.py
+
+:100644 100644 6d231f3daf01ec6da1c613c530d51f8686309776 45188fc646a62c2e0ece01f6f44ea4c7637a9074 M	python_scripts/Generic_Client_Invoice.py
+commit 46fc0778d00402c7d27e1a8f03c2087beedcc17c
+tree ebd0b37feb3eb27b20ff0a7d6ca7fd72a0513680
+parent fbd954d830ad173e638ff24a24b4825d2bdabfc0
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-08-08 08:53:09 -0700
+committer GitHub <noreply@github.com> 2022-08-08 08:53:09 -0700
+
+    Update Generic_Client_Invoice_stage.py
+
+:100644 100644 0c848ab66beecc7aac07146837f358d2b99bff3e 328fac0111176bdf5b915a718ed81ae8b5e3c919 M	python_scripts/Generic_Client_Invoice_stage.py
+commit fbd954d830ad173e638ff24a24b4825d2bdabfc0
+tree 94816c9499bb09ed165b26942f6c10b3d9ed7461
+parent e2f91bfc29fe2fc4e5542bb307cbceab7be83f96
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-08-08 08:52:43 -0700
+committer GitHub <noreply@github.com> 2022-08-08 08:52:43 -0700
+
+    Update Generic_Client_Invoice_prod.py
+
+:100644 100644 2431f7113afe1977436a1f8d986a7883ff192da2 be3a6cd22fb2a11ba92a26811eae9018aa5ab859 M	python_scripts/Generic_Client_Invoice_prod.py

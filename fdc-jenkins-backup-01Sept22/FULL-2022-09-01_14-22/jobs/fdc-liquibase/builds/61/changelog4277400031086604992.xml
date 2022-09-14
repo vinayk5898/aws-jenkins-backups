@@ -1,0 +1,10 @@
+commit 4b0358ee0b9b65b3b0887a6a2f9f78de9a3d585a
+tree 8f98343c22a37b0289b21f8b3f4bd3bd8b6a2c3f
+parent ab21f82ec7ce83d1e9e9f4696bf0b4f30d6ab5f2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-11 13:50:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-11 13:50:13 +0530
+
+    FDC-542 :: procedure changes
+
+
+:100644 100644 c97deb2021c2d77da747b37c2863e871e0048b13 c3dd7bae453803dc32002c13da28c39ab81b44bd M	src/main/resources/db/changelog/db.changelog-master.yaml

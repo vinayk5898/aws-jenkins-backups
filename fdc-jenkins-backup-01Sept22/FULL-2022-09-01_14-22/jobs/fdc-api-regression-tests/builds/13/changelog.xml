@@ -1,0 +1,20 @@
+commit 4da12c1dfacd360641a47973de9da06c70c291d4
+tree e0f2b85e915ffea641d94602aff30363e33edfb5
+parent 6e6f4df56cfa86b648a19d576b740326d29b33a8
+author RealName:Hari <hbolla@altir.co> 2022-06-27 13:00:21 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-06-27 13:00:21 +0530
+
+    Fixed
+
+
+:100644 100644 df312feddf41e141ab1c7595bac3554e4a971bf5 a10c4e20646f7a84ccf6d29b145c7b489b4aab46 M	src/test/java/org/fdc/payloads/requests/shipment/shipment_post_requests.feature
+commit 6e6f4df56cfa86b648a19d576b740326d29b33a8
+tree 6663eff02cfa8f702cd5233dc57ba76c5359406c
+parent af3b4e12c254262ec7531552bfd83b88f08f25b3
+author RealName:Hari <hbolla@altir.co> 2022-06-27 13:00:01 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-06-27 13:00:01 +0530
+
+    Fixed
+
+
+:100644 100644 ec52d403d6aa4aa7d93041e488b35c5e96ca9e25 55c4bcdf28da282be6716d2a87c4bb0ab568b463 M	src/test/java/org/fdc/tests/milestone_request_scenarios.feature

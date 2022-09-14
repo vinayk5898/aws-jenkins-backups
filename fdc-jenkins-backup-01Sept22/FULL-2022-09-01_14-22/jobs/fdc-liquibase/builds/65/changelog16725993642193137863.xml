@@ -1,0 +1,11 @@
+commit e31975c50b996888dfde497369cd4990186eae0a
+tree 81b42a1632d8f116900530bee138b39ee7f01a15
+parent 4b0358ee0b9b65b3b0887a6a2f9f78de9a3d585a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-12 15:49:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-12 15:49:31 +0530
+
+    FDC-542 :: config changes
+
+
+:100644 100644 3afe1a88144376de50bd9f33c2271aa18fe0bf3a 54a79da188564c2785f42701735c50aca95423ed M	src/main/resources/db/sql/fdc_generic_load_shipment_package_V2.sql
+:100644 100644 2b0e3a140c1dc6f12373f2fbea7559af09b3a50b ddd8d6394bbd089f0e9a4c3cbd39e4236d13b2bf M	src/main/resources/db/sql/fdc_international_bridge_client_config_changes.sql

@@ -1,0 +1,11 @@
+commit bf8fc648219635cea76964e46d0056e6702bd9e5
+tree 0147e0be9d930481943296c54f8cbb39e6c9edeb
+parent 9ce319204af639584c93a4dcb831cf5c983aecf1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-26 01:02:33 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-26 01:02:33 +0530
+
+    FDC-156 :: fixed column order
+
+
+:100644 100644 3cef07199974b64d57f66e6db22dae4dcab85385 652de5cb6c9435c03695a50b116be623ac229636 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:100644 100644 8fe663874158c062dda5ee42aaff7567abee7d70 55ce692aac749919219c965c825338b975d4b81f M	src/main/resources/db/sql/v_get_client_invoice.sql

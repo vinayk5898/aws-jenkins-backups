@@ -1,0 +1,20 @@
+commit 09f67962d70e486327bb27d0db2acfc326097178
+tree 9e8789718ab3e88a6fb5536f88e6b63e9948f801
+parent e4ee236b56bc5306c93a7c575a364327480ffd21
+author RealName:Hari <hbolla@altir.co> 2022-08-02 18:31:06 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-02 18:31:06 +0530
+
+    Added new features to regression
+
+
+:100644 100644 8bf535099b860784651a51aa8dd8dff988495d39 085ebe6d26896164c66533fe96e95398edbd7459 M	src/test/java/org/fdc/TestRunner.java
+commit e4ee236b56bc5306c93a7c575a364327480ffd21
+tree cc9470680e7212d269d52dc0563d365e9f41d63d
+parent b29cd6b44e35d6e3042304221e3d4c321982c508
+author RealName:Hari <hbolla@altir.co> 2022-08-02 18:27:21 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-02 18:27:21 +0530
+
+    Fixed scenario validation
+
+
+:100644 100644 2fd4da35a91668f16a3929e0c8255dab572c6eb9 a269755551370b82f7dfb0e3c4e5787f7dc0cd24 M	src/test/java/org/fdc/tests/shipment_request_scenarios.feature

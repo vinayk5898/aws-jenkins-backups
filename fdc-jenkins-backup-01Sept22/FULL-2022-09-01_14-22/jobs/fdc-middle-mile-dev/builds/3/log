@@ -1,0 +1,26 @@
+Started by user [8mha:////4H9G1L0YXL6Xrgxr5ScBRM9Md/1fpGCQ5OyyRDWfh5YpAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZh/dLi1CL9XKB96Yk5iSmZeXmpABijBn7IAAAA[0mMadhavareddy Lingaladinne
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-middle-mile-dev
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-middle-mile-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/ITMF-28^{commit} # timeout=10
+Checking out Revision 2a48493328862f3b83a3d84dd9b31ef3955cc025 (refs/remotes/origin/feature/ITMF-28)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2a48493328862f3b83a3d84dd9b31ef3955cc025 # timeout=10
+Commit message: "Python scripts for middle_mile data generation"
+First time build. Skipping changelog.
+[fdc-middle-mile-dev] $ /bin/sh -xe /tmp/jenkins9134870372529657953.sh
++ cd python_scripts
++ python3 middle_mile_generate.py
+No of Rows inserted :  1
+No of Rows updated :  1
+Finished: SUCCESS

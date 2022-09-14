@@ -1,0 +1,123 @@
+commit 0ffc7ee84a883a317df431058c36df0aa9bd4292
+tree a0b9152921ff6270798467ac890950f0da7eb68a
+parent e9d384c61a8b76b8ea6a87bc02a8fb32278dafec
+author Denis Subach <dsubach@altir.co> 2022-06-10 13:14:26 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-10 13:14:26 +0300
+
+    add loader and remove form hiding on mobile devices
+
+
+:000000 100644 0000000000000000000000000000000000000000 5ddabe130bd0422fc1696c4e0c837148c41c1183 A	src/components/loader/Loader.styles.tsx
+:000000 100644 0000000000000000000000000000000000000000 1097db0b7ddfcbbbe7d9b62477cae60976367088 A	src/components/loader/Loader.tsx
+:100644 100644 d1376a28896e1a4a1644204f0b0c52dd9358e162 0885018707e9a3f319617dfacd70c7db0d0be2ec M	src/pages/Landing/Tracking/Details/Details.styles.tsx
+:100644 100644 db4f4619b3fd96d0a6b54d720240aea9b6beedca 1cea8d43249e6baf65cb97b943397199374fa1af M	src/pages/Landing/Tracking/Details/Details.tsx
+commit e9d384c61a8b76b8ea6a87bc02a8fb32278dafec
+tree 196bd3bcfa42f8c1199ebf5ce8feed7c29c75333
+parent 59de18f361dd84a8288a3c4788335f846a4b6628
+author Denis Subach <dsubach@altir.co> 2022-06-10 13:13:21 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-10 13:13:21 +0300
+
+    handle search error
+
+
+:100644 100644 711a3ced43826c4a59433b3d57e41fd12f9abffb 3beff296cb37c02bcfb149ec836ec73b4fc93ac3 M	src/components/searchBar/SearchBar.tsx
+:100644 100644 37eb8a62189ae759af9640905dbf89709d1cc9dd 3265f9bb5b41ada44350f7bff67ac72e9aa95f1c M	src/components/searchBar/types.ts
+:100644 100644 c8a1f60f8d85b4d9380df87050c7b43223a3cb9f 65c997f932cab634cb83d122075b6d8e3ce53f44 M	src/hooks/useSearch.tsx
+:100644 100644 ed8c3f13001438572b4d79f99c743f51bac5b703 0d6db552b2b30213ce91cf9520934d40b8ac00a1 M	src/pages/Landing/Tracking/Shipment/Shipment.tsx
+commit 1dcc718fbd3ce9d12c8cf03ee82424aff6438ca7
+tree d2d9955d2ec3e618f014083948c31ce8fa233a34
+parent 2ca764d3ab473d882cd0825717ccf63e685ec805
+author Denis Subach <dsubach@altir.co> 2022-06-10 11:45:57 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-10 11:45:57 +0300
+
+    turn off class-methods-use-this rule, set newlines-between to 'ignore'
+
+
+:100644 100644 e16f17d891ed4cd9535153c3b3cf267873e1329d bb65452d7ef5426b7942f8c4942764466ee67c73 M	.eslintrc.js
+:100644 100644 b466022f833bd8bfe7a314bb359956c10fe32150 0bd6cb39b210f928884f4e435c20807515f1e6fb M	src/components/errorMessage/ErrorMessage.tsx
+:100644 100644 df6416e3adcd958a9172ba2feb4dcde020941249 c051b0f1a0dd5df7c5a4f683574391e2cd653f0a M	src/components/errors/ErrorBoundary.tsx
+:100644 100644 9efd850cdb1d2412196bc2a93e9d3431a443b410 250ce7806a4f72d11a81469934c44055b867f2b5 M	src/components/errors/FallbackError.tsx
+:100644 100644 d38d04d60a3f0f5388cd47721146aac21882bf9e c341323b43279db3d187bba9f1d552ac4e500c03 M	src/components/header/Header.tsx
+:100644 100644 2337eb67e57f2b0bd9489966e9d6e91efdfc6988 e4b74afb78775d50833b13cc68312f86822e2a81 M	src/components/landingImage/LandingImage.tsx
+:100644 100644 f78bcf61cbf756b624e2bd041dff1c42ec821bf5 711a3ced43826c4a59433b3d57e41fd12f9abffb M	src/components/searchBar/SearchBar.tsx
+:100644 100644 a9fc5c3888ad9b3b8eb0010117de233e25d6585a 54b09e500994e4181d7defc0d39b498c475fdb43 M	src/components/stepper/ActivityTimeline/ActivityTimeline.tsx
+:100644 100644 ccb86483131f62f73dd42b11b540a33e6c3d45a0 689cf3a5dd4d64f4e74a44922c90e04bfd476383 M	src/hooks/useSearch.tsx
+:100644 100644 cda49319e1b04bc1898b1d2813cab7eb15041815 43cf4230703a22c9ffd7d2b6526cc3d32324fb61 M	src/i18n.ts
+:100644 100644 cf0cab80d112ff7e4f366064f8856d39acc3a006 881b93c11e30c3ec9dfc230a72496881b75c8a9d M	src/index.tsx
+:100644 100644 bb54f049ad5a17360b28393c3c4c4788c94bd686 bb2e41ae74b69391e3e05b7462e98d2be60ac19d M	src/pages/Landing/LandingPage.tsx
+:100644 100644 326ace77d2fd708445fa2304635f06096cfb1ac6 db4f4619b3fd96d0a6b54d720240aea9b6beedca M	src/pages/Landing/Tracking/Details/Details.tsx
+:100644 100644 628c88ae6fc5f7555806d562d63497af69480878 ed8c3f13001438572b4d79f99c743f51bac5b703 M	src/pages/Landing/Tracking/Shipment/Shipment.tsx
+:100644 100644 8939dc41dbfa83bcdbf3e9a052109b2612b27a8f f6de8b2bcc8d0079d0a5339a070c0866e80dd83c M	src/pages/Landing/Tracking/Tracking.tsx
+:100644 100644 857a133dd99172da826630ef6166f7279d329bd0 243fb5307b43afd76e5b6f78ccff8f889da4c184 M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:100644 100644 d3ae498523993845450068074e85efbe800401b6 fc235df0d9485a4da23b96841e9ee6729b23c707 M	src/pages/Landing/Welcome/Welcome.tsx
+:100644 100644 276b040a9f6a9ffe37398ceaf636b49b91813f27 70f1287269c9bef1d09f146be2d4fe9c89b2175e M	src/pages/NotFound/index.tsx
+:100644 100644 5cb8106782a2ea615c97100fdbc082f394c4cd5c cc1d2e05273c203552b74412e46b1c07f56d1f1c M	src/shared/Card/index.tsx
+:100644 100644 7005301df5d49ccf15ea3cd14daae5174533677f 5337ad8265be5e20a3bac75b8ee037ee6870c7a4 M	src/shared/Card/types.ts
+:100644 100644 9cdf9b28d0c18096d0b499f95189da133b789c90 7beb79cb40e843002d102aafec1718d66cd3c71b M	src/shared/button/Button.tsx
+:100644 100644 c382675eaf1fb42b81cc27b68ba4ef521ba3f231 42c8ab62155bd858253fe515e8290e5e6d61c2a2 M	src/shared/button/LinkButton.tsx
+:100644 100644 42ed996f93cdc24c680d4002c6e33b1a5137323f 03a71fdf810c818334c4a31de75bf197bc339042 M	src/store/async/async.actions.ts
+:100644 100644 2f074e0d40a0b488084767a149859aed3d3e21f0 834fff17bb1487e2e05745908d38664633836317 M	src/store/async/types.ts
+:100644 100644 301129cd9cfedaac83f3b66c598efcc31ec3488b 43c937906c35facf2b806403746b6f25cd317d56 M	src/store/index.ts
+:100644 100644 065655fa16c0829a46ba6eda2e0f2fb262e3f3ae 72fe6139036e9a1452f34ecc44b766d0263b48c8 M	src/theme/index.ts
+:100644 100644 c7d7d58edc3f0d98903f72a0222e3d563ec4ad2b 3883ae0fb9070407a701cdb79cd4876b966ce79c M	src/utils/i18nForTest.ts
+:100644 100644 8f1fe76eec99414172ddaa0661b7848b5e7ec2d5 e49d4977dcd67c2ff67db9836494109eb2a73223 M	src/utils/testUtils.tsx
+commit 46761eb8e5b609edd918605e09100458534ba7cd
+tree 24fca270ab438e74effcaf7566b4f450ff273904
+parent 2159dd103294b21e08e83d2fcd1c5d1e70af9396
+author Denis Subach <dsubach@altir.co> 2022-06-10 10:14:59 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-10 10:14:59 +0300
+
+    use trimmed search value in query
+
+
+:100644 100644 48950548a32230cc71febd5f539094c93078e449 af1d06d67ee5e6f985ec45e220e9260385a8e8d3 M	src/hooks/useSearch.tsx
+commit 5dea052bd16abcf278b37c4fc236b7522387b292
+tree 2cf18f61c502fa4d443a11ff1f720b8608368c5d
+parent bbc1531f444c6d8c546b6d76a8b8f207e0f198c2
+author Denis Subach <dsubach@altir.co> 2022-06-10 09:55:52 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-10 09:55:52 +0300
+
+    trim entered search value to prevent form submitting with epty value
+
+
+:100644 100644 ccb86483131f62f73dd42b11b540a33e6c3d45a0 48950548a32230cc71febd5f539094c93078e449 M	src/hooks/useSearch.tsx
+commit 2ca764d3ab473d882cd0825717ccf63e685ec805
+tree 342591985468efc05efe4d172e649c2dac1d087f
+parent 8f732c3ed0c43843fc534b3659ec0d66eb35763b
+author Denis Subach <dsubach@altir.co> 2022-06-09 20:24:01 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-09 20:24:01 +0300
+
+    Code style - Enable import/order ESLint rule and transform all imports
+
+
+:100644 100644 4342816d981d31e4460ff857c8c841f51af051f6 e16f17d891ed4cd9535153c3b3cf267873e1329d M	.eslintrc.js
+:100644 100644 cc061c75fe9e3a1273fb9995d96fe51897d5647d 39bc66c57405f50dffa463a7e0d80a65c0897221 M	package.json
+:100644 100644 4daa65ecc07790c99be06c5267ccfd7232c4ca17 b466022f833bd8bfe7a314bb359956c10fe32150 M	src/components/errorMessage/ErrorMessage.tsx
+:100644 100644 83d78baf40024b87b7e0df3f81f5105b9a471fbe df6416e3adcd958a9172ba2feb4dcde020941249 M	src/components/errors/ErrorBoundary.tsx
+:100644 100644 2fdc09a6ab050868ace05e6dd694b6af88ef6b0c 9efd850cdb1d2412196bc2a93e9d3431a443b410 M	src/components/errors/FallbackError.tsx
+:100644 100644 e99eb7fe4adb879cf20e1a4972178f2162dd7308 c3e70fa1b80d4b0e6a84b5b1c3f9990096669901 M	src/components/header/Header.styles.ts
+:100644 100644 9aa9b04730631b40a59cf43267945b406317c49b 2337eb67e57f2b0bd9489966e9d6e91efdfc6988 M	src/components/landingImage/LandingImage.tsx
+:100644 100644 97a9a7d07226cc3256f0fb32c82e5697ed30f868 f78bcf61cbf756b624e2bd041dff1c42ec821bf5 M	src/components/searchBar/SearchBar.tsx
+:100644 100644 14ec03c4bf52cfb226e85f2dff40a77f03512bf8 37eb8a62189ae759af9640905dbf89709d1cc9dd M	src/components/searchBar/types.ts
+:100644 100644 562445c913fcda515f6436db4cd7e1c57316f344 a9fc5c3888ad9b3b8eb0010117de233e25d6585a M	src/components/stepper/ActivityTimeline/ActivityTimeline.tsx
+:100644 100644 108b1dc1f2c7b7c41672245d640226d3b92a1ae6 0d730344257a77ddbcbfb1ef1bc7c6f31df6093a M	src/components/stepper/StatusLine/StatusLine.tsx
+:100644 100644 9c44f71b4eb40618fe930cfc36d4ffbe228430a4 cda49319e1b04bc1898b1d2813cab7eb15041815 M	src/i18n.ts
+:100644 100644 a478f386cec786ac8cf658342ec92392323d99a8 cf0cab80d112ff7e4f366064f8856d39acc3a006 M	src/index.tsx
+:100644 100644 9a86cb5239d2984786304596e7bb229f2d429729 326ace77d2fd708445fa2304635f06096cfb1ac6 M	src/pages/Landing/Tracking/Details/Details.tsx
+:100644 100644 4160ccadaea6c966495854acf49ce940a0cc303e 628c88ae6fc5f7555806d562d63497af69480878 M	src/pages/Landing/Tracking/Shipment/Shipment.tsx
+:100644 100644 bdf7701be302fd6b4ae939fe6e8ab98b86ef796b 8939dc41dbfa83bcdbf3e9a052109b2612b27a8f M	src/pages/Landing/Tracking/Tracking.tsx
+:100644 100644 67f66b294f06ee3201d83861f006d5d7499b40c9 857a133dd99172da826630ef6166f7279d329bd0 M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:100644 100644 b130de179aa9c747573bd1ec6890559b5601bd15 d3ae498523993845450068074e85efbe800401b6 M	src/pages/Landing/Welcome/Welcome.tsx
+:100644 100644 70f1287269c9bef1d09f146be2d4fe9c89b2175e 276b040a9f6a9ffe37398ceaf636b49b91813f27 M	src/pages/NotFound/index.tsx
+:100644 100644 70af16e9d95b89567db6247c88cb27cca87666e4 07b83b2356a8ec3bb11b76bf7e6d6960f68c79a7 M	src/routes/LandingRoutes.tsx
+:100644 100644 5c7c2b9eb2a70315abeabdf48eaf61ac02443266 88b69ce58ce9bde036cd6ea360a77e599ec7b009 M	src/services/track.service.ts
+:100644 100644 157bd293d27cf8b7aeb9baf8b990eba9a9c44ba8 5cb8106782a2ea615c97100fdbc082f394c4cd5c M	src/shared/Card/index.tsx
+:100644 100644 5337ad8265be5e20a3bac75b8ee037ee6870c7a4 7005301df5d49ccf15ea3cd14daae5174533677f M	src/shared/Card/types.ts
+:100644 100644 f86ae6abb4348c4a4a7b44aa6c84a73511dd5921 9cdf9b28d0c18096d0b499f95189da133b789c90 M	src/shared/button/Button.tsx
+:100644 100644 0aafaf28cc3041c35655666e87d115a63c3d6a4d c382675eaf1fb42b81cc27b68ba4ef521ba3f231 M	src/shared/button/LinkButton.tsx
+:100644 100644 03a71fdf810c818334c4a31de75bf197bc339042 42ed996f93cdc24c680d4002c6e33b1a5137323f M	src/store/async/async.actions.ts
+:100644 100644 fb90cb2edd467e13c22282e46e3b36dc50099927 2f074e0d40a0b488084767a149859aed3d3e21f0 M	src/store/async/types.ts
+:100644 100644 2b696263a829de171a0947256a447f1e8d93c61f 301129cd9cfedaac83f3b66c598efcc31ec3488b M	src/store/index.ts
+:100644 100644 2323ec876ff122a8c0f5e9c87f3868db13166122 065655fa16c0829a46ba6eda2e0f2fb262e3f3ae M	src/theme/index.ts
+:100644 100644 a0117bbbc97fbd4e33f4c84b8d8f58741237270d c7d7d58edc3f0d98903f72a0222e3d563ec4ad2b M	src/utils/i18nForTest.ts
+:100644 100644 a60adeb78e1a6bc7a68926117c091d144ec31703 8f1fe76eec99414172ddaa0661b7848b5e7ec2d5 M	src/utils/testUtils.tsx

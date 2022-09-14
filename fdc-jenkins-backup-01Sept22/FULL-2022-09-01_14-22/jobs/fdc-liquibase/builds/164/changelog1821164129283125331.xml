@@ -1,0 +1,10 @@
+commit 3aa41787fdfa648f43d3c6a5b72ada7cc2e37996
+tree 6fbeddac650506d27b9b76ff9f7f9b390f68e1c7
+parent 13855f8379c85934dae6d2f014d8464b282230d0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 18:00:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 18:00:29 +0530
+
+    FDC-758:: fixed delivery date
+
+
+:100644 100644 765a7beffb4c95d2a5c275682bd4de232c21abc2 08fb0d26c59713253af1e7f2c272bfcb70ed4779 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql

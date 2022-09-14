@@ -1,0 +1,32 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/02-fdc-standard-milestone-job
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/02-fdc-standard-milestone-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/FDC-746^{commit} # timeout=10
+Checking out Revision f271ec24896a877e90951fc90292149f9f32c1cc (refs/remotes/origin/feature/FDC-746)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f271ec24896a877e90951fc90292149f9f32c1cc # timeout=10
+Commit message: "FDC-746 :: added logic for stage and prod files"
+ > git rev-list --no-walk f271ec24896a877e90951fc90292149f9f32c1cc # timeout=10
+[02-fdc-standard-milestone-job] $ /bin/sh -xe /tmp/jenkins511036659616722802.sh
++ cd python_scripts
++ [ stage = dev ]
++ python3 generic_client_milestone_stage.py 121
+ Select tracking_number as "Pandion Tracking ID", facility_id as "Facility ID", event_code as "Pandion Event Code", event_name as "Pandion Event Name", event_details as "Event Details", event_date as "Event Date", event_time as "Event Local Time", event_time_zone as "Event Timezone", event_street as "Event Street", event_city as "Event City", event_state as "Event State", event_lat as "Event Lat", event_long as "Event Long", pod as"POD" from fdc.v_get_pandion_client_milestone where client_id = 121 and updated_on >= '2021-08-03 00:00:00';
+at else start
+Number of records sent : 3695
+at else end
+Connection successfully established ... 
+0 events inserted
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

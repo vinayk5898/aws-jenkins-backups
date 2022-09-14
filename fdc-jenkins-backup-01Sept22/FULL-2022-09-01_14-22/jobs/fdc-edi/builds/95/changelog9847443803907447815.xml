@@ -1,0 +1,41 @@
+commit b8fdece1d2fcf3f2addebcdc6f9fff6b1c3b8e84
+tree 9f3f22d7f1b2b55548071291a46db4e7d9872786
+parent cde1cf3969c2616eaf6f9c1bda5e40cdb5851731
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 19:19:23 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 19:19:23 +0530
+
+    Auth changes for Intenal and non-internal APIs
+
+
+:100644 100644 f4a037f531f90ea4ff8d71edf665a14418a6f3a2 174d29a1d1b94c69477198a1ac7eb6e76f0ebd63 M	fdc-svc-edi-dev-parameter.json
+:100644 100644 f31eebda9e5a3abac2ffab2f6e65ba31ccf9ec0f 83160759d5ff231e3c4c7eb8989b811cfe6b34a9 M	fdc-svc-edi-prod-parameter.json
+:100644 100644 6d68dc9d7b24c068a90de842d512f0e929056e4a 5959703e4aae65a3de431a52135ab1045659643c M	fdc-svc-edi-stage-parameter.json
+commit cde1cf3969c2616eaf6f9c1bda5e40cdb5851731
+tree f641a0a934f2691af1185d9aba7212d0c17a0aba
+parent e965c6dc699ec87cee5934b0f338de8a597710b3
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 17:12:24 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 17:12:24 +0530
+
+    Auth changes for Intenal and non-internal APIs
+
+
+:100644 100644 b78cc9d5284f9f48c2946035964d6b1f95bcbe4c f31eebda9e5a3abac2ffab2f6e65ba31ccf9ec0f M	fdc-svc-edi-prod-parameter.json
+:100644 100644 07bdf6ae0fd3e3e76eecae56dac3c3923334833a bfb0af8aac4dfebae3d2e767e20075be405f1805 M	src/main/resources/application-prod.yml
+commit 784cb3dcd687540ea3ded19c01f65b686bbd7e29
+tree 66888c93c6b4cbddca98740164f7856ea2b2635a
+parent 8a1ed28408bdf9b28d5bc73a7aa30c4d69acad89
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 16:54:24 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 16:54:24 +0530
+
+    Auth changes for Intenal and non-internal APIs
+
+
+:100644 100644 fe98556d698510f767794bbb221dd6ca1b2f5a37 f4a037f531f90ea4ff8d71edf665a14418a6f3a2 M	fdc-svc-edi-dev-parameter.json
+:100644 100644 749dad4286c8718c96437d1fa1d76af99035f45e b78cc9d5284f9f48c2946035964d6b1f95bcbe4c M	fdc-svc-edi-prod-parameter.json
+:100644 100644 2b48bf69fd1b557c49d3c2aed5cfbe4dea36fb0d 6d68dc9d7b24c068a90de842d512f0e929056e4a M	fdc-svc-edi-stage-parameter.json
+:100644 000000 c8ebc43cd0c26f07e2d36a7d6c051f485cab0d80 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/adapter/security/model/Client.java
+:100644 100644 68c8e07ad69aa0b1d3d8778161cad6743d85a535 80ec5ffa2f55cef7fec791dc1568c01793de825f M	src/main/resources/application-dev.yml
+:100644 100644 5ff3d23b35031404b0eb3502c2ed7dc371d35e91 8c35845aa56222b082d0fee725439d2b3b345f81 M	src/main/resources/application-local.yml
+:100644 100644 42074e81935ceade43c92d7dcc23207e0fbebd70 07bdf6ae0fd3e3e76eecae56dac3c3923334833a M	src/main/resources/application-prod.yml
+:100644 100644 95074a06fcba90c05608ab1c29c14cc161e7bc06 67e0ad991764119cb0516fbc04c32f2f17561e6e M	src/main/resources/application-stage.yml
+:100644 100644 83881dfa5c8f45d40c031667be4d70880676a32a 1637405f33cc138e0eabb4ce8e7fac8802e855a4 M	src/main/resources/application.yml

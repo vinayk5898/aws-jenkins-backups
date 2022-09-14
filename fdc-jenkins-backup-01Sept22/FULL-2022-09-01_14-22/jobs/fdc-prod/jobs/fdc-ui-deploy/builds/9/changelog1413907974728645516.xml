@@ -1,0 +1,96 @@
+commit e2cb6334315512a46e765137ee1821b34a60bfba
+tree 5884646e60fbcee4951670ef86e00c3aa2d2583d
+parent 6b0e3ad37022607df6d2dc93146a4c6bbf36560b
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:29:00 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:29:00 +0530
+
+    Update fdc-svc-ui.yml
+
+:100644 100644 24cdc15b26645dab23a24cd700d0b773bd06f3af f0e4a7c61d2931970b8b46f6d9d5a5adf585621d M	fdc-svc-ui.yml
+commit 6b0e3ad37022607df6d2dc93146a4c6bbf36560b
+tree 90f42680e28a990192f1f938a0e70f9cf8aba78b
+parent 24495bd3fcf6272739af8b914ae19430dda486f6
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:26:46 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:26:46 +0530
+
+    Update fdc-svc-ui-prod-parameter.json
+
+:100644 100644 a5429f5ef43b1ef7089c6f7ce2d19fade90fe4ac f8f42c0fd9b4854cac45866935aa3016fda0ae50 M	fdc-svc-ui-prod-parameter.json
+commit 24495bd3fcf6272739af8b914ae19430dda486f6
+tree 2fa04cc8d427e96c9fcc16da3fb66537b3572837
+parent 2153c15b02804e6fa8db72089619f08509407af8
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:26:08 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:26:08 +0530
+
+    Update fdc-svc-ui-stage-parameter.json
+
+:100644 100644 eababa96c3b79eb58e6b24d523b8eb3d8bb84170 ec6e378af1097d9e933ef70d3f59818cbc6d005e M	fdc-svc-ui-stage-parameter.json
+commit 2153c15b02804e6fa8db72089619f08509407af8
+tree b38bddaab5ca2b6ac9fc6d2f131b8ac8476cc91f
+parent 343c8cd95c034d49642a8244c096a166a2c8eaf9
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:25:54 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:25:54 +0530
+
+    Update fdc-svc-ui-stage-parameter.json
+
+:100644 100644 65ff37b6147718d1da4686f3dac0a46617261d2b eababa96c3b79eb58e6b24d523b8eb3d8bb84170 M	fdc-svc-ui-stage-parameter.json
+commit 343c8cd95c034d49642a8244c096a166a2c8eaf9
+tree 86f55c12e7adf27ee79f4ab53a2e5a2dfd622b76
+parent c1837840f33655ea08958c9a53a3f0ca5ed8ba13
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:25:20 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:25:20 +0530
+
+    Update fdc-svc-ui-dev-parameter.json
+
+:100644 100644 2326fd0bb8b10775d467e071f7c73cb562bd1c15 3376c784289686b09408494501e4305bfa454e10 M	fdc-svc-ui-dev-parameter.json
+commit c1837840f33655ea08958c9a53a3f0ca5ed8ba13
+tree cf27af7eb48c568027ba6dfb768312f34bd9d8a5
+parent 96c0a85e0f24b973da9ca5da618f5e0dc437c0bc
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-21 12:23:26 +0530
+committer GitHub <noreply@github.com> 2022-02-21 12:23:26 +0530
+
+    Update fdc-svc-ui.yml
+
+:100644 100644 e685de41a2285c6af3ea969ff80f65a812a66ceb 24cdc15b26645dab23a24cd700d0b773bd06f3af M	fdc-svc-ui.yml
+commit 96c0a85e0f24b973da9ca5da618f5e0dc437c0bc
+tree b776ad1398d66126ccb9bab8121365474635565a
+parent ecd9b3754f15a4d98dc63925fef882b73cf3b78f
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-02-17 16:27:49 +0530
+committer GitHub <noreply@github.com> 2022-02-17 16:27:49 +0530
+
+    Update fdc-svc-ui.yml
+
+:100644 100644 9fba567e3cd22dda350efacbf94b31ecfdc54c29 e685de41a2285c6af3ea969ff80f65a812a66ceb M	fdc-svc-ui.yml
+commit bd5d4c3931e6d594ab8e519b640d09660a6ef46a
+tree 2c80226296d7d7b54c3347c6b895048e5c99d5d2
+parent 7d5a04318bd89fec292f288df73e76d4d1aed0ec
+author Anastasiya Popova <anastasiyapopova@Anastasiya-MacBook.local> 2022-02-04 12:24:32 +0100
+committer Anastasiya Popova <anastasiyapopova@Anastasiya-MacBook.local> 2022-02-04 12:24:32 +0100
+
+    display timezone name after date and time
+
+
+:100644 100644 a4d55134147676826541b64622191364f162263d 5c6ecff1322d89d8214a3b88af6dca2e327fd728 M	src/components/stepper/ActivityTimeline/ActivityTimeline.tsx
+:100644 100644 fa207195f9f005316e2736ba57681e8ed89ead89 5d912d18070ed4788d2ba168d09cdf0914aa0c73 M	src/interfaces/Tracking.ts
+:100644 100644 fd2d27eab627bec4598d1df04467cd51f162cf24 af8b38c04502a5ba1b25e12936f5072779e83a71 M	src/pages/Tracking/index.tsx
+commit 7d5a04318bd89fec292f288df73e76d4d1aed0ec
+tree 0db17b4cfbbe78e083843070197b6f23572413f1
+parent a1d00b56c66e21415fcab693c774415e6e723485
+author Kandarp <kshah@altir.co> 2022-01-12 13:50:03 -0600
+committer Kandarp <kshah@altir.co> 2022-01-12 13:50:03 -0600
+
+    min health percent change for deployment
+
+
+:100644 100644 6832e5ee72a3a5dc61681ef13f510a87d9982917 9fba567e3cd22dda350efacbf94b31ecfdc54c29 M	fdc-svc-ui.yml
+commit fc26ca3b502002cddd4629fb6e70fbd96c1b0bdd
+tree b1bb893b090294dc38095e3d967d1b51913d80a4
+parent a1d00b56c66e21415fcab693c774415e6e723485
+author Anastasiya Popova <anastasiyapopova@Anastasiya-MacBook.local> 2022-01-04 18:06:28 +0300
+committer Anastasiya Popova <anastasiyapopova@Anastasiya-MacBook.local> 2022-01-04 18:06:28 +0300
+
+    reset default fill color for search icon
+
+
+:100644 100644 6aa34c832b53c5107174169b3f20c754bfdd9ffa b152af8ca2931e841d6ddc9e2095e9cd56d2454c M	src/components/searchBar/SearchBar.tsx
+:100644 100644 f65824bfe176d6e46d1c913f1ac51d452bf867ab afd8449da3ccc2a6d5439af3c22d9a0f1d1657c8 M	src/shared/icons/Search.tsx

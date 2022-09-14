@@ -1,0 +1,10 @@
+commit be953dc1b1f43c0f8768e3b3bd7d095b34433ca1
+tree df71e17351ba0c29393dc8119dc50e8e845f4cae
+parent 39681d73668a49b10dba859c6c9597ee7a18649a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-25 23:27:19 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-25 23:27:19 +0530
+
+    FDC-434 :: added local keyword in load step
+
+
+:100644 100644 8fd1e953224ef7b5b45bb14f19b761af5295eac4 62a01fb05fc8462f13cbbeca23670333a22cf8d1 M	scripts/GENERIC_File_Load/BULK_LOAD.ktr

@@ -1,0 +1,94 @@
+commit 7819bfd3e1e98c8efe9256e1c24701c8eb2f86c3
+tree 9880cb7b2142082817aef686428da77651befb6e
+parent 61eba6e10d7351afe0a6a5d85ce14580b35f3f4d
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-19 17:30:41 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-25 18:55:40 +0530
+
+    FDC-752: Endpoint for client self information
+
+
+:100644 100644 b39b8ce072aa7f113585e185ecda280bb83647ee b33691781925edf55114ecb08fdf76dab26e7e50 M	src/main/java/com/fdc/authenticationserver/controller/ClientController.java
+:100644 100644 145e2ecd35ddbf3202353fda482e189228092451 8b4a367a1f1a92b2a24561ca5a55112f25684ddc M	src/main/java/com/fdc/authenticationserver/mapper/ClientMapper.java
+:100644 100644 51d74c992588077a3015d3fae1aca9d7955f3453 8b71ca04e5e6e80b7b63f39c2f86496a1cda332e M	src/main/java/com/fdc/authenticationserver/mapper/impl/ClientMapperImpl.java
+:000000 100644 0000000000000000000000000000000000000000 16d40252d89e68800b9ad97337e56aad8f75bc6a A	src/main/java/com/fdc/authenticationserver/model/ClientApiKeyDto.java
+:000000 100644 0000000000000000000000000000000000000000 af65feedf04f1cbf1548cb31ace51246f713127d A	src/main/java/com/fdc/authenticationserver/model/ClientSelfDto.java
+:100644 100644 8f92ae9cc6530eefc0df074e6031eec9301c4701 e909bf4e36c155fe6ede061532697bea1d6cee1a M	src/main/java/com/fdc/authenticationserver/repository/ClientApiKeyDal.java
+:100644 100644 e95e3fbd0ea225e3163f66b2e6e40249515e84fe 6211a2e28af2bd2443539c8283316ea75190cbb6 M	src/main/java/com/fdc/authenticationserver/repository/impl/ClientApiKeyDalImpl.java
+:100644 100644 4f5472bf3f8f464ae7c388e7b6e364b6a47457a1 335a914972ad11de49d04040a2f28a00a6303a33 M	src/main/java/com/fdc/authenticationserver/service/ApiKeyService.java
+:100644 100644 2e2cbf13fa3d7d5a6c6024c28aa0c136dc00c950 54373fc32fd60af9c5ae8461587172738667d76a M	src/main/java/com/fdc/authenticationserver/service/ClientService.java
+:100644 100644 affa6c9457433803c1717a5aefc0e826bef7c6c6 1bc5f82e12c1e2483018efd78190c97c3cd063ec M	src/main/java/com/fdc/authenticationserver/service/impl/ApiKeyServiceImpl.java
+:100644 100644 7545e50781635cfac452e7e81e0c9cd1a8170941 d05fed08d0a217b6eabeccbfe8cdba8b5f126525 M	src/main/java/com/fdc/authenticationserver/service/impl/ClientServiceImpl.java
+commit 61eba6e10d7351afe0a6a5d85ce14580b35f3f4d
+tree 35d590df188bf30cefada56db75a3d3cf1235bc0
+parent c18fb8ddd3aad8f3948252b383b61a2b275dd174
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-05-23 21:15:47 +0530
+committer GitHub <noreply@github.com> 2022-05-23 21:15:47 +0530
+
+    Update fdc-svc-auth-prod-parameter.json
+
+:100644 100644 c709c5c176a5ba72d00077f42fe7c113aaac1634 c492360809509a407f1d2e75ab81db00ed2ac53f M	fdc-svc-auth-prod-parameter.json
+commit c18fb8ddd3aad8f3948252b383b61a2b275dd174
+tree cceef16e32e8d7ac5958dbcbfafa8f0723a9d566
+parent e6d62027aecbdfce22e508582cdda2351d1d1549
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-20 16:18:40 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-20 16:36:22 +0530
+
+    FDC-490: Mark created_on and updated_on fields as non-insertable and non-updatable in ClientSftp
+
+
+:100644 100644 cf4cc129ea9f47c8328eea99aa7ff819bf5fb3df 6fa28a13bd3291e965ebf70b77eab9171fd7401d M	src/main/java/com/fdc/authenticationserver/domain/ClientSftp.java
+:100644 100644 33e9a9b7516017f4c4dd666de17ee1b3caf85365 51d74c992588077a3015d3fae1aca9d7955f3453 M	src/main/java/com/fdc/authenticationserver/mapper/impl/ClientMapperImpl.java
+commit e6d62027aecbdfce22e508582cdda2351d1d1549
+tree ea4a0dc4e6374e3466603b1c54c9786ee7b72614
+parent 8bc3fff613b656796f19cc7ba7818c942bdad2b1
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-17 13:02:26 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-17 13:06:40 +0530
+
+    Fix checkstyle errors and remove redundant Hibernate annotations from entity
+
+
+:100644 100644 f33b4ad9463c1459e337eb9ed278b2242dd01a3d cf4cc129ea9f47c8328eea99aa7ff819bf5fb3df M	src/main/java/com/fdc/authenticationserver/domain/ClientSftp.java
+:100644 100644 81eb8f1003bf988750decfa0205783c2ccbf8065 b1880fbc4205b4a82f20d55944645d5157b3a84b M	src/main/java/com/fdc/authenticationserver/repository/impl/ClientSftpDalImpl.java
+:100644 100644 76570156599d23804251a2f63b35e29a71f59bc1 7545e50781635cfac452e7e81e0c9cd1a8170941 M	src/main/java/com/fdc/authenticationserver/service/impl/ClientServiceImpl.java
+commit 8bc3fff613b656796f19cc7ba7818c942bdad2b1
+tree df42d772e75a007e89f77d762c55668e55760903
+parent f2ad3aec1662c3fe2e747da84382e9d77b35c3ff
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-11 10:35:28 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-17 13:06:40 +0530
+
+    FDC-490: Endpoint to save SFTP configuration of client
+
+
+:100644 100644 3b605a73d488adaf58183e7a977783b1659e61b7 0b4fdfc26919d6035ede7a1fda24eed1a06cb086 M	google_suppressions.xml
+:100644 100644 4552dbc77a74d0a1f344dfc4a628260fde17863f b39b8ce072aa7f113585e185ecda280bb83647ee M	src/main/java/com/fdc/authenticationserver/controller/ClientController.java
+:000000 100644 0000000000000000000000000000000000000000 f33b4ad9463c1459e337eb9ed278b2242dd01a3d A	src/main/java/com/fdc/authenticationserver/domain/ClientSftp.java
+:000000 100644 0000000000000000000000000000000000000000 74fc4744e05f5cab46fc4a8e3c24e03661e964b5 A	src/main/java/com/fdc/authenticationserver/mapper/ClientSftpMapper.java
+:000000 100644 0000000000000000000000000000000000000000 c7c2fd3c2fba0ae42ce8066dfbc436ca46fadbb7 A	src/main/java/com/fdc/authenticationserver/model/ClientSftpDto.java
+:000000 100644 0000000000000000000000000000000000000000 b55a295b7080be5fbcd61355a09e867aa829e899 A	src/main/java/com/fdc/authenticationserver/repository/ClientSftpDal.java
+:000000 100644 0000000000000000000000000000000000000000 3c96a9aa225b8795c38f7dc3d8ac611be7dd0726 A	src/main/java/com/fdc/authenticationserver/repository/ClientSftpRepository.java
+:000000 100644 0000000000000000000000000000000000000000 81eb8f1003bf988750decfa0205783c2ccbf8065 A	src/main/java/com/fdc/authenticationserver/repository/impl/ClientSftpDalImpl.java
+:100644 100644 cfea7a1a4d9740aff1329783f4fc089f293d9e77 2e2cbf13fa3d7d5a6c6024c28aa0c136dc00c950 M	src/main/java/com/fdc/authenticationserver/service/ClientService.java
+:100644 100644 648f59e3ac2d4f1209de055c68b55e8a7d789a4b 76570156599d23804251a2f63b35e29a71f59bc1 M	src/main/java/com/fdc/authenticationserver/service/impl/ClientServiceImpl.java
+commit f2ad3aec1662c3fe2e747da84382e9d77b35c3ff
+tree 3eaf47c6de870df3b0b698c2a44b3d54beb655c7
+parent cfff3ad04d9c919b5f4df52e61bef021a41bb11f
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-09 08:55:27 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-17 12:53:33 +0530
+
+    FDC-492: Create client api key at client onbaording
+
+
+:100644 100644 7708fdb86004ed6caa8b94fcdd84c181b29e0a60 4f5472bf3f8f464ae7c388e7b6e364b6a47457a1 M	src/main/java/com/fdc/authenticationserver/service/ApiKeyService.java
+:100644 100644 b32ea2469230b73d0a87424d6dfe128dd4f8f5e9 affa6c9457433803c1717a5aefc0e826bef7c6c6 M	src/main/java/com/fdc/authenticationserver/service/impl/ApiKeyServiceImpl.java
+:100644 100644 c4974780cb02a4834f1beb3d2dcbc9f08f290989 648f59e3ac2d4f1209de055c68b55e8a7d789a4b M	src/main/java/com/fdc/authenticationserver/service/impl/ClientServiceImpl.java
+commit cfff3ad04d9c919b5f4df52e61bef021a41bb11f
+tree 35819226e92fc283bda7fdd364d69b17de1b5e1f
+parent 64541c428ad83cc94588321a3539e66129a01f55
+author Kandarp <kshah@altir.co> 2022-04-22 18:04:05 -0500
+committer Kandarp <kshah@altir.co> 2022-04-22 18:04:05 -0500
+
+    auth service stage file
+
+
+:100644 100644 55edd002cd16c87f49087a2be7473544ff80bdba b6eaf046d5984e577f95c535ee6d0a8058064e9a M	fdc-svc-auth-stage-parameter.json
+:100644 100644 1375b35931beae54d6c1c33738837ac6e2feb050 176c37166570df9f8a80994645b8219b475accb7 M	fdc-svc-auth.yml

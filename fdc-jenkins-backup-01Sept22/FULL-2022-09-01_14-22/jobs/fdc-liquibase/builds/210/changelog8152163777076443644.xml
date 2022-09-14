@@ -1,0 +1,293 @@
+commit fdadc12b549c134f69f52fc120c1a1b3d0306c88
+tree 8d7502cc586c05e72f2be0096e301addbab32f14
+parent 0b8ba2dd127d9059500788cd000037d344da8aaa
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-08-01 10:55:39 +0530
+committer GitHub <noreply@github.com> 2022-08-01 10:55:39 +0530
+
+    FDC-1018: add billtoAcctNum col in shipment tab (#74)
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 cbf9caeff3cec90cf2a99e7a946f9067635e919f A	src/main/resources/db/changelog/220729-shipment-tab-billto-acct-num.yaml
+:100644 100644 eb7d1bbc9fb26730c721bb3d4bb95613438579a0 6e1bec076f61855931487dfa2898636e7f27f0bb M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 002bfef1d1b270156063ab8f969900bd41e34791
+tree 820431ce9e9f0f5c03b16577c7888a59c37a40b0
+parent 7ed62722a8da7b4fd915fe0ea3eae692be335bd4
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 01:44:27 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 01:44:27 +0530
+
+    FDC-1031 :: Removed extra repeated entry
+
+
+:100644 100644 b25e44000405c2fedc4e51075fcb5c960fdb1554 eb7d1bbc9fb26730c721bb3d4bb95613438579a0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 79bb31bb7c3475f20a5948d897d3e3f01dc148bb
+tree 9cb90dfdfb8ff56f0c5d94602aa5d036d8d2b4ba
+parent b4067995687ebf255c14c9af21707d531dcaa24c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 01:18:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 01:18:50 +0530
+
+    FDC-1030 :: changed to prod flag
+
+
+:100644 100644 8fa6d05c63a24b2761ac88fb0b279bc1c61b81ae e8eabdfb7d71f77bb4152f799282256141d92bca M	src/main/resources/db/changelog/2022-07-26-Pandion-Standard-Invoice-Configuration.yaml
+commit b4067995687ebf255c14c9af21707d531dcaa24c
+tree e28485eb16da65139447aff9d93b04ae50d0173c
+parent 4d67c72a1cbdb772116b0ab3a34a8219a2d90380
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 01:17:44 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 01:17:44 +0530
+
+    FDC-1030 :: Added Prod changes
+
+
+:100644 100644 1e97930c60fa11cd48f9279124911b1e7dfe9d6e 8fa6d05c63a24b2761ac88fb0b279bc1c61b81ae M	src/main/resources/db/changelog/2022-07-26-Pandion-Standard-Invoice-Configuration.yaml
+commit 7c5510476348a8e8874d4583d5ffc4145bd7c709
+tree 59b33a4bca5410370d297067d26a6c72ccac9105
+parent b673e7ba0651ebbed7acaf1344cb366543280d0d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 02:45:44 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 02:45:44 +0530
+
+    FDC-1031 :: added recent changes in prod file
+
+
+:100644 100644 5aef47eef02e95ad9ea6b2db80f3af1fdb771d35 d60ceb94b16df15655b2e5c4eefd146cf583f214 M	src/main/resources/db/sql/fdc-ib_standard_manifest_Prod_changes.sql
+commit b673e7ba0651ebbed7acaf1344cb366543280d0d
+tree a9faa118b49aac3b11ab5d5120394d097ebb67b4
+parent 6ddd96c50ca44edc38615980812477abdc8a369f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 02:43:55 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 02:43:55 +0530
+
+    FDC-1031 :: added missing script for prod
+
+
+:100644 100644 ade2b8a1ad2f8209d324a21753fdd9971dd0283a 5aef47eef02e95ad9ea6b2db80f3af1fdb771d35 M	src/main/resources/db/sql/fdc-ib_standard_manifest_Prod_changes.sql
+commit 6ddd96c50ca44edc38615980812477abdc8a369f
+tree 280847cf4d78ab960b5b8bdfd6c31ff1abe2db08
+parent 0b859358eac3de02772af08c7b56aedad4a20d1b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:46:58 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:46:58 +0530
+
+    FDC-1031 :: added config for IB delivery date config
+
+
+:100644 100644 90dece6cb2cda67e8b3a328e63d6b392a536abf2 6cf8c01c14183beda02c1831dbe8a72eb3d6b711 M	src/main/resources/db/sql/fdc-ib_standard_manifest_dev_stage_changes.sql
+commit 0b859358eac3de02772af08c7b56aedad4a20d1b
+tree 6b7e0b555ba42aaf2e28cbf53e00c4ce3fd87bae
+parent 2a22793681fb372990107de6efcff9d8aef4bf64
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:22:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:22:24 +0530
+
+    FDC-1031 fixed data issues failure
+
+
+:100644 100644 4eb2b6db975e85803014ec05a85b9d5f54a77043 90dece6cb2cda67e8b3a328e63d6b392a536abf2 M	src/main/resources/db/sql/fdc-ib_standard_manifest_dev_stage_changes.sql
+commit 2a22793681fb372990107de6efcff9d8aef4bf64
+tree a1158420a7df13449be8c7a96f0b14e3c01195aa
+parent 9b03a907dd2196671294c0f279fa4ff3fe84eda7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:10:35 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:10:35 +0530
+
+    FDC-1031 :: fixed the EXT_PARTNER_SHIPMENT_ID alerts
+
+
+:100644 100644 3041ba1ce29919d04fb2b20fc7246229eac8b301 4eb2b6db975e85803014ec05a85b9d5f54a77043 M	src/main/resources/db/sql/fdc-ib_standard_manifest_dev_stage_changes.sql
+commit 4d67c72a1cbdb772116b0ab3a34a8219a2d90380
+tree 8b3d9e5f549c2593b2fbc3d5c954264083b8ac1d
+parent 9c94db90a2f9aed1f2d62ad38536b7cebe18d404
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 16:30:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 16:30:09 +0530
+
+    FDC-1030 fixed invoice table fields list
+
+
+:100644 100644 312a3d07d8c80c6cceb195489a8280929faf9e75 1e97930c60fa11cd48f9279124911b1e7dfe9d6e M	src/main/resources/db/changelog/2022-07-26-Pandion-Standard-Invoice-Configuration.yaml
+commit 9c94db90a2f9aed1f2d62ad38536b7cebe18d404
+tree 708b5a2dc06872759593f0b61702fba2349f85cf
+parent 19b5dfcf0d8ea55235d29aa6b529ecbea394c6ab
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 15:54:53 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 15:54:53 +0530
+
+    FDC-1030 ::  Fixed typos
+
+
+:100644 100644 6a5ef29df9ddc405347a6fbb7ba6d7f65b585501 312a3d07d8c80c6cceb195489a8280929faf9e75 M	src/main/resources/db/changelog/2022-07-26-Pandion-Standard-Invoice-Configuration.yaml
+:100644 100644 3409c421a862bb717b4c65249751a56630c1f0ff 6b090dbb1b529413b2e381e42661e4540b15b4ea M	src/main/resources/db/sql/fdc_pandion_standard_invoice_changes.sql
+commit 19b5dfcf0d8ea55235d29aa6b529ecbea394c6ab
+tree ac0fc8e64fae41ba8cf0fef2a92869685e402e98
+parent 027f7f75afdbdf56f79a1324a2ea54b8d12b18eb
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 15:17:26 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 15:17:26 +0530
+
+    FDC-1030 :: added in change log file
+
+
+:100644 100644 c53763a7c8bb6cb0221205099caed291c0274f06 d4b9667964903bd12743b3df31028c49e69fd0c5 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 027f7f75afdbdf56f79a1324a2ea54b8d12b18eb
+tree 6b52d148461ffc559002d36245b8e8535e98e0f9
+parent 9c025b495952f5a8e8687d44d9c5d1eb5e50bb04
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 15:05:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 15:05:23 +0530
+
+    FDC-1030 :: CONFIGURATION changes
+
+
+:000000 100644 0000000000000000000000000000000000000000 6a5ef29df9ddc405347a6fbb7ba6d7f65b585501 A	src/main/resources/db/changelog/2022-07-26-Pandion-Standard-Invoice-Configuration.yaml
+:000000 100644 0000000000000000000000000000000000000000 3409c421a862bb717b4c65249751a56630c1f0ff A	src/main/resources/db/sql/fdc_pandion_standard_invoice_changes.sql
+commit 466d4c26c4ad96275633212c1ec61005c3fb5c85
+tree 1ba9f885d735c8163563af41d3802131ef06d0e8
+parent e2fa4695a6125d195a4a0e89ab938a3953658082
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 20:24:53 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 20:24:53 +0530
+
+    FDC-746
+
+
+:100644 100644 9a7f6cb1be98b718c9e19c747e846951a6a650e5 481c2bb4bd49a27f9664cb001cd531623bd7b9e8 M	src/main/resources/db/changelog/2022-05-31-72-fdc-generic-milestone-config-changes.yaml
+commit 9b03a907dd2196671294c0f279fa4ff3fe84eda7
+tree 03e333f2407f639cedaac52937e7ade879b2f883
+parent 9c025b495952f5a8e8687d44d9c5d1eb5e50bb04
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 16:37:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 16:37:13 +0530
+
+    FDC-1031 :: IB configuration changes
+
+
+:000000 100644 0000000000000000000000000000000000000000 19dfa2ad2379157300daff4be26c70af03df0880 A	src/main/resources/db/changelog/2022-07-26-IB-Standard-Manifest-Configuration.yaml
+:100644 100644 c53763a7c8bb6cb0221205099caed291c0274f06 db9a7c8a0235a062dbe15b6e53086e91daecb1d5 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 ade2b8a1ad2f8209d324a21753fdd9971dd0283a A	src/main/resources/db/sql/fdc-ib_standard_manifest_Prod_changes.sql
+:000000 100644 0000000000000000000000000000000000000000 3041ba1ce29919d04fb2b20fc7246229eac8b301 A	src/main/resources/db/sql/fdc-ib_standard_manifest_dev_stage_changes.sql
+commit 9c025b495952f5a8e8687d44d9c5d1eb5e50bb04
+tree a72ce89a7dd4e14f500f843a44b357e8958777e8
+parent b38ecfd077e3e954a39b112440778c580d9610a5
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-07-25 18:58:15 +0530
+committer GitHub <noreply@github.com> 2022-07-25 18:58:15 +0530
+
+    map middle_mile address to EDI 214, send err msg if json parse fails, signature name capture (#71)
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 7166ceec6fdef9fb759dc4f6e5d381c352297538 A	src/main/resources/db/changelog/220722-edi_pending_task_fixes.yaml
+:100644 100644 6151911b9a3a239c774a28b7a53a12451f28597d c53763a7c8bb6cb0221205099caed291c0274f06 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 0c4b04631c6ecd470ef03ba6c48faad55d73e3c2 A	src/main/resources/db/sql/fdc_dell_edi_pending_task_changes.sql
+commit e2fa4695a6125d195a4a0e89ab938a3953658082
+tree 2dc7d47abca8b459e92e554127496dc9319a01ab
+parent bd30c1511e1558542be45e3d4600053ed487b46d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:13:14 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:13:14 +0530
+
+    FDC-746 :: changed view name
+
+
+:100644 100644 276ebfbd0dbdde7efddf33ddecad88b922368af3 9a7f6cb1be98b718c9e19c747e846951a6a650e5 M	src/main/resources/db/changelog/2022-05-31-72-fdc-generic-milestone-config-changes.yaml
+commit bd30c1511e1558542be45e3d4600053ed487b46d
+tree 9e5fcce1aa333bb15ab9e0302627bcb41d9af624
+parent dcb130c05a4a53cb818e842486b298f95997b517
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:08:42 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:08:42 +0530
+
+    FDC-746 :: changed view name
+
+
+:100644 100644 59599ab0e392eaa9adc24ebeb53e6b05c99ee57f 12c0b95754a05e8eb161210bd71eb6294dd129f1 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit dcb130c05a4a53cb818e842486b298f95997b517
+tree 81eb43de3e699e4753d2fe558993e5a90df7d389
+parent b72f0eefc9232a42e5c0a302be52fb48b5d11749
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-24 16:08:21 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-24 16:08:21 +0530
+
+    FDC-746 :: updated dates
+
+
+:100644 100644 2bf1b1813902c9b06dc0eea98ea00596238486ba 276ebfbd0dbdde7efddf33ddecad88b922368af3 M	src/main/resources/db/changelog/2022-05-31-72-fdc-generic-milestone-config-changes.yaml
+commit b72f0eefc9232a42e5c0a302be52fb48b5d11749
+tree b4c8851b7ae64494d2ebe337f003a80ce2c88939
+parent 437ce648c19dd5b2a1a3eb782ab28822947f0aae
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-24 15:59:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-24 15:59:31 +0530
+
+    FDC-746 :: created changes for dev/stage/prod versions
+
+
+:100644 100644 0e23ec61b7829a622e967c2d79beea3238a10955 2bf1b1813902c9b06dc0eea98ea00596238486ba M	src/main/resources/db/changelog/2022-05-31-72-fdc-generic-milestone-config-changes.yaml
+:100644 100644 fb73253e1a3ebbc713a4c2e84b61a6ca81f4b5ea 59599ab0e392eaa9adc24ebeb53e6b05c99ee57f M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit 437ce648c19dd5b2a1a3eb782ab28822947f0aae
+tree 324f9d93905ac71ec514814a8adbbffc798d7131
+parent 1132e338e7080de5e8eb772df9df5ab614cceaf0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 22:32:16 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 22:32:16 +0530
+
+    FDC-746 :: changes field names
+
+
+:100644 100644 6f86fa9754f9a9a903ade61acaa8498a1f61550f fb73253e1a3ebbc713a4c2e84b61a6ca81f4b5ea M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit 1132e338e7080de5e8eb772df9df5ab614cceaf0
+tree 3f826cb8c77266266818b3196b50b36ac2395117
+parent 2b68d088c24830e213bf7ab659d4132e5d44816b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 20:39:58 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 20:39:58 +0530
+
+    FDC-746 :: added filters
+
+
+:100644 100644 b597e4621ce85efdfe633605ea6dcaf539c08933 6f86fa9754f9a9a903ade61acaa8498a1f61550f M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit 2b68d088c24830e213bf7ab659d4132e5d44816b
+tree 9031aed5b9659a4f055f6498865ab72184d2444a
+parent 408924f735feaa37633861fa93afb0e92abd06d1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 20:32:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 20:32:45 +0530
+
+    FDC-746 :: updated script to handle ib and pandion
+
+
+:100644 100644 0d3112ac01847ed7b4a1a1f5869922ac50c429bb b597e4621ce85efdfe633605ea6dcaf539c08933 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit 408924f735feaa37633861fa93afb0e92abd06d1
+tree 303af33a8b483ee378190afedeeccd3c0cd18369
+parent f1249c4edd5285fd879a0256d22bd5f27ed3731f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 19:31:17 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 19:31:17 +0530
+
+    FDC-748 :: used same alias as it is in existing
+
+
+:100644 100644 74b16fb160f92ef87d34e8e7ada69c705b5eaaa2 0d3112ac01847ed7b4a1a1f5869922ac50c429bb M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit f1249c4edd5285fd879a0256d22bd5f27ed3731f
+tree 8e5a309d74d2f3684f663efc69edcb1fb01df9db
+parent b2b8359d44dd9af8f478a78ef2bde3ecf3b824bd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 14:46:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 14:46:54 +0530
+
+    FDC-746 :: added entry for IB
+
+
+:100644 100644 1f62c016c5dcb20ab2f14518f00add3966738730 74b16fb160f92ef87d34e8e7ada69c705b5eaaa2 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit b2b8359d44dd9af8f478a78ef2bde3ecf3b824bd
+tree b96deaba79790a670748aab832df320e7ae53127
+parent 773db8485d81e7fcbdbe6a7c1e9b219403342ab9
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 23:51:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 23:51:56 +0530
+
+    FDC-746 :: updates changes
+
+
+:100644 100644 cc2ca6dd1acfb44cf23cf7e3bd7c870a7ce60fb0 1f62c016c5dcb20ab2f14518f00add3966738730 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit 773db8485d81e7fcbdbe6a7c1e9b219403342ab9
+tree 5f3aa12b83510d65d9a49c5fa84b52ccdf4358ac
+parent 1496f454fb9b6aa30bd2d54122f237ff69fe5369
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 22:42:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 22:42:24 +0530
+
+    FDC-746 :: removed spaces in columns
+
+
+:100644 100644 9597555d5152112379fb6ec57f23ed1066c42860 cc2ca6dd1acfb44cf23cf7e3bd7c870a7ce60fb0 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql
+commit 1496f454fb9b6aa30bd2d54122f237ff69fe5369
+tree f70e7eeb0303b11d35366f6b098167361f4a07bc
+parent f843a52ccd73938a2821b810a0f6925ab75e5b04
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 20:42:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 20:42:07 +0530
+
+    FDC-746 :: added config details
+
+
+:000000 100644 0000000000000000000000000000000000000000 0e23ec61b7829a622e967c2d79beea3238a10955 A	src/main/resources/db/changelog/2022-05-31-72-fdc-generic-milestone-config-changes.yaml
+:100644 100644 92c90d2847dcd31801f781f97977329b0cb5beef f9418abc618943435044fbda81621e358a8e7f9a M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 9597555d5152112379fb6ec57f23ed1066c42860 A	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

@@ -1,0 +1,12 @@
+commit 4a8a0d3e116b35c6c6c85b202a9ff143f354df84
+tree 3f9a3353ea3b200da9ed51586fa4884735e4d390
+parent 327138826f4e3944ced283683524e0fa3bac3b3f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 01:34:57 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 01:34:57 +0530
+
+    FDC-434 :: ADDED Local key word
+
+
+:100644 100644 0469d2f2cec4253b1d45624f326d5bdeeb3e8b94 4ad0e4df113ab133f70e29a717dff5d1afd96918 M	scripts/GENERIC_File_Load/BULK_LOAD.ktr
+:100644 100644 72e3b83489137081a2aeefed654c1bee388d5fbe bdbc36d49d9fa6f9e71fce1c5727e6ce2900801a M	scripts/GENERIC_File_Load/GET_CLIENT_METADATA.ktr
+:100644 100644 8c9e0ba1968baa8e00a07a48b2ba8326e672c792 8327d0d90c791b282c17e7d00a76a0da3f055e88 M	scripts/GENERIC_File_Load/ITERATE_FOR_CLIENT.kjb

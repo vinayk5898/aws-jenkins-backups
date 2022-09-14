@@ -1,0 +1,26 @@
+Started by upstream project "[8mha:////4FUMtnvRBRKP7WzeNUgesOW9g2eR4MD9/wLwScKNujS2AAAAth+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz1EgZd/az8JH0DQ920lGTd4pLEvJTEohTd3MS8zLTU4hLdgqL85NTiYqDRuiB1AA1KT0HiAAAA[0m01-fdc-standard-manifest-processing-job" build number [8mha:////4BjsxZvC71ll2nLrYKbe9aPskl7pY9M0hp2AHvPxAT01AAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgYD/az8JH0DQ920lGTd4pLEvJTEohTd3MS8zLTU4hLdgqL85NTiYqDRuiB1lpYWABU7FNjlAAAA[0m998
+originally caused by:
+ Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/dev-fdc-client-manifest-alerts
+The recommended git tool is: git
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/dev-fdc-client-manifest-alerts/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 0336683137a7fc1120047307b30697ca144f6735 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0336683137a7fc1120047307b30697ca144f6735 # timeout=10
+Commit message: "Merge pull request #13 from The-Frontdoor-Collective/feature/ITMF-27"
+ > git rev-list --no-walk 0336683137a7fc1120047307b30697ca144f6735 # timeout=10
+[dev-fdc-client-manifest-alerts] $ /bin/sh -xe /tmp/jenkins16607924717953009981.sh
++ cd python_scripts
++ python3 call_Manifest_data_alerts.py
+Finished: SUCCESS

@@ -1,0 +1,26 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-manifest-stage
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-manifest-stage/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision baa6d2d87797ddccdadae994f9450bc25a446338 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f baa6d2d87797ddccdadae994f9450bc25a446338 # timeout=10
+Commit message: "Check of procedure call"
+ > git rev-list --no-walk 3d10e1c178227dd360ff239f90c8ce5a9e8eb8d7 # timeout=10
+[fdc-pandion-manifest-stage] $ /bin/sh -xe /tmp/jenkins5944698595883998520.sh
++ cd python_scripts
++ python3 Pandian_bulk_load_stage.py
+Connection successfully established ... 
+no files detected in folder or loop reached end 
+Finished: SUCCESS

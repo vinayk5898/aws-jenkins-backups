@@ -1,0 +1,20 @@
+commit 059c9f5d025ebc27c1fb6bc5e8183c00e9e751a4
+tree d7302e2e7c373285d6b6477b2369e6ba655545fd
+parent 044f5df8a3ceec0cf8e8afd5da1a9eba26f5130c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 15:27:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 15:27:40 +0530
+
+    FDC-563 :: Changes were tracking in another ticket so removing the changes on this ticket
+
+
+:100644 100644 774ae645f3695a2aa5f8aeceaba16f7649b23b9d c83302133584786b7876030114c17ac95741f277 M	src/main/resources/db/sql/FDC_563_ddl_dml_changes.sql
+commit 044f5df8a3ceec0cf8e8afd5da1a9eba26f5130c
+tree e603443856945f0eb4cba3a38151bd07ee137285
+parent d4ac29bceb2ec64a9c45d001467a5d590b2f1d9b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-21 12:20:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-21 12:20:50 +0530
+
+    FDC-563:: removed unwanted code
+
+
+:100644 100644 26a5fce8978f541fe661ebe356da3a6a2b13d210 774ae645f3695a2aa5f8aeceaba16f7649b23b9d M	src/main/resources/db/sql/FDC_563_ddl_dml_changes.sql

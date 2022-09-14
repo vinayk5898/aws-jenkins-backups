@@ -1,0 +1,34 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/03-fdc-standard-invoice-report-job
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/03-fdc-standard-invoice-report-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/FDC-1030^{commit} # timeout=10
+Checking out Revision 58cc1379b7b989bac5e198fd19b7b18bebc5c9bf (refs/remotes/origin/feature/FDC-1030)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 58cc1379b7b989bac5e198fd19b7b18bebc5c9bf # timeout=10
+Commit message: "FDC-1030 :: changed logic for prod and stage file versions"
+ > git rev-list --no-walk 58cc1379b7b989bac5e198fd19b7b18bebc5c9bf # timeout=10
+[03-fdc-standard-invoice-report-job] $ /bin/sh -xe /tmp/jenkins7169812605915757904.sh
++ cd python_scripts
++ [ dev = dev ]
++ python3 Generic_Client_Invoice.py 120
+/tmp/client_invoice/120/invoice_report/
+startdate 2022-01-01
+enddate 2022-08-11
+insert into fdc.client_invoice ( package_id,invoice_date,invoice_amount,invoice_status,client_invoice_number,account_number,status,Facility,PackageTrackingId,ContainerTrackingId,PackageLengthInches,PackageHeightInches,PackageWidthInches,PackageWeightLb,PackageArrivalDate,created_on,package_arrival_date,client_id ) select package_id,invoice_date,Invoice_Amount,invoice_status,client_invoice_number,Account_Number,status,parcel_center_id,PackageTrackingId,ContainerTrackingId,PackageLengthInches,PackageHeightInches,PackageWidthInches,PackageWeightLb,PackageArrivalDate,created_on,package_arrival_date,client_id from fdc_stage.dell_invoice_input where client_id = 120 and date(package_arrival_date) <= '2022-08-11'
+No of invoices generated :  135
+started generating invoice files 
+executing  120  customized report script
+executing
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

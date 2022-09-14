@@ -1,0 +1,28 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/Test
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/FDC-746^{commit} # timeout=10
+Checking out Revision ac39595864e72050455391b40c596a228779773d (refs/remotes/origin/feature/FDC-746)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ac39595864e72050455391b40c596a228779773d # timeout=10
+Commit message: "FDC-746 :: final changes"
+ > git rev-list --no-walk ac39595864e72050455391b40c596a228779773d # timeout=10
+[Test] $ /bin/sh -xe /tmp/jenkins13249507968786994261.sh
++ dev == dev
+/tmp/jenkins13249507968786994261.sh: 2: dev: not found
++ dev == stage
+/tmp/jenkins13249507968786994261.sh: 4: dev: not found
++ echo no
+no
+Finished: SUCCESS

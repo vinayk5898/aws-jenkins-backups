@@ -1,0 +1,23 @@
+commit 4944731ac724077b425a1c467f4aa2a6e37df8e3
+tree 3bc10ed9e039ee83478122e5cc47b05446f39285
+parent a0833e7de3c5782882f7e3365fca5542ca4d6eef
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-14 16:28:38 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-14 16:28:38 +0530
+
+    FDC-849: unique index on pkg.track#, client_pickup, default 0 not null
+
+
+:100644 100644 c4b3c89f33a732cea494991c6e1a53574d4ce582 3a4e477a582ceccf4a2b13ff966f0fd30935d8d4 M	src/main/resources/db/changelog/2022-06-10-index-on-tracking-nums-pkg-table.yaml
+:100644 000000 61ae315132b5583893b7dc456f6b66c59a840b08 0000000000000000000000000000000000000000 D	src/main/resources/db/sql/fdc_nonprod_pkg_tab_index_changes.sql
+:000000 100644 0000000000000000000000000000000000000000 db85f0d23678d64be23ec293e4839bbf9ae1f27c A	src/main/resources/db/sql/fdc_pkg_clientpickup_notnull_default.sql
+:100644 100644 990c0bdbf597ce47b865cbb2f21f89069c7c7f5c 261425844fc9201cb36ff063ac0f7ef4a9cccfd5 M	src/main/resources/db/sql/fdc_pkg_table_index_changes.sql
+commit a0833e7de3c5782882f7e3365fca5542ca4d6eef
+tree 782470b95ad27664db6bdfec9ea9222aa6e820be
+parent 3b322fe401b508dac584cd5460e3201084f0c59d
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-14 12:36:28 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-14 12:36:28 +0530
+
+    FDC-849: remove unique index on track# prod for MPMD
+
+
+:100644 100644 19bdcd874c2a5390dd5b61e910de775fe3763032 990c0bdbf597ce47b865cbb2f21f89069c7c7f5c M	src/main/resources/db/sql/fdc_pkg_table_index_changes.sql

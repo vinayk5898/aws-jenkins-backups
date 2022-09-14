@@ -1,0 +1,31 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-IB-Milestone-Prod
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-IB-Milestone-Prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision dd498da96771b26497d4d3f2af930dd3c781ea08 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+Commit message: "Merge pull request #12 from The-Frontdoor-Collective/feature/ITMF-28"
+ > git rev-list --no-walk dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+[fdc-IB-Milestone-Prod] $ /bin/sh -xe /tmp/jenkins1668547661847046795.sh
++ cd python_scripts
++ python3 generic_client_milestone_prod.py 122
+ Select tracking_number as "Tracking Number",containerNo, event_code as "Event Code", event_name as "Event Name"	, event_details as "Event Details", event_date as "Event Date", event_time as "Event Time", event_city as "Event City", event_state as "Event State", event_zip as "Event Zip", event_time_zone as "Event Time Zone", event_lat as "Event Lat", event_long as "Event Long", pod as "POD", signature_url as "Signature Url" from fdc.v_get_ib_client_milestone where client_id = 122 and updated_on >= '2022-08-03 00:00:00';
+at if start
+There are no events in last one hour
+update fdc.client_milestone_config set status = 0, updated_on= now() where client_id = 122;
+at if end
+51 events inserted
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

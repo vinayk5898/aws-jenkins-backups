@@ -1,0 +1,28 @@
+Started by user [8mha:////4HMcP1v79k5YHM3pWS3BjFikVM6tBBD/QDsxsavcWR5dAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYe/dLi1CL94uLEvOxEAMwkBRzBAAAA[0mSrinivas Sanka
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/set_max_pieces_dev
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+Cloning the remote Git repository
+Cloning repository https://github.com/altirllc/fdc-etl.git
+ > git init /var/jenkins_home/workspace/set_max_pieces_dev # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 79f0daab87fa9a09db66b9d5867ea203fae791a1 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 79f0daab87fa9a09db66b9d5867ea203fae791a1 # timeout=10
+Commit message: "Add files via upload"
+First time build. Skipping changelog.
+[set_max_pieces_dev] $ /bin/sh -xe /tmp/jenkins3016840424369210798.sh
++ cd python_scripts
++ python3 set_max_pieces_dev.py
+1 record updated
+Finished: SUCCESS

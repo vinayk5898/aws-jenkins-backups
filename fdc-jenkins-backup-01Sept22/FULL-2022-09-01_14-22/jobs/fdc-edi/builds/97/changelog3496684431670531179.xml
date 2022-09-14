@@ -1,0 +1,11 @@
+commit c479b0440b14cf2878dfda276131297534a8ac69
+tree 6a234eb18840e025f9ee8972c56397bbe231ab28
+parent 3cef8cd6a6e4b6d129bf9156c61b10d4d028425b
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-24 16:51:44 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-24 16:51:44 +0530
+
+    auth urls changed
+
+
+:100644 100644 de8b0699bfc7cc966532f130ce33886fa73c2877 d44fa5f493f465a610c7e808e9275223ee31acf2 M	src/main/resources/application-dev.yml
+:100644 100644 d0a48cac6df6b97dfb214c3ff71f80789185737b 159ace66ec8b929bc947c96dd1bc5832a67b23fc M	src/main/resources/application.yml

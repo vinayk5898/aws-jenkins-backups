@@ -1,0 +1,10 @@
+commit 09d66c589b14548f7dffae0cd3a70ee43e9f258e
+tree 846fe774c24cad9e96d2fe7b014305b9bb601382
+parent 30c74f33641c4425f98cda614a83927b442e9705
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:26:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:26:41 +0530
+
+    FDC-156 :: corrected typo
+
+
+:100644 100644 5ff412199263b2bc97efca98f2486a8fb82b7114 a0cb10cc822d0c2ad6591dcc2aca7e61bdcc227a M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml

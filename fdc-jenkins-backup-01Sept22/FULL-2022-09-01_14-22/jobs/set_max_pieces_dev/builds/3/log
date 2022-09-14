@@ -1,0 +1,27 @@
+Started by upstream project "[8mha:////4P09q85SeKH5c4x157WcyxqsxtsGovQ+AV7kAO7pPUAjAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgY5/az8JP20lGTdgsS8lMz8PN3cxLzMtNTiEt2U1DJ9AKW3rtbTAAAA[0mfdc-pandion-manifest-dev" build number [8mha:////4E+GcOrTh5v82Lz8CaKHd7EFdd/cnNW+9wnh4NWRZliUAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZF/az8JP20lGTdgsS8lMz8PN3cxLzMtNTiEt2U1DJ9E1MDALyTX5fWAAAA[0m450
+originally caused by:
+ Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/set_max_pieces_dev
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/set_max_pieces_dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision eb9215bb3229f166b9d44b31a6ec49d0fa55840d (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f eb9215bb3229f166b9d44b31a6ec49d0fa55840d # timeout=10
+Commit message: "Add files via upload"
+ > git rev-list --no-walk eb9215bb3229f166b9d44b31a6ec49d0fa55840d # timeout=10
+[set_max_pieces_dev] $ /bin/sh -xe /tmp/jenkins8555502297129373524.sh
++ cd python_scripts
++ python3 set_max_pieces_dev.py
+0 record updated
+Finished: SUCCESS

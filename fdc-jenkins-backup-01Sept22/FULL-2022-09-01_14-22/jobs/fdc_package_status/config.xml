@@ -1,0 +1,124 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>10</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <jenkins.plugins.office365connector.WebhookJobProperty plugin="Office-365-Connector@4.15.2">
+      <webhooks>
+        <jenkins.plugins.office365connector.Webhook>
+          <url>https://thefdc.webhook.office.com/webhookb2/6af08cc9-9777-4fb2-83cf-a82e222a730c@764ea393-dbc5-481a-bc27-2225b68f7b9c/IncomingWebhook/4c23827b89344574abfea8c0dfe9f4e7/50716798-e822-413a-9500-6f0b901dd1da</url>
+          <startNotification>false</startNotification>
+          <notifySuccess>true</notifySuccess>
+          <notifyAborted>false</notifyAborted>
+          <notifyNotBuilt>false</notifyNotBuilt>
+          <notifyUnstable>true</notifyUnstable>
+          <notifyFailure>true</notifyFailure>
+          <notifyBackToNormal>true</notifyBackToNormal>
+          <notifyRepeatedFailure>false</notifyRepeatedFailure>
+          <timeout>30000</timeout>
+          <macros class="empty-list"/>
+          <factDefinitions class="empty-list"/>
+        </jenkins.plugins.office365connector.Webhook>
+      </webhooks>
+    </jenkins.plugins.office365connector.WebhookJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>true</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>TZ=America/Mexico_City
+H(0-1) 6-22 * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=&apos;temp-admin&apos; --password=&quot;${password}&quot; --database=fdc --execute=&quot;SELECT status, count(*) from fdc.package where delivery_date = date(CONVERT_TZ( current_timestamp() ,&apos;+00:00&apos;,&apos;-5:00&apos;)) and parcel_center_id = 2 group by status;&quot; &gt; status.txt
+docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=&apos;temp-admin&apos; --password=&quot;${password}&quot; --database=fdc --execute=&quot;SELECT replace(pc.location_name , &apos; &apos;,&apos;&apos;) as ParcelCenter, pkg.status as PackageStatus, count(*) as Total FROM fdc.package as pkg INNER JOIN fdc.parcel_center as pc ON pkg.parcel_center_id = pc.id where pkg.delivery_date = date(CONVERT_TZ( current_timestamp() ,&apos;+00:00&apos;,&apos;-5:00&apos;)) GROUP BY pc.location_name, pkg.status ORDER BY pc.location_name, Total DESC;&quot; &gt; output.txt
+
+echo &quot;##########################&quot;
+cat output.txt | column -t &gt; status.txt
+
+#cat status.txt
+
+echo &quot;##########################&quot;
+docker rm $(docker ps -a -f status=exited -q)
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.85">
+      <recipientList>hourlyreports@frontdoorcorp.com, vishnu.manchala@frontdoorcorp.com, nitish.kumar@frontdoorcorp.com, vinay.kumar@frontdoorcorp.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>text/html</contentType>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>&lt;pre&gt;
+${FILE, path=&quot;status.txt&quot;}
+&lt;/pre&gt;</defaultContent>
+      <attachmentsPattern>status.txt</attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>false</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo>no-reply@frontdoorcorp.com</replyTo>
+      <from></from>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.39">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <com.michelin.cio.hudson.plugins.maskpasswords.MaskPasswordsBuildWrapper>
+      <varPasswordPairs>
+        <varPasswordPair var="password" password="{AQAAABAAAAAQa6OAc1TWS5THvcwEGvqxZepVVMfRbbVFng9mBBcoikY=}"/>
+      </varPasswordPairs>
+    </com.michelin.cio.hudson.plugins.maskpasswords.MaskPasswordsBuildWrapper>
+  </buildWrappers>
+</project>

@@ -1,0 +1,10 @@
+commit 3bc01f55add3784a9619ca30812cd3839cfe50a4
+tree dd25316848ca9efdb79a91b0f2c765fcac19c323
+parent 8497dba7c8639922f6a276e1ad2c0894682d124a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-21 15:16:12 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-21 15:16:12 +0530
+
+    FDC-542 :: added more details
+
+
+:100644 100644 4d7f47dafef67de2a34470f4236fdd17f961f53e f4de340d3946fb81b303051fe7662c97d3f06206 M	src/main/resources/db/sql/fdc_international_bridge_client_config_changes.sql

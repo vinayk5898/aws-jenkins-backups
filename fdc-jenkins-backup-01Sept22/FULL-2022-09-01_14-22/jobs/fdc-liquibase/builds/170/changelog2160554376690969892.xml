@@ -1,0 +1,21 @@
+commit cccb0e276b08f164c17e873cdc6690aaa1b082b0
+tree 57f8770e5809bce8955c46cf256d0359f0e7a135
+parent dd85a3dee845a4b44727614a0a3300bf2f3e0ff2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 23:42:46 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 23:42:46 +0530
+
+    FDC-893 :: added views related script
+
+
+:100644 100644 05fc8bff4bad9cf0dace6a3141c35ff3c0948bdd 9452a6c08054d1073ce10319d4f319c964f857d4 M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+:000000 100644 0000000000000000000000000000000000000000 da7b86e996ba405def81c9b64f635df2b3ac0cff A	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit dd85a3dee845a4b44727614a0a3300bf2f3e0ff2
+tree 17f21cbaaa0a11bb6e248c5f37cfc7506385a6d0
+parent c6138f9f8c86843e4d0815c80093a876b4e17f92
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 22:24:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 22:24:29 +0530
+
+    FDC-893 :: fixed value
+
+
+:100644 100644 301a16dfffcdbe87de13d14452c5f5fb365ce17f 05fc8bff4bad9cf0dace6a3141c35ff3c0948bdd M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml

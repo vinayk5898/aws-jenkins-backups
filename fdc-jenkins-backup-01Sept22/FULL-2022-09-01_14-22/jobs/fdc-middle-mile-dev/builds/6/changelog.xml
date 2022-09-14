@@ -1,0 +1,12 @@
+commit 4a5cf0ec6fdf55d20fe33d4a9c8907d8ac281721
+tree c07957b73debdb2240cdcdc1287a42fb315f261c
+parent 2a48493328862f3b83a3d84dd9b31ef3955cc025
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-18 17:28:35 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-18 17:28:35 +0530
+
+    renamed file
+
+
+:100644 100644 2a0ddb592a6d18ca43195bfd7d143af62963b70d 2a0ddb592a6d18ca43195bfd7d143af62963b70d R100	python_scripts/middle_mile_generate.py	python_scripts/dell_middle_mile_generate.py
+:100644 100644 6a1abb39e6e0ffa761f22f88bfa2f31a083c0a1d 6a1abb39e6e0ffa761f22f88bfa2f31a083c0a1d R100	python_scripts/middle_mile_generate_prod.py	python_scripts/dell_middle_mile_generate_prod.py
+:100644 100644 a2fcd295db67e9bbed36e1e17337abad01baa076 a2fcd295db67e9bbed36e1e17337abad01baa076 R100	python_scripts/middle_mile_generate_stage.py	python_scripts/dell_middle_mile_generate_stage.py

@@ -1,0 +1,15 @@
+commit c19fe7be3be44f2c80c357551bf5db97ebcb82f5
+tree 6fe5047573377442019a12e7b4b7dc8f6dc893a9
+parent 09f67962d70e486327bb27d0db2acfc326097178
+author RealName:Hari <hbolla@altir.co> 2022-08-05 12:01:27 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-05 12:01:27 +0530
+
+    Fixed regression tests
+
+
+:100644 100644 282f5658eb2169387b203e52bdee0f0c5d36af1c e602db53708640375811bca33e9ee0c5a6abfa8b M	src/test/java/org/fdc/payloads/requests/routes/route_optimization_requests.feature
+:100644 100644 c5b172cd8ae57528e9ef12e33c2b7a8e19275db9 ff6184c3cb776ed41213219de545a936ad25aaad M	src/test/java/org/fdc/tests/auth_scenarios.feature
+:100644 100644 58efd755f60e30fdc169d5e2edea427e756f1546 c1879beb935983647c5390348280a8c787ed9751 M	src/test/java/org/fdc/tests/edi_211_Scenarios.feature
+:100644 100644 8b887d840c2adf36e376dbd79b741b2f9c987ecc 1de035f77e59f4e1ef6f6194b179d418d0e92aa0 M	src/test/java/org/fdc/tests/routes_scenarios.feature
+:100644 100644 a9d5f9132742ec1a5a109ddb283e1d822ecf5ea3 080c12f041784e93fbc6179bab20257894974649 M	src/test/java/org/fdc/utils/EDIUtil.java
+:100644 100644 8bb487dee99e88808865a3f72cb95e6b09f4e6b8 ad6455b7366007d55f2468c43c11f3a0f0ccf2ad M	src/test/java/org/fdc/utils/SftpUtil.java

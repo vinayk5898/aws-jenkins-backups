@@ -1,0 +1,11 @@
+commit 2efccc0535ddd14f9e93b93e44d10223313b70b0
+tree 18975eca04f5a2f5db8eb0660faf5ce80dd97730
+parent 4944731ac724077b425a1c467f4aa2a6e37df8e3
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-15 15:29:30 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-15 15:29:30 +0530
+
+    FDC-849: unique index on pkg.track#, client_pickup, default 0 not null
+
+
+:100644 100644 db85f0d23678d64be23ec293e4839bbf9ae1f27c b3d13ff8cd6b79920780fcd582f874f6d4b1027f M	src/main/resources/db/sql/fdc_pkg_clientpickup_notnull_default.sql
+:100644 100644 261425844fc9201cb36ff063ac0f7ef4a9cccfd5 a4245ee333bed129a9035fce444dcbb6a1625720 M	src/main/resources/db/sql/fdc_pkg_table_index_changes.sql

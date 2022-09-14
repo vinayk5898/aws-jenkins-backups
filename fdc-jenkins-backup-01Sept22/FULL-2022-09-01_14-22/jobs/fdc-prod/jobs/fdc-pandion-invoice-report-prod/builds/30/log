@@ -1,0 +1,36 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-pandion-invoice-report-prod
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-pandion-invoice-report-prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 0336683137a7fc1120047307b30697ca144f6735 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0336683137a7fc1120047307b30697ca144f6735 # timeout=10
+Commit message: "Merge pull request #13 from The-Frontdoor-Collective/feature/ITMF-27"
+ > git rev-list --no-walk 1ec1de52ee8d5499d48e91b9010c09bf6ad1ea5d # timeout=10
+[fdc-pandion-invoice-report-prod] $ /bin/sh -xe /tmp/jenkins5864368475446932678.sh
++ cd python_scripts
++ python3 Generic_Client_Invoice_prod.py 121
+Sunday 2022-08-14
+Saturday 2022-08-20
+insert into fdc.client_invoice ( PackageTrackingId,package_id,
+client_invoice_number,Facility,ContainerTrackingId,PackageLengthInches,PackageHeightInches, 
+PackageWidthInches,PackageWeightLb,PackageArrivalDate,PackageVolumeCuFt,ChargeWeight,invoice_date,
+created_on,package_arrival_date,client_id,invoice_status,package_type_id ) select DISTINCT PackageTrackingId, package_id,
+invoice_number, Facility, ContainerTrackingId, PackageLengthInches, PackageHeightInches,
+PackageWidthInches,PackageWeightLb, PackageArrivalDate, PackageVolumeCuFt, ChargeWeight, 
+InvoiceDate, created_date, arrival_date, client_id , temp_status, package_type_id from fdc.v_get_client_invoice where client_id = 121 and date(arrival_date) between '2022-08-14' and '2022-08-20'
+No of invoices generated :  14379
+started generating invoice files 
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

@@ -1,0 +1,82 @@
+commit 9721dbb52c44e62fd9059fb44cbd23e56b183c3a
+tree 20331336071b115af8a41fa09e0aab1567569fe0
+parent 1be2a128af4b2927e819c43fdecb08ec26a7556e
+author Denis Subach <dsubach@altir.co> 2022-06-09 17:37:29 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-09 17:37:29 +0300
+
+    fix case when user entered nothing and click submit button
+
+
+:100644 100644 ebe09499cacbaad4a184502beeeeb3a71d04fb4b ccb86483131f62f73dd42b11b540a33e6c3d45a0 M	src/hooks/useSearch.tsx
+commit 2964d50f66460ed14a08f39940b74a0320a7d0c7
+tree c8b3f52bb65b1d4b55f50e33f7ef1ee32161ba58
+parent fbe2349c92e164fa62f7d2d5fe828e9c6aa74412
+author Denis Subach <dsubach@altir.co> 2022-06-09 17:26:41 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-09 17:26:41 +0300
+
+    update husky
+
+
+:100644 100644 b94d09a0efe31e917ab5e2280d8d4a38876b6a0c cc061c75fe9e3a1273fb9995d96fe51897d5647d M	package.json
+commit fbe2349c92e164fa62f7d2d5fe828e9c6aa74412
+tree 0536f78dc6d97091bd63bbaf96cfef9d324a0a31
+parent 1be2a128af4b2927e819c43fdecb08ec26a7556e
+author Denis Subach <dsubach@altir.co> 2022-06-09 17:21:53 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-09 17:21:53 +0300
+
+    Update project dependencies
+
+
+:100644 100644 7e0ad0759b56cb78ef4554f27422f5a44f256fa3 4342816d981d31e4460ff857c8c841f51af051f6 M	.eslintrc.js
+:000000 100755 0000000000000000000000000000000000000000 c37466e2b308ae097b510ac4f3c8b983ae0dbab7 A	.husky/pre-commit
+:000000 100755 0000000000000000000000000000000000000000 ad9dee7b682bd5eaad01b33d5608f81d26692346 A	.husky/pre-push
+:100644 100644 dac215b6613a5c27e35dd523842c23dba2121d21 b94d09a0efe31e917ab5e2280d8d4a38876b6a0c M	package.json
+:100644 100644 d2c8da77302ae82309a0a954b02e34e6d0957a34 a478f386cec786ac8cf658342ec92392323d99a8 M	src/index.tsx
+:100644 100644 2e7862e68a1687d28a477d63df8556e2a24d20da 9a86cb5239d2984786304596e7bb229f2d429729 M	src/pages/Landing/Tracking/Details/Details.tsx
+:100644 100644 0d6fb90b3469d226c9d2fe177bdce91dc468a620 67f66b294f06ee3201d83861f006d5d7499b40c9 M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:100644 100644 44d74ac2c797a1a8f4bb370873ff914d185307a7 157bd293d27cf8b7aeb9baf8b990eba9a9c44ba8 M	src/shared/Card/index.tsx
+:100644 100644 188dce0bc88d2ff086a6162279d630065cfb6209 d7167022de3b3d8e0a70e877f409e309e77d22a2 M	webpack/webpack.dev.js
+:100644 100644 b52960441bd3ab4687491d2d8f41596a8e215abb 4e62b9726ba05eb6fb91d73575a63569f052c890 M	yarn.lock
+commit 2ae80f54f3c494f02e8a4f2cb1c75883933c4b2d
+tree f86dbc76821fe6b43e74ba051453fb93e4bab442
+parent a8d057a4bd2c05f3dbd9d657e3c7e22c5d0497c7
+author yauheni <ybutski@gmail.com> 2022-06-09 14:14:49 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-09 14:14:49 +0300
+
+    Extend colors palette. Add Sign In link into header.
+
+
+:100644 100644 d21c91a850fea814754b7d0ed2e935af3701ff7f e99eb7fe4adb879cf20e1a4972178f2162dd7308 M	src/components/header/Header.styles.ts
+:100644 100644 ca6251f58ef79e684af273c8b7a52a0b3b1fea94 d38d04d60a3f0f5388cd47721146aac21882bf9e M	src/components/header/Header.tsx
+:100644 100644 6bea4ee5d56332c6727fcef51585833c801f05d3 8399aa6f1ea4c020ac6aae9f91a301d750c72545 M	src/components/searchBar/SearchBar.styles.ts
+:100644 100644 e0adc06b6060cca5c72b6f5ab72868a86378177e 1cfad5d6afa3c7b64bdfade1f62652a8d073cfd4 M	src/components/stepper/ActivityTimeline/ActivityTimeline.styles.ts
+:100644 100644 5cf7755241652a25f721eaf043077821e9eb52b2 1e71c30bf7e5bee498cdb0a177bc2f2728f5a14b M	src/components/stepper/StatusLine/StatusLine.styles.ts
+:100644 100644 a2e4303940e67f37bb2b4ca3eb1c49b5197c12fd 108b1dc1f2c7b7c41672245d640226d3b92a1ae6 M	src/components/stepper/StatusLine/StatusLine.tsx
+:100644 100644 c222c4cc432a7d462c19ea1cadec2432bad2b647 8468f7cbf49e506ba593bbe32b9c5e70c9033840 M	src/pages/Landing/Welcome/Welcome.styles.ts
+:100644 100644 638b8ff926213df6d2ce0abbc5a3967634c5b5d9 1be473e1513110e5566ab451f15506f2efba1428 M	src/theme/colors.ts
+:100644 100644 59469ec6bdad444fd17c3bc3bbd65ca2edfbe7d3 2323ec876ff122a8c0f5e9c87f3868db13166122 M	src/theme/index.ts
+commit a8d057a4bd2c05f3dbd9d657e3c7e22c5d0497c7
+tree e81753e83b56b157e743c9b8cff1c70ea15ecdd5
+parent 2c5ae43670146aaee9b867b38c88a2627fb20ab7
+author yauheni <ybutski@gmail.com> 2022-06-09 11:43:34 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-09 11:43:34 +0300
+
+    Add favicon
+
+
+:000000 100644 0000000000000000000000000000000000000000 94665d9ae038d35cc959dbf65b364dea2f74dfa8 A	public/favicon.png
+:000000 100644 0000000000000000000000000000000000000000 3da1b5150f0f2d7c63ca7e28caa368845b000820 A	public/favicon.svg
+:100644 100644 c16ff44e5af307ceeba16a50a380a16104dd1321 14d213ee3beabb5bf0e0ff92ebc83e2b7f97970a M	public/index.html
+commit 2c5ae43670146aaee9b867b38c88a2627fb20ab7
+tree ce22caef6d436acc3e8edfe9467cc0c01cc90f9e
+parent cc48c0cf64979f94879f5c71e4f9420ddd23c687
+author yauheni <ybutski@gmail.com> 2022-06-08 16:31:24 +0300
+committer yauheni <ybutski@gmail.com> 2022-06-08 16:31:24 +0300
+
+    Add custom variant for Typography and update title on Tracking page to correspond to design.
+
+
+:100644 100644 41451ad514425059077953114be83c334aecce5d ef72a4aaa6858bfd674b07290e60236dff19b6ee M	public/locales/en/translation.json
+:100644 100644 5cebf9d6f8834f96d2adbf801fafc435d957414d 4160ccadaea6c966495854acf49ce940a0cc303e M	src/pages/Landing/Tracking/Shipment/Shipment.tsx
+:100644 100644 2590d7298094b59072c3a3a110e33d06889b71d3 436e4ec086618941371917a8c24b453f7148c50a M	src/theme/types.ts
+:100644 100644 f5680db4ed6fdc1662df36b14f8f5fdc292fa3f1 f0e389771ce0e3f798d09b6ed1c70bf3f6b338eb M	src/theme/typography.ts

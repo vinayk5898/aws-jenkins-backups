@@ -1,0 +1,10 @@
+commit f1249c4edd5285fd879a0256d22bd5f27ed3731f
+tree 8e5a309d74d2f3684f663efc69edcb1fb01df9db
+parent b2b8359d44dd9af8f478a78ef2bde3ecf3b824bd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 14:46:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 14:46:54 +0530
+
+    FDC-746 :: added entry for IB
+
+
+:100644 100644 1f62c016c5dcb20ab2f14518f00add3966738730 74b16fb160f92ef87d34e8e7ada69c705b5eaaa2 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

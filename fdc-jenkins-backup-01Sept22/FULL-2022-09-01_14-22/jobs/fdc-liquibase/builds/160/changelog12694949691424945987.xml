@@ -1,0 +1,12 @@
+commit d79f206ae24a13c848314a5ab84eb157ca85eee8
+tree e2a52b37964f83981253f18cc4f97ebefe9185cd
+parent a7e00b4b5bea3dadce6a71e36932b23e03372925
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-07-01 13:19:07 +0530
+committer GitHub <noreply@github.com> 2022-07-01 13:19:07 +0530
+
+    FDC-828: Add temp_upload_dir column to fdc_adapter.sftp (#40)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 31a48bd783c137abab2ee39556b4d41a24cccb5a A	src/main/resources/db/changelog/220701_71_tbl_sftp_addcol_temp_upload_dir.yaml
+:100644 100644 014dc20b475702d742278a482a142e9bf51f7a78 f495ed59c89675c1382cfb2822427485a704a2b9 M	src/main/resources/db/changelog/db.changelog-master.yaml

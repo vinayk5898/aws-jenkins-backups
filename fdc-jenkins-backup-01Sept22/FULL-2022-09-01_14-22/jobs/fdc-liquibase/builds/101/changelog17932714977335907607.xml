@@ -1,0 +1,10 @@
+commit 7b49b30d92030a1e79bbda33134e78d6224d2985
+tree 44a3a49d3f61f7146b358c691b030e7319eb1b64
+parent 059c9f5d025ebc27c1fb6bc5e8183c00e9e751a4
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 18:05:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 18:05:09 +0530
+
+    Update FDC_563_ddl_dml_changes.sql
+
+
+:100644 100644 c83302133584786b7876030114c17ac95741f277 2834e5094167d9d057a2647045bce9d41aa08c0f M	src/main/resources/db/sql/FDC_563_ddl_dml_changes.sql

@@ -1,0 +1,32 @@
+commit 776d5f6e151ac004c6e16275b4df7876b65b9e71
+tree 1d976167daa4c981d74b727f8395c210abe9eed5
+parent ae5494090b8fedd2875738f02577d3cfcc1ef60c
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-25 16:56:11 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-25 17:04:07 +0530
+
+    Add schema name in the insert changelog
+
+
+:100644 100644 d8c1346949a60a05eed139c8542201db16c6d7f4 e07099d49c115f1d12217328f37875ca521b2fb5 M	src/main/resources/db/changelog/2022-03-25-20-fdc-security-schema-setup.yaml
+commit ae5494090b8fedd2875738f02577d3cfcc1ef60c
+tree 861a9aee041e2b1578ba1c9d5b5aa9dae414f6ec
+parent 7413b814ea8ddfaad4fb3595e7280eb0687ba8c1
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-25 16:24:55 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-25 17:04:07 +0530
+
+    Remove context parameter from the changeset
+
+
+:100644 100644 2b8dc5a230d2732a80e3c3d35131257bb780ad19 d8c1346949a60a05eed139c8542201db16c6d7f4 M	src/main/resources/db/changelog/2022-03-25-20-fdc-security-schema-setup.yaml
+commit 7413b814ea8ddfaad4fb3595e7280eb0687ba8c1
+tree 187cd453f808b549f62d5fe9a30a9ed46abb7651
+parent cd2979840c9cd6b10293ef146c8150e61b642e0b
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-25 16:15:56 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-25 17:04:07 +0530
+
+    Setup `fdc_security` schema and initialize it
+
+
+:000000 100644 0000000000000000000000000000000000000000 2b8dc5a230d2732a80e3c3d35131257bb780ad19 A	src/main/resources/db/changelog/2022-03-25-20-fdc-security-schema-setup.yaml
+:100644 100644 4f70a0b71e4c9cd2c42beb8053d29280c09b9db0 7bd9a09c4b57926f2f10c84946185c41eff55b2f M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 1127114e6dbc8fddfd0be360e0ce53fb0739d2b4 A	src/main/resources/db/sql/fdc_security_schema_setup.sql

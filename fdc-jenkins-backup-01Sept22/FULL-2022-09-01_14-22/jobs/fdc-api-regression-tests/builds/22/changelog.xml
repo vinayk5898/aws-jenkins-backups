@@ -1,0 +1,37 @@
+commit b8272f56a1bfb362e46adc3ee92dd6393729d249
+tree bb220c5957ac4aeb76c4f5389bb7d76c6d687d78
+parent bbbae4e291569befffb14566ea7fa4b607606c66
+author RealName:Hari <hbolla@altir.co> 2022-08-02 18:14:15 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-02 18:14:15 +0530
+
+    Added EDI & Fixed route scenarios
+
+
+:100644 100644 98704a0e7439f7b400ae44eaed3bba87bff75021 446cae32ffc5ea1d3ebf88ffe53c6d1f1ae1d6dc M	src/test/java/org/fdc/common/shipmentHelper.feature
+:100644 100644 a10c4e20646f7a84ccf6d29b145c7b489b4aab46 ebd1d21d545d4bf493c9a843960aa032ba7ad9b5 M	src/test/java/org/fdc/payloads/requests/shipment/shipment_post_requests.feature
+:100644 100644 acb5acf09924a75a618f6916a8cda7efa12bbe54 4d446414f9c6427973ff8387f61181b6160f79f3 M	src/test/java/org/fdc/payloads/resources/shipment/create_shipment_restTemplate.json
+:100644 100644 bc442b4c28b1ee34de90f7686216794e37eba0b7 8b887d840c2adf36e376dbd79b741b2f9c987ecc M	src/test/java/org/fdc/tests/routes_scenarios.feature
+:100644 100644 7ae95372d6f8a81c0aff0e8ef297e203e5c91e71 a9d5f9132742ec1a5a109ddb283e1d822ecf5ea3 M	src/test/java/org/fdc/utils/EDIUtil.java
+:100644 100644 041e2681e930e4c4c0d85571b7d703e2361bb9ca 8bb487dee99e88808865a3f72cb95e6b09f4e6b8 M	src/test/java/org/fdc/utils/SftpUtil.java
+commit bbbae4e291569befffb14566ea7fa4b607606c66
+tree a0e50c8adce4580d3c2397291cb7ba5be98b247a
+parent 4c87bf457a6ad30cdb942b4130a926fcd491f98d
+author RealName:Hari <hbolla@altir.co> 2022-07-29 10:55:29 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-07-29 10:55:29 +0530
+
+    Added EDI & Auth feature
+
+
+:100644 100644 7ad382c5f06d0055eb4daef7f1ee9c7fb0684f31 4115d90f49e0ee5fef115ab8ca681df91098e752 M	src/test/java/karate-config.js
+:000000 100644 0000000000000000000000000000000000000000 6d1f17172f6e7482c60b900c41423b37292ebe96 A	src/test/java/org/fdc/payloads/resources/edi_211/edi_211_external_id_condition.txt
+:000000 100644 0000000000000000000000000000000000000000 0738b42da83c7abe6419c3eff921db62f8da5440 A	src/test/java/org/fdc/payloads/resources/edi_211/edi_211_original.txt
+:000000 100644 0000000000000000000000000000000000000000 6d7ea6bfb82f3a6b77827207f75407d1f37be19c A	src/test/java/org/fdc/payloads/resources/edi_211/edi_211_with_invalid_pc_address.txt
+:000000 100644 0000000000000000000000000000000000000000 137c5453cb4dfc29b5f8e169cfeec92fdb9196c4 A	src/test/java/org/fdc/payloads/resources/edi_211/edi_211_without_mandate_segment.txt
+:000000 100644 0000000000000000000000000000000000000000 6bd673c55a79fcd6ae9480f744cbe86b0a36ade2 A	src/test/java/org/fdc/payloads/resources/edi_211/edi_211_without_recipient_info.txt
+:000000 100644 0000000000000000000000000000000000000000 0a1a9070e3daaaeff85359658d6a3e83617cc6bb A	src/test/java/org/fdc/payloads/resources/edi_211/edi_211_without_shipper_info.txt
+:100644 100644 f3981275abe68eb1c64fc03b358f3f4f9ea70ecb b3a3d25ff73f83fb42163af4ba7fa7d8efe56e2b M	src/test/java/org/fdc/payloads/resources/routes/route_optimization_restTemplate.json
+:000000 100644 0000000000000000000000000000000000000000 c5b172cd8ae57528e9ef12e33c2b7a8e19275db9 A	src/test/java/org/fdc/tests/auth_scenarios.feature
+:000000 100644 0000000000000000000000000000000000000000 58efd755f60e30fdc169d5e2edea427e756f1546 A	src/test/java/org/fdc/tests/edi_211_Scenarios.feature
+:100644 100644 2a869d3fb3f6e7f3b6df24486e4256c49675d120 bc442b4c28b1ee34de90f7686216794e37eba0b7 M	src/test/java/org/fdc/tests/routes_scenarios.feature
+:000000 100644 0000000000000000000000000000000000000000 7ae95372d6f8a81c0aff0e8ef297e203e5c91e71 A	src/test/java/org/fdc/utils/EDIUtil.java
+:100644 100644 34156452ac260c30b098449ece45d388e2181d75 041e2681e930e4c4c0d85571b7d703e2361bb9ca M	src/test/java/org/fdc/utils/SftpUtil.java

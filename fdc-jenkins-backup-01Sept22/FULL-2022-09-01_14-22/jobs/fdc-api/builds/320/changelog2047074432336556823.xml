@@ -1,0 +1,47 @@
+commit f2b68f90d8680345f2b4725e6ffc1de8ec5ff46f
+tree 6f640f84b2885f9df96cfdcd7d0de2c687f88ab8
+parent 175f1120f9a6922e31adeb6a4d9abe9d821d8606
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-31 15:15:21 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-31 15:15:21 +0530
+
+    added code to groundcloud_mapping
+
+
+:100644 100644 6201eb9b0853decb8b8096d0b79d8fb093aeb84f 930fdf911b4777399d5c1389313b3f7e24cea7db M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 8dd5cee887a23393cea90b4807780f7970ee3525 c47fdf714d9fdb7cad7b711cbe5097e391b9b74b M	src/main/java/com/fdc/core/model/jpa/GroundcloudEventMapping.java
+commit 175f1120f9a6922e31adeb6a4d9abe9d821d8606
+tree 5bcbc660214253f5790d0d75e56f323e0e282d61
+parent eeb5155c64dd7e30ea6f3f06338fb4426bd0dea3
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-31 12:29:23 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-31 12:29:23 +0530
+
+    fix related to pod_url
+
+
+:100644 100644 eab2e8c6d5ee13c7a0adb38c4279be2046d3bb10 5b35722c5231cbf7765e6c3cf12169b793433393 M	src/main/java/com/fdc/core/config/Constant.java
+:100644 100644 ec11e098a7acc3854416df711a1f6134a620a289 6201eb9b0853decb8b8096d0b79d8fb093aeb84f M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit a4e81272553f55194079d03b3f1a20290b295be3
+tree a553d9fea886dfeb2d81a71ab4cd2c93059b0940
+parent 74964e72ced990644489e70d094b3c581c8d6d00
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-30 13:13:14 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-30 13:13:14 +0530
+
+    checkstyle issue fix
+
+
+:100644 100644 5cc23776026929bced5aa0a68bb62dc3a2371531 8868729ec431793b75b22815cd9978ab16e18ba4 M	src/main/java/com/fdc/core/cloudsort/service/event/CloudSortToFdcEventService.java
+commit 74964e72ced990644489e70d094b3c581c8d6d00
+tree 46020fe68ec7a61439073cb19b423c80ac2e9934
+parent 881af3b72b20cb2b1949df9dd6b7d47921bb5e58
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-30 13:07:07 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-30 13:07:07 +0530
+
+    event-time read fix, state and city fix for 214
+
+
+:100644 100644 83179ba35de1275c86001dd4934f1c0df0c32613 eff32160b8ecaf4c993d52d8a2fae821af74a99d M	src/main/java/com/fdc/core/cloudsort/config/CloudSortResourceRestTemplateConfiguration.java
+:100644 100644 1cb312abc5967746e62d3ce7296ce430ae4e9501 5cc23776026929bced5aa0a68bb62dc3a2371531 M	src/main/java/com/fdc/core/cloudsort/service/event/CloudSortToFdcEventService.java
+:100644 100644 ab87bdf9cb1cf87d49481817a8689b756af736c5 fcffb7b3701515b78a278e26314bcf85de0157c7 M	src/main/java/com/fdc/core/mapper/mapstruct/MileStoneInfoMapper.java
+:100644 100644 2c0b9b255df0926e74d32f06c8a3ec076c4989e4 51ec51031ef4f5b490501d468849760be182714a M	src/main/java/com/fdc/core/repository/ParentEventsRepository.java
+:100644 100644 6ee4376e5dbf062647332003ee218c5a388220fb 23942463449184b3f7ae478b1c603f22f4daef5e M	src/main/java/com/fdc/core/repository/impl/EventsDalImpl.java
+:100644 100644 ca4d446b7337dfc431cd3b2e877b14b4520a002f d733d79b51b06da502dcb27927b136beb47e0be8 M	src/main/java/com/fdc/core/service/impl/TrackingServiceImpl.java

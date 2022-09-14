@@ -1,0 +1,45 @@
+commit 8f6c052b5e6301f0e0abffe4c464884acdfb84ab
+tree 68e8c5364457bbe990c5671c8d4e7487c318fe91
+parent face7d22ef79a7222e28163594afff2d51557ac2
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-04-04 19:04:43 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-04-06 13:27:54 +0530
+
+    FDC-437: Change URLs
+
+
+:100644 100644 37a0ba3b2c184a096b7b3e0e519117c97b469501 581ddd3f19177a9317fdc9de3142ab196640eaae M	src/main/java/com/fdc/authenticationserver/config/security/AuthServerConfig.java
+:100644 100644 94f2a5a6914225a5cbbba29a66ace7fdaba0af69 9ab32eea30227ed8c8ad0afed17e4e8ddac125cc M	src/main/java/com/fdc/authenticationserver/config/security/WebSecurityConfig.java
+:100644 100644 28f5172c1c89a0343387a16d02f251b4466b7572 bb14c29bb48e0726e1148be6a07af2f6713ad32b M	src/main/java/com/fdc/authenticationserver/controller/ApiKeyController.java
+:100644 100644 2369ca99804d9adff85e23d4df8badd3c0ebf33a 4552dbc77a74d0a1f344dfc4a628260fde17863f M	src/main/java/com/fdc/authenticationserver/controller/ClientController.java
+:100644 100644 3b3c6dd39f323dbe6cb6eb1e8c3a685f5b21b239 77797d3f718df725b62f0a014d38cd8ae6d673fe M	src/main/java/com/fdc/authenticationserver/controller/HealthController.java
+:100644 100644 361758aa0e435d4fcfceef2b2ebab1c0e8448470 10a94edac528f6b6074f7811e24b12713e6dfccc M	src/main/java/com/fdc/authenticationserver/controller/JwksController.java
+:100644 100644 71e550e88f93b888bcf6677c102f67c6caaa2d0b 279ef3c8ac8a4b7282e5a161274c6c23bd1e4f30 M	src/main/java/com/fdc/authenticationserver/util/AppConstants.java
+:100644 100644 303104cf53a6c64466c7aaf573999a15ea14755b a1b68d175ec0c6119bbca7673301660ef1c87446 M	src/main/resources/application.yml
+commit face7d22ef79a7222e28163594afff2d51557ac2
+tree 0fe7efb7af413b3a792d8063aa2fe23a190dcedf
+parent 27644ec329a83cb3629043e27307a06432f6a860
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-03-29 13:52:16 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-04-04 19:01:56 +0530
+
+    Add endpoint to return all the clients
+
+
+:100644 100644 2a904e9b30f7ccc950b461383f57393a2ed4aada 2369ca99804d9adff85e23d4df8badd3c0ebf33a M	src/main/java/com/fdc/authenticationserver/controller/ClientController.java
+:100644 100644 220a61bcb41923c7c8dcff8c27a81d31c84b508c 33e9a9b7516017f4c4dd666de17ee1b3caf85365 M	src/main/java/com/fdc/authenticationserver/mapper/impl/ClientMapperImpl.java
+:100644 100644 a8b1ceaa2fc2922def04384343a30b4be1eff10b 98513d727e131b412d92d2727fa17da37276e74e M	src/main/java/com/fdc/authenticationserver/model/ClientDto.java
+:000000 100644 0000000000000000000000000000000000000000 d47b229624bb2498e08304afc655eaf40f3fa22e A	src/main/java/com/fdc/authenticationserver/model/ClientsDto.java
+:100644 100644 5afaf4705ba58f2f9d5d6be50df4a5feed263541 7ff19a46fb1f8bfa95b005040a74ad77e3904d2a M	src/main/java/com/fdc/authenticationserver/repository/ClientDal.java
+:100644 100644 5ee4edf993d1fa4bd4f7a20fb845de7337f06ccb 2b6531be859359d93d61939221bcce902f484010 M	src/main/java/com/fdc/authenticationserver/repository/impl/ClientDalImpl.java
+:100644 100644 a01860c8f0ea1ce3a89b7cba6367e96fe24f787f cfea7a1a4d9740aff1329783f4fc089f293d9e77 M	src/main/java/com/fdc/authenticationserver/service/ClientService.java
+:100644 100644 ba0c4a10fa7808c98f1159abca5624764a0af0a6 c4974780cb02a4834f1beb3d2dcbc9f08f290989 M	src/main/java/com/fdc/authenticationserver/service/impl/ClientServiceImpl.java
+commit 751db376dccad8009b34c5dc133e0aecbcafe779
+tree 811b7c4cb539c60ac66957a1d45e91044da6686a
+parent e946ff0842deeaa9bce6e7d0c12bb87c476c7db0
+author Kandarp <kshah@altir.co> 2022-03-30 00:27:41 -0500
+committer Kandarp <kshah@altir.co> 2022-03-30 00:27:41 -0500
+
+    auth svc file
+
+
+:100644 100644 29c3e770b23576da1f3b05c5f551e9be98546d21 5a15204f9aa6c7a6ed15f109ccc81f70028d5945 M	fdc-svc-auth-dev-parameter.json
+:100644 100644 f045d471af8f363c5aad6daec51487e2ddb16e57 8d2eef85e48a8b949248e536dbf3f886aa4f81f4 M	fdc-svc-auth.yml

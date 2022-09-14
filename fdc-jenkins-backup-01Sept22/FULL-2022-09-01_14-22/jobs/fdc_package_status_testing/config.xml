@@ -1,0 +1,154 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>10</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>TZ=America/Mexico_City
+0 * * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=&apos;temp-admin&apos; --password=&quot;${password}&quot; --database=fdc --execute=&quot;SELECT replace(pc.location_name , &apos; &apos;,&apos;&apos;) as ParcelCenter, pkg.status as PackageStatus, count(*) as Total FROM fdc.package pkg INNER JOIN fdc.parcel_center pc ON pkg.parcel_center_id = pc.id GROUP BY pc.location_name, pkg.status ORDER BY pc.location_name, Total DESC;&quot; &gt; status.txt
+#docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=&apos;temp-admin&apos; --password=&quot;${password}&quot; --database=fdc --execute=&quot;SELECT replace(pc.location_name , &apos; &apos;,&apos;&apos;) as ParcelCenter, pkg.status as PackageStatus, count(*) as Total FROM fdc.package as pkg INNER JOIN fdc.parcel_center as pc ON pkg.parcel_center_id = pc.id where pkg.delivery_date = date(CONVERT_TZ( current_timestamp() ,&apos;+00:00&apos;,&apos;-5:00&apos;)) GROUP BY pc.location_name, pkg.status ORDER BY pc.location_name, Total DESC;&quot; &gt; status.txt
+docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=&apos;temp-admin&apos; --password=&quot;${password}&quot; --database=fdc --execute=&quot;SELECT replace(et.REPORTING_STATUS , &apos; &apos;,&apos;_&apos;) AS Status,
+    SUM(IF(p.parcel_center_id = 13,1,0)) AS &apos;Boston&apos;, SUM(IF(p.parcel_center_id = 3,1,0)) AS &apos;Houston&apos;, SUM(IF(p.parcel_center_id = 2,1,0)) AS &apos;Philadelphia&apos;, SUM(IF(p.parcel_center_id = 8,1,0)) AS &apos;Pittsburgh&apos;, COUNT(*) AS &apos;TOTAL&apos;
+FROM fdc.package p LEFT JOIN fdc_report.v_event_type et ON p.status = et.name
+WHERE (DATE(delivery_date) = DATE(NOW()))
+GROUP BY et.REPORTING_STATUS
+ORDER BY FIELD(et.REPORTING_STATUS,
+&apos;Manifest Received&apos;,
+&apos;Arrived at Facility&apos;,
+&apos;Not Arrived at Facility&apos;,
+&apos;Departed from Origin&apos;,
+&apos;Package Routed&apos;,
+&apos;Sorted&apos;,
+&apos;Loaded on Truck&apos;,
+&apos;Removed from Route&apos;,
+&apos;Out for Delivery&apos;,
+&apos;Delivered&apos;,
+&apos;Delivered by 3rd Party&apos;,
+&apos;Returned to Station&apos;,
+&apos;Cancelled Max Attempts Reached&apos;,
+&apos;Cancelled by Shipper&apos;,
+&apos;Returned to Client&apos;
+
+&apos;CON EXC: Damaged on Route&apos;,
+&apos;CON EXC: Delivery Not Attempted&apos;,
+&apos;CON EXC: Driver did not Pick up Package&apos;,
+&apos;CON EXC: Unable to Access Address&apos;,
+&apos;CON EXC: Unable to Deliver&apos;,
+&apos;CON EXC: Unable to Locate Address&apos;,
+
+&apos;UNC EXC: Address Not Found&apos;,
+&apos;UNC EXC: Bad Address&apos;,
+&apos;UNC EXC: Business Closed&apos;,
+&apos;UNC EXC: Conditions not Safe for Delivery&apos;,
+&apos;UNC EXC: Customer Moved&apos;,
+&apos;UNC EXC: Customer Refused&apos;,
+&apos;UNC EXC: Holiday&apos;,
+&apos;UNC EXC: Late Delivery Attempt&apos;,
+&apos;UNC EXC: No Access Granted from Security&apos;,
+&apos;UNC EXC: No Secure Location&apos;,
+&apos;UNC EXC: No Signature Acquired&apos;,
+&apos;UNC EXC: Received Damaged Package&apos;,
+&apos;UNC EXC: Resident not in&apos;
+), et.id
+;&quot; &gt; status.txt
+
+
+echo &quot;##########################&quot;
+
+cat status.txt
+
+cat status.txt | column -t &gt; fdc_hourly_status_report.txt
+
+
+echo &quot;##########################&quot;
+
+
+docker rm $(docker ps -a -f status=exited -q)</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.85">
+      <recipientList>hourlyreports@frontdoorcorp.com, vishnu.manchala@frontdoorcorp.com, nitish.kumar@frontdoorcorp.com, vinay.kumar@frontdoorcorp.com, cpat@frontdoorcorp.com</recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+        <hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+          <email>
+            <subject>$PROJECT_DEFAULT_SUBJECT</subject>
+            <body>$PROJECT_DEFAULT_CONTENT</body>
+            <recipientProviders>
+              <hudson.plugins.emailext.plugins.recipients.ListRecipientProvider/>
+            </recipientProviders>
+            <attachmentsPattern></attachmentsPattern>
+            <attachBuildLog>false</attachBuildLog>
+            <compressBuildLog>false</compressBuildLog>
+            <replyTo>$PROJECT_DEFAULT_REPLYTO</replyTo>
+            <contentType>project</contentType>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.AlwaysTrigger>
+      </configuredTriggers>
+      <contentType>text/html</contentType>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>&lt;pre&gt;
+${FILE, path=&quot;fdc_hourly_status_report.txt&quot;}
+&lt;/pre&gt;</defaultContent>
+      <attachmentsPattern>fdc_hourly_status_report.txt</attachmentsPattern>
+      <presendScript>$DEFAULT_PRESEND_SCRIPT</presendScript>
+      <postsendScript>$DEFAULT_POSTSEND_SCRIPT</postsendScript>
+      <attachBuildLog>false</attachBuildLog>
+      <compressBuildLog>false</compressBuildLog>
+      <replyTo>no-reply@frontdoorcorp.com</replyTo>
+      <from></from>
+      <saveOutput>false</saveOutput>
+      <disabled>false</disabled>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.39">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <com.michelin.cio.hudson.plugins.maskpasswords.MaskPasswordsBuildWrapper>
+      <varPasswordPairs>
+        <varPasswordPair var="password" password="{AQAAABAAAAAQa6OAc1TWS5THvcwEGvqxZepVVMfRbbVFng9mBBcoikY=}"/>
+      </varPasswordPairs>
+    </com.michelin.cio.hudson.plugins.maskpasswords.MaskPasswordsBuildWrapper>
+  </buildWrappers>
+</project>

@@ -1,0 +1,26 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-middle-mile-dev
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-middle-mile-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/ITMF-28^{commit} # timeout=10
+Checking out Revision 4a5cf0ec6fdf55d20fe33d4a9c8907d8ac281721 (refs/remotes/origin/feature/ITMF-28)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4a5cf0ec6fdf55d20fe33d4a9c8907d8ac281721 # timeout=10
+Commit message: "renamed file"
+ > git rev-list --no-walk 2a48493328862f3b83a3d84dd9b31ef3955cc025 # timeout=10
+[fdc-middle-mile-dev] $ /bin/sh -xe /tmp/jenkins5255472993503877887.sh
++ cd python_scripts
++ python3 dell_middle_mile_generate.py
+No of Rows inserted :  1
+No of Rows updated :  2
+Finished: SUCCESS

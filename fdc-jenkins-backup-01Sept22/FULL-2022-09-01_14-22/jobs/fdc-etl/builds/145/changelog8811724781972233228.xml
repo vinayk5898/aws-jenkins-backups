@@ -1,0 +1,51 @@
+commit 327138826f4e3944ced283683524e0fa3bac3b3f
+tree ad63fd00facc7cd8c9e465c45ad869756c4e5c0d
+parent 60fdc47904d911f657320664c6a23f7cc50dc22a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-07 13:00:21 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-07 13:00:21 +0530
+
+    FDC-434 :: ADDED Local key word
+
+
+:100644 100644 22a8775ebc676076aa04b723576d034c276129ea 0469d2f2cec4253b1d45624f326d5bdeeb3e8b94 M	scripts/GENERIC_File_Load/BULK_LOAD.ktr
+commit 60fdc47904d911f657320664c6a23f7cc50dc22a
+tree d8bf3a1a29bfd92669d9ace2627f3fa945006559
+parent 63eeeb70a7d1c6b63a71a3a397e68d481bdc85b3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-04 16:06:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-04 16:06:07 +0530
+
+    FDC-434 :: Added logic to choose sftp or ftp connection depends on client
+
+
+:100644 100644 0469d2f2cec4253b1d45624f326d5bdeeb3e8b94 22a8775ebc676076aa04b723576d034c276129ea M	scripts/GENERIC_File_Load/BULK_LOAD.ktr
+:100644 100644 acafd5c49babdaf1e3d4364c1b6f68ec0aef7015 b90b3ef910dc357761841e6e7775fbb05d05478b M	scripts/GENERIC_File_Load/GENERIC_CLIENT_FILE_LOAD.kjb
+:100644 100644 05fc75f2a6b0542a42b5dbc4a49c577e982446a9 72e3b83489137081a2aeefed654c1bee388d5fbe M	scripts/GENERIC_File_Load/GET_CLIENT_METADATA.ktr
+:100644 100644 4f5b764dffac8e6f108fd1885d5caec40e6e3f6c 8c9e0ba1968baa8e00a07a48b2ba8326e672c792 M	scripts/GENERIC_File_Load/ITERATE_FOR_CLIENT.kjb
+commit 63eeeb70a7d1c6b63a71a3a397e68d481bdc85b3
+tree ab9943bf40ce6caa8c9800b341bfdc4a399da6ee
+parent c4688519618377d2007ded4f3b807f1d5ac34b9b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-03 22:34:51 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-03 22:34:51 +0530
+
+    FCD-434:: fixed a problem like getting previous file names if current filename is null
+
+
+:100644 100644 7cfb5f76498f28c61332d7345d682d8fac2631f6 0469d2f2cec4253b1d45624f326d5bdeeb3e8b94 M	scripts/GENERIC_File_Load/BULK_LOAD.ktr
+:100644 100644 4de2b7d2189870b2730ef45b4f9d2024aa2773ac 8d30772ab907326b534c9007488d15a3817ed331 M	scripts/GENERIC_File_Load/Delete_Loaded_Files.ktr
+:100644 100644 0f72e3bfd97d3e923bb3c10bd0ad675cb846b054 acafd5c49babdaf1e3d4364c1b6f68ec0aef7015 M	scripts/GENERIC_File_Load/GENERIC_CLIENT_FILE_LOAD.kjb
+:100644 100644 0e5fbb3e6879a13c8b4d81eadfcdfe75ab192095 05fc75f2a6b0542a42b5dbc4a49c577e982446a9 M	scripts/GENERIC_File_Load/GET_CLIENT_METADATA.ktr
+:100644 100644 24c49f2b1a50b7375978f8af3aad3208394351ff 4f5b764dffac8e6f108fd1885d5caec40e6e3f6c M	scripts/GENERIC_File_Load/ITERATE_FOR_CLIENT.kjb
+commit c4688519618377d2007ded4f3b807f1d5ac34b9b
+tree d8a5a029c9a88e77d91a469d4adb710550a9a9e0
+parent be953dc1b1f43c0f8768e3b3bd7d095b34433ca1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-27 23:56:10 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-27 23:56:10 +0530
+
+    FDC-434 ::  Parameterised the fdc connection details and load table names
+
+
+:100644 100644 62a01fb05fc8462f13cbbeca23670333a22cf8d1 7cfb5f76498f28c61332d7345d682d8fac2631f6 M	scripts/GENERIC_File_Load/BULK_LOAD.ktr
+:000000 100644 0000000000000000000000000000000000000000 4de2b7d2189870b2730ef45b4f9d2024aa2773ac A	scripts/GENERIC_File_Load/Delete_Loaded_Files.ktr
+:100644 100644 a2dba20aae88425238ea5f1d56a2ae1d743ce9ed 0f72e3bfd97d3e923bb3c10bd0ad675cb846b054 M	scripts/GENERIC_File_Load/GENERIC_CLIENT_FILE_LOAD.kjb
+:100644 100644 d820146836f21bb16668038b025d77cc15c808f6 0e5fbb3e6879a13c8b4d81eadfcdfe75ab192095 M	scripts/GENERIC_File_Load/GET_CLIENT_METADATA.ktr
+:100644 100644 f99f28e979f6f41d23a9e39266af561e523cd9ca 24c49f2b1a50b7375978f8af3aad3208394351ff M	scripts/GENERIC_File_Load/ITERATE_FOR_CLIENT.kjb

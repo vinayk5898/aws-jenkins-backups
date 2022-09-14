@@ -1,0 +1,18 @@
+Started by user [8mha:////4H9G1L0YXL6Xrgxr5ScBRM9Md/1fpGCQ5OyyRDWfh5YpAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZh/dLi1CL9XKB96Yk5iSmZeXmpABijBn7IAAAA[0mMadhavareddy Lingaladinne
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/temp-ssh
+[SSH] executing pre build script:
+
+pwd
+docker ps
+history
+hostname -i
+sudo -S su
+/home/ec2-user
+CONTAINER ID   IMAGE                            COMMAND    CREATED      STATUS                PORTS     NAMES
+24b166eab54a   amazon/amazon-ecs-agent:latest   "/agent"   9 days ago   Up 9 days (healthy)             ecs-agent
+10.1.7.82
+Build was aborted
+Aborted by [8mha:////4H9G1L0YXL6Xrgxr5ScBRM9Md/1fpGCQ5OyyRDWfh5YpAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZh/dLi1CL9XKB96Yk5iSmZeXmpABijBn7IAAAA[0mMadhavareddy Lingaladinne
+Finished: ABORTED

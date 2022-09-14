@@ -1,0 +1,105 @@
+commit 09d346c9ed547691a547a2b3747e7a1efa2f05b8
+tree 1cbfb850b1382cb9122ba28abb115d5da706254b
+parent 5f7bca2f8b4b6797db27e709eeadf000b7e655c6
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-24 00:46:33 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-24 00:46:33 +0530
+
+    renamed file
+
+
+:100644 100644 e63f63f64887032c4cefaec2e24f56d645c2b61f e63f63f64887032c4cefaec2e24f56d645c2b61f R100	src/main/resources/db/changelog/2022-08-23_adding_shipFrom_and_dellCenter_columns.yaml	src/main/resources/db/changelog/2022-08-23_adding_dellCenter_column.yaml
+:100644 100644 70ea4db1b2e6fe99853fbdcb6f958ff107f73997 66694e2576e1e2fac5b2442d21d16407ea24509e M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 5f7bca2f8b4b6797db27e709eeadf000b7e655c6
+tree 059aef28de5d56d3bcd2ee0cfe6f13d16bb46da0
+parent d48873a6eed54961ee9b07fb2294286edc695b6f
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-23 23:03:07 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-23 23:03:07 +0530
+
+    removed ship_from column from shipment
+
+
+:100644 100644 bd23af62d7bca6e4665944e254c878f3ab94cc30 e63f63f64887032c4cefaec2e24f56d645c2b61f M	src/main/resources/db/changelog/2022-08-23_adding_shipFrom_and_dellCenter_columns.yaml
+:000000 100644 0000000000000000000000000000000000000000 52ae4a2b6cfe2fd187ce52561210910480f6d2a1 A	src/main/resources/db/sql/adding_dellCenter_column.sql
+:100644 000000 5dec178150756f3e0b2580109958e04b450ee67a 0000000000000000000000000000000000000000 D	src/main/resources/db/sql/adding_shipFrom_and_dellCenter_columns.sql
+commit d48873a6eed54961ee9b07fb2294286edc695b6f
+tree 25b3d90dcd3e01bd98fe4ad73eb6ddd93ed76b5f
+parent dbc8d8325129aee1b79340c8a3abd8c8e63263d9
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-23 18:52:20 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-23 18:52:20 +0530
+
+    added two columns for resolving cloudsort entry station
+
+
+:000000 100644 0000000000000000000000000000000000000000 bd23af62d7bca6e4665944e254c878f3ab94cc30 A	src/main/resources/db/changelog/2022-08-23_adding_shipFrom_and_dellCenter_columns.yaml
+:100644 100644 3a569fd4b10c58b545a0300659709d1204fd87f7 70ea4db1b2e6fe99853fbdcb6f958ff107f73997 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 5dec178150756f3e0b2580109958e04b450ee67a A	src/main/resources/db/sql/adding_shipFrom_and_dellCenter_columns.sql
+commit 5f207e4f8c42427251e65d6e27d4c896d09a7b8b
+tree ca3eb6b0d691d9190469352f8cf96c213b3b5c20
+parent bd94fb5ffc4227a649b3fcb75e6f4e9204179815
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:48:24 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:48:24 +0530
+
+    Update fdc_update_altir_email_to_fdc_email.sql
+
+
+:100644 100644 7a7c4e4eb33856f368d417ad16eb906e5eb6d551 0ac938eb2886cfe9ba6c27eb486baf03b59da42c M	src/main/resources/db/sql/fdc_update_altir_email_to_fdc_email.sql
+commit bd94fb5ffc4227a649b3fcb75e6f4e9204179815
+tree 2adddb13431f4f70f72ad6f9b25073ea5d567d47
+parent 61935a262d6e2c3a42291eb8aad905408ef4c366
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:19:33 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:19:33 +0530
+
+    changed altir email to fdc email
+
+
+:000000 100644 0000000000000000000000000000000000000000 807da447336bb50d7f20538d6006922e2a04b5b2 A	src/main/resources/db/changelog/2022-08-18-115-update_client_invoice_config_to_fdc_mail.yaml
+:100644 100644 0ab50c6bfe73bb44d1173a9ed341edbcf93a4f88 3a569fd4b10c58b545a0300659709d1204fd87f7 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 7a7c4e4eb33856f368d417ad16eb906e5eb6d551 A	src/main/resources/db/sql/fdc_update_altir_email_to_fdc_email.sql
+commit 61935a262d6e2c3a42291eb8aad905408ef4c366
+tree 5f7e9a1ef5d8a9f91db1cb4ec426e27012606722
+parent 406e082d641539aacf9592c3bb13a6c6a14d829a
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-08-17 21:55:36 +0530
+committer GitHub <noreply@github.com> 2022-08-17 21:55:36 +0530
+
+    lob, ext_sales_order_# fields in pkg table (#84)
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 ff3ada886dfa18f02c895189f87207f363268ceb A	src/main/resources/db/changelog/20220817-pkg-tab-newcols.yaml
+:100644 100644 b55466d18ccb1d1298adb939a648b33f29aac6e5 0ab50c6bfe73bb44d1173a9ed341edbcf93a4f88 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 865410b159b9d10a6c70eb190cabd470441122be
+tree 223936c8f6f912fa3820a5be0568739d0b549617
+parent 76b35f69063038532628ad986934f86e33baa81f
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-13 02:57:33 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-13 02:57:33 +0530
+
+    resolved conflict
+
+
+:100644 100644 5fb867fb376eebbae2f9cad5d7a65a9c5e745833 b8792189ec5a583755fd6469defb6fb6b0012af1 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 76b35f69063038532628ad986934f86e33baa81f
+tree 7dec815aaf87395b416c7a84ebcf50a05862437b
+parent da8f15aae0896a6314117960e3d9849137c60b1f
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-10 17:10:50 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-10 17:10:50 +0530
+
+    Distinct keyword for PackageTrackingId for invoice process
+    
+    Added distinct keyword for PackageTrackingId in view_column_list for fdc.client table.
+
+
+:000000 100644 0000000000000000000000000000000000000000 7bb45e9e0300cc34d786b0b5c548661f97b72378 A	src/main/resources/db/changelog/2022-08-10_distinct-keyword-for-v_view_column_list.yaml
+:100644 100644 a8db8002f39d084ca2654d13a2271b0d3d91982e 5fb867fb376eebbae2f9cad5d7a65a9c5e745833 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 212e4f2a7318ead6e089bec0088faa88b06b5d13 A	src/main/resources/db/sql/distinct_keyword_for_PackageTrackingId.sql
+commit 638f3aaaa7a894c782c0300193cea857cb112901
+tree a45cdfa1d24ce46e10c22f20fff48257824f63cc
+parent da8f15aae0896a6314117960e3d9849137c60b1f
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 14:10:58 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 14:10:58 +0530
+
+    update fdc_stage.shipment and fdc.package filename length to 100
+
+
+:000000 100644 0000000000000000000000000000000000000000 3534de0165ea419e18abf9b88b4f69bbb0976d5e A	src/main/resources/db/changelog/2022-08-09-modify_filename_length_100.yaml
+:100644 100644 a8db8002f39d084ca2654d13a2271b0d3d91982e a6344a0ecb3e82733916f9978630a3d439e002e9 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 c77c71a74ecea5e958b98f2edbb4c15a60cf4f76 A	src/main/resources/db/sql/220809_modify_filename_length.sql

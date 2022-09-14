@@ -1,0 +1,49 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/02-fdc-standard-milestone-job
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/02-fdc-standard-milestone-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/FDC-746^{commit} # timeout=10
+Checking out Revision f271ec24896a877e90951fc90292149f9f32c1cc (refs/remotes/origin/feature/FDC-746)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f271ec24896a877e90951fc90292149f9f32c1cc # timeout=10
+Commit message: "FDC-746 :: added logic for stage and prod files"
+ > git rev-list --no-walk f271ec24896a877e90951fc90292149f9f32c1cc # timeout=10
+[02-fdc-standard-milestone-job] $ /bin/sh -xe /tmp/jenkins4257090221091481562.sh
++ cd python_scripts
++ [ dev = dev ]
++ python3 generic_client_milestone.py 121
+ Select tracking_number as "Pandion Tracking ID", facility_id as "Facility ID", event_code as "Pandion Event Code", event_name as "Pandion Event Name", event_details as "Event Details", event_date as "Event Date", event_time as "Event Local Time", event_time_zone as "Event Timezone", event_street as "Event Street", event_city as "Event City", event_state as "Event State", event_lat as "Event Lat", event_long as "Event Long", pod as"POD" from fdc.v_get_pandion_client_milestone where client_id = 121 and updated_on >= '2022-08-01 21:08:49';
+at else start
+Number of records sent : 3181
+at else end
+Connection successfully established ... 
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/02-fdc-standard-milestone-job/python_scripts/generic_client_milestone.py", line 83, in <module>
+    sftp.put(newpath+file_name+'.csv', v_sftp_filepath+file_name+'.csv')
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/pysftp/__init__.py", line 363, in put
+    sftpattrs = self._sftp.put(localpath, remotepath, callback=callback,
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/paramiko/sftp_client.py", line 759, in put
+    return self.putfo(fl, remotepath, file_size, callback, confirm)
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/paramiko/sftp_client.py", line 714, in putfo
+    with self.file(remotepath, "wb") as fr:
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/paramiko/sftp_client.py", line 372, in open
+    t, msg = self._request(CMD_OPEN, filename, imode, attrblock)
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/paramiko/sftp_client.py", line 822, in _request
+    return self._read_response(num)
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/paramiko/sftp_client.py", line 874, in _read_response
+    self._convert_status(msg)
+  File "/var/jenkins_home/.local/lib/python3.9/site-packages/paramiko/sftp_client.py", line 903, in _convert_status
+    raise IOError(errno.ENOENT, text)
+FileNotFoundError: [Errno 2] ParentPathNotFound: Parent not found, cannot create file non recursively.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

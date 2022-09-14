@@ -1,0 +1,27 @@
+Started by upstream project "[8mha:////4IvaLMmqRkGx2Ugk6VLxa9V9dwu5QnYGS11/o3w2Jj4JAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAylEgYd/az8JP20lGTdgqL8FAQnMS8lMz9PNzcxLzMttbgEIgsAjDRzaeEAAAA=[0mfdc-prod/fdc-pandion-manifest-prod" build number [8mha:////4OrkDcyUQlhQWclYUTo2XWLmG9EaRE1z6bhDoorX3i9OAAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZ9/az8JP20lGTdgqL8FAQnMS8lMz9PNzcxLzMttbgEImtiZAIAZ8DqLeQAAAA=[0m424
+originally caused by:
+ Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/set_max_pieces_prod
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/set_max_pieces_prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 43685424415e37bfd3fbe1390de3e3400af6db0f (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 43685424415e37bfd3fbe1390de3e3400af6db0f # timeout=10
+Commit message: "FDC-559 :: when unable to map rates assigning max rate"
+ > git rev-list --no-walk 43685424415e37bfd3fbe1390de3e3400af6db0f # timeout=10
+[set_max_pieces_prod] $ /bin/sh -xe /tmp/jenkins17263775937767279242.sh
++ cd python_scripts
++ python3 set_max_pieces_prod.py
+0 record updated
+Finished: SUCCESS

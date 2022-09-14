@@ -1,0 +1,32 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/01-fdc-standard-manifest-processing-job
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/01-fdc-standard-manifest-processing-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision dd498da96771b26497d4d3f2af930dd3c781ea08 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+Commit message: "Merge pull request #12 from The-Frontdoor-Collective/feature/ITMF-28"
+ > git rev-list --no-walk dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+[01-fdc-standard-manifest-processing-job] $ /bin/sh -xe /tmp/jenkins3507907706616017447.sh
++ cd python_scripts
++ [ dev = dev ]
++ python3 standard_client_manifest.py 121
+Connection successfully established ... 
+Found few files and started loading
+ce06a3d2-c292-49fb-928b-711f6dbd0bbc_20220831032804.csv Processing In-Progress
+Manifest ce06a3d2-c292-49fb-928b-711f6dbd0bbc_20220831032804.csv have all mandatory fields, will be loaded 
+231 record inserted
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Triggering a new build of [8mha:////4AVxlWpapBX5+Wd7v0YiSvw8famcETGWpylnAWmdEfFbAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYV/az8JP2U1DLdtJRk3eSczNS8Et3cxLzMtNTiEt3EnNSikmJ9AJslzTHZAAAA[0mdev-fdc-client-manifest-alerts
+Finished: SUCCESS

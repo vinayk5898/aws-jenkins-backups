@@ -1,0 +1,10 @@
+commit 3282c7026d0d74be273d09e3c32beac66990d2c7
+tree 35594cb4839f1981c6a02317bab8db6d2a0cef9e
+parent c356a9789e7c88b2a444582f7bf0ef09e38914cd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-30 15:48:27 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-30 15:48:27 +0530
+
+    FDC-788 :: added to change log
+
+
+:100644 100644 92c90d2847dcd31801f781f97977329b0cb5beef f97dd6250c693afa9541fe705303a9dc9050118c M	src/main/resources/db/changelog/db.changelog-master.yaml

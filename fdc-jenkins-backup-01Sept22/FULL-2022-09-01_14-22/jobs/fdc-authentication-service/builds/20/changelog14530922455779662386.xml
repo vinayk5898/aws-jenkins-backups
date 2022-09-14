@@ -1,0 +1,15 @@
+commit 64541c428ad83cc94588321a3539e66129a01f55
+tree 05d3059b40e7b11c6ead28af3e9c55a21acaba2a
+parent 12abe4db8579d0e30b11d2544e6bec5b7d26317a
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-04-11 21:14:32 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-04-12 17:59:27 +0530
+
+    Log elapsed time for all endpoints and others
+
+
+:100644 100644 21099bcd42cdf19edbcdd8b66d8c861c10574d89 525a7322f22e6e3620e3c6b2bd3b32ce190094b8 M	pom.xml
+:100644 100644 7e8c37fbe4c9f69241692e5a857e9c8a1ae28404 80627ba2d95a39dfec860504d69c56f410cae6c5 M	src/main/java/com/fdc/authenticationserver/config/MdcFilter.java
+:100644 100644 9ab32eea30227ed8c8ad0afed17e4e8ddac125cc be67a44323d121146673b09b49c4f9471a6c9269 M	src/main/java/com/fdc/authenticationserver/config/security/WebSecurityConfig.java
+:100644 100644 77797d3f718df725b62f0a014d38cd8ae6d673fe af3d8361c3af60785527f6f71b3af4bd358b3b7d M	src/main/java/com/fdc/authenticationserver/controller/HealthController.java
+:100644 100644 de4299cb112434e80555a4d13b98d1b78112d18c 469b66ea65a954e7f82b5e52eeec85572cee96d8 M	src/main/java/com/fdc/authenticationserver/security/CustomTokenServices.java
+:100644 100644 a1b68d175ec0c6119bbca7673301660ef1c87446 4abd1a4858e5d97fa130d6317596175236256f1a M	src/main/resources/application.yml

@@ -1,0 +1,305 @@
+commit eeb5155c64dd7e30ea6f3f06338fb4426bd0dea3
+tree 1209ed42ff0b180fe2b4cd535b109a38b0e0b940
+parent b77ae679b1c102c58b72c05962971b142aa136ed
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-30 15:19:39 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-30 15:19:39 +0530
+
+    Update application-local.yml
+
+
+:100644 100644 c26312a380d57338a73d1456c84f060124c567e0 e1460afad8a04de6fca0d975edf19c85f50ea060 M	src/main/resources/application-local.yml
+commit 4a05a4288366919c385193d45daf49ef66632b2b
+tree 25912cda45ba7c51681745f06e6f134de88dcc9a
+parent af43cb4f22b0f15ebac7a8d5f1f938e23c28df92
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-30 14:23:25 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-30 14:23:25 +0530
+
+    resolved checkstyle violations
+
+
+:100644 100644 98d6e23d3ef9436e84f0ff4cf959a3123adecfe7 6cf926fcf94a0b814c21572afd4e9292d441070e M	pom.xml
+:100644 100644 f932652d0a7e16ec77e899e160190cfc65dfa0d1 de9213cce75cb63c8601711651f0eef0e62e2421 M	src/main/java/com/fdc/core/controller/ParcelCenterController.java
+:100644 000000 3650e2ff7def3a6d59ca27ef9b41fa90617da1c2 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/core/dto/groundcloud/DriverDTO.java
+:000000 100644 0000000000000000000000000000000000000000 1a32ef56f8a9066672cee9fa6afa9840eb4c647f A	src/main/java/com/fdc/core/dto/groundcloud/DriverDto.java
+:100644 000000 1f9ef259b86580302ede897d29e465fecb431b5c 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/core/dto/groundcloud/GeoJSONPointDTO.java
+:000000 100644 0000000000000000000000000000000000000000 4a505ff6b9744b2bdd7cc320e4d1615746d8ccc4 A	src/main/java/com/fdc/core/dto/groundcloud/GeoJsonPointDto.java
+:100644 000000 b8e287f2319eb3e93c3ef6fe46d6f16532bb31a0 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/core/dto/groundcloud/GroundcloudEventDTO.java
+:000000 100644 0000000000000000000000000000000000000000 034e25238954dff20d3f5cd8db7861cb13c0bcf8 A	src/main/java/com/fdc/core/dto/groundcloud/GroundcloudEventDto.java
+:100644 000000 0118294fca8d4f04c5ef57b98322c2d0959e4749 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/core/dto/groundcloud/ProofOfDeliveryImageDTO.java
+:000000 100644 0000000000000000000000000000000000000000 0d5a25519d6393601435d2536a3a3671ae01f74e A	src/main/java/com/fdc/core/dto/groundcloud/ProofOfDeliveryImageDto.java
+:100644 100644 5bbfff4bdbec418d016f1abe5cfbcc9dc57a2b7c 68cfa1625aa751e260c822b0905754ea92af4e77 M	src/main/java/com/fdc/core/event/processor/GroundcloudEventProcessor.java
+:100644 100644 55e8a8ded11f8eb31078db900ff41a62315f0762 ec11e098a7acc3854416df711a1f6134a620a289 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 7230fc61498a251a6ce9f432c7ecee25fd2b20d4 35f8d73ad5668eee21ac1f20fcd4e9ebe4ebab45 M	src/main/java/com/fdc/core/model/jpa/Event.java
+:100644 100644 5ab3c6c752632cde948d0f685a0b63d50e56fc40 8dd5cee887a23393cea90b4807780f7970ee3525 M	src/main/java/com/fdc/core/model/jpa/GroundcloudEventMapping.java
+:100644 100644 6f38c9eaad6d11137cec371abe1172dc41b7e135 5d753bb2dcdbf0bed80379ebbb20077e23cc09e7 M	src/main/java/com/fdc/core/model/jpa/ParcelCenter.java
+:100644 100644 fedfc0e7219d6e9182403dd56063e23f971f4c5e 634396239a834bccfef7f62c51a9af4a031a1059 M	src/main/java/com/fdc/core/model/jpa/RouteVendor.java
+:100644 100644 afa7c5f4fb2b8291a862549b21c5d3795d1cf0ba e355c74551a2ad0a7fc71b457f78a8b7f9a2ef1a M	src/main/java/com/fdc/core/repository/EventTypeRepository.java
+:100644 100644 288cbf90dbba11212391a780a33dd7a847fe1b52 13d044a4907b18c3fa0272c80fe12761e0336362 M	src/main/java/com/fdc/core/repository/GroundcloudEventMappingRepository.java
+:100644 100644 abfbd5d02a6ea0e13ba866a573c5593e9fcf2609 121920070f4cf9416f48d1f1d54cdb4c099ae7c1 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 f81de0f67658fa7b8868c8abb31b0cd0ab063439 02707cd4c372e98f3d068077faae5b094ca9c1aa M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+:100644 100644 4a3b9894a38060cc576fcce8c1fc32987c118616 e494f37f9c703e048cb76b9532165cb9c0ff9e91 M	src/main/java/com/fdc/core/service/impl/ParcelCenterServiceImpl.java
+commit 7582ddf4650a4d7b8e6763f75e1bef2bf802e9f7
+tree 786b4a008edd410e4db4527fb7f11c0aadd58bf2
+parent 44aa13220083a717610ac504e3ca5be5b93d8000
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-29 17:05:02 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-29 17:05:02 +0530
+
+    dispatched event process fix and sending 214 events with eventTime column fix
+
+
+:100644 100644 0634de455d2c475ce59bbd3a777f88de26f72912 b5e28de30b5c4923eb978202e7a83ec7778c4347 M	src/main/java/com/fdc/core/cloudsort/web/hook/pkg/types/DispatchedEventProcessor.java
+:100644 100644 eba84e0ef8289779beac37c71c914f21b2384e45 ab87bdf9cb1cf87d49481817a8689b756af736c5 M	src/main/java/com/fdc/core/mapper/mapstruct/MileStoneInfoMapper.java
+:100644 100644 03e1a5ac57ad224fa3acf7dbc75fdaa930d94684 8b447d9cdf148c9a81a4722fa0de790deb2c5eda M	src/main/java/com/fdc/core/repository/MiddleMileFacilityRepository.java
+:100644 100644 c14a341ba8cd22fb80b9604b2458f3a7a2381021 2c0b9b255df0926e74d32f06c8a3ec076c4989e4 M	src/main/java/com/fdc/core/repository/ParentEventsRepository.java
+:100644 100644 74b3e7a6495a62a11fcc83b727d4ba4368b74cbf e1ee3547105d975f6924182c46594b859244d947 M	src/main/java/com/fdc/core/service/MiddleMileFacilityService.java
+:100644 100644 8847392e2489b2e8ed549c43c9e34a3021d9e3d4 ca4d446b7337dfc431cd3b2e877b14b4520a002f M	src/main/java/com/fdc/core/service/impl/TrackingServiceImpl.java
+commit af43cb4f22b0f15ebac7a8d5f1f938e23c28df92
+tree 1d8a8246daee8132430d540ba577143da8441652
+parent fd21e5f2321afc6c2dc6a580c1200cb7ccc70c64
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-24 16:00:05 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-24 16:00:05 +0530
+
+    added endpoints to toggle between gc and r4me
+
+
+:000000 100644 0000000000000000000000000000000000000000 f932652d0a7e16ec77e899e160190cfc65dfa0d1 A	src/main/java/com/fdc/core/controller/ParcelCenterController.java
+:100644 100644 22ce0ece08a13796ba5e4eccc15f43f52280a0eb 4dae21bc1e016e2e0e0d16697c2a1a71616131e9 M	src/main/java/com/fdc/core/repository/ParcelCenterRepository.java
+:100644 100644 b0d3c15ed4e57fc2d310413c37224050f1227f81 3b7435429b0ea78a22e60895002d83fc1a2d7317 M	src/main/java/com/fdc/core/service/ParcelCenterService.java
+:100644 100644 bd4795be9e665d0bfd68f4f6b0146f77c3f0964c 4a3b9894a38060cc576fcce8c1fc32987c118616 M	src/main/java/com/fdc/core/service/impl/ParcelCenterServiceImpl.java
+commit fd21e5f2321afc6c2dc6a580c1200cb7ccc70c64
+tree 56d01623df97af74e87b84ec8f245180909f0783
+parent c7e64c90f4d15eaa6c5a305c2bda374603b626ec
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-24 12:04:05 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-24 12:04:05 +0530
+
+    events processing if the pc is enabled with gc
+
+
+:100644 100644 fae4067b49fa17ccd27305c8d52a690d70e072d3 55e8a8ded11f8eb31078db900ff41a62315f0762 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit c7e64c90f4d15eaa6c5a305c2bda374603b626ec
+tree c9a2fa72fb7bfced14fd6809b24a5320ccac840e
+parent 1a09f0b3d5bd6471923a3285d9fffa322298c1f6
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-23 21:24:42 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-23 21:24:42 +0530
+
+    added event local time
+
+
+:100644 100644 6355cb47ae6b9c807b644f4d63ae35c658634179 fae4067b49fa17ccd27305c8d52a690d70e072d3 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 1a09f0b3d5bd6471923a3285d9fffa322298c1f6
+tree 5878bf580fae3838964fa934acae7676a87c6ce0
+parent 838fbdda3285a4266b6089c221ea2fd2c466fb3e
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-17 19:30:19 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-17 19:30:19 +0530
+
+    Update pom.xml
+
+
+:100644 100644 6cf926fcf94a0b814c21572afd4e9292d441070e 98d6e23d3ef9436e84f0ff4cf959a3123adecfe7 M	pom.xml
+commit 838fbdda3285a4266b6089c221ea2fd2c466fb3e
+tree 8ea8a6deeb1b0c259955fbf58a88bb2006a068d8
+parent f9da8897703f8e364d016765e26e684a58cbecfa
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-17 19:06:21 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-17 19:06:21 +0530
+
+    update timestamp format and carrierDriverId datatype
+
+
+:100644 100644 71c1337adb5177e70863000221f594aa3ab86918 3650e2ff7def3a6d59ca27ef9b41fa90617da1c2 M	src/main/java/com/fdc/core/dto/groundcloud/DriverDTO.java
+:100644 100644 40a78e2431902ac36b43976bb1472da3e9ee6460 6355cb47ae6b9c807b644f4d63ae35c658634179 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit f9da8897703f8e364d016765e26e684a58cbecfa
+tree f22479c0717abfe6ffaa4a56e8a7b5ee16b08e27
+parent b264adb8a827b1eae08bc2ebf0abb0c6759cd565
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-17 15:27:12 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-17 15:27:12 +0530
+
+    Update PackageServiceImpl.java
+
+
+:100644 100644 ef8065f299a2005f87483e418212d411d850f4ce f81de0f67658fa7b8868c8abb31b0cd0ab063439 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit 9f46e53a4b8e95fb77be0a66e6034d8a0acc2d8f
+tree ec60102151202af2d55b27336ed74666baa557fc
+parent af26ebe094ed1e90227bdbc0c27dda6e5107ed18
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-05 15:10:18 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-05 15:10:18 +0530
+
+    restrict passing of events with null Type.
+
+
+:100644 100644 b254d554a88632aba42f9994873b81dafc53649c fb82fa6105704b7631c265fad0d76f7065fc6bdc M	src/main/java/com/fdc/core/mapper/impl/PackageMilestoneMapperImpl.java
+commit af26ebe094ed1e90227bdbc0c27dda6e5107ed18
+tree ccd38ee28e641e32bbfcd3163f591bbd58fa4c63
+parent 81019ce8888159073ed83091bdf76c2de496bca2
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-05 12:28:03 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-05 12:28:03 +0530
+
+    added joda-time dependency
+
+
+:100644 100644 a354aacbdf5c12ce0eaad832b45aa8570ba02d66 e46cddc7c6a1decfb97e0155131733bfac25166f M	pom.xml
+:100644 100644 f13cd418e652ec0ee314b9b622b583c4e49d1bbd 40a78e2431902ac36b43976bb1472da3e9ee6460 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 180b0eec2d4e110286784f995b9a40b351d59a24
+tree 2f25709df14e972e8e67bfd2d39fcb5baf69d9dd
+parent cc79e76175d52224cca319c9c0b342f6d184d212
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-04 15:56:57 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-04 15:56:57 +0530
+
+    update pom.xml
+
+
+:100644 100644 23487366e2f9f382fa58e565bc46baa0ee2d6eee 092009cae76f62be2ae2e6c05d06de257e64e610 M	pom.xml
+commit cc79e76175d52224cca319c9c0b342f6d184d212
+tree 3c202e23dd3a3ecfb732ec66cf4c01d30fe86d8a
+parent 1a3b9f6c4aa688bdccd43f596f01af9f63b7e658
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-04 15:44:35 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-04 15:44:35 +0530
+
+    updated cloudsort credentials
+
+
+:100644 100644 09318d7046b2a808e57758e6e27428c36a9c7a7e b60f203f8d8164e58a35600e7efae01a234cf97a M	src/main/resources/application.yml
+commit 1a3b9f6c4aa688bdccd43f596f01af9f63b7e658
+tree bec6d5625816265347b03d27a49ce3fefa8d87f7
+parent ae01c60ac347c7dc1e4ae945f5eb841124f85cc3
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-04 15:32:13 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-04 15:32:13 +0530
+
+    commented checkstyle plugin usage
+
+
+:100644 100644 f73427e859dcf06896194a60cfa95f2ecfa7c2ad 23487366e2f9f382fa58e565bc46baa0ee2d6eee M	pom.xml
+commit ae01c60ac347c7dc1e4ae945f5eb841124f85cc3
+tree 0059090f8d25de32a59cac691e1bf542f3426895
+parent e0ba5852ae1418c99d40287e03a5078e3f6f5ebe
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-03 20:06:53 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-03 20:06:53 +0530
+
+    removed grouncloud_event table dependencies
+
+
+:100644 100644 9960d45485c24113eed30d0410f4c0095f0d7be8 f857a8b8a47561ceb012fef7ae081e3b99d1df06 R089	src/main/java/com/fdc/shortcut/groundcloud/dto/DriverDTO.java	src/main/java/com/fdc/shortcut/dto/groundcloud/DriverDTO.java
+:100644 100644 b249222fbe16c57bb79e4053b55b212e4e37ee72 3f8990c020d5758adc001552d864035c2d4e4b7e R082	src/main/java/com/fdc/shortcut/groundcloud/dto/GeoJSONPointDTO.java	src/main/java/com/fdc/shortcut/dto/groundcloud/GeoJSONPointDTO.java
+:100644 100644 a066136feb14208913864278ab46a7f6c1f74572 32607c313e4f3f49a8c8ddee94c6104f8fd61817 R089	src/main/java/com/fdc/shortcut/groundcloud/dto/PackageStatusEventDTO.java	src/main/java/com/fdc/shortcut/dto/groundcloud/GroundcloudEventDTO.java
+:100644 100644 4488052e564832d19d517927dd074bbbe52eb5b8 9d593ed798cc91f64342fea4945a6bc4c8bd5b1a R080	src/main/java/com/fdc/shortcut/groundcloud/dto/ProofOfDeliveryImageDTO.java	src/main/java/com/fdc/shortcut/dto/groundcloud/ProofOfDeliveryImageDTO.java
+:100644 100644 09213a692d940d85cb151ad7eacbff49e8c68956 75ebff6c854e0b22936c3048174c87fa74aee34a M	src/main/java/com/fdc/shortcut/event/processor/GroundcloudEventProcessor.java
+:100644 100644 67ba55ba98b0815ca21e5371b580bf9f40e6462c 64f443bbed3a8355ae9584ff400a810205ea0f1f M	src/main/java/com/fdc/shortcut/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 000000 309d502d5ada17a85dc91dc34174911655e7f50d 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/shortcut/model/jpa/GroundCloudEvent.java
+:100644 000000 a89395cb05c294d032eabbe1a10c662dd5458229 0000000000000000000000000000000000000000 D	src/main/java/com/fdc/shortcut/repository/GroundcloudEventRepository.java
+:100644 100644 601b0cfe559a48d50278d848864f947f3916e782 b66ad2ba658d127004753d2d427eb990148bf735 M	src/main/java/com/fdc/shortcut/service/impl/ActivityConsumeServiceImpl.java
+commit e0ba5852ae1418c99d40287e03a5078e3f6f5ebe
+tree 20e2b549dd71ff5a36e2b5efeeeccb90d0e49eaf
+parent f84650d0b4a70f5d470189a0a75cc8475f9e8478
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-02 21:50:34 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-02 21:50:34 +0530
+
+    added check for groundcloud enabled PCs.
+
+
+:100644 100644 f7e69c48c136234e45a41b32cb54dd5ec60bd7cd 7137f35f9e5326f45cb790851a0b83650a67aeb0 M	src/main/java/com/fdc/shortcut/repository/PackagesRepository.java
+:100644 100644 9bca534ccfb0432c60d4b264b0de214ab858ba50 6e81550d63128dc2b5af80a217737968deea0b86 M	src/main/java/com/fdc/shortcut/service/impl/PackageServiceImpl.java
+commit f84650d0b4a70f5d470189a0a75cc8475f9e8478
+tree 56c9bfce88cea4ef192a996f5223889073339a32
+parent e616b453f37872df49543286cea6cc16c7834782
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-02 19:43:13 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-02 19:43:13 +0530
+
+    Update application.yml
+
+
+:100644 100644 3d319ccaa3701bee2b1538741d1ec037ee618efe 09318d7046b2a808e57758e6e27428c36a9c7a7e M	src/main/resources/application.yml
+commit e616b453f37872df49543286cea6cc16c7834782
+tree 2b2ec7aab87164be3e6a56b649763e124f248908
+parent 8b819af95362d583d4020755548874f343a75b2a
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-02 11:59:52 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-02 11:59:52 +0530
+
+    update PackageRepository.java to accomodate routeVendor
+
+
+:100644 100644 7137f35f9e5326f45cb790851a0b83650a67aeb0 f7e69c48c136234e45a41b32cb54dd5ec60bd7cd M	src/main/java/com/fdc/shortcut/repository/PackagesRepository.java
+commit 8b819af95362d583d4020755548874f343a75b2a
+tree 1816d87c64470ca5229c371f56ad51530deede79
+parent e6200a9608d3a6c27136d808d1a24879d5bfdf60
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 19:05:29 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 19:05:29 +0530
+
+    added route_vendor entity.
+
+
+:100644 100644 89e1f430b256ec018fbbe332af7b91802fbefef9 67ba55ba98b0815ca21e5371b580bf9f40e6462c M	src/main/java/com/fdc/shortcut/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 fdf642ed67a76588a554a9530a3b7d3235c49d9e 09617429b7ca7a44fd0dc6484c3794a43ff3f675 M	src/main/java/com/fdc/shortcut/model/jpa/ParcelCenter.java
+:000000 100644 0000000000000000000000000000000000000000 2e696475de65c55cee5ef9bb6a68e23dd04cd32c A	src/main/java/com/fdc/shortcut/model/jpa/RouteVendor.java
+commit e6200a9608d3a6c27136d808d1a24879d5bfdf60
+tree 57e60677d2444b19299fc803d1ef69caf8c22e4f
+parent 2263159149849b633547039108be994b33c2b07e
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 16:18:10 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 16:18:10 +0530
+
+    added lat, long for gc events ; updated timestamp as per activity timestamp
+
+
+:100644 100644 827b7201137f16e105650147ee4f11b1f4e2a8a0 89e1f430b256ec018fbbe332af7b91802fbefef9 M	src/main/java/com/fdc/shortcut/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 39c483e43b90490eda6c80c515ef29b5c2cc71f7 b4bc3c28f01907cb3880070d7e8f269bf1593a06 M	src/main/java/com/fdc/shortcut/security/ClientAuthenticationFilter.java
+commit 2263159149849b633547039108be994b33c2b07e
+tree f46ae4bd4f83813f5161442b114259bfbbb7afd2
+parent afe8644285955c3d8e4ef7bc8bf2ca8676bcd7a3
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 13:11:31 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 13:11:31 +0530
+
+    package name changed from dto.groundcloud to groundcloud.dto
+
+
+:100644 100644 858a05a72d2024bb9519a6feea8c1567653568ba 09213a692d940d85cb151ad7eacbff49e8c68956 M	src/main/java/com/fdc/shortcut/event/processor/GroundcloudEventProcessor.java
+:100644 100644 ebb9b1aa6e00a5aa66f0ba2764785e92d8715f86 827b7201137f16e105650147ee4f11b1f4e2a8a0 M	src/main/java/com/fdc/shortcut/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 f857a8b8a47561ceb012fef7ae081e3b99d1df06 9960d45485c24113eed30d0410f4c0095f0d7be8 R089	src/main/java/com/fdc/shortcut/dto/groundcloud/DriverDTO.java	src/main/java/com/fdc/shortcut/groundcloud/dto/DriverDTO.java
+:100644 100644 3f8990c020d5758adc001552d864035c2d4e4b7e b249222fbe16c57bb79e4053b55b212e4e37ee72 R082	src/main/java/com/fdc/shortcut/dto/groundcloud/GeoJSONPointDTO.java	src/main/java/com/fdc/shortcut/groundcloud/dto/GeoJSONPointDTO.java
+:100644 100644 a1a3d6069b98c06da8c2347c18d060e54110f22d a066136feb14208913864278ab46a7f6c1f74572 R094	src/main/java/com/fdc/shortcut/dto/groundcloud/PackageStatusEventDTO.java	src/main/java/com/fdc/shortcut/groundcloud/dto/PackageStatusEventDTO.java
+:100644 100644 9d593ed798cc91f64342fea4945a6bc4c8bd5b1a 4488052e564832d19d517927dd074bbbe52eb5b8 R080	src/main/java/com/fdc/shortcut/dto/groundcloud/ProofOfDeliveryImageDTO.java	src/main/java/com/fdc/shortcut/groundcloud/dto/ProofOfDeliveryImageDTO.java
+:100644 100644 ac2bd0b90930efcb54adeeb6f77fd81706251889 309d502d5ada17a85dc91dc34174911655e7f50d M	src/main/java/com/fdc/shortcut/model/jpa/GroundCloudEvent.java
+:100644 100644 a97e75f0b256f9012fae4b4948af3ab5a19a5752 601b0cfe559a48d50278d848864f947f3916e782 M	src/main/java/com/fdc/shortcut/service/impl/ActivityConsumeServiceImpl.java
+commit afe8644285955c3d8e4ef7bc8bf2ca8676bcd7a3
+tree f0010677479a80cd10dee8f090f6cf156ea7f36b
+parent 5043ae1dec79ec0d0e965e0e35c53818a70fc780
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 12:19:11 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 12:19:11 +0530
+
+    update swagger from openapi to springfox
+
+
+:100644 100644 02fedd43e4755286b0f0e27bf4736085f1cd3504 f73427e859dcf06896194a60cfa95f2ecfa7c2ad M	pom.xml
+:100644 100644 ccbf955075672fef2406d51ab02c14e71d6f1198 a04e41ee448f6dc1b0a28d64d16c9b624ead77c2 M	src/main/java/com/fdc/shortcut/ShipmentApplication.java
+:100644 100644 3acad4c20519d52b8bae54e8dba5f58b89b247b2 56487a9557ed2d0b4e146a8bbc8d6ece19d8b24f M	src/main/java/com/fdc/shortcut/security/ShortcutSecurityConfig.java
+commit 5043ae1dec79ec0d0e965e0e35c53818a70fc780
+tree 61319eeaa9efd0f77e4559b0832c823efa3126ac
+parent 53378138730e68bb36d065d9a3a1c7bd3aaf3892
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 12:06:48 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-01 12:06:48 +0530
+
+    init changes for gc-webhook
+
+
+:100644 100644 610bae27e9dc49afcded6a302ed67b5c3e83f1b4 02fedd43e4755286b0f0e27bf4736085f1cd3504 M	pom.xml
+:100644 100644 a04e41ee448f6dc1b0a28d64d16c9b624ead77c2 ccbf955075672fef2406d51ab02c14e71d6f1198 M	src/main/java/com/fdc/shortcut/ShipmentApplication.java
+:100644 100644 0c1bff47d1d6605ae6de653421d32c75c5477c7b 84b6f7565c626c5eb756ad847849764487f6d40a M	src/main/java/com/fdc/shortcut/config/ActivityDeserializer.java
+:100644 100644 e2030464e2cd0e69d43d7c734d4a0d57d609f204 85b96ad719948d892ce037cf13eb29fbcfefbc9f M	src/main/java/com/fdc/shortcut/controller/ActivityConsumeController.java
+:000000 100644 0000000000000000000000000000000000000000 f857a8b8a47561ceb012fef7ae081e3b99d1df06 A	src/main/java/com/fdc/shortcut/dto/groundcloud/DriverDTO.java
+:000000 100644 0000000000000000000000000000000000000000 3f8990c020d5758adc001552d864035c2d4e4b7e A	src/main/java/com/fdc/shortcut/dto/groundcloud/GeoJSONPointDTO.java
+:000000 100644 0000000000000000000000000000000000000000 a1a3d6069b98c06da8c2347c18d060e54110f22d A	src/main/java/com/fdc/shortcut/dto/groundcloud/PackageStatusEventDTO.java
+:000000 100644 0000000000000000000000000000000000000000 9d593ed798cc91f64342fea4945a6bc4c8bd5b1a A	src/main/java/com/fdc/shortcut/dto/groundcloud/ProofOfDeliveryImageDTO.java
+:100644 100644 187a8c01303cdca38b0c085ec89d3fa1810a5d26 e16e9fe470375b9ef659c3343fd0c0cf0d52ccb7 M	src/main/java/com/fdc/shortcut/event/processor/FdcEventProcessor.java
+:000000 100644 0000000000000000000000000000000000000000 858a05a72d2024bb9519a6feea8c1567653568ba A	src/main/java/com/fdc/shortcut/event/processor/GroundcloudEventProcessor.java
+:000000 100644 0000000000000000000000000000000000000000 ebb9b1aa6e00a5aa66f0ba2764785e92d8715f86 A	src/main/java/com/fdc/shortcut/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 b8e619333976910e0cb056d88a4851c436e7e533 ea7c730e325497b8b5ad890fdf6bf2b7341443b3 M	src/main/java/com/fdc/shortcut/event/processor/impl/DeliveredEventProcessor.java
+:100644 100644 bd8e6a1d07dc5fbc09df1ada8633253959492c4b 304d102efd61a75cc9a353faf2966e996eb2e0ba M	src/main/java/com/fdc/shortcut/model/jpa/Event.java
+:000000 100644 0000000000000000000000000000000000000000 ac2bd0b90930efcb54adeeb6f77fd81706251889 A	src/main/java/com/fdc/shortcut/model/jpa/GroundCloudEvent.java
+:000000 100644 0000000000000000000000000000000000000000 a793e0da8340e8c43f83e75f551c05f32d4cc3ef A	src/main/java/com/fdc/shortcut/model/jpa/GroundcloudEventMapping.java
+:100644 100644 0010130a9665029fa7a989537e9d1e62969e8bc7 a910adef314e04733d5792887ab1c60a051df9cc M	src/main/java/com/fdc/shortcut/repository/EventTypeRepository.java
+:000000 100644 0000000000000000000000000000000000000000 58404bd1349ef893eda651c3b601fcb41f6421bd A	src/main/java/com/fdc/shortcut/repository/GroundcloudEventMappingRepository.java
+:000000 100644 0000000000000000000000000000000000000000 a89395cb05c294d032eabbe1a10c662dd5458229 A	src/main/java/com/fdc/shortcut/repository/GroundcloudEventRepository.java
+:100644 100644 ba41bdda624d5325b90ec03bbb99139b764e7a11 7137f35f9e5326f45cb790851a0b83650a67aeb0 M	src/main/java/com/fdc/shortcut/repository/PackagesRepository.java
+:100644 100644 db2a709cbbe8050f1e5aa6fe562ff155bcb916d8 39c483e43b90490eda6c80c515ef29b5c2cc71f7 M	src/main/java/com/fdc/shortcut/security/ClientAuthenticationFilter.java
+:100644 100644 56487a9557ed2d0b4e146a8bbc8d6ece19d8b24f 3acad4c20519d52b8bae54e8dba5f58b89b247b2 M	src/main/java/com/fdc/shortcut/security/ShortcutSecurityConfig.java
+:100644 100644 f86445d2a3db3044fcd8b53f78efa4e0f9474b09 4b615ab1e4abcdd6e6c113e22dd37ac17f35952d M	src/main/java/com/fdc/shortcut/service/ActivityConsumerService.java
+:100644 100644 4bb1c97a406f8ae4b969e847de4f010e087cb0a3 a97e75f0b256f9012fae4b4948af3ab5a19a5752 M	src/main/java/com/fdc/shortcut/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 9d46bdb54a4cef1e97d53d7391b26e06c2544456 c26312a380d57338a73d1456c84f060124c567e0 M	src/main/resources/application-local.yml
+:100644 100644 b17724655e4a720ae52e61bb4916168ac46c5100 3d319ccaa3701bee2b1538741d1ec037ee618efe M	src/main/resources/application.yml

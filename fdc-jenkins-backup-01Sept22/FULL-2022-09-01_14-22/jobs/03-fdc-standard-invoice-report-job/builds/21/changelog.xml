@@ -1,0 +1,538 @@
+commit 153d2e7e1af6a669207da23c541a5e72a58bfa52
+tree 637afd27c13b34da01f84ab418c6356422674acb
+parent cd794d7df8e4172063f446edde8919afcad50410
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:48:00 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:48:00 +0530
+
+    added one more email
+
+
+:100644 100644 243106ac1754e13741b0b768765bd27e03e6c97a af7dff7f9db3bb563cbd7f3ae3d7f4197fe8eacd M	python_scripts/Pandion_invoice_report_prod.py
+:100644 100644 84753c3a0f5c7bc78acdad004caa35083f39e5b7 c6f9cb69a89b972f2b0090769f9b113e62e6db4d M	python_scripts/Pandion_invoice_report_stage.py
+commit cd794d7df8e4172063f446edde8919afcad50410
+tree a9cd82be4b1a8cb7deec0460075fe889be75f34a
+parent 697fce754c1a69da0d78c294978d0e91d46d760d
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:32:35 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:32:35 +0530
+
+    updated altir mails to fdc mail
+
+
+:100644 100644 c7acf5c3e106f1a8dc5a88fe23abd3c41118676d 4aa4b3f20c2bf256cd43964134fc1f171c4d2179 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 ae3f3505fb84d4b6c23af62c01c9f41a7c514d76 fa9f27f8181412249272f65b85b96d54a3aaa691 M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 90f0e03fbdd9444adda4050b48c5083977d1432c cc17b107e80a9b817bedffeb182a8db51d880254 M	python_scripts/Generic_Client_Invoice_stage.py
+:100644 100644 6da3ea1cfab21ce4d937ea9c4f43950157fbdace f67d83042c77d9fa5ba9198e108d835553a7df78 M	python_scripts/Pandion_invoice_report.py
+:100644 100644 1c22038cd9b8394d7957bab7e1e3d6db5ce479c2 243106ac1754e13741b0b768765bd27e03e6c97a M	python_scripts/Pandion_invoice_report_prod.py
+:100644 100644 6005b760f324e1124c113ba05cb71d5207c4e9b6 84753c3a0f5c7bc78acdad004caa35083f39e5b7 M	python_scripts/Pandion_invoice_report_stage.py
+commit 34c5b473e3de3b57325b9fee9c594941c54e2096
+tree b9fa946a083e176a74d1e439ed72cb341b202630
+parent 07b5176139dd10db0898c68c1df9ae4fa7b0cc13
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-12 03:02:17 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-12 03:02:17 +0530
+
+    feature/ITMF-10-1
+    
+    modified logic for all invoice file generation should be in one file.
+
+
+:100644 100644 45188fc646a62c2e0ece01f6f44ea4c7637a9074 c7acf5c3e106f1a8dc5a88fe23abd3c41118676d M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 be3a6cd22fb2a11ba92a26811eae9018aa5ab859 ae3f3505fb84d4b6c23af62c01c9f41a7c514d76 M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 328fac0111176bdf5b915a718ed81ae8b5e3c919 90f0e03fbdd9444adda4050b48c5083977d1432c M	python_scripts/Generic_Client_Invoice_stage.py
+:100644 100644 b590c156832b16ed75b08d8005ac5eebc18244c6 cb10d90c0e833fe78de052035fee203d80ced8e7 M	python_scripts/get_dell_invoice_custom_report_generation.py
+:100644 100644 e2073182cfdd4ea3c150fa2ff684451cb5018e80 1965c1c1f102c5012bd29d276ac12212716d2085 M	python_scripts/get_dell_invoice_custom_report_generation_prod.py
+:100644 100644 b9796e6ac2cf817abda4e6e206bdf3b77b2aaa5f 0d1525acfa31d6d0db133c872cc56c3e3dd268fe M	python_scripts/get_dell_invoice_custom_report_generation_stage.py
+commit 6ca34548a19f3973893c852a4ada01e18cbd0221
+tree 6bafb260e10e5525b2a9d159908bf2e4102a75d9
+parent 07b5176139dd10db0898c68c1df9ae4fa7b0cc13
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:10:56 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:16:17 +0530
+
+    validations removed for 'filename'
+
+
+:100644 100644 aabb798fc2f507391979a5785f40fcae580c5c46 7bec042ed0832ff666ebaa128b21d8b074ea8ae9 M	python_scripts/standard_client_manifest.py
+:100644 100644 2af6a9bd31959fdfc66459f0d5dd5c9d42ae1d9a 22144126222463ac6cdeab5c60cb3b6b0280045d M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 f5337e03c0cbc9ee38ad08ac74d3f4a7ce514aa6 8225cb37bbc2ee7edaa6a89a3fbe4cbe5c00b1b4 M	python_scripts/standard_client_manifest_stage.py
+commit 38923debe6cfc2dfaf9c762c5719c9fb70fd59c4
+tree 4c9f8fe5efe45d4203b9bf71ec55ea370739ca2a
+parent 512fa42d87c12b261b29b9d2ce002cfd2d5f239b
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:10:56 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:10:56 +0530
+
+    validations removed for 'filename'
+
+
+:100644 100644 aabb798fc2f507391979a5785f40fcae580c5c46 7bec042ed0832ff666ebaa128b21d8b074ea8ae9 M	python_scripts/standard_client_manifest.py
+:100644 100644 2af6a9bd31959fdfc66459f0d5dd5c9d42ae1d9a 22144126222463ac6cdeab5c60cb3b6b0280045d M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 f5337e03c0cbc9ee38ad08ac74d3f4a7ce514aa6 8225cb37bbc2ee7edaa6a89a3fbe4cbe5c00b1b4 M	python_scripts/standard_client_manifest_stage.py
+commit 07b5176139dd10db0898c68c1df9ae4fa7b0cc13
+tree 906de35c4b30adab38f8c60f35fbbfa3340606d9
+parent 46fc0778d00402c7d27e1a8f03c2087beedcc17c
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-08-08 08:53:53 -0700
+committer GitHub <noreply@github.com> 2022-08-08 08:53:53 -0700
+
+    Update Generic_Client_Invoice.py
+
+:100644 100644 6d231f3daf01ec6da1c613c530d51f8686309776 45188fc646a62c2e0ece01f6f44ea4c7637a9074 M	python_scripts/Generic_Client_Invoice.py
+commit 46fc0778d00402c7d27e1a8f03c2087beedcc17c
+tree ebd0b37feb3eb27b20ff0a7d6ca7fd72a0513680
+parent fbd954d830ad173e638ff24a24b4825d2bdabfc0
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-08-08 08:53:09 -0700
+committer GitHub <noreply@github.com> 2022-08-08 08:53:09 -0700
+
+    Update Generic_Client_Invoice_stage.py
+
+:100644 100644 0c848ab66beecc7aac07146837f358d2b99bff3e 328fac0111176bdf5b915a718ed81ae8b5e3c919 M	python_scripts/Generic_Client_Invoice_stage.py
+commit fbd954d830ad173e638ff24a24b4825d2bdabfc0
+tree 94816c9499bb09ed165b26942f6c10b3d9ed7461
+parent e2f91bfc29fe2fc4e5542bb307cbceab7be83f96
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-08-08 08:52:43 -0700
+committer GitHub <noreply@github.com> 2022-08-08 08:52:43 -0700
+
+    Update Generic_Client_Invoice_prod.py
+
+:100644 100644 2431f7113afe1977436a1f8d986a7883ff192da2 be3a6cd22fb2a11ba92a26811eae9018aa5ab859 M	python_scripts/Generic_Client_Invoice_prod.py
+commit f271ec24896a877e90951fc90292149f9f32c1cc
+tree a303cea80588a241d8189b5a72325e05ae3ebdb4
+parent ac39595864e72050455391b40c596a228779773d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-02 13:10:18 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-02 13:10:18 +0530
+
+    FDC-746 :: added logic for stage and prod files
+
+
+:100644 100644 f67d977433fd391433f74ceb7a8e2461600f39d6 60fee1f6376224e4f43513ebcdb073ca59702c30 M	python_scripts/generic_client_milestone_prod.py
+:100644 100644 6a4569add021870ff382f2336567147239cafd99 c817ad3c4eafcaf3745365a3e18c3b9d1fafdbed M	python_scripts/generic_client_milestone_stage.py
+commit 58cc1379b7b989bac5e198fd19b7b18bebc5c9bf
+tree 23d788671bd8560702057bdf541b34d7b56a0476
+parent 4e25fb4d827e6fb5e05616544d6267d87e3c501d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-02 12:45:32 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-02 12:45:32 +0530
+
+    FDC-1030 :: changed logic for prod and stage file versions
+
+
+:100644 100644 8573ac44549fdd5344ef02d39bf91f79ae03ca6e 2431f7113afe1977436a1f8d986a7883ff192da2 M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 3b4846f274c20c5b3c03bd08ee3a63d4f58d3131 0c848ab66beecc7aac07146837f358d2b99bff3e M	python_scripts/Generic_Client_Invoice_stage.py
+commit 4e25fb4d827e6fb5e05616544d6267d87e3c501d
+tree 6380b7af64aff50f6d9b19575b7cfe35261b34f7
+parent 72eedebf10f7a9e8e4e591171fc6090766bc2e21
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-02 12:32:04 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-02 12:32:04 +0530
+
+    FDC-1030 :: fixed year in date part
+
+
+:100644 100644 d14543b2cdcb4f0258412fb2b6b58bc4de33b37d 6d231f3daf01ec6da1c613c530d51f8686309776 M	python_scripts/Generic_Client_Invoice.py
+commit 72eedebf10f7a9e8e4e591171fc6090766bc2e21
+tree 5aa7c8130b42c54199e093e2725c1a7dbc95b208
+parent deead057d3bb9a3c3b30d5992c905e5fb3c47690
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 15:58:08 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 15:58:08 +0530
+
+    FDC-1030 :: fixed minor issues on summary sheet and amount conversion
+
+
+:100644 100644 be6c234bbc9ff8d56a23a7167a0514c82c4facfd d14543b2cdcb4f0258412fb2b6b58bc4de33b37d M	python_scripts/Generic_Client_Invoice.py
+commit deead057d3bb9a3c3b30d5992c905e5fb3c47690
+tree 0a2195792a0ad095dc28f8646d708bd6f3e17707
+parent 512fa42d87c12b261b29b9d2ce002cfd2d5f239b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 19:41:12 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 19:41:12 +0530
+
+    FDC-1030 fixed error
+
+
+:100644 100644 07dc4cb8d06928fff528297c796287fb09585436 be6c234bbc9ff8d56a23a7167a0514c82c4facfd M	python_scripts/Generic_Client_Invoice.py
+commit ac39595864e72050455391b40c596a228779773d
+tree a7871789d9d783275db63d38bf29c80844c1fe5b
+parent c9a0f1f32966382c4713bab3aabfd1f27414d8c5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 20:21:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 20:21:41 +0530
+
+    FDC-746 :: final changes
+
+
+:100644 100644 bbaeaf2c9e8e0e86c36e25426e87148702c3f0e5 08a85c4e227ac648dd846dda837f8d1394214d49 M	python_scripts/generic_client_milestone.py
+:100644 000000 c81f59e885cff96fde0d757c7c321faaf4bd26cd 0000000000000000000000000000000000000000 D	python_scripts/standard_milestone.py
+commit c9a0f1f32966382c4713bab3aabfd1f27414d8c5
+tree e5d00be363e412cf126b56d593781052a0b75854
+parent 7587a4b1d43c6facc1a21acd726cd120e6082ffd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 16:53:16 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 16:53:16 +0530
+
+    test
+
+
+:100644 100644 9669def83dfb4e75d5a2569aa7da52f433e755d1 c81f59e885cff96fde0d757c7c321faaf4bd26cd M	python_scripts/standard_milestone.py
+commit 7587a4b1d43c6facc1a21acd726cd120e6082ffd
+tree 8d0fbe895076bcf2de43c6895672ae4d231f92b3
+parent 9b09c79c84e6b485ad58d2a3938d51a3f068fa58
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 16:50:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 16:50:45 +0530
+
+    test
+
+
+:100644 100644 6d7212ca462283104fb0a91a90bfe4fec93ea1ee 9669def83dfb4e75d5a2569aa7da52f433e755d1 M	python_scripts/standard_milestone.py
+commit 9b09c79c84e6b485ad58d2a3938d51a3f068fa58
+tree 0270008c64eef799f78637fb3848f279daf91e92
+parent 3a6f2b39c30da213af1720d940cac4d0014b8fb8
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 15:20:16 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 15:20:16 +0530
+
+    test
+
+
+:100644 100644 c006a8688059ce0388339fc49a5d5000590d5ffa 6d7212ca462283104fb0a91a90bfe4fec93ea1ee M	python_scripts/standard_milestone.py
+commit 3a6f2b39c30da213af1720d940cac4d0014b8fb8
+tree ce35529dd80f3589e0a50f7782d287bfdea5b632
+parent bc570c3645404dd8d386df7c2111e16756b95305
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 14:28:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 14:28:41 +0530
+
+    changed field order
+
+
+:100644 100644 70c784ecafa101cad7dc1e3c80fb0253aa182414 c006a8688059ce0388339fc49a5d5000590d5ffa M	python_scripts/standard_milestone.py
+commit bc570c3645404dd8d386df7c2111e16756b95305
+tree 5f240cb5a5a27301d8ff62410f600f96df96f049
+parent a5d2b12087098137ca28d7c992fc67dfca8da5b5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 14:13:04 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 14:13:04 +0530
+
+    test
+
+
+:100644 100644 f5979e8bb90fba3e1eb194d5a58de5dafd496fd4 70c784ecafa101cad7dc1e3c80fb0253aa182414 M	python_scripts/standard_milestone.py
+commit a5d2b12087098137ca28d7c992fc67dfca8da5b5
+tree 9d6c9730dc158495ebeefa4787e470027cfcd7ad
+parent c8460b4e8f3619c54b96ce561e23f14141307206
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 14:03:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 14:03:56 +0530
+
+    Testfile
+
+
+:000000 100644 0000000000000000000000000000000000000000 f5979e8bb90fba3e1eb194d5a58de5dafd496fd4 A	python_scripts/standard_milestone.py
+commit c8460b4e8f3619c54b96ce561e23f14141307206
+tree 28a82535f8cd62990af0bdcd13e7e1714ede686f
+parent baceff34201bc6a136dacdd275054cd64762df7a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 00:10:47 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 00:10:47 +0530
+
+    test
+
+
+:100644 100644 677202c12236f023c4b14b54a90324a838424303 bbaeaf2c9e8e0e86c36e25426e87148702c3f0e5 M	python_scripts/generic_client_milestone.py
+commit baceff34201bc6a136dacdd275054cd64762df7a
+tree 1ad39e508736ff0363977c59b26d12d45ba03d95
+parent df29a8c0b95a2bad1dc85776f2ec56efc82ee960
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:57:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:57:31 +0530
+
+    changing names
+
+
+:100644 100644 fd376fb59240f50555b0e544f0c27643fc026736 677202c12236f023c4b14b54a90324a838424303 M	python_scripts/generic_client_milestone.py
+commit df29a8c0b95a2bad1dc85776f2ec56efc82ee960
+tree db578c3ca3313ee5030556987f7e1f8433b9d6c0
+parent 13aeaebcb3d724fe3fae1dfe9767acce2006dce4
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:41:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:41:54 +0530
+
+    test
+
+
+:100644 100644 0fcd47b3edc68a51268ffe9919920214e72e50af fd376fb59240f50555b0e544f0c27643fc026736 M	python_scripts/generic_client_milestone.py
+commit 13aeaebcb3d724fe3fae1dfe9767acce2006dce4
+tree 760f4354b22fb3e999e9320b7a7fac6cbcb4a391
+parent 25fc9a661f3907b35d43b4c005b752836af0a7b3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:37:21 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:37:21 +0530
+
+    test
+
+
+:100644 100644 76582202d33a44c3cd5579c94219644d7844e6c6 0fcd47b3edc68a51268ffe9919920214e72e50af M	python_scripts/generic_client_milestone.py
+commit 25fc9a661f3907b35d43b4c005b752836af0a7b3
+tree 9493913f9b25d7eb4cd6f1efbe626f759b02e08d
+parent 58c09aa23eeeed6c8616daa82abcd8cb1907b7e0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:35:53 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:35:53 +0530
+
+    commented
+
+
+:100644 100644 87d43cad43cac2fdbaa0bb09ecaf2d48cfa059c6 76582202d33a44c3cd5579c94219644d7844e6c6 M	python_scripts/generic_client_milestone.py
+commit 58c09aa23eeeed6c8616daa82abcd8cb1907b7e0
+tree c68f7119861cb9f2e6fb7e7698cf51cefd6b1cef
+parent dd2baf155af6a8e896a036f605e9e2d74ecb741f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:29:43 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:29:43 +0530
+
+    removed quotes
+
+
+:100644 100644 e9fa39cc4cbf28b539a0bafd9aa7fd3308e1d85c 87d43cad43cac2fdbaa0bb09ecaf2d48cfa059c6 M	python_scripts/generic_client_milestone.py
+commit dd2baf155af6a8e896a036f605e9e2d74ecb741f
+tree 0dd933f11731ea9c62198b82da5a4954223de185
+parent 6fa33e9d1b4b3b4590f06f6dbe03fdd76306e5a9
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:27:30 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:27:30 +0530
+
+    uncommented
+
+
+:100644 100644 e7c0f39caeeb33c6792a1e97e1fb988d9e877d80 e9fa39cc4cbf28b539a0bafd9aa7fd3308e1d85c M	python_scripts/generic_client_milestone.py
+commit 6fa33e9d1b4b3b4590f06f6dbe03fdd76306e5a9
+tree 833dc2c92b0ac0e5bfbbf0e8c93858e7c173121d
+parent 51951375e9f6b6172853900746f4b29e4dd796af
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:27:02 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:27:02 +0530
+
+    removed extra spaces
+
+
+:100644 100644 417bc3d019370d3aba230acd8422604e90dec0a8 e7c0f39caeeb33c6792a1e97e1fb988d9e877d80 M	python_scripts/generic_client_milestone.py
+commit 51951375e9f6b6172853900746f4b29e4dd796af
+tree 7e2ab29d23c3059f033616bd93710777fd2f4cc3
+parent 197c5a1af55f46d649d0bf32adb96e5f6afae5d8
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:24:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:24:07 +0530
+
+    removed extra spaces
+
+
+:100644 100644 dbfcb06ed6cdaa39825de5aa2277235dee29b066 417bc3d019370d3aba230acd8422604e90dec0a8 M	python_scripts/generic_client_milestone.py
+commit 197c5a1af55f46d649d0bf32adb96e5f6afae5d8
+tree 1720ef3f80720186e806c35c2ffe118d01cf2fef
+parent fdb0314af2aa6fe88805a63b5b2801b65d2bbac2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:22:38 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:22:38 +0530
+
+    removed quotes
+
+
+:100644 100644 73fcfb6eb478a0a964d11c40223a7a36d2fde204 dbfcb06ed6cdaa39825de5aa2277235dee29b066 M	python_scripts/generic_client_milestone.py
+commit fdb0314af2aa6fe88805a63b5b2801b65d2bbac2
+tree 2af7f4fdbb8b4b4bd283ed80e42e6e4a8dbb5435
+parent 803e70d0e8a2242f3530f380d4ce05542dc2ceef
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:21:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:21:13 +0530
+
+    test
+
+
+:100644 100644 65c5421892b98421bbeb0a1689b61e4329e49405 73fcfb6eb478a0a964d11c40223a7a36d2fde204 M	python_scripts/generic_client_milestone.py
+commit 803e70d0e8a2242f3530f380d4ce05542dc2ceef
+tree 9cf354a22a4cbbcd4bdafc5c7290adb7e1c47f58
+parent 9d5ae40579c991e73c058bd4a65d821a565f8a53
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:18:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:18:24 +0530
+
+    removed unwanted quotes
+
+
+:100644 100644 178f7202a8f081b1bb87d68d93eb997499822aac 65c5421892b98421bbeb0a1689b61e4329e49405 M	python_scripts/generic_client_milestone.py
+commit 9d5ae40579c991e73c058bd4a65d821a565f8a53
+tree c076e59e90f59b980a4d91e0de4f94e7a425270a
+parent 23f3d04a954cfd3e016e39ed28257a60bc1005ad
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:13:18 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:13:18 +0530
+
+    test
+
+
+:100644 100644 362b2490e337fa1abc447d05d61d30c4de478eff 178f7202a8f081b1bb87d68d93eb997499822aac M	python_scripts/generic_client_milestone.py
+commit 23f3d04a954cfd3e016e39ed28257a60bc1005ad
+tree 3decf29d46820265aef9e81f3cbe88ae3a2dacdd
+parent 448332592597e83de090be87795cbc9fd5a4894a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:05:01 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:05:01 +0530
+
+    test
+
+
+:100644 100644 864117c3cb1f388a977b9507b11408ff37f373d6 362b2490e337fa1abc447d05d61d30c4de478eff M	python_scripts/generic_client_milestone.py
+commit 448332592597e83de090be87795cbc9fd5a4894a
+tree d4b7972ae0701aa5742895951fd320ebc1a38e4e
+parent 10a7897d32e6262fcb742244be8dab25b07af33f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:02:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 23:02:41 +0530
+
+    used counts
+
+
+:100644 100644 385094b5309ddb25afcf9b1c20fe0f24754ada8e 864117c3cb1f388a977b9507b11408ff37f373d6 M	python_scripts/generic_client_milestone.py
+commit 10a7897d32e6262fcb742244be8dab25b07af33f
+tree d0d3c7924e661055b9e954a95da76e2db1642ce3
+parent b20696dc8feac5439c137030d8f27e8c59ee4ad4
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 22:09:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 22:09:52 +0530
+
+    test
+
+
+:100644 100644 0088cc4e71e8c0f62d3ed6358b0a5e34d89578a6 385094b5309ddb25afcf9b1c20fe0f24754ada8e M	python_scripts/generic_client_milestone.py
+commit b20696dc8feac5439c137030d8f27e8c59ee4ad4
+tree 1f35bb5bdb88f907955dac617ae6150e24a0fe3a
+parent e6fbcf3d47bb9c2ff86c7fc50089a713074f1a4e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:37:03 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:37:03 +0530
+
+    test
+
+
+:100644 100644 385094b5309ddb25afcf9b1c20fe0f24754ada8e 0088cc4e71e8c0f62d3ed6358b0a5e34d89578a6 M	python_scripts/generic_client_milestone.py
+commit e6fbcf3d47bb9c2ff86c7fc50089a713074f1a4e
+tree d0d3c7924e661055b9e954a95da76e2db1642ce3
+parent 6b3460a035d0b4f804b0401accfef9fd5ca702fe
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:25:43 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:25:43 +0530
+
+    test
+
+
+:100644 100644 794599547a9640a5ac827fd66caf62429f66cf95 385094b5309ddb25afcf9b1c20fe0f24754ada8e M	python_scripts/generic_client_milestone.py
+commit 6b3460a035d0b4f804b0401accfef9fd5ca702fe
+tree 91013f733957267c2ce093b2f6d28089993121a3
+parent e4d1130ec33354075a3fa83de0f5f8fd04b1db77
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:56:17 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:56:17 +0530
+
+    test
+
+
+:100644 100644 f8f73af9f8ad08a2df9e8afa6960a9f758250f8d 794599547a9640a5ac827fd66caf62429f66cf95 M	python_scripts/generic_client_milestone.py
+commit e4d1130ec33354075a3fa83de0f5f8fd04b1db77
+tree fa8a5992d25af772ae02dbaed4d6343372d0baba
+parent 76486e35ecb250639b82a7d2d8e4a01aaafedcf6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:38:43 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:38:43 +0530
+
+    test
+
+
+:100644 100644 1bc3bd76cda825d7c6910c45e016f041428a786e f8f73af9f8ad08a2df9e8afa6960a9f758250f8d M	python_scripts/generic_client_milestone.py
+commit 76486e35ecb250639b82a7d2d8e4a01aaafedcf6
+tree c0e865b97700dbd2d2f1551bc133c11351744b0a
+parent f87ab9554fef29a35441e296ca5b47c944a13d9b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:35:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:35:50 +0530
+
+    test
+
+
+:100644 100644 3f95ef8e5614ad9c76bec5b9bcb98427f01e3966 1bc3bd76cda825d7c6910c45e016f041428a786e M	python_scripts/generic_client_milestone.py
+commit f87ab9554fef29a35441e296ca5b47c944a13d9b
+tree ea068920b19b7d87f257c66e313c5f762ba79d66
+parent 553a2313be7b9bcbc00e0be6f2b28517d210d456
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:29:46 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:29:46 +0530
+
+    test
+
+
+:100644 100644 d4cb79170e119f097b24188caae09d48d959088a 3f95ef8e5614ad9c76bec5b9bcb98427f01e3966 M	python_scripts/generic_client_milestone.py
+commit 553a2313be7b9bcbc00e0be6f2b28517d210d456
+tree 77637ebdf1771ca024b3dbcfb090ec10c37b604e
+parent 271de10ce315dfff0a9794e1d48836bcab4c8ee3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:27:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:27:45 +0530
+
+    test
+
+
+:100644 100644 d070e2c116f579587e122a9f59b637033de08d72 d4cb79170e119f097b24188caae09d48d959088a M	python_scripts/generic_client_milestone.py
+commit 271de10ce315dfff0a9794e1d48836bcab4c8ee3
+tree 6a90be6e41fad1fe14bbb269550870ec0335b73a
+parent 2f06df2024bb420b6eb828685f724c0225c3f094
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:22:11 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:22:11 +0530
+
+    test
+
+
+:100644 100644 a53f75c69d9eed46f16b99c8ed2ed9b79b3e2c2c d070e2c116f579587e122a9f59b637033de08d72 M	python_scripts/generic_client_milestone.py
+commit 2f06df2024bb420b6eb828685f724c0225c3f094
+tree 9f7f98a9ba0705b0ad90f26c7b6212972d268df6
+parent c2c1e77c4af0b6df50cc25f0731dcb1634bf5458
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:20:00 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:20:00 +0530
+
+    test
+
+
+:100644 100644 4744920726c33090c3f42c6b2628fe52931f1144 a53f75c69d9eed46f16b99c8ed2ed9b79b3e2c2c M	python_scripts/generic_client_milestone.py
+commit c2c1e77c4af0b6df50cc25f0731dcb1634bf5458
+tree 0c44bd9761a10941af6470f1cb519623a2707c3c
+parent 8f8854ab703865a3210371434c8e77411128f1ad
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:18:06 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:18:06 +0530
+
+    test
+
+
+:100644 100644 281856f5684daaf36e2b65a95088001f63a3e30b 4744920726c33090c3f42c6b2628fe52931f1144 M	python_scripts/generic_client_milestone.py
+commit 8f8854ab703865a3210371434c8e77411128f1ad
+tree c921f9f09851bc49bc9d3f1a10d5231961f54bbc
+parent f603c96a7a442a843ac7d45540ecb874849b672d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:13:04 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:13:04 +0530
+
+    test
+
+
+:100644 100644 6bba95aeb18bc177cb2eb9452e5d83b614974d80 281856f5684daaf36e2b65a95088001f63a3e30b M	python_scripts/generic_client_milestone.py
+commit f603c96a7a442a843ac7d45540ecb874849b672d
+tree 5a85f5bdc7a18f367c73bda0d55a6483c4b39df9
+parent 537aeceac7bc46599754144294e78240817b116d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:08:37 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:08:37 +0530
+
+    test
+
+
+:100644 100644 71c04bc7036ce305ba777d20ebb5fcc8f73296b9 6bba95aeb18bc177cb2eb9452e5d83b614974d80 M	python_scripts/generic_client_milestone.py
+commit 537aeceac7bc46599754144294e78240817b116d
+tree 20120407304b37221d91dc5130208c1376f94f16
+parent c7694becff85d9234c9cb59f4555e3787f40d26f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:05:55 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 17:05:55 +0530
+
+    test
+
+
+:100644 100644 916ab3753072dfc5bb8439a25084dcc86c523f71 71c04bc7036ce305ba777d20ebb5fcc8f73296b9 M	python_scripts/generic_client_milestone.py
+commit c7694becff85d9234c9cb59f4555e3787f40d26f
+tree 7a4ccba25a6085387d2fcd6daa72d143e349dcdb
+parent b7e1ef5a00536e78691b3ec6f48478fcba355367
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 16:49:28 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 16:49:28 +0530
+
+    test commit
+
+
+:100644 100644 92ecca4be405bbdb153034e5f91f631abb3fbd16 916ab3753072dfc5bb8439a25084dcc86c523f71 M	python_scripts/generic_client_milestone.py
+commit b7e1ef5a00536e78691b3ec6f48478fcba355367
+tree c7a8483649b4950ff6aa04472dec472f6d5c984c
+parent 1636f4bf5a994aec21bb458894cf7a338c0d9128
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-23 00:01:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-23 00:01:50 +0530
+
+    FDC-746 :: Created prod and satge versions
+
+
+:000000 100644 0000000000000000000000000000000000000000 f67d977433fd391433f74ceb7a8e2461600f39d6 A	python_scripts/generic_client_milestone_prod.py
+:000000 100644 0000000000000000000000000000000000000000 6a4569add021870ff382f2336567147239cafd99 A	python_scripts/generic_client_milestone_stage.py
+commit 1636f4bf5a994aec21bb458894cf7a338c0d9128
+tree 1cea252d63a46587da46588c93b33347850122c9
+parent baa6d2d87797ddccdadae994f9450bc25a446338
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 00:06:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 00:06:56 +0530
+
+    FDC-746 :: generic milestone first version
+
+
+:000000 100644 0000000000000000000000000000000000000000 92ecca4be405bbdb153034e5f91f631abb3fbd16 A	python_scripts/generic_client_milestone.py

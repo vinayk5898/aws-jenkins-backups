@@ -1,0 +1,12 @@
+commit 9fec4b5d1dcfaa2b0d4614551f8a8144fc6bda4f
+tree e6ebba83573c3c57066b1e121e3678ad8a35a9dc
+parent e99c7dae481d8db60df83bda7c3debeb130c9b58
+author RealName:Hari <hbolla@altir.co> 2022-07-19 12:28:42 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-07-19 12:28:42 +0530
+
+    Fixed shipment payload
+
+
+:100644 100644 a646a354b1cf81ece443c0e47a6263b38726c011 78ff69f41834e628320546f4c88e231df2238e6f M	src/test/java/org/fdc/payloads/resources/shipment/create_shipment_restTemplate.json
+:100644 100644 4fce31b90314bdcbae5850764291d62cafb75790 f5e075ba34c1183342e1cc9bba56767a230cb680 M	src/test/java/org/fdc/payloads/resources/shipment/create_shipment_with_multiple_packages_restTemplate.json
+:100644 100644 86cb801307850c6370d319c749146a5aba6009e2 a0aa073957dff6d12be697bbac51ef7b43a10193 M	src/test/java/org/fdc/payloads/resources/shipment/update_shipment_restTemplate.json

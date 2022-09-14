@@ -1,0 +1,41 @@
+commit 30c74f33641c4425f98cda614a83927b442e9705
+tree 19be8daf059edf3ea5d4bd21c666b99868703373
+parent 6f8c0f441749bb3f187820ab07eefb12b0485abf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:22:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:22:52 +0530
+
+    FDC-867 :: IB Invoice when dimensions are missing
+
+
+:100644 100644 a3245843c8f780e47812ad31c5a48c78a85ecdcd 5ff412199263b2bc97efca98f2486a8fb82b7114 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 6f8c0f441749bb3f187820ab07eefb12b0485abf
+tree aaae1cfd7d374196105e6bf08eea7eadd3e40ff2
+parent 8b428d3b9fb2ada8541ce42aa46d2369e7a688e6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:17:36 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:17:36 +0530
+
+    FDC-867 :: IB Invoice when dimensions are missing changes
+
+
+:100644 100644 3ca4db14da23f66940cf38e887fb5546c1399262 a3245843c8f780e47812ad31c5a48c78a85ecdcd M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:100644 100644 55ce692aac749919219c965c825338b975d4b81f 78e8c2a4ee5cd56b0efd8eb4bc662aeb6e7eeb86 M	src/main/resources/db/sql/v_get_client_invoice.sql
+commit 8b428d3b9fb2ada8541ce42aa46d2369e7a688e6
+tree b99852fba17defd0f18c4659fb6d4c2ad4e1a377
+parent 8ffddc460fec9fffb0efb88898f6fa523295ffb1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 17:51:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 17:51:24 +0530
+
+    FDC-867 :: IB Invoice when dimensions are missing
+
+
+:100644 100644 335f86054a1833f32999e1502e12633ba2b551ad 3ca4db14da23f66940cf38e887fb5546c1399262 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 8ffddc460fec9fffb0efb88898f6fa523295ffb1
+tree 7c3fa371046db047e1a5679f90ef9aad79c9aa7b
+parent bf8fc648219635cea76964e46d0056e6702bd9e5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-29 15:50:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-29 15:50:13 +0530
+
+    fdc-156 :: fixed typo
+
+
+:100644 100644 652de5cb6c9435c03695a50b116be623ac229636 335f86054a1833f32999e1502e12633ba2b551ad M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml

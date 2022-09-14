@@ -1,0 +1,15 @@
+commit d42a14fa5ed7363913d2138174409b2808e70e87
+tree 64102a75977f23a52ce92c6d4cdbdc92db92d1df
+parent d92a8d92d3f18dd206bcde795016cf8979e66690
+author Jitendra Kumar <jkumar@altir.co> 2022-08-17 19:56:08 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-08-18 10:53:53 +0530
+
+    FDC-1056: Opt-out of retry in EDI-214 communication
+
+
+:100644 100644 ec9a951f91228acc2552c993af1cca708dc27c5a b5ae8e70cf2c8a73b1ccbe92563d08897c664bd0 M	src/main/java/com/fdc/adapter/outbound/OutboundFileProcessor.java
+:100644 100644 22790a77d4cff9c4de27e0c3ffcc618471d3826a 6de95864953c97bda04e98d8f8be87218615114b M	src/main/java/com/fdc/adapter/outbound/OutboundParams.java
+:100644 100644 8d9a491f1f21624bce465a464606051247126b4b eb9fde66febc3cedcc21596eab16ccec5a2f1570 M	src/main/java/com/fdc/adapter/outbound/OutboundService.java
+:100644 100644 4aae475134eb41db3b138b7b1916350875d552f0 476da035e44ee3e76b9f8119454701cdffef89b2 M	src/main/java/com/fdc/adapter/outbound/OutboundSftpFileFailureHandler.java
+:100644 100644 26adfb26bf31cce81c478cf5083e7c7e464edb08 f0c12772b89c6b973f1d1b969a1cc7bf4618018d M	src/main/java/com/fdc/adapter/service/impl/EdiOutboundServiceImpl.java
+:100644 100644 31024807b78124c719fe325f335172db1f42d3e8 1bdcf65135eb6a791af46d1d2d47f09142c3e685 M	src/test/java/com/fdc/adapter/outbound/OutboundFileProcessorTest.java

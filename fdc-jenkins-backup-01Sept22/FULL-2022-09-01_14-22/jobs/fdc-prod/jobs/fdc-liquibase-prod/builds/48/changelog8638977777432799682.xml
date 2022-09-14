@@ -1,0 +1,11 @@
+commit 169674ef1492f6948bf18c262a41d5968cb13689
+tree 7a7d4048827939de915d6ddd496bd68b65827fcc
+parent 774dd3a55c0edf5d347f14df2db3268167c091ad
+author Jitendra Kumar <jkumar@altir.co> 2022-08-03 13:04:23 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-08-04 18:49:25 +0530
+
+    FDC-1021: Increase width of columns in fdc_adapter.sftp_file_event
+
+
+:000000 100644 0000000000000000000000000000000000000000 eb72f0a1bba1e6dcc8279b7f2fe780912d541af6 A	src/main/resources/db/changelog/220803_modify_fdc_adapter_dot_sftp_file_event.yaml
+:100644 100644 52cc2fa139403e47049bfa19ec3d62043d0902ec a8db8002f39d084ca2654d13a2271b0d3d91982e M	src/main/resources/db/changelog/db.changelog-master.yaml

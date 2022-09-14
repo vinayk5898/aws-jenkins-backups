@@ -1,0 +1,27 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-IB-manifest-prod
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-IB-manifest-prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision dd498da96771b26497d4d3f2af930dd3c781ea08 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+Commit message: "Merge pull request #12 from The-Frontdoor-Collective/feature/ITMF-28"
+ > git rev-list --no-walk dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+[fdc-IB-manifest-prod] $ /bin/sh -xe /tmp/jenkins10808553278752657961.sh
++ cd python_scripts
++ python3 standard_client_manifest_prod.py 122
+Connection successfully established ... 
+No csv files detected
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

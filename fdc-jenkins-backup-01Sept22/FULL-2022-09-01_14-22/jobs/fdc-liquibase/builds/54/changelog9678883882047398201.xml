@@ -1,0 +1,11 @@
+commit d5edcd4aca3612df7e85e135eaf2ddaa690ff54d
+tree 874a74d96adf6732373c08cb88242de9e48acec4
+parent a155ad0ffefff03f418a5b2973b7ca55ed37993d
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-13 17:22:31 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-13 17:22:31 +0530
+
+    functional index on event_local_time for faster query
+
+
+:000000 100644 0000000000000000000000000000000000000000 c1ae2ccdd14349d4d260679e1971f8c4e606a4a6 A	src/main/resources/db/changelog/2022-04-13-26-event-local-time-fn-index.yaml
+:100644 100644 07b371bdf083c2f4119debbfedc352ffdcd6de6c 50f667ef9ba0592ca114a895dbbda53f9f9b138e M	src/main/resources/db/changelog/db.changelog-master.yaml

@@ -1,0 +1,183 @@
+commit 10f9ab23a1048b171f93832e29a7b9582cb40c95
+tree 4d8a6a01d24aae4dabf528b1382af1fc664f0536
+parent abb1525f529682065911258b3e300d7cde86f91d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:12:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:12:41 +0530
+
+    FDC-156 :: fixed subject
+
+
+:100644 100644 0c7a6d6f915f39a5d3ba8818c526c9368b8cf1a2 6b4273fc25c735cd1e2be8bbfd80403239907037 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit abb1525f529682065911258b3e300d7cde86f91d
+tree 1afb25afb9d3cda4b7976d70559892b42ff87e96
+parent 430b9298b010f7b7e254b1d60d5cffe6cdb03bf3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:10:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:10:52 +0530
+
+    FDC-156 :: fixed statsu
+
+
+:100644 100644 3d7f18e415da327cb09cc5abea27af2bf9fc18ec 0c7a6d6f915f39a5d3ba8818c526c9368b8cf1a2 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 430b9298b010f7b7e254b1d60d5cffe6cdb03bf3
+tree f44a90e69e3e81a9e7214f1a92ea88beb25dbf3c
+parent ed999dc50a094e676bbc19cd286b4c545018416d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:03:01 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:03:01 +0530
+
+    FDC-156 :: reverted typo
+
+
+:100644 100644 9ee355612a59c2423fce4fd50ab37047607cfdc3 1fd72b5266625289e004dc208ce0117033fea50d M	pom.xml
+commit ed999dc50a094e676bbc19cd286b4c545018416d
+tree f894ce704f456708b40cbcf2d3ed7dedb1542140
+parent 3a6b9577ff8a67b697605540ce9e68da664df3a9
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:01:28 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:01:28 +0530
+
+    FDC-156 :: added missing script
+
+
+:100644 100644 1fd72b5266625289e004dc208ce0117033fea50d 9ee355612a59c2423fce4fd50ab37047607cfdc3 M	pom.xml
+:100644 100644 6829580384ffa060bb8de6b3a2ad777da5989fb5 3d7f18e415da327cb09cc5abea27af2bf9fc18ec M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 97d0a11359782f5b3df059685b61810ede785bb3
+tree 18975eca04f5a2f5db8eb0660faf5ce80dd97730
+parent f48cfe2bf917d0916496a5bc071af4335be6ca06
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-06-15 17:09:39 +0530
+committer GitHub <noreply@github.com> 2022-06-15 17:09:39 +0530
+
+    Support/fdc 849 (#30)
+    
+    * FDC-849: drop unique index track# prod, create indx in non-prod
+    
+    * FDC-849: remove unique index on track# prod for MPMD
+    
+    * FDC-849: unique index on pkg.track#, client_pickup, default 0 not null
+    
+    * FDC-849: unique index on pkg.track#, client_pickup, default 0 not null
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 3a4e477a582ceccf4a2b13ff966f0fd30935d8d4 A	src/main/resources/db/changelog/2022-06-10-index-on-tracking-nums-pkg-table.yaml
+:100644 100644 4b4493e0ef318508253b80d1619772088762d86c 2bd4405733aa5c7d015bb549a59c74e8b7b18539 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 b3d13ff8cd6b79920780fcd582f874f6d4b1027f A	src/main/resources/db/sql/fdc_pkg_clientpickup_notnull_default.sql
+:000000 100644 0000000000000000000000000000000000000000 a4245ee333bed129a9035fce444dcbb6a1625720 A	src/main/resources/db/sql/fdc_pkg_table_index_changes.sql
+commit 499c7ebd98296feac3d501ba3062921b5cc334af
+tree a18ec7697d536e6cae73d5874231bc9166b5ddde
+parent c2322552b46dde3d2626fbe52e2a865a562467d0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 12:51:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 12:51:54 +0530
+
+    FDC-768 :: corrected typo
+
+
+:100644 100644 82ca039aef54daf52a40294516b225f452b045d4 013024b78a8f78d4b184ea2db6ce4500faac88b7 M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit c2322552b46dde3d2626fbe52e2a865a562467d0
+tree ceea4768893834fa6d4e8a4af3c38b871af85d4e
+parent fe52e5429cf4d81f8a826e1cd9f4a7c537bc1cdf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 11:38:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 11:38:40 +0530
+
+    fdc-769 :: added configuration entries
+
+
+:100644 100644 4fe7fef5e4ea93db645337e0c303a68c738e85ee 82ca039aef54daf52a40294516b225f452b045d4 M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit fe52e5429cf4d81f8a826e1cd9f4a7c537bc1cdf
+tree 940e24ad31eaec74b591af68cdf61ccfc855cf3b
+parent 03c1c2e3fe4851b4a99ccc0c4cfdcb45dd02eb7c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 22:08:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 22:08:29 +0530
+
+    FDC-769 :: enhanced the script obey cut off time that changes delivery date to next day
+
+
+:100644 100644 dbcd4e27fb936c9583d7bbfc553fea8a9f36d8fa 4fe7fef5e4ea93db645337e0c303a68c738e85ee M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit 03c1c2e3fe4851b4a99ccc0c4cfdcb45dd02eb7c
+tree 798a08b05bd2559530e0288076320f3aae650b96
+parent 4c904921c742df00f499ed67a9952ee4a152116d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:05:48 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:05:48 +0530
+
+    fdc-769 :: changed schema name
+
+
+:100644 100644 e9c36265cecc68e02f3feb51efd0fe2772aa207a dbcd4e27fb936c9583d7bbfc553fea8a9f36d8fa M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit 4c904921c742df00f499ed67a9952ee4a152116d
+tree 506f0bad1affd1b77635f60b26d841c8947a5080
+parent 1bb4971e97beed38d3043b8cd0d322f87be388a5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:04:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:04:09 +0530
+
+    FDC-769 :: fixed change log issues
+
+
+:100644 100644 63c29200dac6fb375cd27ac9d23cee26ceeeb5f5 240224442742b1e488e3d4fc00501388fb3b9349 R096	src/main/resources/db/changelog/2022-06-01-72-fdc-769-ib-enhancement-changes.yaml	src/main/resources/db/changelog/2022-06-01-73-fdc-769-ib-enhancement-changes.yaml
+:100644 100644 3eeda7c80182269cb5e71f189223272459200b20 0330f99383d18c90f489fb02f51d7c5f18e0f69c M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 1bb4971e97beed38d3043b8cd0d322f87be388a5
+tree b05bbd44dbd31ab53e6ac58b8b22406213918338
+parent f843a52ccd73938a2821b810a0f6925ab75e5b04
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 23:45:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 23:45:23 +0530
+
+    FDC-769 :: changed default package type and ignoring milestone entry if it is sack
+
+
+:000000 100644 0000000000000000000000000000000000000000 63c29200dac6fb375cd27ac9d23cee26ceeeb5f5 A	src/main/resources/db/changelog/2022-06-01-72-fdc-769-ib-enhancement-changes.yaml
+:100644 100644 92c90d2847dcd31801f781f97977329b0cb5beef 3eeda7c80182269cb5e71f189223272459200b20 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 e9c36265cecc68e02f3feb51efd0fe2772aa207a A	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit 3282c7026d0d74be273d09e3c32beac66990d2c7
+tree 35594cb4839f1981c6a02317bab8db6d2a0cef9e
+parent c356a9789e7c88b2a444582f7bf0ef09e38914cd
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-30 15:48:27 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-30 15:48:27 +0530
+
+    FDC-788 :: added to change log
+
+
+:100644 100644 92c90d2847dcd31801f781f97977329b0cb5beef f97dd6250c693afa9541fe705303a9dc9050118c M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit c356a9789e7c88b2a444582f7bf0ef09e38914cd
+tree fecc59c1cfb65e9600782a3c522f40cdd341c1ea
+parent f843a52ccd73938a2821b810a0f6925ab75e5b04
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-30 15:44:48 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-30 15:44:48 +0530
+
+    FDC-788
+
+
+:000000 100644 0000000000000000000000000000000000000000 14515567e60e4856ffc5288eaeff44a6b65cc319 A	src/main/resources/db/changelog/2022-05-30_64-FDC_20220529.yaml
+:000000 100644 0000000000000000000000000000000000000000 fe6ee7fb7a857a9a11b0b242231924431ece8ddf A	src/main/resources/db/sql/FDC_20220529.sql
+commit f843a52ccd73938a2821b810a0f6925ab75e5b04
+tree 07048b3ab5d695d07b7f6c22a31a8334115e705c
+parent 337f221c047396d61b25b1d27dac63741199b137
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-26 13:05:32 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-26 14:09:54 +0530
+
+    FDC-745: Changes to SFTP file tracking schema
+
+
+:000000 100644 0000000000000000000000000000000000000000 f0010b5911aa14960129b103d5871399956f3c02 A	src/main/resources/db/changelog/2022-05-25-63-client-sftp-file-tracking-alterations.yaml
+:100644 100644 2658a425bbf0f8a75541bc9b4c244c2782e152b0 92c90d2847dcd31801f781f97977329b0cb5beef M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 4461a5ba5db6192412e64d8f4d54de72f9c303a8 A	src/main/resources/db/sql/fdc_client_sftp_file_tracking_alteration.sql
+commit 6a3ec254eec39a1f73d413264c9318cb6a0e00a1
+tree 4bffa2064817efb2b53b4ecdd7553c4919f3f2b0
+parent 7bca82233a1fa4fb32a103a420773d6d5ea0c717
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-23 12:57:39 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-25 11:56:32 +0530
+
+    FDC-745: Create tables for client sftp file tracking
+
+
+:000000 100644 0000000000000000000000000000000000000000 61e4f73943198ad98dbd9e5bb936a66fe633b9d1 A	src/main/resources/db/changelog/2022-05-23-62-client-sftp-file-tracking.yaml
+:100644 100644 93845ef3e8734ba4fd498d58868a3d558997ef66 7c0d304a00bae6bd18cd1bf630520d9965ec2336 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 7fe8ae6e7a79d44fcd065b6564387a413537121b A	src/main/resources/db/sql/fdc_client_sftp_file_tracking.sql
+commit c1344e3c01be4f033098c5aae3f3f29255cad971
+tree 1fa8ac897793802c4d71f8a4493f5b9d4078a8f6
+parent 6a04870208cb26b3960fc26f7f53e44455cfa180
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-19 17:07:38 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-19 17:07:38 +0530
+
+    pc_cust_attribute is_active type boolean tinyint
+
+
+:000000 100644 0000000000000000000000000000000000000000 df61e9579184bedea4bce2aaf68edff4944bd44a A	src/main/resources/db/changelog/2022-05-19-32-make-pc-custom-attribute-active.yaml
+:100644 100644 2b24fe8c54fa13f7b6c6fc51e82b2d1f6ec4a1df 0292c9ea84963c662a667649c0eca46bccab8ce6 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 977d100fa0199b02bc830136d4b5e7282081d8cc A	src/main/resources/db/sql/fdc_pccustomattr_isactive_enable.sql

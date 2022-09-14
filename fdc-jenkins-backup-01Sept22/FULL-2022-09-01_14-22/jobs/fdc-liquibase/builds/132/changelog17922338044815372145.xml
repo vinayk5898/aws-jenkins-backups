@@ -1,0 +1,63 @@
+commit 499c7ebd98296feac3d501ba3062921b5cc334af
+tree a18ec7697d536e6cae73d5874231bc9166b5ddde
+parent c2322552b46dde3d2626fbe52e2a865a562467d0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 12:51:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 12:51:54 +0530
+
+    FDC-768 :: corrected typo
+
+
+:100644 100644 82ca039aef54daf52a40294516b225f452b045d4 013024b78a8f78d4b184ea2db6ce4500faac88b7 M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit c2322552b46dde3d2626fbe52e2a865a562467d0
+tree ceea4768893834fa6d4e8a4af3c38b871af85d4e
+parent fe52e5429cf4d81f8a826e1cd9f4a7c537bc1cdf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 11:38:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 11:38:40 +0530
+
+    fdc-769 :: added configuration entries
+
+
+:100644 100644 4fe7fef5e4ea93db645337e0c303a68c738e85ee 82ca039aef54daf52a40294516b225f452b045d4 M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit fe52e5429cf4d81f8a826e1cd9f4a7c537bc1cdf
+tree 940e24ad31eaec74b591af68cdf61ccfc855cf3b
+parent 03c1c2e3fe4851b4a99ccc0c4cfdcb45dd02eb7c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 22:08:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 22:08:29 +0530
+
+    FDC-769 :: enhanced the script obey cut off time that changes delivery date to next day
+
+
+:100644 100644 dbcd4e27fb936c9583d7bbfc553fea8a9f36d8fa 4fe7fef5e4ea93db645337e0c303a68c738e85ee M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit 03c1c2e3fe4851b4a99ccc0c4cfdcb45dd02eb7c
+tree 798a08b05bd2559530e0288076320f3aae650b96
+parent 4c904921c742df00f499ed67a9952ee4a152116d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:05:48 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:05:48 +0530
+
+    fdc-769 :: changed schema name
+
+
+:100644 100644 e9c36265cecc68e02f3feb51efd0fe2772aa207a dbcd4e27fb936c9583d7bbfc553fea8a9f36d8fa M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit 4c904921c742df00f499ed67a9952ee4a152116d
+tree 506f0bad1affd1b77635f60b26d841c8947a5080
+parent 1bb4971e97beed38d3043b8cd0d322f87be388a5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:04:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 00:04:09 +0530
+
+    FDC-769 :: fixed change log issues
+
+
+:100644 100644 63c29200dac6fb375cd27ac9d23cee26ceeeb5f5 240224442742b1e488e3d4fc00501388fb3b9349 R096	src/main/resources/db/changelog/2022-06-01-72-fdc-769-ib-enhancement-changes.yaml	src/main/resources/db/changelog/2022-06-01-73-fdc-769-ib-enhancement-changes.yaml
+:100644 100644 3eeda7c80182269cb5e71f189223272459200b20 0330f99383d18c90f489fb02f51d7c5f18e0f69c M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 1bb4971e97beed38d3043b8cd0d322f87be388a5
+tree b05bbd44dbd31ab53e6ac58b8b22406213918338
+parent f843a52ccd73938a2821b810a0f6925ab75e5b04
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 23:45:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-01 23:45:23 +0530
+
+    FDC-769 :: changed default package type and ignoring milestone entry if it is sack
+
+
+:000000 100644 0000000000000000000000000000000000000000 63c29200dac6fb375cd27ac9d23cee26ceeeb5f5 A	src/main/resources/db/changelog/2022-06-01-72-fdc-769-ib-enhancement-changes.yaml
+:100644 100644 92c90d2847dcd31801f781f97977329b0cb5beef 3eeda7c80182269cb5e71f189223272459200b20 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 e9c36265cecc68e02f3feb51efd0fe2772aa207a A	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql

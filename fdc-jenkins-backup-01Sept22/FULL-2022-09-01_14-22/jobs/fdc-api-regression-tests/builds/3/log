@@ -1,0 +1,1015 @@
+Started by user [8mha:////4EEU3YRk+b1MmgfKrpZubC3gJQ0vOcBlRPM10GFI9jZ7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYe/dLi1CL9jKT8nJxEALsRv1DBAAAA[0mHari Bolla
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-api-regression-tests
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-api-regression-tests/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-backend-tests.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-backend-tests.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-backend-tests.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/fdc_setup^{commit} # timeout=10
+Checking out Revision d5d6ac787128859c80ffc443fed0a1b6902aa948 (refs/remotes/origin/feature/fdc_setup)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d5d6ac787128859c80ffc443fed0a1b6902aa948 # timeout=10
+Commit message: "Fixed the header issue"
+ > git rev-list --no-walk e542509652ed833a665bdc2060bc2707f6f490a5 # timeout=10
+[fdc-api-regression-tests] $ /bin/sh -xe /tmp/jenkins6132471163384253839.sh
++ mvn clean verify -P stage
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36morg.fdc:fdc-backend-tests[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding fdc-backend-tests 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/fdc-api-regression-tests/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/fdc-api-regression-tests/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:compile[m [1m(default-compile)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /var/jenkins_home/workspace/fdc-api-regression-tests/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 28 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:testCompile[m [1m(default-testCompile)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 19 source files to /var/jenkins_home/workspace/fdc-api-regression-tests/target/test-classes
+[[1;34mINFO[m] /var/jenkins_home/workspace/fdc-api-regression-tests/src/test/java/org/fdc/utils/GsonHelper.java: /var/jenkins_home/workspace/fdc-api-regression-tests/src/test/java/org/fdc/utils/GsonHelper.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /var/jenkins_home/workspace/fdc-api-regression-tests/src/test/java/org/fdc/utils/GsonHelper.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.fdc.[1mTestRunner[m
+Setting up the things....
+Using the Environment stage
+07:25:28.518 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': stage
+07:25:33.001 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:25:41.976 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:42.798 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 8: update_optimise_params_by_missing_required_filed_payload
+07:25:44.275 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"paramName":"max_cargo_volume","paramValue":5000}
+
+07:25:51.475 [main] DEBUG com.intuit.karate - response time in milliseconds: 7195
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:25:51 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 25
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ad4f4b13-e0bf-4087-87d8-469c890fa6e6
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoW5E59vHcFtLw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 368220d2-f06a-11ec-b08e-b5d1084c6814
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:51 GMT
+["Request is not valid."]
+07:25:51.514 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:51.538 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 12: update_optimise_params_with_unknown_pc_payload
+07:25:51.645 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 76
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":32552355,"paramName":"max_cargo_volume","paramValue":5000}
+
+07:25:52.461 [main] DEBUG com.intuit.karate - response time in milliseconds: 795
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:25:52 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 8d22cec0-c969-4e14-a585-57caf388bbf2
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoX_H9ZPHcFt6Q=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 36f5a2c3-f06a-11ec-b0c2-832a6c23d514
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:52 GMT
+["ParcelCenter or param does not exist"]
+07:25:52.477 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:52.489 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 16: update_optimise_params_with_unknown_param_name_payload
+07:25:52.519 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 66
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"unknown_param","paramValue":5000}
+
+07:25:52.682 [main] DEBUG com.intuit.karate - response time in milliseconds: 156
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:25:52 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 7a346273-d957-40b8-89dc-16b65903c7ca
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoYHGCovHcFxdQ=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3748cc33-f06a-11ec-b08e-894791f94410
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:52 GMT
+["ParcelCenter or param does not exist"]
+07:25:52.697 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:52.752 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 20: update_optimise_params_with_invalid_value_format_payload
+07:25:52.787 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"max_cargo_volume","paramValue":true}
+
+07:25:53.225 [main] DEBUG com.intuit.karate - response time in milliseconds: 413
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:25:53 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 38
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 91ea75e8-23f9-4184-a9c7-2fdc8d98637d
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoYLEecPHcFzDw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 378c6484-f06a-11ec-b0c2-3f82e43cd4cf
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:53 GMT
+["Invalid value for max_cargo_volume"]
+07:25:53.264 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:53.277 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 20: update_optimise_params_with_invalid_value_format_payload
+07:25:53.306 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"max_cargo_volume","paramValue":true}
+
+07:25:53.353 [main] DEBUG com.intuit.karate - response time in milliseconds: 44
+1 < 401
+1 < Date: Mon, 20 Jun 2022 07:25:53 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 26
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 6b00cd81-1f0e-4c64-94f4-bdd7a2a538d7
+1 < x-amzn-ErrorType: UnauthorizedException
+1 < x-amz-apigw-id: UAoYPF72vHcFlug=
+{"message":"Unauthorized"}
+07:25:53.367 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:53.383 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 24: update_optimise_param
+07:25:53.416 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"max_cargo_volume","paramValue":"5000"}
+
+07:25:53.541 [main] DEBUG com.intuit.karate - response time in milliseconds: 119
+1 < 200
+1 < Date: Mon, 20 Jun 2022 07:25:53 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 9f702020-b0a5-4945-b888-a504b2222705
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 0
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoYQHKfPHcFQjg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 37cdb3a4-f06a-11ec-b08e-318f450a7ebe
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:53 GMT
+
+07:25:53.627 [main] DEBUG com.intuit.karate - request:
+2 > GET https://api-stage.frontdoorcorp.net/fdc/optimise/param/2
+2 > Authorization: client 120
+2 > Host: api-stage.frontdoorcorp.net
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+07:25:53.808 [main] DEBUG com.intuit.karate - response time in milliseconds: 179
+2 < 200
+2 < Date: Mon, 20 Jun 2022 07:25:53 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 217
+2 < Connection: keep-alive
+2 < x-amzn-RequestId: 2488510a-9f1e-4489-a31b-125e08932742
+2 < X-XSS-Protection: 1; mode=block
+2 < X-Frame-Options: DENY
+2 < x-amzn-Remapped-Connection: keep-alive
+2 < x-amz-apigw-id: UAoYSHa9PHcFY4Q=
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expires: 0
+2 < X-Content-Type-Options: nosniff
+2 < correlation_id: 37f42705-f06a-11ec-b0c2-a73597f37172
+2 < Pragma: no-cache
+2 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:53 GMT
+{"max_cargo_volume":"5000","route_max_duration":"25200","route_time":"59400","parts":"200","max_tour_size":"150","vehicle_capacity":"200","round_trip":"TRUE","max_pieces_per_route":"200","manifest_cutoff_time":"0500"}
+07:25:53.861 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:53.878 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 24: update_optimise_param
+07:25:53.902 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"api_key","paramValue":"5000"}
+
+07:25:53.997 [main] DEBUG com.intuit.karate - response time in milliseconds: 93
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:25:53 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 41
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 1728f630-6190-4445-887d-d6bfd7b3daa9
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoYVFTDPHcFqMg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 38162e55-f06a-11ec-b08e-4355ada9e140
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:25:53 GMT
+["api_key is not allowed to be modified"]
+---------------------------------------------------------
+feature: classpath:org/fdc/tests/optimise_params_request_scenarios.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 11.0674
+---------------------------------------------------------
+
+07:25:57.622 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (0 remaining) classpath:org/fdc/tests/optimise_params_request_scenarios.feature
+07:25:57.641 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:25:58.643 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 10: create_shipment_without_package_payload
+07:26:01.128 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 432
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true}
+
+07:26:01.350 [main] DEBUG com.intuit.karate - response time in milliseconds: 219
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:26:01 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 21
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 211293b8-135e-4c4d-82ae-ce2ae631f460
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoZdFNpvHcFydg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3c66c3c8-f06a-11ec-b08e-5f43260f109f
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:01 GMT
+["must not be empty"]
+07:26:01.503 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:01.779 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 14: create_shipment_with_empty_packages_payload
+07:26:01.821 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 446
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[]}
+
+07:26:02.658 [main] DEBUG com.intuit.karate - response time in milliseconds: 837
+1 < 400
+1 < Date: Mon, 20 Jun 2022 07:26:02 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 21
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ddfb3b4c-949f-40e5-8240-9a0524d27b88
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoZkGwQPHcFp-Q=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3cfe6f88-f06a-11ec-b0c2-8d3c5221ba2a
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:02 GMT
+["must not be empty"]
+07:26:02.663 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:02.696 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 14: create_shipment_with_empty_packages_payload
+07:26:02.862 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 446
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[]}
+
+07:26:02.956 [main] DEBUG com.intuit.karate - response time in milliseconds: 92
+1 < 401
+1 < Date: Mon, 20 Jun 2022 07:26:02 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 26
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 2f822237-c8d8-4fea-959e-d86eb6cd5742
+1 < x-amzn-ErrorType: UnauthorizedException
+1 < x-amz-apigw-id: UAoZvHAbPHcFzvw=
+{"message":"Unauthorized"}
+07:26:03.187 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:03.194 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:03.219 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072603","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072603","customAttributes":{}}]}
+
+07:26:03.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 386
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:03 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 20052ca9-02f8-40ee-a009-f9f3212fde35
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoZyG56PHcF-tg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3da6bdd9-f06a-11ec-b08e-03b2dc1cfa21
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:03 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:03.606 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/shipment_request_scenarios.feature:43
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 386, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/tests/shipment_request_scenarios.feature:43
+---------------------------------------------------------
+feature: classpath:org/fdc/tests/shipment_request_scenarios.feature
+scenarios:  4 | passed:  3 | failed:  1 | time: 5.5444
+---------------------------------------------------------
+
+07:26:05.038 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (0 remaining) classpath:org/fdc/tests/shipment_request_scenarios.feature
+07:26:05.100 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:05.137 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:05.140 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:05.188 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:05.276 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072605","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072605","customAttributes":{}}]}
+
+07:26:06.049 [main] DEBUG com.intuit.karate - response time in milliseconds: 772
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:06 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 266277f4-d071-49c0-9f6d-d15f6eb341a2
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoaHGwkPHcFilg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3ee7c8f9-f06a-11ec-b0c2-a38ccd27252a
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:06 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:06.050 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 772, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:06.050 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 772, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:06.056 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:06.072 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:06.073 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:06.085 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:06.131 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072606","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072606","customAttributes":{}}]}
+
+07:26:06.655 [main] DEBUG com.intuit.karate - response time in milliseconds: 523
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:06 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 573bd1ba-1618-4d47-a0fb-fea370c96ab8
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoaPFPTPHcFv6A=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3f6bc60a-f06a-11ec-b0c2-19b14ccea811
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:06 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:06.658 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 523, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:06.659 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 523, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:06.665 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:06.669 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:06.670 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:06.682 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:06.695 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072606","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072606","customAttributes":{}}]}
+
+07:26:07.169 [main] DEBUG com.intuit.karate - response time in milliseconds: 471
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:07 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 4a392eb7-fe0d-4b18-a639-49543aeb2c76
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoaVEK8vHcFQrQ=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 3fbfd97b-f06a-11ec-b0c2-c5614e133d28
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:07 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:07.171 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 471, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:07.171 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 471, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:07.177 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:07.192 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:07.193 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:07.293 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:07.328 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072607","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072607","customAttributes":{}}]}
+
+07:26:07.817 [main] DEBUG com.intuit.karate - response time in milliseconds: 481
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:07 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 7082ac60-68f8-46aa-a40e-a682eb3fedb3
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoabF-lPHcF47g=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 40232f2d-f06a-11ec-b0c2-517508748e4d
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:07 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:07.821 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 481, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:07.823 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 481, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:07.829 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:07.838 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:07.840 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:07.862 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:07.887 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072607","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072607","customAttributes":{}}]}
+
+07:26:08.054 [main] DEBUG com.intuit.karate - response time in milliseconds: 167
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:08 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 839d99a8-a398-4d7d-a34f-3d8f95aa2059
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoahGKLPHcFuxA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 406cbbab-f06a-11ec-b08e-43313b1d77aa
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:08 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:08.059 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 167, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:08.061 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 167, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:08.067 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:08.075 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:08.076 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:08.085 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:08.125 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072608","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072608","customAttributes":{}}]}
+
+07:26:08.280 [main] DEBUG com.intuit.karate - response time in milliseconds: 141
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:08 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: e9a70f03-c959-4d08-99cc-3056a15312fc
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoajEApvHcFx3A=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 409181bc-f06a-11ec-b08e-e7cab23dbad0
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:08 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:08.283 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 141, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:08.285 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 141, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:08.292 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:08.297 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:08.299 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:08.308 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:08.322 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072608","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072608","customAttributes":{}}]}
+
+07:26:11.531 [main] DEBUG com.intuit.karate - response time in milliseconds: 3203
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:11 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 8d6bfe94-c97f-4046-ac57-115e43256275
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAoalH8sPHcFVRg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 427dc15e-f06a-11ec-b08e-31138cca2c07
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:11 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:11.538 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 3203, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:11.539 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 3203, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:11.564 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:11.610 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:11.611 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:11.628 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:11.687 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072611","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072611","customAttributes":{}}]}
+
+07:26:11.872 [main] DEBUG com.intuit.karate - response time in milliseconds: 181
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:11 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: cb3513b5-6025-4ce2-8300-81f6f2581e66
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAobHFEJvHcFeCw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 42b5e85f-f06a-11ec-b08e-c3a7fa8e0908
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:11 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:11.873 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 181, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:11.878 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 181, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+07:26:11.881 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+07:26:11.911 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+07:26:11.912 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+07:26:11.924 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+07:26:11.999 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220620072611","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220620072611","customAttributes":{}}]}
+
+07:26:12.760 [main] DEBUG com.intuit.karate - response time in milliseconds: 761
+1 < 500
+1 < Date: Mon, 20 Jun 2022 07:26:12 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 160
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 31702dbf-b194-4cad-a2fd-ce7405b28d36
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 160
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UAobMFkCvHcFtuw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 4302cf7f-f06a-11ec-b0c2-b9645705826e
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 20 Jun 2022 07:26:12 GMT
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+07:26:12.761 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 761, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+07:26:12.761 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+status code was: 500, expected: 200, response time in milliseconds: 761, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+---------------------------------------------------------
+feature: classpath:org/fdc/tests/milestone_request_scenarios.feature
+scenarios:  9 | passed:  0 | failed:  9 | time: 7.5360
+---------------------------------------------------------
+
+07:26:13.900 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:org/fdc/tests/milestone_request_scenarios.feature
+07:26:13.912 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+Karate version: 1.1.0
+======================================================
+elapsed:  45.46 | threads:    1 | thread time: 24.15 
+features:     3 | skipped:    0 | efficiency: 0.53
+scenarios:   20 | passed:    10 | failed: 10
+======================================================
+>>> failed features:
+status code was: 500, expected: 200, response time in milliseconds: 772, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 523, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 471, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 481, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 167, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 141, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 3203, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 181, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 761, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/common/shipmentHelper.feature:11
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+status code was: 500, expected: 200, response time in milliseconds: 386, url: https://api-stage.frontdoorcorp.net/fdc/shipment, response: 
+could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+classpath:org/fdc/tests/shipment_request_scenarios.feature:43
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.1.0
+file:///var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/karate-summary.html
+===================================================================
+
+Total Feature => 3
+Total Scenarios => 20
+Passed Scenarios => 10
+Jun 20, 2022 7:26:15 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/org.fdc.tests.shipment_request_scenarios.json' contains 1 features
+Jun 20, 2022 7:26:15 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/org.fdc.tests.milestone_request_scenarios.json' contains 1 features
+Jun 20, 2022 7:26:15 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/org.fdc.tests.optimise_params_request_scenarios.json' contains 1 features
+Tearing down the things....
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 51.226 s[1;31m <<< FAILURE![m - in org.fdc.[1mTestRunner[m
+[[1;31mERROR[m] executeKarateTest  Time elapsed: 51.13 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: There are Some Failed Scenarios  ==> expected: <0> but was: <10>
+	at org.fdc.TestRunner.executeKarateTest(TestRunner.java:55)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  TestRunner.executeKarateTest:55 There are Some Failed Scenarios  ==> expected: <0> but was: <10>[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:28 min
+[[1;34mINFO[m] Finished at: 2022-06-20T07:26:20Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.2:test[m [1m(default-test)[m on project [36mfdc-backend-tests[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /var/jenkins_home/workspace/fdc-api-regression-tests/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Execute shell' marked build as failure
+[CucumberReport] Using Cucumber Reports version 5.6.1
+[CucumberReport] JSON report directory is ""
+[CucumberReport] Copied 3 properties files from workspace "/var/jenkins_home/workspace/fdc-api-regression-tests" to reports directory "/var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache"
+[CucumberReport] Copied 17 files from workspace "/var/jenkins_home/workspace/fdc-api-regression-tests" to reports directory "/var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache"
+[CucumberReport] Processing 17 json files:
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/common/update_optimise_params_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/orders/create_orders_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/orders/remove_orders_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/routes/route_optimization_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/shipment/create_shipment_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/shipment/create_shipment_with_multiple_packages_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/src/test/java/org/fdc/payloads/resources/shipment/update_shipment_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/karate-reports/org.fdc.tests.milestone_request_scenarios.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/karate-reports/org.fdc.tests.optimise_params_request_scenarios.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/karate-reports/org.fdc.tests.shipment_request_scenarios.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/common/update_optimise_params_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/orders/create_orders_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/orders/remove_orders_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/routes/route_optimization_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/shipment/create_shipment_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/shipment/create_shipment_with_multiple_packages_restTemplate.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/3/cucumber-html-reports/.cache/target/test-classes/org/fdc/payloads/resources/shipment/update_shipment_restTemplate.json
+[CucumberReport] Missing report result - report was not successfully completed
+[CucumberReport] Build status is left unchanged
+Finished: FAILURE

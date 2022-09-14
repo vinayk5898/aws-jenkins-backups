@@ -1,0 +1,10 @@
+commit bd30c1511e1558542be45e3d4600053ed487b46d
+tree 9e5fcce1aa333bb15ab9e0302627bcb41d9af624
+parent dcb130c05a4a53cb818e842486b298f95997b517
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:08:42 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-25 18:08:42 +0530
+
+    FDC-746 :: changed view name
+
+
+:100644 100644 59599ab0e392eaa9adc24ebeb53e6b05c99ee57f 12c0b95754a05e8eb161210bd71eb6294dd129f1 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

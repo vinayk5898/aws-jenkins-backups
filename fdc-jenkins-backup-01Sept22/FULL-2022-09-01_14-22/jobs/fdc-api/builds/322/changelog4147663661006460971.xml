@@ -1,0 +1,10 @@
+commit ec2ace1e41df3bfa4f999059153cb488232c2041
+tree b6564cc8ae2df27cd8acaed51cb4ab5a3c824a01
+parent 73b8606a417ed7877c1354987dce25415126e1ff
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-01 08:52:16 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-01 08:52:16 +0530
+
+    ITMF-60 : swap lat,long to long,lat.
+
+
+:100644 100644 bdc188cd57645ee2e51926fbf71f80a7aba639d1 6ad7c8af2000a2b2b38c7960f9ea796968b4a97b M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java

@@ -1,0 +1,46 @@
+commit 12abe4db8579d0e30b11d2544e6bec5b7d26317a
+tree 4a6e41935464efc438cec55cafa04fe980b1ebd0
+parent b190980ee9a25cfe85ca21f40f3bc5772d80c07d
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-04-07 16:28:39 +0530
+committer GitHub <noreply@github.com> 2022-04-07 16:28:39 +0530
+
+    Update fdc-svc-auth-dev-parameter.json
+
+:100644 100644 1188d791c2149c2ef0c6ce49b857fe7b85e7a9c9 ab77c78a8261344f2febee7458917e5e9b9f0b13 M	fdc-svc-auth-dev-parameter.json
+commit b190980ee9a25cfe85ca21f40f3bc5772d80c07d
+tree a8c93e9a32ba4f8ea39c3c01daa57c902fb0c924
+parent c6ddbd06c0dc5866eecfb45225234fd97f792009
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-04-07 16:28:24 +0530
+committer GitHub <noreply@github.com> 2022-04-07 16:28:24 +0530
+
+    Update fdc-svc-auth.yml
+
+:100644 100644 4a6cda84df6249cc0fde87080420354e5d3c65bb 1375b35931beae54d6c1c33738837ac6e2feb050 M	fdc-svc-auth.yml
+commit c6ddbd06c0dc5866eecfb45225234fd97f792009
+tree b57a76f9bfa8509b8888d6f1cad8c86023714fb4
+parent c9296b0cc161ce28e1732ad9420b295a5d7d8055
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-04-07 15:58:21 +0530
+committer GitHub <noreply@github.com> 2022-04-07 15:58:21 +0530
+
+    Update fdc-svc-auth.yml
+
+:100644 100644 8d2eef85e48a8b949248e536dbf3f886aa4f81f4 4a6cda84df6249cc0fde87080420354e5d3c65bb M	fdc-svc-auth.yml
+commit c9296b0cc161ce28e1732ad9420b295a5d7d8055
+tree ca63f8e591c91bc6310d07ed295458ba1ee73d7f
+parent 076ecd905ae40cd5b022eb3d85ab11cbc2acb8b6
+author mlingaladinne-altir <92972792+mlingaladinne-altir@users.noreply.github.com> 2022-04-07 15:56:27 +0530
+committer GitHub <noreply@github.com> 2022-04-07 15:56:27 +0530
+
+    Update fdc-svc-auth-dev-parameter.json
+
+:100644 100644 5a15204f9aa6c7a6ed15f109ccc81f70028d5945 1188d791c2149c2ef0c6ce49b857fe7b85e7a9c9 M	fdc-svc-auth-dev-parameter.json
+commit 67951e434203fc126845c276e7fa60c61625fe86
+tree 996bcb8236256915d04dde280019916dc11a3ff0
+parent 8f6c052b5e6301f0e0abffe4c464884acdfb84ab
+author Srinath Samudrala <srinath9939@gmail.com> 2022-04-07 13:53:39 +0530
+committer Srinath Samudrala <srinath9939@gmail.com> 2022-04-07 13:53:39 +0530
+
+    api pattern update :: removed api word from the path
+
+
+:100644 100644 279ef3c8ac8a4b7282e5a161274c6c23bd1e4f30 426c258c98c426a82640a9726d6bc7de57540692 M	src/main/java/com/fdc/authenticationserver/util/AppConstants.java

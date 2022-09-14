@@ -1,0 +1,11 @@
+commit 60044e4bfe5d0ec5b8e4bf88f02985f1b3b2eec2
+tree 7fe97af0595471df6cd0ce340e10fc25fc999b8b
+parent 0ec29c68d1e6b95738957e1e08619b46dc824bf2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 18:03:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 18:03:45 +0530
+
+    FDC-156 :: added view
+
+
+:100644 100644 cdaf0d81af678506b50dad2588d6d7dddd33b5ab b1e44f84e4b833fa87674700c4ed2e252b645e3f M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:000000 100644 0000000000000000000000000000000000000000 8fe663874158c062dda5ee42aaff7567abee7d70 A	src/main/resources/db/sql/v_get_client_invoice.sql

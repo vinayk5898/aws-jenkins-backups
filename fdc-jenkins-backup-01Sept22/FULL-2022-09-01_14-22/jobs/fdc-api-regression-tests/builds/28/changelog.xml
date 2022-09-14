@@ -1,0 +1,28 @@
+commit f955b09b4cf17ade580d2d8d02bf52a2fcedba14
+tree 188f12ad0be975011704fe2948afbc540cdd6c94
+parent 790e19daca508ee694b7883cbd645e3a958e2a67
+author RealName:Hari <hbolla@altir.co> 2022-08-08 17:17:48 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-08 17:17:48 +0530
+
+    Stabilised regression tests
+
+
+:100644 100644 0215e4e1af301c414b115d2ae6a4ba3d473c204b 8482f3e47d098412273491ba17c9b883fce3ff90 M	src/test/java/karate-config.js
+:100644 100644 085ebe6d26896164c66533fe96e95398edbd7459 1841a76079c17846884c92ead87b7ac787527c41 M	src/test/java/org/fdc/TestRunner.java
+:100644 100644 c1879beb935983647c5390348280a8c787ed9751 826f74fc097a2a6dff83ded6c77337f8182f73ff R099	src/test/java/org/fdc/tests/edi_211_Scenarios.feature	src/test/java/org/fdc/tests/edi_inbound_outbound_scenarios.feature
+:100644 100644 55c4bcdf28da282be6716d2a87c4bb0ab568b463 98dff46f53534e9af2ec04d60f6bd0e48d450c12 M	src/test/java/org/fdc/tests/milestone_request_scenarios.feature
+:100644 100644 625a5f349615dd60c22e6ec1366f22995b0321e4 9fc173912001d81451390e89adcfb72e7ffa5175 R097	src/test/java/org/fdc/tests/orders_scenarios.feature	src/test/java/org/fdc/tests/orders_crud_scenarios.feature
+:100644 100644 9fecc4264345232eaace02b74f1010dc5aa2a1d2 ea701b4ea2526417b814f42824705fb7d2bd8f6a R062	src/test/java/org/fdc/tests/routes_scenarios_failskip_flow.feature	src/test/java/org/fdc/tests/route_failskip_flow_scenarios.feature
+:100644 100644 9f9024b4b0be3fd0db8dc48aac8a4c2e80dc71e1 b87101c0740ea56f89f2623078734a4e7345b51f M	src/test/java/org/fdc/tests/route_optimization_scenarios.feature
+:100644 100644 1de035f77e59f4e1ef6f6194b179d418d0e92aa0 73890aa917250dc1bd7bd2e811ff819cc7070dc6 R080	src/test/java/org/fdc/tests/routes_scenarios.feature	src/test/java/org/fdc/tests/route_success_flow_scenarios.feature
+:100644 100644 efe481b32435f71dff11b18ab865981524540fa3 405d8074b69ec74486958629e8000590fbb5ed6c M	src/test/resources/develop.properties
+commit 790e19daca508ee694b7883cbd645e3a958e2a67
+tree 672c17df66e75242b2abfc6fda8c0126767ba8e2
+parent c19fe7be3be44f2c80c357551bf5db97ebcb82f5
+author RealName:Hari <hbolla@altir.co> 2022-08-05 12:13:25 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-05 12:13:25 +0530
+
+    Added inbound status end point
+
+
+:100644 100644 f56271eab566163e6219460f8b13e7bfeb37f88f 0215e4e1af301c414b115d2ae6a4ba3d473c204b M	src/test/java/karate-config.js

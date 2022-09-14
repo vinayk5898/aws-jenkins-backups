@@ -1,0 +1,70 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc_package_status_testing
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No emails were triggered.
+[fdc_package_status_testing] $ /bin/sh -xe /tmp/jenkins3630402357121356317.sh
++ docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=temp-admin --password=******** --database=fdc --execute=SELECT replace(et.REPORTING_STATUS , ' ','_') AS Status,
+    SUM(IF(p.parcel_center_id = 13,1,0)) AS 'Boston', SUM(IF(p.parcel_center_id = 3,1,0)) AS 'Houston', SUM(IF(p.parcel_center_id = 2,1,0)) AS 'Philadelphia', SUM(IF(p.parcel_center_id = 8,1,0)) AS 'Pittsburgh', COUNT(*) AS 'TOTAL'
+FROM fdc.package p LEFT JOIN fdc_report.v_event_type et ON p.status = et.name
+WHERE (DATE(delivery_date) = DATE(NOW()))
+GROUP BY et.REPORTING_STATUS
+ORDER BY FIELD(et.REPORTING_STATUS,
+'Manifest Received',
+'Arrived at Facility',
+'Not Arrived at Facility',
+'Departed from Origin',
+'Package Routed',
+'Sorted',
+'Loaded on Truck',
+'Removed from Route',
+'Out for Delivery',
+'Delivered',
+'Delivered by 3rd Party',
+'Returned to Station',
+'Cancelled Max Attempts Reached',
+'Cancelled by Shipper',
+'Returned to Client'
+
+'CON EXC: Damaged on Route',
+'CON EXC: Delivery Not Attempted',
+'CON EXC: Driver did not Pick up Package',
+'CON EXC: Unable to Access Address',
+'CON EXC: Unable to Deliver',
+'CON EXC: Unable to Locate Address',
+
+'UNC EXC: Address Not Found',
+'UNC EXC: Bad Address',
+'UNC EXC: Business Closed',
+'UNC EXC: Conditions not Safe for Delivery',
+'UNC EXC: Customer Moved',
+'UNC EXC: Customer Refused',
+'UNC EXC: Holiday',
+'UNC EXC: Late Delivery Attempt',
+'UNC EXC: No Access Granted from Security',
+'UNC EXC: No Secure Location',
+'UNC EXC: No Signature Acquired',
+'UNC EXC: Received Damaged Package',
+'UNC EXC: Resident not in'
+), et.id
+;
+Got error: Access denied for user 'root'@'10.10.0.71' (using password: NO)
++ echo ##########################
+##########################
++ cat status.txt
+Status	Boston	Houston	Philadelphia	Pittsburgh	TOTAL
+Returned_to_Station	0	0	14	0	14
++ cat status.txt
++ column -t
++ echo ##########################
+##########################
++ docker ps -a -f status=exited -q
++ docker rm 40447257675f
+40447257675f
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: hourlyreports@frontdoorcorp.com vishnu.manchala@frontdoorcorp.com nitish.kumar@frontdoorcorp.com vinay.kumar@frontdoorcorp.com cpat@frontdoorcorp.com
+Finished: SUCCESS

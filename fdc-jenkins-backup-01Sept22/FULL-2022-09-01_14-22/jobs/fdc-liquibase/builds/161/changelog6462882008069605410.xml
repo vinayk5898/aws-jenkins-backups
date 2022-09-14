@@ -1,0 +1,17 @@
+commit df1a12c40eb99c2cc2180375164af25db984c91b
+tree fb3606aeaf6b7e2552c508be37e3f413ab0286fd
+parent d79f206ae24a13c848314a5ab84eb157ca85eee8
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-07-01 15:06:48 +0530
+committer GitHub <noreply@github.com> 2022-07-01 15:06:48 +0530
+
+    Feature/fdc 942 (#41)
+    
+    * FDC-942: new fields in package, shipment table as per EDI 211 shipment API changes
+    
+    * FDC-942: ext_pkg_number made string as per EDI fields, insert PCS, PLT pkg_type lookup
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 0801991039b754196cd18d4a270b1a1e308a6a1b A	src/main/resources/db/changelog/2022-06-29-37_shipment_pkg_tab_newfields_211.yaml
+:100644 100644 f495ed59c89675c1382cfb2822427485a704a2b9 0154901c02f0c1ce5d6213f79dd358e7d3f60378 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 b7ca8df8fd81c8f7d449c797f4834269d45b6100 A	src/main/resources/db/sql/fdc_pkg_shipment_table_newfields.sql

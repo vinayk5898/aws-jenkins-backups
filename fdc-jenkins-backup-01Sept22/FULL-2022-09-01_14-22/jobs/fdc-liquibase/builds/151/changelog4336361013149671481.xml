@@ -1,0 +1,13 @@
+commit c52cafbf669e1c186c426014cb55ed6bc237f645
+tree 230a39c4fb2147518a4be25a57062b77ac6d2235
+parent b43d99b8f6ed439246916104a7cd853080331721
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-06-22 16:31:47 +0530
+committer GitHub <noreply@github.com> 2022-06-22 16:31:47 +0530
+
+    FDC-885: Create table client_sftp_mapping (#31)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 2c5283448ffdf5e9d1be0e4bfd74cd5a2584c382 A	src/main/resources/db/changelog/2022-06-16-65-create-table-client-sftp-mapping.yaml
+:100644 100644 ddab71f29cc513a128db0539ea0aefc241918d64 c64435058cd735c4aee438dc6b6a934175e65b4d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 440953bd20faf6bc7a5eb7183aef38a0fc1583f8 A	src/main/resources/db/sql/fdc_client_sftp_mapping_table.sql

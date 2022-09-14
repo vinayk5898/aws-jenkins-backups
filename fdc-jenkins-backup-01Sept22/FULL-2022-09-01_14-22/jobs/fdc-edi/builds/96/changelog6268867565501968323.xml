@@ -1,0 +1,22 @@
+commit 3cef8cd6a6e4b6d129bf9156c61b10d4d028425b
+tree 75f5a31cff59e653270160edc70382313d48d7e3
+parent 5d40a2546e34afeb079a4e0224f60128711ffe8c
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-24 16:13:40 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-24 16:13:40 +0530
+
+    auth service url change for GCP testing
+
+
+:100644 100644 80ec5ffa2f55cef7fec791dc1568c01793de825f de8b0699bfc7cc966532f130ce33886fa73c2877 M	src/main/resources/application-dev.yml
+:100644 100644 a9d8a45edc71d815eacdd171cc9cf33004bdde32 d0a48cac6df6b97dfb214c3ff71f80789185737b M	src/main/resources/application.yml
+commit 5d40a2546e34afeb079a4e0224f60128711ffe8c
+tree 62201be2b2d3b09053eaa9cca86d5fdf652d3f4f
+parent b8fdece1d2fcf3f2addebcdc6f9fff6b1c3b8e84
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 20:09:32 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-08-23 20:09:32 +0530
+
+    fix some changes
+
+
+:100644 100644 8c35845aa56222b082d0fee725439d2b3b345f81 6bde7f262f84cfc4f6c6902eef823edd1d6a8ee8 M	src/main/resources/application-local.yml
+:100644 100644 1637405f33cc138e0eabb4ce8e7fac8802e855a4 a9d8a45edc71d815eacdd171cc9cf33004bdde32 M	src/main/resources/application.yml

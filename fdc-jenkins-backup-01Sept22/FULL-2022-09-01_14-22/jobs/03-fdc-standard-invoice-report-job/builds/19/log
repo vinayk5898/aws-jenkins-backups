@@ -1,0 +1,37 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/03-fdc-standard-invoice-report-job
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/03-fdc-standard-invoice-report-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/ITMF-10-1^{commit} # timeout=10
+Checking out Revision 34c5b473e3de3b57325b9fee9c594941c54e2096 (refs/remotes/origin/feature/ITMF-10-1)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 34c5b473e3de3b57325b9fee9c594941c54e2096 # timeout=10
+Commit message: "feature/ITMF-10-1"
+First time build. Skipping changelog.
+[03-fdc-standard-invoice-report-job] $ /bin/sh -xe /tmp/jenkins5218444365295150304.sh
++ cd python_scripts
++ [ dev = dev ]
++ python3 Generic_Client_Invoice.py 121
+Sunday 2022-07-31
+Saturday 2022-08-06
+insert into fdc.client_invoice ( PackageTrackingId,package_id,
+client_invoice_number,Facility,ContainerTrackingId,PackageLengthInches,PackageHeightInches, 
+PackageWidthInches,PackageWeightLb,PackageArrivalDate,PackageVolumeCuFt,ChargeWeight,invoice_date,
+created_on,package_arrival_date,client_id,invoice_status,package_type_id ) select DISTINCT PackageTrackingId, package_id,
+invoice_number, Facility, ContainerTrackingId, PackageLengthInches, PackageHeightInches,
+PackageWidthInches,PackageWeightLb, PackageArrivalDate, PackageVolumeCuFt, ChargeWeight, 
+InvoiceDate, created_date, arrival_date, client_id , temp_status, package_type_id from fdc.v_get_client_invoice where client_id = 121 and date(arrival_date) between '2022-07-31' and '2022-08-06'
+No of invoices generated :  2400
+started generating invoice files 
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

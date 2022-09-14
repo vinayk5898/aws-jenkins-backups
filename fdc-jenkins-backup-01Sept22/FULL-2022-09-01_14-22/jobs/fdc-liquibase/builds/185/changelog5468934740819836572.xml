@@ -1,0 +1,81 @@
+commit b38ecfd077e3e954a39b112440778c580d9610a5
+tree 3fcae34544bb07031e161b21a567744f1725e47f
+parent 723c4e69a7f87ebf8b6f0c2344e99384d0278cdc
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-07-22 18:56:29 +0530
+committer GitHub <noreply@github.com> 2022-07-22 18:56:29 +0530
+
+    FDC-1020: Add column in fdc_adapter.sftp_file for retry count and create table shedlock (#64)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 6e892ef4aa82b1b371fe8fa394736c8768ce12fb A	src/main/resources/db/changelog/220720_adapter_retry.yaml
+:100644 100644 7576c88fa8449287ef24f343b34c2e723bae5359 6151911b9a3a239c774a28b7a53a12451f28597d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 4e6a5d0e51db2ca959a1bca5b9aeb5ecd6916e69 A	src/main/resources/db/sql/220722_fdc_adapter_create_table_shedlock.sql
+commit 7c2ef3973163bb7f269c737896894d8fd8894633
+tree 4950e68dbe8b1e60fd10f89f1a40714cc3e28ee8
+parent 2a4caa39ed1526c06e5c778a6a3a22872fda67ed
+author Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-20 17:25:36 +0300
+committer Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-20 17:25:36 +0300
+
+    FDC-1017 Create liquibase script to setup the parcel center to cloud sort map
+
+
+:100644 100644 d09266931ea021ca5ef5b4635dc7370597dba02a 26b8eb92a418053d230b2b630abe01241e8e279a M	src/main/resources/db/changelog/220706_cloud-sort_integration_insert_data_to_middle_mile_facility.yaml
+:100644 100644 3fbafd65f74148579b8068127ded441fe754e052 3e32ba129e72ceac682f3d3d8e21f6c80868bcbb M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 2a4caa39ed1526c06e5c778a6a3a22872fda67ed
+tree 64f62a752d508652e2d0bf1b3ebe09e6bae735f6
+parent 777b79a7a5edb2e5213d6f4e5a32af888b9604b7
+author Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-20 16:01:31 +0300
+committer Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-20 16:01:31 +0300
+
+    FDC-1017 Create liquibase script to setup the parcel center to cloud sort map
+
+
+:100644 100644 602c214c68c5d66fa073f1b46e145bbd06fcd18e d09266931ea021ca5ef5b4635dc7370597dba02a M	src/main/resources/db/changelog/220706_cloud-sort_integration_insert_data_to_middle_mile_facility.yaml
+commit b1c6a8099b3688a66c4429315949e3467ade16bb
+tree c8e6eef307ae31cf069ae594efc87b0b804edff9
+parent f03dfad185c66b47bc07c4ba82c49a192b590eaf
+author Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-20 15:58:01 +0300
+committer Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-20 15:58:01 +0300
+
+    FDC-1017 Create liquibase script to setup the parcel center to cloud sort map
+
+
+:000000 100644 0000000000000000000000000000000000000000 602c214c68c5d66fa073f1b46e145bbd06fcd18e A	src/main/resources/db/changelog/220706_cloud-sort_integration_insert_data_to_middle_mile_facility.yaml
+:100644 100644 807893a5efb7dc1f4d49981ea6e5a08305e7f93a a29ecf266b52800942a17c186cd2748d0dbe5346 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 638e7ca4675e6abc9add795978c2f1b6c84ab3b8 A	src/main/resources/db/sql/fdc_insert_data_to_middel_mile_facility.sql
+commit 27ddff0500f44ba38f0094a10a4021660cf9d730
+tree baf680371f0350872c7e796e309500ac4da87fa6
+parent f03dfad185c66b47bc07c4ba82c49a192b590eaf
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-07-20 14:56:22 +0530
+committer GitHub <noreply@github.com> 2022-07-20 14:56:22 +0530
+
+    fix duplicate edi 214 status codes (#63)
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 e08711a97fedd2b5088a8e3d76552ecbbc42e8dd A	src/main/resources/db/changelog/220719_edi214_middlemile_status_fix.yaml
+:100644 100644 807893a5efb7dc1f4d49981ea6e5a08305e7f93a b0f461a82602d01c491b2bbfec2026895b05baaf M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 4ae565c0748ac9a4cbddc70968d5aa5a18e66e4f A	src/main/resources/db/sql/fdc_dell_edi214_middlemile_statusfix.sql
+commit b0854b7a525e4c711864a125020dab78146c296f
+tree 86c997ffe6128aaa18d6f4b7f5347242584dc709
+parent 6bef794386c7ad554cdb3321f4a951c441a09c5e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 23:26:28 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 23:26:28 +0530
+
+    FDC-995
+
+
+:100644 100644 e28f995070bbb248476868669a9aa6220d2b60b0 324f3cd7e8d0800b3675ac0d5842eacc7b8dd801 M	src/main/resources/db/sql/fdc-add-new-field-in-pandion-manifest.sql
+commit 4bc9e1a9f561704b356647b72730ef3959004664
+tree 9bbc7382d1af8797913cb30b37c2669f9962408d
+parent c4baa581f066a2e504629898c81ad490b0d4b67f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-15 01:19:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-15 01:19:41 +0530
+
+    FDC-968 :: add signature required field from pandion manifest
+
+
+:000000 100644 0000000000000000000000000000000000000000 5cfbbf0fcdf25e46f752c4c926dc0a5100c53aff A	src/main/resources/db/changelog/2022-07-15_92-add-new-field-in-pandion-manifest.yaml
+:100644 100644 7b29a29498b3cdf9b5c587e7ddc8d80d8ae7ed21 f794b2c3ae9e5ed10ab132cd6b67dd3b9cce8474 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 e28f995070bbb248476868669a9aa6220d2b60b0 A	src/main/resources/db/sql/fdc-add-new-field-in-pandion-manifest.sql

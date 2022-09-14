@@ -1,0 +1,10 @@
+commit 73b8606a417ed7877c1354987dce25415126e1ff
+tree f2aacb70a582f6e260c53d27ef4ecc6260cf4724
+parent 91240eb1e80262c1a9f14ebb0dccfbfbf3a62225
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-31 19:50:27 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-31 19:50:27 +0530
+
+    updated exception to log , for handling other events fetched in the event
+
+
+:100644 100644 930fdf911b4777399d5c1389313b3f7e24cea7db bdc188cd57645ee2e51926fbf71f80a7aba639d1 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java

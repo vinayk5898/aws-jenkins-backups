@@ -1,0 +1,20 @@
+commit c787f74041b6b67a7a96cc2bccf58dd090bd667b
+tree b520e13629b317e3558aa089a767f8b5fcdf2320
+parent 76b6710fd110dc8f24bbf08dfe1c18f64119730b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 14:38:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 14:38:31 +0530
+
+    FDC-758 :: removed id field from insert
+
+
+:100644 100644 9b03e76c7ef468b9c8c60a4eb3ec66aefc3bd68e b5932dbe03028e19fd3df9b9edca91465991d099 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql
+commit 76b6710fd110dc8f24bbf08dfe1c18f64119730b
+tree b6f8a607392e8c054d53e2eb4278f137d60acf5f
+parent 3b23a42f19ba8657ee460368a3e032e31c78f9ab
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 14:25:35 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-09 14:25:35 +0530
+
+    fdc-758 :: fixed missing field
+
+
+:100644 100644 768c102f109ea26fccbf51369ad221d588cea7b3 9b03e76c7ef468b9c8c60a4eb3ec66aefc3bd68e M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql

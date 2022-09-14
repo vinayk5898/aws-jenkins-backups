@@ -1,0 +1,17 @@
+commit 34c5b473e3de3b57325b9fee9c594941c54e2096
+tree b9fa946a083e176a74d1e439ed72cb341b202630
+parent 07b5176139dd10db0898c68c1df9ae4fa7b0cc13
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-12 03:02:17 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-12 03:02:17 +0530
+
+    feature/ITMF-10-1
+    
+    modified logic for all invoice file generation should be in one file.
+
+
+:100644 100644 45188fc646a62c2e0ece01f6f44ea4c7637a9074 c7acf5c3e106f1a8dc5a88fe23abd3c41118676d M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 be3a6cd22fb2a11ba92a26811eae9018aa5ab859 ae3f3505fb84d4b6c23af62c01c9f41a7c514d76 M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 328fac0111176bdf5b915a718ed81ae8b5e3c919 90f0e03fbdd9444adda4050b48c5083977d1432c M	python_scripts/Generic_Client_Invoice_stage.py
+:100644 100644 b590c156832b16ed75b08d8005ac5eebc18244c6 cb10d90c0e833fe78de052035fee203d80ced8e7 M	python_scripts/get_dell_invoice_custom_report_generation.py
+:100644 100644 e2073182cfdd4ea3c150fa2ff684451cb5018e80 1965c1c1f102c5012bd29d276ac12212716d2085 M	python_scripts/get_dell_invoice_custom_report_generation_prod.py
+:100644 100644 b9796e6ac2cf817abda4e6e206bdf3b77b2aaa5f 0d1525acfa31d6d0db133c872cc56c3e3dd268fe M	python_scripts/get_dell_invoice_custom_report_generation_stage.py

@@ -1,0 +1,10 @@
+commit 7bc7ebf2ef09841c6890cc1d16c4123a5a16eab7
+tree f5eb2792185c0431927135844e871d7eb37e4214
+parent 1aae0f0c6c773d273ab36fcd2998bc887fb2d29c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-07 11:42:33 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-07 11:42:33 +0530
+
+    FDC-346T :: corrected typo
+
+
+:100644 100644 9d57f3494484d44172fa5e8968e048916edb5340 9d57f3494484d44172fa5e8968e048916edb5340 R100	src/main/resources/db/changelog/2022-04-07-345-fdc-etl-client-configuration-details.sql.yaml	src/main/resources/db/changelog/2022-04-07-345-fdc-etl-client-configuration-details.yaml

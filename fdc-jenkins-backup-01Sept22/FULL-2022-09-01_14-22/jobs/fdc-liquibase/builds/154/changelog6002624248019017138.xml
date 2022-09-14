@@ -1,0 +1,11 @@
+commit da52001ef5b57065ae44c7a7950c1b369eee9901
+tree ab38695e88c9b91c39f358e7d3e049c5e4b638e3
+parent 257b7b85ae76c141131e43767571928cce5a2d24
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:17:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:17:23 +0530
+
+    FDC-758:: updated new changes
+
+
+:100644 100644 f142709c447f490e08291b78fdcddad3111de28a fe36d6b3b081dfb7f37ffa3ed9b2e4cd851674fa M	src/main/resources/db/changelog/2022-06-08-74-standard-manifest-dml-changes.yaml
+:100644 100644 ec56e97553d2881caf7c1c68db895d7e07e5cfda 3015f7d1e04bd9b18a278d3238354ed7d2a0eda6 M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql

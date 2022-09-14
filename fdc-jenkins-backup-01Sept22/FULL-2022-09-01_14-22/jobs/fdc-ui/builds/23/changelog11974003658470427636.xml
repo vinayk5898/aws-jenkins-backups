@@ -1,0 +1,99 @@
+commit a952f43c0fa60d30f56bf99ae61270a6cb8b77bc
+tree f80d3c3855d5e3ce029ae4733d73024a7cecb6fb
+parent e392b9c1a4cf68d8a4c9c7b26099c3c77f5875c8
+author Denis Subach <dsubach@altir.co> 2022-06-08 10:30:18 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-08 10:30:18 +0300
+
+    refactor: rename route
+
+
+:100644 100644 9cddaeddfecad14f6d67c904969aa9b0fbc0d0ae 77880d792fb57482846e4011684d2954970c2c61 M	src/configs/routes/landing-routes.ts
+commit e392b9c1a4cf68d8a4c9c7b26099c3c77f5875c8
+tree 5caa866cdb7021911412cf42f7c6095f9fcb0a5d
+parent ded1bb19f1df2ccaf694b68419471e71b1ca8e0b
+author Denis Subach <dsubach@altir.co> 2022-06-08 10:04:50 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-08 10:04:50 +0300
+
+    refactor: fix PR issues
+
+
+:100644 100644 49bc8ecd84ad2391b82d10731e35156a246f6b46 97a9a7d07226cc3256f0fb32c82e5697ed30f868 M	src/components/searchBar/SearchBar.tsx
+:000000 100644 0000000000000000000000000000000000000000 14ec03c4bf52cfb226e85f2dff40a77f03512bf8 A	src/components/searchBar/types.ts
+:100644 100644 aedd6010acf23ebf30fc770b252f734d9d71e3ae 9cddaeddfecad14f6d67c904969aa9b0fbc0d0ae M	src/configs/routes/landing-routes.ts
+:100644 100644 559e1125c4a812313c758e31aaf1736b459d0cbf ebe09499cacbaad4a184502beeeeb3a71d04fb4b M	src/hooks/useSearch.tsx
+commit ded1bb19f1df2ccaf694b68419471e71b1ca8e0b
+tree 852c8e29f648fd070101278abbde448440305b8a
+parent 041bcfe2f048b6458daab0deee1cc4022edbe65d
+author Denis Subach <dsubach@altir.co> 2022-06-07 17:34:38 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-07 17:34:38 +0300
+
+    feat: implement TrackShipment page
+
+
+:100644 100644 83d7e488285e99e894ba8c359571e2bf80677b59 9aa9b04730631b40a59cf43267945b406317c49b M	src/components/landingImage/LandingImage.tsx
+:100644 100644 b67b2502dfb2ae1aad267b78043283890ce85579 49bc8ecd84ad2391b82d10731e35156a246f6b46 M	src/components/searchBar/SearchBar.tsx
+:100644 100644 497681594b24a2ba0fc0763300ad6952d5c9b6fe aedd6010acf23ebf30fc770b252f734d9d71e3ae M	src/configs/routes/landing-routes.ts
+:000000 100644 0000000000000000000000000000000000000000 559e1125c4a812313c758e31aaf1736b459d0cbf A	src/hooks/useSearch.tsx
+:100644 100644 39c1512d4eb1498456170ad10539e952eb855665 2e7862e68a1687d28a477d63df8556e2a24d20da M	src/pages/Landing/Tracking/Details/Details.tsx
+:000000 100644 0000000000000000000000000000000000000000 a475e8b516bfc17b2c0a7045f1b07508d33c9694 A	src/pages/Landing/Tracking/Shipment/Shipment.styles.ts
+:000000 100644 0000000000000000000000000000000000000000 5cebf9d6f8834f96d2adbf801fafc435d957414d A	src/pages/Landing/Tracking/Shipment/Shipment.tsx
+:100644 100644 ea0b6290c0082ef615fd18aa912e04a8169b3a0b 0d6fb90b3469d226c9d2fe177bdce91dc468a620 M	src/pages/Landing/Welcome/Navigation/Navigation.tsx
+:100644 100644 4dc73ce2bb749b9e7c65d929b2a1608f7071f282 70af16e9d95b89567db6247c88cb27cca87666e4 M	src/routes/LandingRoutes.tsx
+commit 041bcfe2f048b6458daab0deee1cc4022edbe65d
+tree b894bff1cf44ddd527eb32ca5e2005232ac284f6
+parent 8fef86583cd69d255525570171628daa20f62661
+author Denis Subach <dsubach@altir.co> 2022-06-07 17:28:25 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-07 17:28:25 +0300
+
+    feat: add button component
+
+
+:000000 100644 0000000000000000000000000000000000000000 f86ae6abb4348c4a4a7b44aa6c84a73511dd5921 A	src/shared/button/Button.tsx
+commit 8fef86583cd69d255525570171628daa20f62661
+tree 2af298ffa9a41ef377613fc78930fc5803e07615
+parent 74168bc3448162f96f3e9b53f7dac17724dd06ef
+author Denis Subach <dsubach@altir.co> 2022-06-07 17:27:51 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-07 17:27:51 +0300
+
+    feat: add translations
+
+
+:100644 100644 34ce1ca4db793602ef525ec793a157e86609ac99 41451ad514425059077953114be83c334aecce5d M	public/locales/en/translation.json
+commit 74168bc3448162f96f3e9b53f7dac17724dd06ef
+tree 31cb6bc59b02ae63a2589a16abe6fe1d79d79528
+parent 044ae59403c9a5645bb14c357524c2327089d809
+author Denis Subach <dsubach@altir.co> 2022-06-07 17:27:38 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-07 17:27:38 +0300
+
+    feat: add dependency
+
+
+:100644 100644 e1e48db3071bcfc200c57c44efd3907cc5788a11 582163b49953d77f01eb05353355beb87deeb3fd M	package.json
+:100644 100644 dbbfca43fc7f9e5d53d10e6c5c16802baa76503e b52960441bd3ab4687491d2d8f41596a8e215abb M	yarn.lock
+commit 044ae59403c9a5645bb14c357524c2327089d809
+tree f73c37635eb1f65f5ea65d598f49bca1842db8bc
+parent 126c30fa1b512b3655879677001064eaa5c37bbe
+author Denis Subach <dsubach@altir.co> 2022-06-07 17:27:13 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-07 17:27:13 +0300
+
+    feat: update eslint rule
+
+
+:100644 100644 ae3ab8268ed12310cd79fdfc3676307e9ec08f17 7e0ad0759b56cb78ef4554f27422f5a44f256fa3 M	.eslintrc.js
+commit 126c30fa1b512b3655879677001064eaa5c37bbe
+tree 917df9b89f47ed7c90e72eb9b86d51b7cd2470e3
+parent feca1f51864cc62870b4c67c5471206ac0a9608e
+author Denis Subach <dsubach@altir.co> 2022-06-07 17:26:42 +0300
+committer Denis Subach <dsubach@altir.co> 2022-06-07 17:26:42 +0300
+
+    feat: add new colors
+
+
+:100644 100644 1c8185db78f8d67ab7dff399ba80a6be301357f2 d21c91a850fea814754b7d0ed2e935af3701ff7f M	src/components/header/Header.styles.ts
+:100644 100644 d88f98de582ac1b21953b917182fd3447ddba275 6bea4ee5d56332c6727fcef51585833c801f05d3 M	src/components/searchBar/SearchBar.styles.ts
+:100644 100644 ca5092491c8ad4703f72e2f9a36445ce48a39e42 e0adc06b6060cca5c72b6f5ab72868a86378177e M	src/components/stepper/ActivityTimeline/ActivityTimeline.styles.ts
+:100644 100644 38051751ffacb4a8f52d86fa28fe82386e8cd52a 5cf7755241652a25f721eaf043077821e9eb52b2 M	src/components/stepper/StatusLine/StatusLine.styles.ts
+:100644 100644 681acef71745770bb8277de22465b742e16b130f a2e4303940e67f37bb2b4ca3eb1c49b5197c12fd M	src/components/stepper/StatusLine/StatusLine.tsx
+:100644 100644 3e3ac823d4bf1ae209ef2065204c5860557d13ff c222c4cc432a7d462c19ea1cadec2432bad2b647 M	src/pages/Landing/Welcome/Welcome.styles.ts
+:100644 100644 daa395fbbb530e5471564dc06e6e9262aa50a5f4 638b8ff926213df6d2ce0abbc5a3967634c5b5d9 M	src/theme/colors.ts
+:100644 100644 65f3cda41ea575b2e79ea48f2141eeadaa3e2e42 59469ec6bdad444fd17c3bc3bbd65ca2edfbe7d3 M	src/theme/index.ts

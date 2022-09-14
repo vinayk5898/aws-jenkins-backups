@@ -1,0 +1,28 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-pandion-manifest-prod-new-job
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-pandion-manifest-prod-new-job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision dd498da96771b26497d4d3f2af930dd3c781ea08 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+Commit message: "Merge pull request #12 from The-Frontdoor-Collective/feature/ITMF-28"
+ > git rev-list --no-walk dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+[fdc-pandion-manifest-prod-new-job] $ /bin/sh -xe /tmp/jenkins17638387690379824057.sh
++ cd python_scripts
++ python3 standard_client_manifest_prod.py 121
+Connection successfully established ... 
+No csv files detected
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Triggering a new build of [8mha:////4BIpVAhI7SvjAR5qsOcv0CYa5JQaoXm1sym5z3qmrDnoAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZt/az8JP20lGTdgqL8FBSObm5iXmZaanGJbmJOalFJsT4Av3l2nOAAAAA=[0mfdc-prod ? fdc-prod-manifest-alerts
+Finished: SUCCESS

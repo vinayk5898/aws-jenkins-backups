@@ -1,0 +1,23 @@
+commit 6dcae119d275f9e3ab4126e30f0fb76de22d81d2
+tree 820b28993e886c00f5fe08df16905f30e57c88af
+parent 8eff265400acb0381b2d1f52c2c56f6c6e20dca0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-17 21:34:37 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-17 21:34:37 +0530
+
+    FDC-424:: added missing script
+
+
+:000000 100644 0000000000000000000000000000000000000000 f305f8c95557c38418f1e015f3e6e8f3c704f9bc A	src/main/resources/db/changelog/2022-03-17-32-pitney-bowes-data-model-changes-2.yaml
+:100644 100644 6e3100f661ad2cc91689840c914ba96dca78b0ab 0e8c4e05b5b3fb2ad2fd625a7be601d94f4018e6 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 8eff265400acb0381b2d1f52c2c56f6c6e20dca0
+tree bee2d6ca1ae0877b8f29b52b989a55f5e3efd63e
+parent cf310552499aa9a4288b7358bcf6e0e16e207e29
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-17 20:14:37 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-17 20:14:37 +0530
+
+    FDC-424:: added trigger
+
+
+:000000 100644 0000000000000000000000000000000000000000 c449a877e3f032358f741b5761e1e20c004c5384 A	src/main/resources/db/changelog/2022-03-17-31-fdc-client-location-updated-on-trigger.yaml
+:100644 100644 eb88ba685603692757668b5f002861cb8d4acaef 6e3100f661ad2cc91689840c914ba96dca78b0ab M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 7969c139acc9d6d97eefad6ee44da41c72b1fa13 A	src/main/resources/db/sql/fdc_client_location_updated_on_trigger.sql

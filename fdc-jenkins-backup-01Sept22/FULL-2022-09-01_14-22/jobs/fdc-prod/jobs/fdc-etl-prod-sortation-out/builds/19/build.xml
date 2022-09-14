@@ -1,0 +1,382 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>releaseVersion</name>
+          <description>You can use &apos;latest&apos;, job will append build_number and timestamp to it, eg: latest-&lt;build number&gt;-&lt;time_stamp&gt;
+Or
+you can use any image version other than &apos;latest&apos;, but it should be unique, so that it&apos;ll run on specified version, eg; 2021.12.17.1, latest-41-2021-12-16_06-18-25 etc</description>
+          <value>latest</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>fdcenv</name>
+          <description>Choose the environment you want to deploy to.</description>
+          <value>prod</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Git_Branch</name>
+          <description>Please mention required git branch
+Eg: develop
+       release/xxxx.xx.xx
+mlingaladinne-altir-patch-1</description>
+          <value>develop</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>PENTAHO_HOME</name>
+          <value>/opt/pentaho</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>kjb_script</name>
+          <value>Sortation_Out.kjb</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>releaseVersion</string>
+        <string>fdcenv</string>
+        <string>Git_Branch</string>
+        <string>PENTAHO_HOME</string>
+        <string>kjb_script</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ssanka</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.10.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/develop</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>2159597ea05944ea48f3cce8b7cd38702395bd3f</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/develop</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>19</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/altirllc/fdc-etl.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/altirllc/fdc-etl.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@548.v9085a486966a">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.3">
+      <stagesUUID>c871d9c6-eb73-4346-96ab-616762019134</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.3">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Building docker image</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if (releaseVersion == &apos;latest&apos;) {
+                            dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+                        } else {
+                            dockerTag = &quot;${params.releaseVersion}&quot;
+                        }
+                  sh &apos;sed -i &quot;s/fdcenv/${fdcenv}/&quot; ${WORKSPACE}/Dockerfile&apos;
+                  sh &apos;cat Dockerfile&apos;
+                  dockerImage = docker.build(&quot;837587249384.dkr.ecr.us-west-2.amazonaws.com/$imagename&quot;,&quot;--build-arg STRIPE_KEY=abc -f Dockerfile .&quot;)</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Publishing docker Image</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">docker.withRegistry(ecrurl, ecrcredentials) {     
+                     dockerImage.push(dockerTag)
+
+                  }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Deploying stack in ${fdcenv} environment</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if (fdcenv == &apos;dev&apos;) {
+                            sshagent(credentials : [&apos;aws-etl-ssh&apos;])  {
+                                sh &apos;&apos;&apos;
+                                    echo &quot;Docker image: ${dockerTag}&quot;
+                                    ssh -tt ec2-user@10.1.7.82 -o StrictHostKeyChecking=no &quot;docker login -u AWS -p $(aws ecr get-login-password --region us-west-2) 837587249384.dkr.ecr.us-west-2.amazonaws.com &amp;&amp; docker pull 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} &amp;&amp; docker run -d -e /bin/sh 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} sh -c &apos;$PENTAHO_HOME/data-integration/kitchen.sh -file:&quot;${PENTAHO_HOME}/scripts/${kjb_script}&quot;&apos; &amp;&amp; docker ps&quot;
+                                &apos;&apos;&apos;
+                            }
+                     } else if (fdcenv == &apos;prod&apos;) {
+                            sshagent(credentials : [&apos;aws-etl-prod-ssh&apos;])  {
+                                sh &apos;&apos;&apos;
+                                    echo &quot;Docker image: ${dockerTag}&quot;
+                                    ssh -tt ec2-user@10.5.0.71 -o StrictHostKeyChecking=no &quot;docker login -u AWS -p $(aws ecr get-login-password --region us-west-2) 837587249384.dkr.ecr.us-west-2.amazonaws.com &amp;&amp; docker pull 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} &amp;&amp; docker run -d -e /bin/sh 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} sh -c &apos;$PENTAHO_HOME/data-integration/kitchen.sh -file:&quot;${PENTAHO_HOME}/scripts/${kjb_script}&quot;&apos; &amp;&amp; docker ps&quot;
+                                &apos;&apos;&apos;
+                            }
+                     } else {
+                            sh &apos;echo &quot;Please run this build only for DEV or PROD envs&quot;&apos;
+                            sh &apos;exit 1&apos;
+                     }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>c871d9c6-eb73-4346-96ab-616762019134</uuid>
+          </stages>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>imagename</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">fdc-etl</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>ecrurl</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">https://837587249384.dkr.ecr.us-west-2.amazonaws.com</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>ecrcredentials</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">ecr:us-west-2:aws-credentials</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>dockerTag</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                  <value class="string">&quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2633.v6baeedc13805">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.6.1">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+  </actions>
+  <queueId>1305</queueId>
+  <timestamp>1645415129686</timestamp>
+  <startTime>1645415129727</startTime>
+  <result>SUCCESS</result>
+  <duration>20056</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    environment {
+        imagename = &quot;fdc-etl&quot;
+        ecrurl = &quot;https://837587249384.dkr.ecr.us-west-2.amazonaws.com&quot;
+        ecrcredentials = &quot;ecr:us-west-2:aws-credentials&quot;
+        dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+    } 
+    agent any
+    stages {
+        stage(&apos;Building docker image&apos;) {
+            steps{
+                script {
+                  if (releaseVersion == &apos;latest&apos;) {
+                            dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+                        } else {
+                            dockerTag = &quot;${params.releaseVersion}&quot;
+                        }
+                  sh &apos;sed -i &quot;s/fdcenv/${fdcenv}/&quot; ${WORKSPACE}/Dockerfile&apos;
+                  sh &apos;cat Dockerfile&apos;
+                  dockerImage = docker.build(&quot;837587249384.dkr.ecr.us-west-2.amazonaws.com/$imagename&quot;,&quot;--build-arg STRIPE_KEY=abc -f Dockerfile .&quot;)
+                }
+            }
+        }
+        stage(&apos;Publishing docker Image&apos;) {
+            steps{
+                script {
+                  docker.withRegistry(ecrurl, ecrcredentials) {     
+                     dockerImage.push(dockerTag)
+
+                  }
+                }
+            }
+        }
+        stage(&apos;Deploying stack in ${fdcenv} environment&apos;) {
+            steps {
+                script {
+                    if (fdcenv == &apos;dev&apos;) {
+                            sshagent(credentials : [&apos;aws-etl-ssh&apos;])  {
+                                sh &apos;&apos;&apos;
+                                    echo &quot;Docker image: ${dockerTag}&quot;
+                                    ssh -tt ec2-user@10.1.7.82 -o StrictHostKeyChecking=no &quot;docker login -u AWS -p $(aws ecr get-login-password --region us-west-2) 837587249384.dkr.ecr.us-west-2.amazonaws.com &amp;&amp; docker pull 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} &amp;&amp; docker run -d -e /bin/sh 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} sh -c &apos;$PENTAHO_HOME/data-integration/kitchen.sh -file:&quot;${PENTAHO_HOME}/scripts/${kjb_script}&quot;&apos; &amp;&amp; docker ps&quot;
+                                &apos;&apos;&apos;
+                            }
+                     } else if (fdcenv == &apos;prod&apos;) {
+                            sshagent(credentials : [&apos;aws-etl-prod-ssh&apos;])  {
+                                sh &apos;&apos;&apos;
+                                    echo &quot;Docker image: ${dockerTag}&quot;
+                                    ssh -tt ec2-user@10.5.0.71 -o StrictHostKeyChecking=no &quot;docker login -u AWS -p $(aws ecr get-login-password --region us-west-2) 837587249384.dkr.ecr.us-west-2.amazonaws.com &amp;&amp; docker pull 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} &amp;&amp; docker run -d -e /bin/sh 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:${dockerTag} sh -c &apos;$PENTAHO_HOME/data-integration/kitchen.sh -file:&quot;${PENTAHO_HOME}/scripts/${kjb_script}&quot;&apos; &amp;&amp; docker ps&quot;
+                                &apos;&apos;&apos;
+                            }
+                     } else {
+                            sh &apos;echo &quot;Please run this build only for DEV or PROD envs&quot;&apos;
+                            sh &apos;exit 1&apos;
+                     }
+                }
+            }
+    
+        }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>2853828412</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>196738792</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>6810472676</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>43241948</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1325628149</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>65</iota>
+    <head>1:65</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.10.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/altirllc/fdc-etl.git</url>
+            <credentialsId>fdaf6255-c33e-4004-b386-2d20682fd879</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>${Git_Branch}</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-sortation-out@script</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-sortation-out</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

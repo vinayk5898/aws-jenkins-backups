@@ -1,0 +1,50 @@
+commit 153d2e7e1af6a669207da23c541a5e72a58bfa52
+tree 637afd27c13b34da01f84ab418c6356422674acb
+parent cd794d7df8e4172063f446edde8919afcad50410
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:48:00 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:48:00 +0530
+
+    added one more email
+
+
+:100644 100644 243106ac1754e13741b0b768765bd27e03e6c97a af7dff7f9db3bb563cbd7f3ae3d7f4197fe8eacd M	python_scripts/Pandion_invoice_report_prod.py
+:100644 100644 84753c3a0f5c7bc78acdad004caa35083f39e5b7 c6f9cb69a89b972f2b0090769f9b113e62e6db4d M	python_scripts/Pandion_invoice_report_stage.py
+commit cd794d7df8e4172063f446edde8919afcad50410
+tree a9cd82be4b1a8cb7deec0460075fe889be75f34a
+parent 697fce754c1a69da0d78c294978d0e91d46d760d
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:32:35 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-18 18:32:35 +0530
+
+    updated altir mails to fdc mail
+
+
+:100644 100644 c7acf5c3e106f1a8dc5a88fe23abd3c41118676d 4aa4b3f20c2bf256cd43964134fc1f171c4d2179 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 ae3f3505fb84d4b6c23af62c01c9f41a7c514d76 fa9f27f8181412249272f65b85b96d54a3aaa691 M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 90f0e03fbdd9444adda4050b48c5083977d1432c cc17b107e80a9b817bedffeb182a8db51d880254 M	python_scripts/Generic_Client_Invoice_stage.py
+:100644 100644 6da3ea1cfab21ce4d937ea9c4f43950157fbdace f67d83042c77d9fa5ba9198e108d835553a7df78 M	python_scripts/Pandion_invoice_report.py
+:100644 100644 1c22038cd9b8394d7957bab7e1e3d6db5ce479c2 243106ac1754e13741b0b768765bd27e03e6c97a M	python_scripts/Pandion_invoice_report_prod.py
+:100644 100644 6005b760f324e1124c113ba05cb71d5207c4e9b6 84753c3a0f5c7bc78acdad004caa35083f39e5b7 M	python_scripts/Pandion_invoice_report_stage.py
+commit 6ca34548a19f3973893c852a4ada01e18cbd0221
+tree 6bafb260e10e5525b2a9d159908bf2e4102a75d9
+parent 07b5176139dd10db0898c68c1df9ae4fa7b0cc13
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:10:56 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:16:17 +0530
+
+    validations removed for 'filename'
+
+
+:100644 100644 aabb798fc2f507391979a5785f40fcae580c5c46 7bec042ed0832ff666ebaa128b21d8b074ea8ae9 M	python_scripts/standard_client_manifest.py
+:100644 100644 2af6a9bd31959fdfc66459f0d5dd5c9d42ae1d9a 22144126222463ac6cdeab5c60cb3b6b0280045d M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 f5337e03c0cbc9ee38ad08ac74d3f4a7ce514aa6 8225cb37bbc2ee7edaa6a89a3fbe4cbe5c00b1b4 M	python_scripts/standard_client_manifest_stage.py
+commit 38923debe6cfc2dfaf9c762c5719c9fb70fd59c4
+tree 4c9f8fe5efe45d4203b9bf71ec55ea370739ca2a
+parent 512fa42d87c12b261b29b9d2ce002cfd2d5f239b
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:10:56 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-08-09 13:10:56 +0530
+
+    validations removed for 'filename'
+
+
+:100644 100644 aabb798fc2f507391979a5785f40fcae580c5c46 7bec042ed0832ff666ebaa128b21d8b074ea8ae9 M	python_scripts/standard_client_manifest.py
+:100644 100644 2af6a9bd31959fdfc66459f0d5dd5c9d42ae1d9a 22144126222463ac6cdeab5c60cb3b6b0280045d M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 f5337e03c0cbc9ee38ad08ac74d3f4a7ce514aa6 8225cb37bbc2ee7edaa6a89a3fbe4cbe5c00b1b4 M	python_scripts/standard_client_manifest_stage.py

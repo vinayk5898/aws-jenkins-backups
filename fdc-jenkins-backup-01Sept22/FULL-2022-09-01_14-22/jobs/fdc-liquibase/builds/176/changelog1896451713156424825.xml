@@ -1,0 +1,45 @@
+commit 2cf5983097710b4be2846d2b6da6ec51a7ebea33
+tree 77de8ecac2a9813107af4b063db0b2b25b351d1c
+parent 7352e4b97025b21c16683a34e3703fb55db6a5d7
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-07-15 13:19:44 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-07-18 13:09:32 +0530
+
+    FDC-833: Add table to have connections among SFTP files in adapter
+
+
+:000000 100644 0000000000000000000000000000000000000000 d17df61a0c81fd0e0eb9c8a6f43f4215eb047f2b A	src/main/resources/db/changelog/220714_edi_adapter_sftp_file_connection.yaml
+:100644 100644 c4f69b936619daaf5ed9425b6c76a45c37518750 d71df0c4c0635a53575c300bcda54e9ca3470515 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 c06b0ec333bec5e777467cb270d8ac9fc3abaae5 A	src/main/resources/db/sql/220714_create_tbl_sftp_file_connection.sql
+commit cfce5a0e8bfbcde7bc0b705d7824b0e11dfb7c92
+tree 30b55e7dc48aa32327b253038612a7e927d44e05
+parent d05f2d4f3d2f9d5069eaed38283b77f37f44a3e6
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-07-18 13:00:19 +0530
+committer GitHub <noreply@github.com> 2022-07-18 13:00:19 +0530
+
+    Feature/fdc 979 (#54)
+    
+    * FDC-979: table to store edi control numbers per client
+    
+    * FDC-979: table for client level control #
+    
+    * FDC-979: insert dell edi 214 status reason codes
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 ee856e67b78686d2e3eb28fea45871bf53109fe4 A	src/main/resources/db/changelog/2022-07-15-41-edi-control-nums-tab.yaml
+:000000 100644 0000000000000000000000000000000000000000 4c097a173e706a3c96111ac323751585ccbffcba A	src/main/resources/db/changelog/2022-07-15-42-edi-214-status-reasoncodes.yaml
+:100644 100644 d54042ae7091cddd43b3499f58522ae888e817fe 47e1013ac587eb266555771ea117067002e1cd90 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 95c361742fa92319678ab324e4bff3cf670be6f4 A	src/main/resources/db/sql/insert_edi_status_reason_codes_dell.sql
+commit 231360d4e0d8e6c0d5f5a3a5ad748422db9d1257
+tree 40395ed8b2d2191b50e926ab54b7ef9ab3ce0d20
+parent c4baa581f066a2e504629898c81ad490b0d4b67f
+author Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-15 17:07:15 +0300
+committer Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-15 17:07:15 +0300
+
+    FDC-975: Estimate the arrival and delivery date for Dell Packages
+
+
+:000000 100644 0000000000000000000000000000000000000000 946fe538c27dbb54051fc2ac1335c38294e3f87c A	src/main/resources/db/changelog/2207014_cloudsort_dispatched_event_handling.yaml
+:100644 100644 7b29a29498b3cdf9b5c587e7ddc8d80d8ae7ed21 487b9646f22767c4344cd0a8be8051ae67892549 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 b736e0bc074fbed2d31fc82c69b5e489ddca004e A	src/main/resources/db/sql/fdc_create_transit_time_table.sql
+:000000 100644 0000000000000000000000000000000000000000 f68cd35dde5c08c2e19f3008b512460c9f27b239 A	src/main/resources/db/sql/insert-cloudsort-event-type-values-v2.sql

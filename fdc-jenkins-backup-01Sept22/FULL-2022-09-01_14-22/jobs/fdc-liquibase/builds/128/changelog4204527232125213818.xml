@@ -1,0 +1,20 @@
+commit c2322552b46dde3d2626fbe52e2a865a562467d0
+tree ceea4768893834fa6d4e8a4af3c38b871af85d4e
+parent fe52e5429cf4d81f8a826e1cd9f4a7c537bc1cdf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 11:38:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 11:38:40 +0530
+
+    fdc-769 :: added configuration entries
+
+
+:100644 100644 4fe7fef5e4ea93db645337e0c303a68c738e85ee 82ca039aef54daf52a40294516b225f452b045d4 M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql
+commit fe52e5429cf4d81f8a826e1cd9f4a7c537bc1cdf
+tree 940e24ad31eaec74b591af68cdf61ccfc855cf3b
+parent 03c1c2e3fe4851b4a99ccc0c4cfdcb45dd02eb7c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 22:08:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-02 22:08:29 +0530
+
+    FDC-769 :: enhanced the script obey cut off time that changes delivery date to next day
+
+
+:100644 100644 dbcd4e27fb936c9583d7bbfc553fea8a9f36d8fa 4fe7fef5e4ea93db645337e0c303a68c738e85ee M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql

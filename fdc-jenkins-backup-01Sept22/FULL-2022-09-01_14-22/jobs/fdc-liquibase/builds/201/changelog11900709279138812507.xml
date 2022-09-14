@@ -1,0 +1,10 @@
+commit 4d67c72a1cbdb772116b0ab3a34a8219a2d90380
+tree 8b3d9e5f549c2593b2fbc3d5c954264083b8ac1d
+parent 9c94db90a2f9aed1f2d62ad38536b7cebe18d404
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 16:30:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-27 16:30:09 +0530
+
+    FDC-1030 fixed invoice table fields list
+
+
+:100644 100644 312a3d07d8c80c6cceb195489a8280929faf9e75 1e97930c60fa11cd48f9279124911b1e7dfe9d6e M	src/main/resources/db/changelog/2022-07-26-Pandion-Standard-Invoice-Configuration.yaml

@@ -1,0 +1,408 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>releaseVersion</name>
+          <description>Eg: 2021.xx.xx</description>
+          <value>2022.06.01.0</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>fdcenv</name>
+          <description>Choose the environment you want to deploy.</description>
+          <value>stage</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Git_Branch</name>
+          <description>Please mention required git branch and it should be release branch
+Eg: release/xxxx.xx.xx</description>
+          <value>release/2022.06.01</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>releaseVersion</string>
+        <string>fdcenv</string>
+        <string>Git_Branch</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>mlingaladinne</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@548.v9085a486966a">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.3">
+      <stagesUUID>50176f62-5384-4317-9dd5-1e5036639050</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.3">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Git checkout</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>git</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>branch</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">${Git_Branch}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>credentialsId</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">fdaf6255-c33e-4004-b386-2d20682fd879</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>url</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">https://github.com/altirllc/fdc-authentication-service.git/</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Updating Parameter File</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">
+                      ImageTag=$(grep -A1 &quot;ImageTag&quot; ${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json | tail -1 | cut -d &quot;:&quot; -f2 | cut -d &quot;\&quot;&quot; -f2)
+                      if [ $releaseVersion = &quot;latest&quot; ]
+                      then
+                       sed -i &quot;s/$ImageTag/${dockerTag}/&quot; ${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json
+                      else
+                       sed -i &quot;s/$ImageTag/${releaseVersion}/&quot; ${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json
+                      fi
+                      </value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Deploying stack in ${fdcenv} environment</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if (fdcenv == &apos;stage&apos;) {
+                               withAWS(roleAccount:&apos;579576404934&apos;, role:&apos;AllowAltirJenkins&apos;) {
+                                    sh &apos;cat fdc-svc-auth-${fdcenv}-parameter.json&apos;
+                                    sh &apos;aws cloudformation update-stack --stack-name fdc-svc-auth-${fdcenv} --region us-west-2 --template-body file://${WORKSPACE}/fdc-svc-auth.yml --parameters file://${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json --capabilities &quot;CAPABILITY_IAM&quot; &quot;CAPABILITY_NAMED_IAM&quot;&apos;
+                                    sh &apos;aws cloudformation wait stack-update-complete --stack-name fdc-svc-auth-${fdcenv} --region us-west-2&apos;
+                               }
+                    } else if (fdcenv == &apos;prod&apos;) {
+                               withAWS(roleAccount:&apos;923567406269&apos;, role:&apos;AllowAltirJenkins&apos;) {
+                                    sh &apos;cat fdc-svc-auth-${fdcenv}-parameter.json&apos;
+                                    sh &apos;aws cloudformation update-stack --stack-name fdc-svc-auth-${fdcenv} --region us-west-2 --template-body file://${WORKSPACE}/fdc-svc-auth.yml --parameters file://${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json --capabilities &quot;CAPABILITY_IAM&quot; &quot;CAPABILITY_NAMED_IAM&quot;&apos;
+                                    sh &apos;aws cloudformation wait stack-update-complete --stack-name fdc-svc-auth-${fdcenv} --region us-west-2&apos;
+                               }
+                    } else {
+                                    sh &apos;echo &quot;Please run this build only for STAGE or PROD envs&quot;&apos;
+                                    sh &apos;exit 1&apos;
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>50176f62-5384-4317-9dd5-1e5036639050</uuid>
+          </stages>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>imagename</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">fdc-auth</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>ecrurl</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">https://837587249384.dkr.ecr.us-west-2.amazonaws.com</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>ecrcredentials</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">ecr:us-west-2:aws-credentials</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>dockerTag</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                  <value class="string">&quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2633.v6baeedc13805">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@4.10.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/release/2022.04.30</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>cfff3ad04d9c919b5f4df52e61bef021a41bb11f</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/release/2022.04.30</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/release/2022.06.01</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>7819bfd3e1e98c8efe9256e1c24701c8eb2f86c3</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/release/2022.06.01</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>7</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/release/2022.05.23</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>d4e34016bfb9e9637f9d27f55095db10cf739c09</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/release/2022.05.23</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry[2]/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/altirllc/fdc-authentication-service.git/</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/altirllc/fdc-authentication-service.git/</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>17244</queueId>
+  <timestamp>1653872303667</timestamp>
+  <startTime>1653872303693</startTime>
+  <result>SUCCESS</result>
+  <duration>134008</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    environment {
+        imagename = &quot;fdc-auth&quot;
+        ecrurl = &quot;https://837587249384.dkr.ecr.us-west-2.amazonaws.com&quot;
+        ecrcredentials = &quot;ecr:us-west-2:aws-credentials&quot;
+        dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+    } 
+    agent any
+    stages {
+        stage(&apos;Git checkout&apos;) {
+            steps {
+                git branch: &apos;${Git_Branch}&apos;, credentialsId: &apos;fdaf6255-c33e-4004-b386-2d20682fd879&apos;, url: &apos;https://github.com/altirllc/fdc-authentication-service.git/&apos;
+            }
+        }
+        stage (&apos;Updating Parameter File&apos;) {
+            steps {
+                sh &apos;&apos;&apos;
+                      ImageTag=$(grep -A1 &quot;ImageTag&quot; ${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json | tail -1 | cut -d &quot;:&quot; -f2 | cut -d &quot;\\&quot;&quot; -f2)
+                      if [ $releaseVersion = &quot;latest&quot; ]
+                      then
+                       sed -i &quot;s/$ImageTag/${dockerTag}/&quot; ${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json
+                      else
+                       sed -i &quot;s/$ImageTag/${releaseVersion}/&quot; ${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json
+                      fi
+                      &apos;&apos;&apos;
+            }
+        } 
+          stage(&apos;Deploying stack in ${fdcenv} environment&apos;) {
+            steps {
+                script {
+                    if (fdcenv == &apos;stage&apos;) {
+                               withAWS(roleAccount:&apos;579576404934&apos;, role:&apos;AllowAltirJenkins&apos;) {
+                                    sh &apos;cat fdc-svc-auth-${fdcenv}-parameter.json&apos;
+                                    sh &apos;aws cloudformation update-stack --stack-name fdc-svc-auth-${fdcenv} --region us-west-2 --template-body file://${WORKSPACE}/fdc-svc-auth.yml --parameters file://${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json --capabilities &quot;CAPABILITY_IAM&quot; &quot;CAPABILITY_NAMED_IAM&quot;&apos;
+                                    sh &apos;aws cloudformation wait stack-update-complete --stack-name fdc-svc-auth-${fdcenv} --region us-west-2&apos;
+                               }
+                    } else if (fdcenv == &apos;prod&apos;) {
+                               withAWS(roleAccount:&apos;923567406269&apos;, role:&apos;AllowAltirJenkins&apos;) {
+                                    sh &apos;cat fdc-svc-auth-${fdcenv}-parameter.json&apos;
+                                    sh &apos;aws cloudformation update-stack --stack-name fdc-svc-auth-${fdcenv} --region us-west-2 --template-body file://${WORKSPACE}/fdc-svc-auth.yml --parameters file://${WORKSPACE}/fdc-svc-auth-${fdcenv}-parameter.json --capabilities &quot;CAPABILITY_IAM&quot; &quot;CAPABILITY_NAMED_IAM&quot;&apos;
+                                    sh &apos;aws cloudformation wait stack-update-complete --stack-name fdc-svc-auth-${fdcenv} --region us-west-2&apos;
+                               }
+                    } else {
+                                    sh &apos;echo &quot;Please run this build only for STAGE or PROD envs&quot;&apos;
+                                    sh &apos;exit 1&apos;
+                    }
+                }
+            }
+    
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1135025462</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>200815106</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3293418520</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>106162475</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>614183795</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>36</iota>
+    <head>1:36</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.10.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/altirllc/fdc-authentication-service.git/</url>
+            <credentialsId>fdaf6255-c33e-4004-b386-2d20682fd879</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/${Git_Branch}</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>${Git_Branch}</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/fdc-prod/fdc-authentication-service-delpoy</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

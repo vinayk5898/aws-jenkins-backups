@@ -1,0 +1,12 @@
+commit 2b94c1b2f6756ab414b032f980bb8a3df4930f9d
+tree 409d221c22b03033d563fd0014b375e30ee87dff
+parent 84766ec07687bb18700b69c56df880649210952e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-21 23:34:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-21 23:34:52 +0530
+
+    FDC-893 :: changed the filtering code logic to both daily and weekly logic
+
+
+:100644 100644 de535dfbd3ab3684e815a4b9105df8a4450e9c6f 07dc4cb8d06928fff528297c796287fb09585436 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 800f409a0ae5d6b40589f5604a5f255980f5eaf9 8573ac44549fdd5344ef02d39bf91f79ae03ca6e M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 5d7fccbb7a6ba29700f1ae8b0881cfec7a610e2f 3b4846f274c20c5b3c03bd08ee3a63d4f58d3131 M	python_scripts/Generic_Client_Invoice_stage.py

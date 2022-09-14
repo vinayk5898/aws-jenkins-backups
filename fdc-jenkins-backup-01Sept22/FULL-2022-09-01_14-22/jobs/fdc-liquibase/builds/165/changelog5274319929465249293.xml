@@ -1,0 +1,12 @@
+commit 9f24ce08e2aa72fbf6de238b11b679bfe017224b
+tree 9819afaf3a0f5949bf6ec1fb15f81f95d438b5b6
+parent df1a12c40eb99c2cc2180375164af25db984c91b
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-07-04 12:20:11 +0530
+committer GitHub <noreply@github.com> 2022-07-04 12:20:11 +0530
+
+    FDC-828: Add column sftp.client_duns and modify data in sftp (#42)
+    
+
+
+:000000 100644 0000000000000000000000000000000000000000 b6ad4ef22c042034f8ae8a6f65be8a294f3eda76 A	src/main/resources/db/changelog/220701_72_tbl_sftp_addcol_duns_modify_sftp_data.yaml
+:100644 100644 0154901c02f0c1ce5d6213f79dd358e7d3f60378 b23de76f246b5dcd5853f08c5464702e5992512a M	src/main/resources/db/changelog/db.changelog-master.yaml

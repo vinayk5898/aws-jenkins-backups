@@ -1,0 +1,10 @@
+commit d4ac29bceb2ec64a9c45d001467a5d590b2f1d9b
+tree 387266769bcc86ba2bd517ca02fe8dd78628a97d
+parent 4d776952645ea4248bf872bcd8246e15daa267b7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-20 15:10:51 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-20 15:10:51 +0530
+
+    FDC-563 :: added rate changes
+
+
+:100644 100644 4e40b9e19c238d7bec2ed9baed4ce5a99a1772d2 26a5fce8978f541fe661ebe356da3a6a2b13d210 M	src/main/resources/db/sql/FDC_563_ddl_dml_changes.sql

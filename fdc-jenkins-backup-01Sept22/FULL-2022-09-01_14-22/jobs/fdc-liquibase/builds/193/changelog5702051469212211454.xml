@@ -1,0 +1,11 @@
+commit b72f0eefc9232a42e5c0a302be52fb48b5d11749
+tree b4c8851b7ae64494d2ebe337f003a80ce2c88939
+parent 437ce648c19dd5b2a1a3eb782ab28822947f0aae
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-24 15:59:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-24 15:59:31 +0530
+
+    FDC-746 :: created changes for dev/stage/prod versions
+
+
+:100644 100644 0e23ec61b7829a622e967c2d79beea3238a10955 2bf1b1813902c9b06dc0eea98ea00596238486ba M	src/main/resources/db/changelog/2022-05-31-72-fdc-generic-milestone-config-changes.yaml
+:100644 100644 fb73253e1a3ebbc713a4c2e84b61a6ca81f4b5ea 59599ab0e392eaa9adc24ebeb53e6b05c99ee57f M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

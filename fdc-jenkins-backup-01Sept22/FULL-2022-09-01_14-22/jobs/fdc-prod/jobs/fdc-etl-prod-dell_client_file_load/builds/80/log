@@ -1,0 +1,223 @@
+Started by timer
+Checking out git https://github.com/altirllc/fdc-etl.git into /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load@script to read Jenkinsfile
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/develop^{commit} # timeout=10
+Checking out Revision 434e70b787a0750e6ffe2350e2a3965cd1f6fb64 (origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 434e70b787a0750e6ffe2350e2a3965cd1f6fb64 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 434e70b787a0750e6ffe2350e2a3965cd1f6fb64 # timeout=10
+[8mha:////4MBQw3doW90qfvbHslla4DbBrobCx+f+NgWzjfpBt2UJAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Aylt9QAnZ1G/gHXbYcv1XVtg0dFQVMHR8J0jPG/eP/4AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4NxaZ8xuNfbdnpvdSMQDoBX57gmoYgcBX0YMVEZ5I6k7AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load
+[8mha:////4BUfElIsTMZ7njuz/JX7kRli+S77NQKCCEt3B3YYV3Y7AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4B6eT3xhizraXG0q0tEZGyGCikpyR7/Bf47zhB1hq2T5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4DT0YEHfI2hy7cAdNPW+LD8XTPatUAaZ6yKgmdcgK5W3AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Fy70PaG3e7CEjVVZZzRUrQBBSc1F0sQoWAk1Zsgo0KKAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/develop^{commit} # timeout=10
+Checking out Revision 434e70b787a0750e6ffe2350e2a3965cd1f6fb64 (origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 434e70b787a0750e6ffe2350e2a3965cd1f6fb64 # timeout=10
+Commit message: "Update Jenkinsfile"
+[8mha:////4Dw9azVoXKTnukn2bBndxUhwPHbIu1wdXYL8N4k9umHLAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4MhIxQ6dpgUuBZl7CbdahCbZy9WCUx83lo+citT6fckHAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4L3Ru8QNkxX6WeWMJFrEzv0y0RmRyQhmDMHblBg9FU07AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4MJQphsUSdnsuV0v8L96FpMPuo7+DLFXpYI0KnQ7kkz1AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4AxaIleFGkCYw61T3bu1XsH9a0ZgkgPCbM7A7x9JpcFkAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withEnv
+[8mha:////4OpdMl6c6ucXrveQo2+XOVC9k/TYGHIAr+rwJ8CCahuwAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4ByIOQF247QQx5kDMkm5L406x3fVGjoFyqljYJ0KHt2mAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] stage
+[8mha:////4HXIlqLLjFs2ItMRxkiPqBmUa7dOR2JysT2jPq8KKnTAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Building docker image)
+[8mha:////4Cc61b90dCVa6WjfUfvcMVQhiAB6C5eKkewrK2oypoS7AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] script
+[8mha:////4D4GTEQqt8cNSoSi3xbB0HHb6ALzorRPgzRPAAETwekhAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] {
+[8mha:////4FfkVICDKjGF1Y4Gdd8vE9HLHogX6yf5qoRKnPlifLGQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] sh
++ sed -i s/fdcenv/prod/ /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load/Dockerfile
+[8mha:////4JUkPBhQprFnDSV/YnduiKVzjhaIQYilNnkJGZju9Uz0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN1TuT7W+AAAA[0m[Pipeline] sh
++ cat Dockerfile
+FROM centos:latest
+
+ENV JAVACMD=/usr/bin/java \
+    SERVER_CN=server.com \
+    INSTALL_PLUGINS=none 
+ENV PENTAHO_HOME /opt/pentaho
+
+# Install Dependences
+RUN yum check-update; yum install zip -y; \
+yum install wget unzip git vim -y; 
+
+RUN \
+  yum clean all && \
+  yum install -y tar java-1.8.0-openjdk openssl && \
+  mkdir -p /opt/pentaho && \
+  cd /opt/pentaho 
+
+RUN /usr/bin/wget https://sourceforge.net/projects/pentaho/files/Pentaho-9.2/client-tools/pdi-ce-9.2.0.0-290.zip -O /opt/pentaho/pdi-ce-9.2.0.0-290.zip
+#COPY ./pdi-ce-9.2.0.0-290.zip $PENTAHO_HOME/pdi-ce-9.2.0.0-290.zip
+
+RUN cd /opt/pentaho && \
+    unzip pdi-ce-9.2.0.0-290.zip && rm pdi-ce-9.2.0.0-290.zip
+  
+COPY ./lib/. $PENTAHO_HOME/data-integration/lib/
+COPY ./scripts/. ${PENTAHO_HOME}/scripts
+COPY ./kettle/prod/kettle.properties /root/.kettle/
+
+WORKDIR /opt/pentaho/data-integration 
+
+[8mha:////4ItZM4iQ0Tz/SoaaaOcvm5S4mFAk5zTI3y3UXUg0emiWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AFE68tmvgAAAA==[0m[Pipeline] isUnix
+[8mha:////4P/F84cDOApVhsZ9QOB/6958C3/b74o6eM5H+IA0drZfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+QVkfcu1r/wEF2tB/vgAAAA==[0m[Pipeline] sh
++ docker build -t 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl --build-arg STRIPE_KEY=abc -f Dockerfile .
+Sending build context to Docker daemon  18.88MB
+Step 1/11 : FROM centos:latest
+ ---> 5d0da3dc9764
+Step 2/11 : ENV JAVACMD=/usr/bin/java     SERVER_CN=server.com     INSTALL_PLUGINS=none
+ ---> Using cache
+ ---> 7b94fac607aa
+Step 3/11 : ENV PENTAHO_HOME /opt/pentaho
+ ---> Using cache
+ ---> ebf6a87d21c6
+Step 4/11 : RUN yum check-update; yum install zip -y; yum install wget unzip git vim -y;
+ ---> Using cache
+ ---> 60f39b50fc78
+Step 5/11 : RUN   yum clean all &&   yum install -y tar java-1.8.0-openjdk openssl &&   mkdir -p /opt/pentaho &&   cd /opt/pentaho
+ ---> Using cache
+ ---> 2b6283d1a3e7
+Step 6/11 : RUN /usr/bin/wget https://sourceforge.net/projects/pentaho/files/Pentaho-9.2/client-tools/pdi-ce-9.2.0.0-290.zip -O /opt/pentaho/pdi-ce-9.2.0.0-290.zip
+ ---> Using cache
+ ---> 6a76f0e6630b
+Step 7/11 : RUN cd /opt/pentaho &&     unzip pdi-ce-9.2.0.0-290.zip && rm pdi-ce-9.2.0.0-290.zip
+ ---> Using cache
+ ---> c39d00162687
+Step 8/11 : COPY ./lib/. $PENTAHO_HOME/data-integration/lib/
+ ---> Using cache
+ ---> c601633a0d2a
+Step 9/11 : COPY ./scripts/. ${PENTAHO_HOME}/scripts
+ ---> Using cache
+ ---> 5626eccf48a6
+Step 10/11 : COPY ./kettle/prod/kettle.properties /root/.kettle/
+ ---> Using cache
+ ---> c5b55cad4e7a
+Step 11/11 : WORKDIR /opt/pentaho/data-integration
+ ---> Using cache
+ ---> c82490c73c4f
+[Warning] One or more build-args [STRIPE_KEY] were not consumed
+Successfully built c82490c73c4f
+Successfully tagged 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest
+[8mha:////4KUgInyLLSD2o5x7Wn/S3/i26Jd/TDbeYv3Agk5ULkCsAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRaSgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGMia70vgAAAA==[0m[Pipeline] }
+[8mha:////4MOhmZu8qW37Wlxj55PyDucDS7s+AiyhAI3rufbb71OGAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+/avVIvgAAAA==[0m[Pipeline] // script
+[8mha:////4Dh1n/YyZS8wOuKrLbkonTyqgxDlGBWm1d+YSedD4TicAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AG9C/nMvgAAAA==[0m[Pipeline] }
+[8mha:////4Eccw9Ncpbj3YZcdoaj/fXcfNr2pa9CIVqkFGXFQXwK5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdIdd2/wGO6KJwvgAAAA==[0m[Pipeline] // stage
+[8mha:////4AhDFfvk/oGCmWQegpIcoVE9F4ITbYNCACNrb0Z8Nk8uAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUgMSCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52WXb7j/P6g0l7b9pwgAAAA==[0m[Pipeline] stage
+[8mha:////4E4xdUZFGOKMZz1yZJ8sqt1M7QYAhLYZbf2vlZtkkP+KAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Publishing docker Image)
+[8mha:////4J87sPWj/7z6MHzANc+XfDb6KivqK3oOw9j/qL3ft+f+AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] script
+[8mha:////4NWHJ9/0I5sn6kEpe5FBJyr9zD4noddDoePPUZEfsmEnAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4FJ4++TI5r46Wt1RBULBaJjgf+bTZ1e8An0M7Hg0iQV3AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] withEnv
+[8mha:////4KbDn/2UrOFikordXm77oJ0xYXoIw9+ZVk53nY0F6/eEAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] {
+[8mha:////4OhU++FqHvNdgDSM6pJH/TrR7j3np5UhOSQRnsjF2fsWAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] withDockerRegistry
+Using the existing docker config file.Removing blacklisted property: auths$ docker login -u AWS -p ******** https://837587249384.dkr.ecr.us-west-2.amazonaws.com
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load@tmp/f954ddbd-1f0a-441d-856e-e36b6ef51566/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[8mha:////4LbnUPHPV2/UFZB8Kscmv1oE5TDlqLCKx1/tKB1JQWLWAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] {
+[8mha:////4G+QsrFQfNm8w1aLFGH738cJkSQ8oumJHXtb+JAGdE5fAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxM6xsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NGWcPtb4AAAA=[0m[Pipeline] isUnix
+[8mha:////4JqgggPo18QTgg/Qi5DG+E9laAE5qCpNXBAmKFOzI93gAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZKwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/fWFYUrL4AAAA=[0m[Pipeline] sh
++ docker tag 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-80-2022-04-08_03-45-00
+[8mha:////4HlQ8T5c2V9FQtVI8eQYxw5WqENuYhhsiqmAY43YAR3JAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSZMbGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALNPULftp/b+DZsFOYe+AAAA[0m[Pipeline] isUnix
+[8mha:////4LVBBLFC18kos43Mcu96h9stjsix/4mXTlrb28MACc9gAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpLBwrGwZGk+ACSKE+Z8AkVSeyKt5B9HMWLnFzr5t3vMF6xjgSEEzq3AwGDvDvJt0WSxTGK6OMrN0YR1hJKeYUFlQr04LCkoKllQ1rDhsFHaOokGdYMutvMvGSdTNOYXyHTjUph/hARUv5iRD+sIcYHeb+kj48/wVwOwT1G37qb1/A9o0Ip6+AAAA[0m[Pipeline] sh
++ docker push 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-80-2022-04-08_03-45-00
+The push refers to repository [837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl]
+7aa54cf2caa3: Preparing
+8e5fd80570a1: Preparing
+ca304df10906: Preparing
+3ca905fa2779: Preparing
+7b580d7e37cb: Preparing
+726e63ab8aa8: Preparing
+00267c6e4b90: Preparing
+74ddd0ec08fa: Preparing
+726e63ab8aa8: Waiting
+00267c6e4b90: Waiting
+74ddd0ec08fa: Waiting
+3ca905fa2779: Layer already exists
+8e5fd80570a1: Layer already exists
+7aa54cf2caa3: Layer already exists
+7b580d7e37cb: Layer already exists
+ca304df10906: Layer already exists
+00267c6e4b90: Layer already exists
+726e63ab8aa8: Layer already exists
+74ddd0ec08fa: Layer already exists
+latest-80-2022-04-08_03-45-00: digest: sha256:44ed71bbc3f904ddff5cdf57b09d2fc65c73b91df8346f67b4b323c44a23825b size: 2008
+[8mha:////4BeUfNl0K8V8SONwAe55GWl5/ikbSDygFOv7k8kaLonaAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSpHHGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DcUHGca+AAAA[0m[Pipeline] }
+[8mha:////4J924ITodpb2pDtMqWCiWv0A4daCZZcJsrS0/GQUKskJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQYUQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN/bkQnq+AAAA[0m[Pipeline] // withDockerRegistry
+[8mha:////4LMjwwlLC2/JkcB8+xcaRlA7UyzdYQhv021lurZ0rfyDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICgg6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5trvPgra4wG+AAAA[0m[Pipeline] }
+[8mha:////4ENuJ3e5FcNpJp6XQGKvgf0mDfdoopOQKH5H3SGjPliFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICgg6lorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5dpvPzk5uL2+AAAA[0m[Pipeline] // withEnv
+[8mha:////4NoDUPjP17PMl4FbYFZJ2FiaFr25Bea4T0O1jGNLOZyaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRTQIUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9ywutbvgAAAA==[0m[Pipeline] }
+[8mha:////4H3v6Jwnxbo17lGFVty/oXrlxxEC2SM/P1HqxkK0oReFAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv8u1PXwAQSGw574AAAA=[0m[Pipeline] // script
+[8mha:////4J9MuXngWJl2dw//jKG3x9ACvHTFwNKuS/Njd1XKkFHLAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRUCQKRJXWSsMLTHwYJ9adsR2SihfxNf6ARSQqtljtbDOvN6xjgBMHI3qkwVLsrPBuNHmJicNwdTyJni+iY4rsULQ4tayxWbDlhLCkKGElYYPUOY6WTIKt7NVDVU6Rqc4p5O8oobT6Dk8oZDYnFdIX5gC726gj08/zVwCz9wnKus61P3wAaAwKar4AAAA=[0m[Pipeline] }
+[8mha:////4L3FLUFdN1avCzgRv1LGp+ZM3fac7NiSCGaAaVVe+Qz0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIaBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9b71HWvgAAAA==[0m[Pipeline] // stage
+[8mha:////4NOSh1W8WQMeKSegcnhTOfNjtE0/ztxsPLq/XRkyEqatAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCMSCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52Wbb7T/P6g0f2G8KwgAAAA==[0m[Pipeline] stage
+[8mha:////4NCggQQ9DlRCd4K3nKo4T4xkTCCDgP8XVS4TVnEVz1XFAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] { (Deploying stack in ${fdcenv} environment)
+[8mha:////4KXMj2gIFUVHmZD+5p9Gpr+q+GxPaI26iaeaStwZGV+qAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] script
+[8mha:////4HimNighRU8qD+n2HNAieixGhgo9VeOI3Ary5SaxMVvfAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] {
+[8mha:////4HaV6SXMVWO+Mr5Kmoq8IDfifCrgZCKepuwkXW4Y0B8KAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUAQaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0iH00AwgAAAA==[0m[Pipeline] sshagent
+[ssh-agent] Using credentials ec2-user (ssh to fdc-etl-prod)
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-W0xOmNPYUN8x/agent.28763
+SSH_AGENT_PID=28766
+Running ssh-add (command line suppressed)
+Identity added: /var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load@tmp/private_key_5696748682269591231.key (/var/jenkins_home/workspace/fdc-prod/fdc-etl-prod-dell_client_file_load@tmp/private_key_5696748682269591231.key)
+[ssh-agent] Started.
+[8mha:////4OzLFjz0uNLUn4vI4XvgqKT1RZUyniyUcpKJLaBAf+Y/AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUBibE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAW2++SvCAAAA[0m[Pipeline] {
+[8mha:////4LP8VqeXK4sMmLt2peiySWt7hTD9aI5zadnmvrmeah2oAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFN4OkKLa+AAAA[0m[Pipeline] sh
++ echo Docker image: latest-80-2022-04-08_03-45-00
+Docker image: latest-80-2022-04-08_03-45-00
++ aws ecr get-login-password --region us-west-2
++ ssh -tt ec2-user@10.5.0.71 -o StrictHostKeyChecking=no docker login -u AWS -p eyJwYXlsb2FkIjoiQkZqcW1uTUc0Ym9OY3RnZ0hDdkkwOFdiS0VWMVFlcUdUVldKQ0s3UVRTZ1NVanduOGZwYzJ6WWFRRzdJZXNQQVo5bDFPd3dVWnVVZ0l2aVE1VGFMR3IrdWZaUmwxRjFOYUdZWjc0T1RRQTYyTWF2R1BJTk9xYWwySFovWmZkQUR3R0tRUWV4QTBWbFZOWmdqb0dwVlFmMmFzbEcyODVXNlp2NWl6RzF4SnExYVBtaHR5RHM3bHpJVjd2dnRnSDNQZE5nKytta3BWVTlVNFlGMk1kSXd5WGFSYm5xK0oyMEl4MGlyeHJaUTdqZFMvQmYrdEpNSDVuTTN6TG1MRHI1REp1MGFWUnUxTm5tSVZjUUNGWUxmNk1vd0V6bjcreENGZTc2a08xNVZ1NTV2RHJuMlRhck9sRzUvSFNjTW4rSWRqWVBsSDNTQk5vMFJWSXdTelJMdzFpeG0xL0Y5V29LRUg4U3pGQUppcFhiL2Q2MTl0dE1rMnBtdmdRUWxEbXY2QlFxMmJPaDlQSkgwUHBKZEd6Z0EyQ2lUQ3R3dHM4SmhYcHFFbXNBcmdYd0ZDT1NMSEVRYVB4TFlQMENxOUZaV2Z5eGsvUjdIc09PWDdEeG14U29LSFh4K25Xbzg4Tm8yUzdHSUs0dElRbGdrejZEdS9OWHIzVEFjejRQaVdPWU5oSWR5T2NGaEJ5QXdQWXNHSVZtdnhRa1ZUVTJ6Zm1zRDhEeXAvTFF0S0RDUzJIOGFTazh1R1lSRm9FVnA1OHpRU084ME9PWkhLSVF3dVRoOSt2dzRFc1VpalEwRURLVkpRelB0QXVtTjJTQlpqTEJRZEh4anVaM0djVWYzRE44SUw5dG5abTFubzFhbHBzOExqcnhwdERpaFZrV1hFa0ZtRTZKc1RZSmFVcDZZOWZ4MTV1dW9Ud2VXb09sWUdaMHdGZGRZKy9Da1JLZnhtZ21JWHB5NlN2cEpWalVGbDBMUmpEWGsvRzhCa0RuSk4ybWJ4Z01KUVo0TTgrQmRQbEpLNFhvT2FUalp5MHZ4aUxHcmQzNkt0bkkwcEZKMXQ1bWhuYmpGMWxnWHgrNDF3bzdPRmplUWxhdmh0bGk2cEJybUJOaDVrYmlZQkpCSUZPdjFSUUllNkQ1dTRKSHNOaXB2aGhkak5RZVpadWxSWVRjWmdSS2YxQ014SGxFL251bkpSbWdGWlNIdS8wZXM0cmRtZVNyUHRGLy9DRU1YY2hYVVNSVS9lcEdwdWtJY2pBN0c0dm5DS3dmeUdrUnhva2pUdWRVNFdDM3VIVDBETlJIbVR4UGhSeFp5azhLM1dOaXovU0ptSUVkV2Qxd25GT1ZSUzY2eTNUVnRCM05tSkJua1crVmRyZzF6NnpVY3ZjOW81ak01YW9xekczQ1g0T0x5dmI4cmR2ZDB5WkZOREs2SS9OL1MxZTZva2lwZyt2SmJ4akQ4ZS95RHhWRC9ZUml1eGdwamk5MnJXcmZ6MlhVWUxRQ083UnRVeVR1VjEyL04yRTE1UkZlRUMvUG9kaEU1d2JnNEVGU3V1cGdPUWwvN2ZoaTNXMk1ienVMcVpIUGZDeFhGM3Rja3lOVDJoNVpBbGxIcWo3ZnJIdFFTNXova3M5QnlucXgzR1J0aHVDcFpCVzZhNWozQ2FmbHJTajhabk9HaFAzVW93cmZNUHI5OUdxQjJ4TkxkSGk5Wmw1SWdqNWsya3dUaURNSXNLaEUzSHplUjVpL3dXbXVOVDhxVEZ1bE80TW9GUENsamh0TlUxTktERUxhV0U1ZXBzMU45eHFBN0JxUHRjb0g0UVhJZmxNSm8wNFpXck11MFF0SENIbWcwN0l5SCtTT2VUUFdQNlpnSTlybHpEVXI3bmJzemNCYUpLODRnYUhJTHVmUUs1SVpYV2IwZFFmZTBmamp2bklBQk16dC9HRyszUkgxRnJ3cFIzTW5kNUJQaElPYWlrYmhGVFpNaFNGQ3FyNUtEK2xwQzByaGJZZFlZVGxjcHNWMVU4M29sY3V5WkIzZHdjdWxEZVhLQUlXeGcxVzdhZHFqV3ZLa0ZDR1MrNk9FU1RTVnpjcWxWMlZvbDJ0eGRiczNJbGlHdHZFQzUzRE82dW83b0hZYjlUN3c0ZjdXQXZ4aWc4NUV6ZVh4TlJXSldxQT09IiwiZGF0YWtleSI6IkFRRUJBSGo2bGM0WElKdy83bG4wSGMwMERNZWs2R0V4SENiWTRSSXBUTUNJNThJblV3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURLSjZXU3B3bFExSjNyK0NnQUlCRUlBN0N2Rk93UGx3WTQyT3Q4dVp1dWkrRlBKS1Rhc1lkYTZsb1pyZDZWSWpXbWpHNk9tcFdNM0h1RGtoeThzM0R1QWJ4dE9KWTExOEhJaUIzUzA9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNjQ5NDMyNzIxfQ== 837587249384.dkr.ecr.us-west-2.amazonaws.com && docker pull 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-80-2022-04-08_03-45-00 && docker run -d -e /bin/sh 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-80-2022-04-08_03-45-00 sh -c '/opt/pentaho/data-integration/kitchen.sh -file:/opt/pentaho/scripts/DELL_Client_File_Load.kjb' && docker ps
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Error saving credentials: write /home/ec2-user/.docker/config.json169353609: no space left on device
+Connection to 10.5.0.71 closed.
+[8mha:////4KUpRVP6qWOsXl0qADo2XWBMB3hEa0r2SLfzGIYUjojRAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN5YEWne+AAAA[0m[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 28766 killed;
+[ssh-agent] Stopped.
+[8mha:////4MHB/9+m5+7GcNycmCk7ICV29YfFxEsZ9kQSu2YY58AgAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCARWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BrgEWB2+AAAA[0m[Pipeline] // sshagent
+[8mha:////4PriuPhi7VyaUdoqQUY3Oe7XrP8uUcC5qGEYV6teePJNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpSIEQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AH4XsO2vgAAAA==[0m[Pipeline] }
+[8mha:////4JV0nP/neF0xrm4vLSrr8AXMrUmjC6GFiKB/eoOdd4gqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAEJCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw/AHFBHvgAAAA==[0m[Pipeline] // script
+[8mha:////4IZfnQf2sgDRoj+4LYajathO6kYuSJid4uGHWqvhB5PSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgFIgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QH00rMcvgAAAA==[0m[Pipeline] }
+[8mha:////4DPCBK+VoH9YWCk7C+L3f4Uezn7wDg9l3sy9MmQek8Z1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAEJCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w+3UOKavgAAAA==[0m[Pipeline] // stage
+[8mha:////4FUFeo7XWzeLRzcRsrGX8v5S4GYY2znT573BamlBPi7GAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryf8i13X0A2IOjXL4AAAA=[0m[Pipeline] }
+[8mha:////4KEhvejecnO/fVATFUh6b8X9IU+we8TSLvqs6iVyQTsxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtdu/wEb+EM9vgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4IAGFoLB1ER4Ew6Q7NZEQL06GbMviTx5Ghi527BPL3JqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJRGhpERWu54QUmMcaOdWfsC0nFi/gaf8AiEhVbrHa2mdcb1jnBkZIV3uDgMHdOxDDassREabgGmoSni+gIMwUjlJkU9ea0oCI2sKSqYSVhY7ALlB1ahq30+qGboNE2Z07lO0ioXX+HJ1SymFkn/sKcYHcb+0z48/wVwBwjQ71vS7XtBwR6Fm++AAAA[0m[Pipeline] }
+[8mha:////4NeUTqTruIkouGRW8kAbP+3m+01hW6yKbf1ONXvuorsrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDPtdu+wE8OIWevgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4IwOFnhkJhWGg3Vb/GalAfA4/5kW+GaSx6SRQZWVivf2AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8VZLsP7WHgiL0AAAA=[0m[Pipeline] }
+[8mha:////4LaDDi7Y9aA3RLes9kmfGzhsEO6+ZI/b4B/SDXFOWqXHAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8TZNsPXiikpL0AAAA=[0m[Pipeline] // node
+[8mha:////4JxeozT1CIyV7MLJwJg1assq8/OBf/PcVmhOnLLhdAsCAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRkKBBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AHgxw+69AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

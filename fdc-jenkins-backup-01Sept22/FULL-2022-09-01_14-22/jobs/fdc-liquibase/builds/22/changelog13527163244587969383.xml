@@ -1,0 +1,13 @@
+commit cd2979840c9cd6b10293ef146c8150e61b642e0b
+tree 660a8c37ef0fa3e0b00141a4a1117a296c65ca5a
+parent 9d2594ff8ebfe51e8e0d385f7a69dadfe7023905
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-03-17 20:25:26 +0530
+committer GitHub <noreply@github.com> 2022-03-17 20:25:26 +0530
+
+    client_sftp table create and config entry added (#4)
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 f9bd887864bafe21cc60fc2733b17d63e91732a4 A	src/main/resources/db/changelog/2022-03-16-18-create-sftp-config-table.yaml
+:100644 100644 2fc6a9393030461cc0064e627ff9e2125c30e9f0 4f70a0b71e4c9cd2c42beb8053d29280c09b9db0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 8d22b31d6efa196eae78c960bbabb5acb9dc11fd A	src/main/resources/db/sql/fdc_client_sftp_config_table.sql

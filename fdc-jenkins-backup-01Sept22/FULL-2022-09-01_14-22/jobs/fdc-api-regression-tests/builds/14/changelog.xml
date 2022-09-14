@@ -1,0 +1,15 @@
+commit 59c03daf45d9b27e15fc1fa40c37219b5efae0b7
+tree b3ea774febcd6682313a007887a12812b947fef9
+parent 4da12c1dfacd360641a47973de9da06c70c291d4
+author RealName:Hari <hbolla@altir.co> 2022-06-29 16:07:27 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-06-29 16:07:27 +0530
+
+    Fixed orders_requests_scenarios
+
+
+:100644 100644 dd9b46cad7eb13ac8d2754ed5f74edf7543b4abe 7ad382c5f06d0055eb4daef7f1ee9c7fb0684f31 M	src/test/java/karate-config.js
+:100644 100644 707c90b823072e5588f21226befd12ae75f5c18b 37f5481866663fc902a7b1db16e26c11e46d6a97 M	src/test/java/org/fdc/common/orderHelper.feature
+:100644 100644 7d67d9e7b84cc92ba12c4b468435a55c05e995db 98704a0e7439f7b400ae44eaed3bba87bff75021 M	src/test/java/org/fdc/common/shipmentHelper.feature
+:100644 100644 e6efeaf7b4c8295c70d405f1cc78a5ef0e32732c e96069fa80d53f26f32be08521deed88bf810ea9 M	src/test/java/org/fdc/payloads/requests/orders/orders_requests_route4me.feature
+:100644 100644 593b5fec94a713ead01526f83b6d4cf402c418f1 4095603786a734ccffd42fa17e2cf3164ec059ee M	src/test/java/org/fdc/payloads/resources/orders/create_orders_restTemplate.json
+:100644 100644 60f94f184838d476601d4d07994f6ddcc824df35 724ce126aaf84a2705a996db00b83c14eb67b406 M	src/test/java/org/fdc/tests/orders_scenarios.feature

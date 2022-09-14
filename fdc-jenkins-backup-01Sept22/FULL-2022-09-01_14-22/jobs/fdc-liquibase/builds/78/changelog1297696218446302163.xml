@@ -1,0 +1,59 @@
+commit 8497dba7c8639922f6a276e1ad2c0894682d124a
+tree 891bc94901baac5d31090e6c1a3ca99ddf19c848
+parent 9f2faafb4520992c23417058baed2864285903f6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-21 13:47:32 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-21 13:47:32 +0530
+
+    FDC-542 :: added package type changes
+
+
+:000000 100644 0000000000000000000000000000000000000000 a8083beb3595137aa0cef297f28c284cbac8be1a A	src/main/resources/db/changelog/2022-05-11-63-fdc-IB-config-ddl-changes-v1.yaml
+:100644 100644 c3dd7bae453803dc32002c13da28c39ab81b44bd 420422a66825a5e47e2d7f7a32decfba8c4407bb M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 9fac9153905a9e3bc24fd871dbfb8997dbe521de 88f1cfbfa9f84c25eaf6aaebc42013e2fc2c9fbb M	src/main/resources/db/sql/fdc_generic_load_shipment_package_V2.sql
+:100644 100644 de33a6fcbc4ad1fcf93bfee712432f952fe7860d 4d7f47dafef67de2a34470f4236fdd17f961f53e M	src/main/resources/db/sql/fdc_international_bridge_client_config_changes.sql
+:000000 100644 0000000000000000000000000000000000000000 8299135f6ffa2c95ce5ee402d5285ef8299f3d90 A	src/main/resources/db/sql/fdc_international_bridge_client_config_changes_v1.sql
+commit 9f2faafb4520992c23417058baed2864285903f6
+tree 46a4a404781cbc4855f3f480ae4fa54842235977
+parent d6585b7260a6a39ba61c2d7837c7c36d6d005dc6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 00:26:59 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 00:26:59 +0530
+
+    FDC-542 :: discarded changes were tracked in separate branch as they need to go early
+
+
+:100644 000000 3844ce32cba20f588aedf6da0851e210e215dea8 0000000000000000000000000000000000000000 D	src/main/resources/db/changelog/2022-05-12-57-fdc-update-script-of-FDC-557.yaml
+:100644 100644 a98484174be13c25170139f54f2e2b238d0b8e1c c3dd7bae453803dc32002c13da28c39ab81b44bd M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit d6585b7260a6a39ba61c2d7837c7c36d6d005dc6
+tree a401f86ebdf1744fcf24e89cbe0a9fab130f20ce
+parent 73652d2d39015fbaaf898e9520b5d7f4f679396d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 00:00:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 00:00:54 +0530
+
+    removed script of FDC-557
+
+
+:100644 100644 090e44eda9f47434742d431ece64f0cee4e9f9c6 9fac9153905a9e3bc24fd871dbfb8997dbe521de M	src/main/resources/db/sql/fdc_generic_load_shipment_package_V2.sql
+:100644 000000 4c231517fdcdcc74ce48bda8d3ef8e872ef010b1 0000000000000000000000000000000000000000 D	src/main/resources/db/sql/fdc_update_script_of_FDC-557.sql
+commit 73652d2d39015fbaaf898e9520b5d7f4f679396d
+tree 5985268ba910db21ea9fdccc42b1055d25c586d9
+parent e12bf76feef41b6acc1409a2311885b82f13b602
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-12 23:37:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-12 23:37:54 +0530
+
+    FDC-557  :: changes added
+
+
+:000000 100644 0000000000000000000000000000000000000000 3844ce32cba20f588aedf6da0851e210e215dea8 A	src/main/resources/db/changelog/2022-05-12-57-fdc-update-script-of-FDC-557.yaml
+:100644 100644 c3dd7bae453803dc32002c13da28c39ab81b44bd a98484174be13c25170139f54f2e2b238d0b8e1c M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 54a79da188564c2785f42701735c50aca95423ed 090e44eda9f47434742d431ece64f0cee4e9f9c6 M	src/main/resources/db/sql/fdc_generic_load_shipment_package_V2.sql
+:000000 100644 0000000000000000000000000000000000000000 4c231517fdcdcc74ce48bda8d3ef8e872ef010b1 A	src/main/resources/db/sql/fdc_update_script_of_FDC-557.sql
+commit e12bf76feef41b6acc1409a2311885b82f13b602
+tree 8d633225cbbbe735730033d9e6d85de7eef5473b
+parent e31975c50b996888dfde497369cd4990186eae0a
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-12 23:08:33 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-12 23:08:33 +0530
+
+    FDC-542 :: added dml script
+
+
+:100644 100644 ddd8d6394bbd089f0e9a4c3cbd39e4236d13b2bf de33a6fcbc4ad1fcf93bfee712432f952fe7860d M	src/main/resources/db/sql/fdc_international_bridge_client_config_changes.sql

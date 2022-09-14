@@ -1,0 +1,10 @@
+commit db4017f812299e36d6610018a8755004bce773e6
+tree 706f7365832720005a384fc198cdb04f41df57c3
+parent 1b15076cef28eb872ffed921dde27d09b615760f
+author RealName:Hari <hbolla@altir.co> 2022-07-05 17:11:46 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-07-05 17:11:46 +0530
+
+    Initial Setup
+
+
+:100755 100755 42e92fe306a4c4bd9afda1e5f3cf35069d12a641 ebf245ebd003a094dc4874a7c8bc6bee458e448d M	Dockerfile

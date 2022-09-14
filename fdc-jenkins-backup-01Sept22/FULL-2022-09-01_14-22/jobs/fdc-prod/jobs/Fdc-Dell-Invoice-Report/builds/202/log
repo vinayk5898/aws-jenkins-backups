@@ -1,0 +1,30 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/Fdc-Dell-Invoice-Report
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/Fdc-Dell-Invoice-Report/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision dd498da96771b26497d4d3f2af930dd3c781ea08 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+Commit message: "Merge pull request #12 from The-Frontdoor-Collective/feature/ITMF-28"
+ > git rev-list --no-walk dd498da96771b26497d4d3f2af930dd3c781ea08 # timeout=10
+[Fdc-Dell-Invoice-Report] $ /bin/sh -xe /tmp/jenkins11849374670581506691.sh
++ cd python_scripts
++ python3 Generic_Client_Invoice_prod.py 120
+startdate 2022-02-21
+enddate 2022-08-31
+insert into fdc.client_invoice ( package_id,invoice_date,invoice_amount,invoice_status,client_invoice_number,account_number,status,Facility,PackageTrackingId,ContainerTrackingId,PackageLengthInches,PackageHeightInches,PackageWidthInches,PackageWeightLb,PackageArrivalDate,created_on,package_arrival_date,client_id ) select package_id,invoice_date,Invoice_Amount,invoice_status,client_invoice_number,Account_Number,status,parcel_center_id,PackageTrackingId,ContainerTrackingId,PackageLengthInches,PackageHeightInches,PackageWidthInches,PackageWeightLb,PackageArrivalDate,created_on,package_arrival_date,client_id from fdc_stage.dell_invoice_input where client_id = 120 and date(package_arrival_date) <= '2022-08-31'
+No of invoices generated :  0
+since the array list is empty skipping email step
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS
