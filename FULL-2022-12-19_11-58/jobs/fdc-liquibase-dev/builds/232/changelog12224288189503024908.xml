@@ -1,0 +1,21 @@
+commit 90814df914a86d9de58e935607b08edf95406148
+tree 1b8f6b9f7e29f9a99f6c8d6653f586d151075d33
+parent c3637c602b23ff69912b63ccf357743b5784f5d4
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-15 12:19:03 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-15 12:19:03 +0530
+
+    added akikey column and data in sftp table
+
+
+:000000 100644 0000000000000000000000000000000000000000 6b22d8e117fbf224198b7ec08036a04b4bd0837e A	src/main/resources/db/changelog/2022-09-15-add-apikey-in-sftp-table.yaml
+:100644 100644 2a598d1f1ace48095be937cd697d3df2752273aa a596bbc948edcf6025ca848cbd687742f5ca2eec M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 1e4fe4a63e543dd7b9b0a2f6436e49864fa9a270 A	src/main/resources/db/sql/add_apikey_column_in_sftp_table.sql
+commit 92ad8afa9493ac64c442468414ee3c67195e85ca
+tree 37c689924ab949bd25f557e2291d94fc3ccfd5fa
+parent d17274359ded92a9571249a14d75b1e5094eb68a
+author Prashant Talan <110808007+PrashantTalan@users.noreply.github.com> 2022-09-12 15:05:12 +0530
+committer GitHub <noreply@github.com> 2022-09-12 15:05:12 +0530
+
+    Update db.changelog-master.yaml
+
+:100644 100644 2a598d1f1ace48095be937cd697d3df2752273aa b073b21b37a9678f691d9a8503c5bbe8389cdef3 M	src/main/resources/db/changelog/db.changelog-master.yaml

@@ -1,0 +1,168 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-staples-adapter-jar-run
+[fdc-staples-adapter-jar-run] $ /bin/sh -xe /tmp/jenkins16787013183111380162.sh
++ cd /var/jenkins_home/workspace/fdc-staples-adapter-build/target
++ java -jar -Dspring.profiles.active=stage staplesadapter-0.0.1-SNAPSHOT.jar 5
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/log4j-slf4j-impl-2.17.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.6.13)
+
+2022-12-02 10:58:46.165  INFO 8050 --- [           main] c.f.s.StaplesadapterApplication          : Starting StaplesadapterApplication v0.0.1-SNAPSHOT using Java 11.0.12 on ip-10-10-0-21.us-west-2.compute.internal with PID 8050 (/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar started by jenkins in /var/jenkins_home/workspace/fdc-staples-adapter-build/target)
+2022-12-02 10:58:46.173  INFO 8050 --- [           main] c.f.s.StaplesadapterApplication          : The following 1 profile is active: "stage"
+2022-12-02 10:58:47.771  INFO 8050 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-02 10:58:48.202  INFO 8050 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 414 ms. Found 5 JPA repository interfaces.
+2022-12-02 10:58:49.528  INFO 8050 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2022-12-02 10:58:49.548  INFO 8050 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-02 10:58:49.549  INFO 8050 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-02 10:58:49.753  INFO 8050 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-02 10:58:49.753  INFO 8050 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3490 ms
+2022-12-02 10:58:50.508  INFO 8050 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-02 10:58:51.391  INFO 8050 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-02 10:58:51.585  INFO 8050 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-02 10:58:51.710  INFO 8050 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-02 10:58:52.235  INFO 8050 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-02 10:58:52.605  INFO 8050 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-02 10:58:54.331  INFO 8050 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-02 10:58:54.344  INFO 8050 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-02 10:58:55.632  WARN 8050 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-02 10:58:56.287  INFO 8050 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2022-12-02 10:58:56.306  INFO 8050 --- [           main] c.f.s.StaplesadapterApplication          : Started StaplesadapterApplication in 11.098 seconds (JVM running for 12.36)
+2022-12-02 10:58:56.310  INFO 8050 --- [           main] c.f.s.StaplesadapterApplication          : CommandLineRunner starts running.
+2022-12-02 10:58:56.478  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No. of unprocessed events found in the database : 1
+2022-12-02 10:58:56.479  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Started processing event_id : 994632
+2022-12-02 10:58:56.479  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Uploading the images to Azure Storage for event_id : 994632
+2022-12-02 10:58:56.534  INFO 8050 --- [           main] c.a.c.i.jackson.JacksonVersion           : Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.33.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-12-02 10:58:57.508  INFO 8050 --- [           main] c.f.s.s.impl.UploadImageServiceImpl      : Started uploading the image for eventId: 994632 
+2022-12-02 10:58:58.765 ERROR 8050 --- [           main] c.f.s.s.impl.UploadImageServiceImpl      : Image not uploaded due to Exception. Event Id = 994632StackTrace = 
+com.azure.storage.blob.models.BlobStorageException: If you are using a StorageSharedKeyCredential, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate method call.
+If you are using a SAS token, and the server returned an error message that says 'Signature did not match', you can compare the string to sign with the one generated by the SDK. To log the string to sign, pass in the context key value pair 'Azure-Storage-Log-String-To-Sign': true to the appropriate generateSas method call.
+Please remember to disable 'Azure-Storage-Log-String-To-Sign' before going to production as this string can potentially contain PII.
+Status code 403, "?<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthenticationFailed</Code><Message>Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+RequestId:6d4894f9-401e-0105-223d-06392c000000
+Time:2022-12-02T10:58:58.5721037Z</Message><AuthenticationErrorDetail>Signature not valid in the specified time frame: Start [Fri, 18 Nov 2022 15:48:08 GMT] - Expiry [Wed, 30 Nov 2022 23:48:08 GMT] - Current [Fri, 02 Dec 2022 10:58:58 GMT]</AuthenticationErrorDetail></Error>"
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:710)
+	at com.azure.core.implementation.http.rest.ResponseExceptionConstructorCache.invoke(ResponseExceptionConstructorCache.java:56)
+	at com.azure.core.implementation.http.rest.RestProxyBase.instantiateUnexpectedException(RestProxyBase.java:367)
+	at com.azure.core.implementation.http.rest.AsyncRestProxy.lambda$ensureExpectedStatus$1(AsyncRestProxy.java:115)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:113)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2068)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onNext(FluxHide.java:137)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxHide$SuppressFuseableSubscriber.onNext(FluxHide.java:137)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.FluxDelaySubscription$DelaySubscriptionMainSubscriber.onNext(FluxDelaySubscription.java:189)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.onNext(FluxTimeout.java:180)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.SerializedSubscriber.onNext(SerializedSubscriber.java:99)
+	at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onNext(FluxRetryWhen.java:174)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.Operators$MonoInnerProducerBase.complete(Operators.java:2664)
+	at reactor.core.publisher.MonoSingle$SingleSubscriber.onComplete(MonoSingle.java:180)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onComplete(MonoFlatMapMany.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onComplete(FluxDoFinally.java:128)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1817)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onComplete(FluxHandle.java:220)
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onComplete(FluxMap.java:275)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:400)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+	at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+	at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:336)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:308)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1373)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1247)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1287)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:519)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:458)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:280)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:800)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:499)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:397)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1707)
+		at com.azure.storage.common.implementation.StorageImplUtils.blockWithOptionalTimeout(StorageImplUtils.java:156)
+		at com.azure.storage.blob.BlobClient.uploadWithResponse(BlobClient.java:337)
+		at com.azure.storage.blob.BlobClient.upload(BlobClient.java:268)
+		at com.azure.storage.blob.BlobClient.upload(BlobClient.java:253)
+		at com.fdc.staplesadapter.service.impl.UploadImageServiceImpl.uploadImagesToAzure(UploadImageServiceImpl.java:89)
+		at com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl.generateAndSendXml(XmlSenderServiceImpl.java:102)
+		at com.fdc.staplesadapter.StaplesadapterApplication.run(StaplesadapterApplication.java:36)
+		at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782)
+		at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:766)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+		at com.fdc.staplesadapter.StaplesadapterApplication.main(StaplesadapterApplication.java:22)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+		at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+		at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+		at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-12-02 10:58:58.769  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Generation of XML started for eventId : 994632
+2022-12-02 10:58:59.053  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : XML is generated for eventId : 994632 
+2022-12-02 10:58:59.053  WARN 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No images uploaded, no entry is pushed to delivery confirmation store for the eventId : 994632. 
+2022-12-02 10:58:59.053  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Now, start processing all entries in DeliveryConfirmationStore with statuses NEW and FAILED.
+2022-12-02 10:58:59.080  INFO 8050 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No unprocessed entries found in DeliveryConfirmationStore.
+2022-12-02 10:58:59.087  INFO 8050 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-02 10:58:59.097  INFO 8050 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-02 10:58:59.100  INFO 8050 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-02 10:58:59.118  INFO 8050 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-02 10:58:59.119  INFO 8050 --- [           main] c.f.s.StaplesadapterApplication          : CommandLineRunner is terminated.
+Finished: SUCCESS

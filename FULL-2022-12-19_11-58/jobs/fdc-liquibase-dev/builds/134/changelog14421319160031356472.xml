@@ -1,0 +1,10 @@
+commit 257b7b85ae76c141131e43767571928cce5a2d24
+tree 72406a1f74f276fbd1f6d0c1a7f617f8b4c490d6
+parent c787f74041b6b67a7a96cc2bccf58dd090bd667b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-10 16:18:49 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-10 16:18:49 +0530
+
+    FDC-758 :: added cutoff time logic
+
+
+:100644 100644 b5932dbe03028e19fd3df9b9edca91465991d099 ec56e97553d2881caf7c1c68db895d7e07e5cfda M	src/main/resources/db/sql/fdc_standard_manifest_ddl_procedure_function_changes.sql

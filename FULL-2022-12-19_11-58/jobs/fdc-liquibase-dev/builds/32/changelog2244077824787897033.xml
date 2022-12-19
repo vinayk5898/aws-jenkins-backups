@@ -1,0 +1,10 @@
+commit 599377c23bcc1084f55956ca613bdd68776b3534
+tree 43896b3d2316015b53d470e3c019450b0169a5b0
+parent da5880ff80bc0962515710436fa25f0fffc0179f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 12:49:47 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 12:49:47 +0530
+
+    FDC-424 :: added client_id
+
+
+:100644 100644 52a27e34736621bc8b27977a5300611005130d7a e15c5cee27cdf2d245386146d7f0ec7d6953c7d2 M	src/main/resources/db/changelog/2022-03-15-18-pitney-bowes-data-model-changes.yaml

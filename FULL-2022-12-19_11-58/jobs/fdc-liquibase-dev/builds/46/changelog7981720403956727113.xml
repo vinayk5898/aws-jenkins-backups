@@ -1,0 +1,10 @@
+commit d5f4315e6eb3639c9a799329d54f41c57a5c0648
+tree 03f917676ca4761b675874ca7e941f1a84e7110b
+parent f3a93a7792c3e3f49e83d2bb62cc27377dc8296f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-11 15:42:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-11 15:42:23 +0530
+
+    FDC-485::  corrected case format
+
+
+:100644 100644 e46c8fcb51646e051b9ce1745b23fa0d413b6760 2c0b5835d4a7a2be61eb958071b0cb4289662716 M	src/main/resources/db/sql/etl_client_milestone_config_table.sql

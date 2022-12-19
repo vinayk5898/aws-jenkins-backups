@@ -1,0 +1,10 @@
+commit 4c31f6b61d3b5cf66ca8d4f1275b8d88fd0eb70a
+tree a3058982e8c070f363011d060bc6f188c097f95e
+parent ae6576f860943fbe23101706a3331d37d588a02a
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-08 13:19:48 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-08 13:19:48 +0530
+
+    added few changes
+
+
+:100644 100644 43428eed52e6305e4cfa98731fd3062462f3d19d 8942e88af2bb4f987c2817358c66019ad2a0dacb M	src/pages/ManifestIngestion/ManifestIngestion.tsx

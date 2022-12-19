@@ -1,0 +1,10 @@
+commit 48e399f9415882442b5005a1186d754b9595ff38
+tree 4c6c6abea9b7638e56f63e6a01c8cb1c61e04632
+parent def0a368fbf07274b1fb574171c8d4f0753828de
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-07 16:00:41 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-07 16:00:41 +0530
+
+    Update max_attempt.py
+
+
+:100644 100644 7ca33c565564c7fcc0fea970a1b5dddab725fa3e 1b9edf800953a8a35d264a2015c3e34aebbf6862 M	python_scripts/max_attempt.py

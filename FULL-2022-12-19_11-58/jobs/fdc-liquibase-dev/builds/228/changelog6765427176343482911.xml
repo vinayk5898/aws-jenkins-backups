@@ -1,0 +1,10 @@
+commit 9102359058e33470205d8d0adaa963cb0dffa44f
+tree dd55d91eb6075eb4bbb5cf24304e3a81a2e579c1
+parent b4fab5edfe9c0dac009a996b931fa3a754262d6c
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-12 13:27:36 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-12 13:27:36 +0530
+
+    Update add_column_in_v_get_pandion_client_milestone_view
+
+
+:100644 100644 982d4090b161dc51fcbbfa7d5bcc222f0bb0c48f 7dc94903b1c9b61cce0c43d6d0f527e21ee86c2a M	src/main/resources/db/sql/add_column_in_v_get_pandion_client_milestone_view

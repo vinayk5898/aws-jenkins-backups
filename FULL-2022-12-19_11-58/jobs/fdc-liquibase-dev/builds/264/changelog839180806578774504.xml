@@ -1,0 +1,195 @@
+commit f8648a367d4a99be949807f51ee4915098b4b19a
+tree 68634b7ea5ac727e01db72d0e256988b5ed23f06
+parent 2dad05d7962e3e65a91082504acfeb8a4436b6a5
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 13:24:13 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 13:24:13 +0530
+
+    event type and gc_event_mapping added
+
+
+:000000 100644 0000000000000000000000000000000000000000 c87f2613b48565e56ba793c0277073cc456eecdb A	src/main/resources/db/changelog/2022-12-07_add_event_type_and_gc_mapping.yaml
+:100644 100644 73b1f27756a2b74a50f9968ededeac83781672ae c3f5d31e516d231d79d7724c610da11eb976a8a7 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 86d4f713f445fc72f6ec6720bbecf8073e6a2b7d A	src/main/resources/db/sql/221207_add_pickup_event_types_and_gc_mapping.sql
+commit b303e88751a16dbf556cf8464b45b4d0ee957b66
+tree f99796147de21925e62ae5d1e3e2e6f7e3d88518
+parent bf83ca96ae428f91cb034327aec4c46c06676830
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-05 18:13:24 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-05 18:13:24 +0530
+
+    Added index
+
+
+:000000 100644 0000000000000000000000000000000000000000 d76384a151b31f09d1455cb41be7ff417328f2ff A	src/main/resources/db/changelog/20221122_add_index_in_fdc_event_type_client_on_client_id.yaml
+:100644 100644 813f5992b76b906c26619f11d22450677ab72e69 7251dd0c66957d60803baf05d64f3c482a84cbed M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 5321dc8bb724ef5b82805f6a679458a91645e0cf A	src/main/resources/db/sql/add_index_in_fdc_event_type_client_on_client_id.sql
+:100644 100644 40c332c54881d90bbf8b988e04e05a2e430fb8c2 8954f7a68fdad8405024aa7117bd7eb31babd966 M	src/main/resources/db/sql/add_index_in_fdc_event_type_client_on_event_type_id_client_id.sql
+commit a2d828a14e5a6863c090a89192bc3ca2cdc2b865
+tree b89e6224dcb748b2ce1949fca8632fc47672e005
+parent 6458d06f8c7a9f267a278560e8e367a55a55a566
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-05 17:42:01 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-05 17:42:01 +0530
+
+    Update file name
+
+
+:100644 100644 dc5f6c16b607ed23167f42075a14e28a77e45c48 dc5f6c16b607ed23167f42075a14e28a77e45c48 R100	src/main/resources/db/changelog/20221122_add_index_in_fdc_client_invoice_package_id copy.yaml	src/main/resources/db/changelog/20221122_add_index_in_fdc_client_invoice_package_id.yaml
+commit 6458d06f8c7a9f267a278560e8e367a55a55a566
+tree 54f67fb9c85999b4da312fa727a445a61a931040
+parent 59c1713ef1d09e120f8a2a3b8117a4cd804592d9
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-05 17:21:20 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-05 17:21:20 +0530
+
+    Added Indexes
+
+
+:000000 100644 0000000000000000000000000000000000000000 96beecb73ea6a79e1245394d296a48af1724bb93 A	src/main/resources/db/changelog/20221205_add_index_in_fdc_client_invoice_on_client_id_package_type_id.yaml
+:000000 100644 0000000000000000000000000000000000000000 8644cd47ab763c56c20b73bf0c0e1ff8450a492c A	src/main/resources/db/changelog/20221205_add_index_in_fdc_weight_rates_on_package_type_id.yaml
+:100644 100644 8d061dd779825eacfa9ed5322a249ce496d135ce 42d5ea90e04c353640a0056c9477d863a8a9aa49 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 1b3c45e754af93e13a27863f7b19298edc1e8ea9 A	src/main/resources/db/sql/add_index_in_fdc_client_invoice_on_client_id_package_type_id.sql
+:000000 100644 0000000000000000000000000000000000000000 efe81b8738a97d0e190cd82572b0694776bbec6d A	src/main/resources/db/sql/add_index_in_fdc_weight_rates_on_package_type_id.sql
+commit 4105097db042b00b4ac59e06caa3ba6a8b2dd2c2
+tree 5fdbd369676588a4ea60847808637fd58cc8ef50
+parent 8ef44c2b192b1974541a8cfcf28d65b7220ce60c
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 15:41:10 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 15:41:10 +0530
+
+    added retry column in event store table
+
+
+:000000 100644 0000000000000000000000000000000000000000 cbd85d2a5f691b218c5bb06bc1043cd629c7e9f2 A	src/main/resources/db/changelog/2022-12-05-add-column-in-event-store-table.yaml
+:100644 100644 8e3182e90aee54fb2f9b62ba7eca67f793ff03e0 09e9ddb054a06da3b73aacfe805b8c7b2c757fc5 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 fb9d304c3257bf71e8d4116d6a6089f8d81b53d8 A	src/main/resources/db/sql/add_retry_in_event_store_table.sql
+commit 0b3a631329386555432ead0015ae5136ed3dcc55
+tree 214c74c269a3d3cbcec0f521145691e88916ae0b
+parent 8ef44c2b192b1974541a8cfcf28d65b7220ce60c
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-05 15:40:13 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-05 15:40:13 +0530
+
+    added staples delivery config tables
+
+
+:000000 100644 0000000000000000000000000000000000000000 4a8251f130667571317f31820140fa82169a3d15 A	src/main/resources/db/changelog/2022-12-05_add_staples_delivery_config.yaml
+:100644 100644 8e3182e90aee54fb2f9b62ba7eca67f793ff03e0 0b783edab12cca5158cb14ecb28e59ff099cbbc5 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 8472f48ffc17db98dbe579c236e7bf3abdd38b5c A	src/main/resources/db/sql/221205_staples_delivery_config.sql
+commit 6587a20167e8f18578cef92c94a94c0d171bd311
+tree 528c37adb90b56bd78329845d73a52441e640a5a
+parent 5c0aaec2a0fd81486a853dc90ebb8203d7ec8c33
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 17:10:27 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 17:10:27 +0530
+
+    webhook-test-trigger
+
+
+:000000 100644 0000000000000000000000000000000000000000 9afbe2a60b14671577b33cb52fb9d808288448e8 A	src/main/resources/db/changelog/2022-12-01_create_client_webhook_config.yaml
+:100644 100644 a28181af8395cd3970eec57983213dc86dd0f88d 8e3182e90aee54fb2f9b62ba7eca67f793ff03e0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 50cdc3c88f81ac1518e891f86e1fd89bc2660aa2 A	src/main/resources/db/sql/221201_create_client_webhook_config_table.sql
+commit 86a5e41c60530e2ff887422a15144ab9a8cd51ac
+tree 7c3fffeb21cefc80e854dcd8da8e70dd0c950083
+parent 90de188cc9d0e31d483694ce3838459d8d7f7b6c
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:22:20 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:22:20 +0530
+
+    add gc_reference_id in events table
+
+
+:000000 100644 0000000000000000000000000000000000000000 70338ee9394063f58049c605e4a3cdc2c5b003e9 A	src/main/resources/db/changelog/2022-12-01_add_gc_reference_id_event_table.yaml
+:100644 100644 148c47ff110876ec6cb9f6e718d0fab5556ffe17 a28181af8395cd3970eec57983213dc86dd0f88d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 1b29c87e34393fa5ab7e2bd99dffe552d2d88c92 A	src/main/resources/db/sql/221201_add_gc_reference_id_events_table.sql
+commit bf26162ecd89b763bef59b7f68ad6b718f4d103c
+tree 32ca455ddae869c01fa67da90acc6132c26d9ae2
+parent 53f8439b1552da8a1f53299c04be213b21ed41f1
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-28 15:31:35 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-28 15:31:35 +0530
+
+    changes in auth table
+
+
+:100644 100644 b9c1c4970e11704a45e66d407cdfb745450a0da7 2043cd863d995464d5d3e49b6a25105b9ff1e8d2 M	src/main/resources/db/changelog/2022-11-11-create-tables-for-auth-changes.yaml
+:100644 100644 5b7f0028914d579cdc5c4c4f614b29b0def74b96 a1c168100a41556448eaabc21e796d548825a211 M	src/main/resources/db/sql/create_new_auth_related_tables.sql
+commit 59c1713ef1d09e120f8a2a3b8117a4cd804592d9
+tree b9dcaacb5c4ef6dde7568535910675ec93ce08f3
+parent 21ef34189314460b6afc2bb89f9e34e0b00a61d1
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-24 09:51:44 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-24 09:51:44 +0530
+
+    Add indexes to tables
+
+
+:000000 100644 0000000000000000000000000000000000000000 dc5f6c16b607ed23167f42075a14e28a77e45c48 A	src/main/resources/db/changelog/20221122_add_index_in_fdc_client_invoice_package_id copy.yaml
+:000000 100644 0000000000000000000000000000000000000000 717532e4ca8bcb4f321586bbe8c583c49ce4f65f A	src/main/resources/db/changelog/20221122_add_index_in_fdc_event_type_client_on_event_type_id_client_id.yaml
+:100644 100644 148c47ff110876ec6cb9f6e718d0fab5556ffe17 8d061dd779825eacfa9ed5322a249ce496d135ce M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 39de73d1a987a61fa8cb29c1c71fd5f84ed2e106 A	src/main/resources/db/sql/add_index_in_fdc_client_invoice_package_id.sql
+:000000 100644 0000000000000000000000000000000000000000 40c332c54881d90bbf8b988e04e05a2e430fb8c2 A	src/main/resources/db/sql/add_index_in_fdc_event_type_client_on_event_type_id_client_id.sql
+commit 21ef34189314460b6afc2bb89f9e34e0b00a61d1
+tree bcced4e790fc21ee3ea486cec1633afc4473ea04
+parent cc79faf98811132a8ae168989b417114adfbc288
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-18 19:26:04 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-18 19:26:04 +0530
+
+    Add index on fdc stage shipment table
+
+
+:000000 100644 0000000000000000000000000000000000000000 1c808340ddee5b62d7cc855a5bdfd5324ea65ca1 A	src/main/resources/db/changelog/20221118_add_index_in_fdc_stage_shipment_ext_tracking_id.yaml
+:100644 100644 d3fa0f918348ada4dfd5cc085a9b3cb59f7d9e2d 148c47ff110876ec6cb9f6e718d0fab5556ffe17 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 827a7318d290b630a545e6a562e39e6452f45dff A	src/main/resources/db/sql/add_index_in_fdc_stage_shipment_ext_tracking_id.sql
+commit cc79faf98811132a8ae168989b417114adfbc288
+tree d3d5d8650e40dab8153a12e624a35cb4c8f8fb03
+parent c8d8f783b8de3c044b54cd138773439cba2d2bce
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-18 18:28:27 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-18 18:28:27 +0530
+
+    add procedure to create index
+
+
+:000000 100644 0000000000000000000000000000000000000000 2f33121e09b02d509ea7f4eb2bc5399da56f5bdf A	src/main/resources/db/changelog/20221118_procedure_create_index.yaml
+:100644 100644 0411d96b4cadd6cb7a192db80e7b293265b20da4 d3fa0f918348ada4dfd5cc085a9b3cb59f7d9e2d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 63974fb667e467e3d5e302cf227a26ff11f63c9c eda893422121add0eae2a6293e9d178c3450abc4 M	src/main/resources/db/sql/add_index_in_event_tracking_number.sql
+:000000 100644 0000000000000000000000000000000000000000 b0b241fd4b788a993eb5105556874a8fa9240393 A	src/main/resources/db/sql/procedure_create_index.sql
+commit c8d8f783b8de3c044b54cd138773439cba2d2bce
+tree 1f75dbfa12a68b605fc7ebc4a7ff8c4092340842
+parent 82b261a8a143a11ebf9fe958e0a8dec2820452ae
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-18 16:23:24 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-18 16:23:24 +0530
+
+    Add index on event.tracking_number
+
+
+:000000 100644 0000000000000000000000000000000000000000 b1e117c03f89b26918f0854fea08dba9a2f391e8 A	src/main/resources/db/changelog/20221118_add_index_in_event_tracking_number.yaml
+:100644 100644 877230bea34a5e1db5f4752e338cb46f159b930e 0411d96b4cadd6cb7a192db80e7b293265b20da4 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 63974fb667e467e3d5e302cf227a26ff11f63c9c A	src/main/resources/db/sql/add_index_in_event_tracking_number.sql
+commit 04377c44dd0b8b560075cac60b81fe7c039fb9b1
+tree 3c149e3083b230d45d2bab697267511331f870b5
+parent 59a0f53b60b0427a3da3eb8ca8d81062c989e8aa
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-16 14:40:22 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-16 14:40:22 +0530
+
+    added new auth changes
+
+
+:000000 100644 0000000000000000000000000000000000000000 b9c1c4970e11704a45e66d407cdfb745450a0da7 A	src/main/resources/db/changelog/2022-11-11-create-tables-for-auth-changes.yaml
+:100644 100644 cb2e71bcbfb9a5bc39cdae4bf091eba5147db1c0 48f487dd4db81d8db85f28a71ce223bf4c0256a7 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 5b7f0028914d579cdc5c4c4f614b29b0def74b96 A	src/main/resources/db/sql/create_new_auth_related_tables.sql
+commit 13a1fb4aefa5575d2ccb40de2bcdd3d803dfd87c
+tree 450687835e525fab332f87f443be82b8863c7827
+parent 59a0f53b60b0427a3da3eb8ca8d81062c989e8aa
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-03 19:36:25 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-03 19:36:25 +0530
+
+    Added package exception tracking table
+
+
+:000000 100644 0000000000000000000000000000000000000000 79450a61a8062985679cb97505d682813a57d95c A	src/main/resources/db/changelog/20221103_create_package_exception_tracking_table.yaml
+:100644 100644 cb2e71bcbfb9a5bc39cdae4bf091eba5147db1c0 877230bea34a5e1db5f4752e338cb46f159b930e M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 d388b22c9b8c748df5e2ed82397b0d8f521305e8 A	src/main/resources/db/sql/create_package_exception_tracking_table.sql
+commit 30449aa42e4d3d52ab73f12a97da54d4c5cddf84
+tree 3f538944582f9b293012d4c38a153ead18695361
+parent d1e9c661ddce960c89918482653aae37a3b48dec
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-02 12:32:17 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-02 12:32:17 +0530
+
+    added event store table
+
+
+:000000 100644 0000000000000000000000000000000000000000 bb4e8e73b9e244726c673a48f4cc5ab1d129dc14 A	src/main/resources/db/changelog/2022-11-01-create-event-store-table.yaml
+:100644 100644 f3e3a70d282670d6903c281fac8c0cd8aaaf42bf cb2e71bcbfb9a5bc39cdae4bf091eba5147db1c0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 98d8af18e6f87179045f4644426db02226118930 A	src/main/resources/db/sql/create_event_store_table.sql

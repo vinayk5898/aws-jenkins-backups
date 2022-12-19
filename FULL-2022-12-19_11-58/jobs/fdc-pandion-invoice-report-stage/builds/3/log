@@ -1,0 +1,24 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-invoice-report-stage
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-invoice-report-stage/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision cb408423471f5cd642a7047b3175f80c7566213c (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cb408423471f5cd642a7047b3175f80c7566213c # timeout=10
+Commit message: "Corrected filter logic by adding datetime"
+ > git rev-list --no-walk 831549800f33ddf830623b9acb99d8eb64cb4628 # timeout=10
+[fdc-pandion-invoice-report-stage] $ /bin/sh -xe /tmp/jenkins10061362663015819384.sh
++ cd python_scripts
++ python3 Pandion_invoice_report_stage.py
+Finished: SUCCESS

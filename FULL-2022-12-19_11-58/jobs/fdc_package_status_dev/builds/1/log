@@ -1,0 +1,61 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc_package_status_dev
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+No emails were triggered.
+[fdc_package_status_dev] $ /bin/sh -xe /tmp/jenkins16350005111333361636.sh
++ docker run imega/mysql-client mysql --host=ffdc.cw4jtwdt36yd.us-west-2.rds.amazonaws.com --user=vinayk --password= --database=fdc --execute=SELECT replace(et.REPORTING_STATUS , ' ','_') AS Status,
+    SUM(IF(p.parcel_center_id = 13,1,0)) AS 'Boston', SUM(IF(p.parcel_center_id = 3,1,0)) AS 'Houston', SUM(IF(p.parcel_center_id = 2,1,0)) AS 'Philadelphia', SUM(IF(p.parcel_center_id = 8,1,0)) AS 'Pittsburgh', COUNT(*) AS 'TOTAL'
+FROM fdc.package p LEFT JOIN fdc_report.v_event_type et ON p.status = et.name
+WHERE (DATE(delivery_date) = DATE(NOW()))
+GROUP BY et.REPORTING_STATUS
+ORDER BY FIELD(et.REPORTING_STATUS,
+'Manifest Received',
+'Arrived at Facility',
+'Not Arrived at Facility',
+'Departed from Origin',
+'Package Routed',
+'Sorted',
+'Loaded on Truck',
+'Removed from Route',
+'Out for Delivery',
+'Delivered',
+'Delivered by 3rd Party',
+'Returned to Station',
+'Cancelled Max Attempts Reached',
+'Cancelled by Shipper',
+'Returned to Client'
+
+'CON EXC: Damaged on Route',
+'CON EXC: Delivery Not Attempted',
+'CON EXC: Driver did not Pick up Package',
+'CON EXC: Unable to Access Address',
+'CON EXC: Unable to Deliver',
+'CON EXC: Unable to Locate Address',
+
+'UNC EXC: Address Not Found',
+'UNC EXC: Bad Address',
+'UNC EXC: Business Closed',
+'UNC EXC: Conditions not Safe for Delivery',
+'UNC EXC: Customer Moved',
+'UNC EXC: Customer Refused',
+'UNC EXC: Holiday',
+'UNC EXC: Late Delivery Attempt',
+'UNC EXC: No Access Granted from Security',
+'UNC EXC: No Secure Location',
+'UNC EXC: No Signature Acquired',
+'UNC EXC: Received Damaged Package',
+'UNC EXC: Resident not in'
+), et.id
+;
+Got error: Unknown MySQL server host 'ffdc.cw4jtwdt36yd.us-west-2.rds.amazonaws.com' (-2)
+Build step 'Execute shell' marked build as failure
+Email was triggered for: Failure - Any
+Email was triggered for: Always
+Sending email for trigger: Failure - Any
+Sending email to: nitish.kumar@frontdoorcorp.com vinay.kumar@frontdoorcorp.com
+Sending email for trigger: Always
+Sending email to: nitish.kumar@frontdoorcorp.com vinay.kumar@frontdoorcorp.com
+Finished: FAILURE

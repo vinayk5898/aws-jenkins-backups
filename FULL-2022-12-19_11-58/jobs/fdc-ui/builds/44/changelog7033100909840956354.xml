@@ -1,0 +1,21 @@
+commit a0fc0c75d1f45c4901616c1cef83ce56490fbf4b
+tree 1e2c9b9c5997d035ebb50368e7efd71d9e84039b
+parent 198cee13f7e08a9239b202890cdf4445e4d8da36
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-07 16:39:22 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-07 16:39:22 +0530
+
+    added few changes
+
+
+:100644 100644 6d3a70618a9d498942789baaa75d5f86de19d73e 5d3bf69ad744307b1e9aa3c85df85c80088c5375 M	src/pages/ManifestIngestion/ManifestIngestion.styles.ts
+commit 198cee13f7e08a9239b202890cdf4445e4d8da36
+tree ed511a6f414e406c1a186a943ea84c88db26f30c
+parent cdbe847a1cd90b1a3a8869e2a04c0587a6921892
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-07 16:27:17 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-07 16:27:17 +0530
+
+    added few changes
+
+
+:100644 100644 9121603825cf0a6558eedd95b7bfd55f9618d657 6d3a70618a9d498942789baaa75d5f86de19d73e M	src/pages/ManifestIngestion/ManifestIngestion.styles.ts
+:100644 100644 f96d7926a5a9acca8b1d405d6d5f9dc4ede1d204 b591254e209e1d548dc775406b53274451e7c4e1 M	src/pages/ManifestIngestion/ManifestIngestion.tsx

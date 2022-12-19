@@ -1,0 +1,67 @@
+commit f8c645dd1811da6c994d2e94209912c72a95a83d
+tree 97158b94cd787bd3e48dc78a1cd71bd64d3038aa
+parent 4fadf9bf41c99fbb1d8695afba030c9d0fe90e9b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 11:34:46 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 11:34:46 +0530
+
+     Resolving git commit
+
+
+:100644 100644 ea06f1b8ed0b7fb4b5a383dd8a33f670f746c2af 788c2566f605754eb178e58a31c06eb45bde4b9c M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 1461b217aa83ab8cb06d184522b558d6e15fc246
+tree 30e021e67a59c118fffe54960298532fed1ec3f7
+parent 811390b8d280950332720cf0d1a5a5030b500d7e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 00:27:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-08-01 00:27:24 +0530
+
+    FDC-1039 :: fixed field in case of null
+
+
+:100644 100644 e3997578d56138152355cc0029071274c56a4da5 e1c0de40243aef91a6a473d9d5127bed1c3ac4ec M	src/main/resources/db/sql/fdc_dell_account_number_field_logic_update.sql
+commit 811390b8d280950332720cf0d1a5a5030b500d7e
+tree 675907add62e2361f1bf5f63ed40ae13afb59128
+parent 72f1ecfd30194f9481c8b1d1828b1d1df7b34be3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 03:17:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 03:17:54 +0530
+
+    FDC-1039 ::  drop view
+
+
+:100644 100644 d05836798b1a5d103299ee6167c905c667765bec e3997578d56138152355cc0029071274c56a4da5 M	src/main/resources/db/sql/fdc_dell_account_number_field_logic_update.sql
+commit 72f1ecfd30194f9481c8b1d1828b1d1df7b34be3
+tree 99e50e2aeb1d64cc3e6302c0de3b872ae9996244
+parent 37ccb6d7677f7876dfbc18b5eec0c4f82d34db3f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 03:13:34 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-31 03:13:34 +0530
+
+    FDC-1039 :: view changes
+
+
+:000000 100644 0000000000000000000000000000000000000000 1c281566119a4d57cea325956540986f925bad2b A	src/main/resources/db/changelog/2022-07-31-fdc-dell-account-number-field-logic-update.yaml
+:100644 100644 34d36b090e3f1001f75a28f23a60df617e032e14 879d057cee2c2f185b049c2b04eb0b22687027e1 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 d05836798b1a5d103299ee6167c905c667765bec A	src/main/resources/db/sql/fdc_dell_account_number_field_logic_update.sql
+commit 3b064d816f86ec0c2fed4016cdd4b24a3ce650ea
+tree 97b9acc65c50a0d68a67ca6c22dccab7343a1342
+parent de8d76b658d5d4a279ba48a2fe0b584e4ae1b4b3
+author Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-28 14:42:07 +0300
+committer Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-28 14:42:07 +0300
+
+    update feature branch
+
+
+:100644 100644 3cb999a61415bb408a05853402a02f2e88d92308 0f15a21faa4a597cdf28d72bdf182f027845d2bf M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 63dac78c1902ca9872314ada97300eda13de2f6b
+tree 27f26cd3b88e00654199457a0d62138bd1e6adb0
+parent 723c4e69a7f87ebf8b6f0c2344e99384d0278cdc
+author Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-27 16:07:22 +0300
+committer Yauhen Makaranka <yauhen.makaranka@itechart-group.com> 2022-07-27 16:07:22 +0300
+
+    FDC-975 Estimate the arrival and delivery date for Dell Packages
+
+
+:000000 100644 0000000000000000000000000000000000000000 6946c255b7ec2952db780fd95d0acdaa56736824 A	src/main/resources/db/changelog/2207022_cloudsort_dispatched_event_handling_v2.yaml
+:000000 100644 0000000000000000000000000000000000000000 794b98e87d591640e3ef7346541bceea11c55e9d A	src/main/resources/db/changelog/2207027_cloudsort_dispatched_event_handling_v3.yaml
+:100644 100644 7576c88fa8449287ef24f343b34c2e723bae5359 da58fdb5c729cd99d06f89eb34d404cba51101b0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 08d8c1c53c352e83773d9e0b2016d267dd138f39 A	src/main/resources/db/sql/fdc_delete_transit_time_table.sql
+:000000 100644 0000000000000000000000000000000000000000 5de40c16aa03e1694bfe86238bb2f4fff2ca83f6 A	src/main/resources/db/sql/fdc_fake_parcel_centers.sql
+:000000 100644 0000000000000000000000000000000000000000 df65f2fa6d0d9013ac7798e43d20c7d371a1b7f5 A	src/main/resources/db/sql/fdc_update_middle_mile_facilities.sql

@@ -1,0 +1,34 @@
+commit 5f6c5414a327823f966268e4776962f168637aa9
+tree 17a70a6b894ae43e8b641781a9508c97f21de8da
+parent c38f6dbcdbdd3eb0bfec1369d3c0cc48cf2f38d9
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-12 16:51:05 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-12 16:51:05 +0530
+
+    Update 221212_updation_in_dcs_table.sql
+
+
+:100644 100644 209aec030bbb241b672e236908b00f73f34046f1 bc298e6b28c322a70d24c89ba7da1b0dcd0af80d M	src/main/resources/db/sql/221212_updation_in_dcs_table.sql
+commit c38f6dbcdbdd3eb0bfec1369d3c0cc48cf2f38d9
+tree cd93ccc53a2303e18cb3f636e1d7f804483c332a
+parent c9cc83fb15abdbe3e90e655d18dcc26350186777
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-12 16:23:03 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-12 16:23:03 +0530
+
+    addition of timestamp to dcs table
+
+
+:000000 100644 0000000000000000000000000000000000000000 5fe2d378ebdbeb5decb7f00ea5d792cfc3c7486b A	src/main/resources/db/changelog/2022-12-12-update-dcs-table.yaml
+:100644 100644 c3f5d31e516d231d79d7724c610da11eb976a8a7 e1bb7d5ca71f53bd950e073c6b406853355cf4c8 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 209aec030bbb241b672e236908b00f73f34046f1 A	src/main/resources/db/sql/221212_updation_in_dcs_table.sql
+commit f8648a367d4a99be949807f51ee4915098b4b19a
+tree 68634b7ea5ac727e01db72d0e256988b5ed23f06
+parent 2dad05d7962e3e65a91082504acfeb8a4436b6a5
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 13:24:13 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 13:24:13 +0530
+
+    event type and gc_event_mapping added
+
+
+:000000 100644 0000000000000000000000000000000000000000 c87f2613b48565e56ba793c0277073cc456eecdb A	src/main/resources/db/changelog/2022-12-07_add_event_type_and_gc_mapping.yaml
+:100644 100644 73b1f27756a2b74a50f9968ededeac83781672ae c3f5d31e516d231d79d7724c610da11eb976a8a7 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 86d4f713f445fc72f6ec6720bbecf8073e6a2b7d A	src/main/resources/db/sql/221207_add_pickup_event_types_and_gc_mapping.sql

@@ -1,0 +1,24 @@
+commit 9cd3fadf6fb5bfc4a12ea7e987a636c5b689b0a4
+tree 5bdcf38a89718ea3967a58e2676470fdbed5b711
+parent 73d11a69ba90c98131d11059fd4780e350aea465
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-13 11:34:17 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-13 11:34:17 +0530
+
+    added driver_name
+
+
+:100644 100644 b4b19408b7aad5c3b2d390e0922662a31213fffc f77017d406f537f70b14426d22328e378a8ca664 M	python_scripts/daily_exceptions_report.py
+:100644 100644 d337559f62bb42fe5111fe9b399ea5851a7c128f fb501475c4555b22c398dbbaacc1debad88cadd0 M	python_scripts/daily_exceptions_report_prod.py
+:100644 100644 ec16260322ec126922ec5025d8bb6d1c06327af4 8827d7c923e8eb5314764dd53a8baa1ffac835b7 M	python_scripts/daily_exceptions_report_stage.py
+commit 73d11a69ba90c98131d11059fd4780e350aea465
+tree b657165ba1402e6c9c9e583f3e395c522049719d
+parent 17be4b0eb28b59664845d6eb4da31a3f56317b86
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-13 08:48:52 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-13 08:48:52 +0530
+
+    fixed issue in the OFD>Delivered query
+
+
+:100644 100644 22f76ac4788f03254bb5cd2455728bbf794974db b4b19408b7aad5c3b2d390e0922662a31213fffc M	python_scripts/daily_exceptions_report.py
+:100644 100644 71f6e4f524d9de28ba0d6cc229046cd6c32d5fad d337559f62bb42fe5111fe9b399ea5851a7c128f M	python_scripts/daily_exceptions_report_prod.py
+:100644 100644 ac0db8ab25e06a2734d0122c39d8b6d9f625f19c ec16260322ec126922ec5025d8bb6d1c06327af4 M	python_scripts/daily_exceptions_report_stage.py

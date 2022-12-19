@@ -1,0 +1,21 @@
+commit 63a1277c5c83fcc0ecf91fbeef14a95895aee6b7
+tree 9e32be53dc399190a70e6b3c6538d64d63c3a396
+parent d6be7c4fb6c49d921beb98c387160614c9e4f724
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-18 23:11:20 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-18 23:11:20 +0530
+
+    FDC-893 :: Parameterised cut off time
+
+
+:100644 100644 9452a6c08054d1073ce10319d4f319c964f857d4 e677620b9e493c97cb6083b5be2ec61873baafa7 M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+:100644 100644 3b8ba0b7dd23ce04bef5c408062c787859632f31 5983282a520ae1bcb403138a16a7dde1e25d5f8b M	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit d6be7c4fb6c49d921beb98c387160614c9e4f724
+tree 5c01c55d719859ed4f98e9a3c13af973966864a9
+parent cccb0e276b08f164c17e873cdc6690aaa1b082b0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-15 16:41:59 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-15 16:41:59 +0530
+
+    FDC-893 changed logic with updated fields
+
+
+:100644 100644 da7b86e996ba405def81c9b64f635df2b3ac0cff 3b8ba0b7dd23ce04bef5c408062c787859632f31 M	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql

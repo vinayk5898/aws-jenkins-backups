@@ -1,0 +1,21 @@
+commit 371298eba91ee3c2b5ba02e25d9271e173d0f11a
+tree e677afa7323978d63370072ce5fc4369933ec1b8
+parent ab7e396e2a6461bee5a6cbb3efe4bffa2ef1dbae
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:54:38 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:54:38 +0530
+
+    table name fix
+
+
+:100644 100644 45891afe393a3c601481f8b672026884c282a800 236e08ba5da55b2bf387b926f19a65bc9e2c94f7 M	src/main/resources/db/changelog/2022-05-12-30-insert-NSL-exception-eventtype.yaml
+commit ab7e396e2a6461bee5a6cbb3efe4bffa2ef1dbae
+tree af218463d1590f421e1bdbd7cacc9aa37fd8c66c
+parent 0b98ae5f10ea9c11231e82aac066dcaf9abd7745
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:17:50 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:17:50 +0530
+
+    insert NSL exception code, updation description for HOL exception
+
+
+:000000 100644 0000000000000000000000000000000000000000 45891afe393a3c601481f8b672026884c282a800 A	src/main/resources/db/changelog/2022-05-12-30-insert-NSL-exception-eventtype.yaml
+:100644 100644 306018b2e0d2ac01c2bec8d86a2217ff3af01bfc 3b9be0d1c8646330a36410a99a2d168e7384a8cf M	src/main/resources/db/changelog/db.changelog-master.yaml

@@ -1,0 +1,29 @@
+Started by user [8mha:////4EEU3YRk+b1MmgfKrpZubC3gJQ0vOcBlRPM10GFI9jZ7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYe/dLi1CL9jKT8nJxEALsRv1DBAAAA[0mHari Bolla
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-IB-manifest-dev
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-IB-manifest-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 512fa42d87c12b261b29b9d2ce002cfd2d5f239b (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 512fa42d87c12b261b29b9d2ce002cfd2d5f239b # timeout=10
+Commit message: "Merge pull request #6 from The-Frontdoor-Collective/feature/FDC-893"
+ > git rev-list --no-walk 31cea1f51223a326208f4b4aca8a5373dfd0ffb9 # timeout=10
+[fdc-IB-manifest-dev] $ /bin/sh -xe /tmp/jenkins5180173725944272142.sh
++ cd python_scripts
++ python3 IB_Manifest.py
+Connection successfully established ... 
+FOUND FILE 2022_TEST-3.csv
+2 record inserted
+0 record inserted
+no files were detected in folder or loop reached end 
+Finished: SUCCESS

@@ -1,0 +1,10 @@
+commit 4b033163fa5071424d3af1e2dbaa671c52de62d9
+tree 73c942d59cb9c7ec10d8222dcbbe800e58c9f2c1
+parent 5eeab7cb72da6eba69f75831bded7eef80704035
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 18:39:22 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 18:39:22 +0530
+
+    added checksryle
+
+
+:100644 100644 df61ad875a505d49d0224c15181507fdd2524cb3 39247c5aeeea49e1a1675f4fc5dbd3b93b7daf0e M	src/main/java/com/fdc/core/model/jpa/ClientUserRole.java

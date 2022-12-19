@@ -1,0 +1,10 @@
+commit 17be4b0eb28b59664845d6eb4da31a3f56317b86
+tree 02eeebc55884e183699075cc7f69945a70108c4b
+parent 99886e00f85823d366ea89e1a6e8b2356be489bd
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-13 07:08:18 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-13 07:08:18 +0530
+
+    Update daily_exceptions_report_prod.py
+
+
+:100644 100644 7a1cfa4431a002695faeb2b49b912d43030282b4 71f6e4f524d9de28ba0d6cc229046cd6c32d5fad M	python_scripts/daily_exceptions_report_prod.py

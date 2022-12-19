@@ -1,0 +1,41 @@
+Started by user [8mha:////4P+/dDx6Qgzg5+JbUV+XyFeZ19ZCBQuvtUETu4RUHhvZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL93JTElFIA1sE1isAAAAA=[0mMohit Dadu
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-pandion-milestone-prod
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-pandion-milestone-prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-177^{commit} # timeout=10
+Checking out Revision da44ed33965e27a62ec1466a6fad27da26fae74e (refs/remotes/origin/ITDMF-177)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f da44ed33965e27a62ec1466a6fad27da26fae74e # timeout=10
+Commit message: "Update mailTo.json"
+ > git rev-list --no-walk 4b0f7b0b22e4676e7c08ef445d51c38a65d39299 # timeout=10
+[fdc-pandion-milestone-prod] $ /bin/sh -xe /tmp/jenkins692690296613814423.sh
++ cd python_scripts
++ python3 Daily_Missing_Manifest_Report.py mysql-prod.frontdoorcorp.net etluser fl@tCurve17 fdc_stage
+database connection successfully
+dataframe Created
+Creating workbook
+writing excel
+  location_name    tracking_number  ...          created_on          updated_on
+0          BOSA  2P100000051040433  ... 2022-12-15 12:51:24 2022-12-15 12:51:24
+1          BOSA  2P100000051875336  ... 2022-12-15 12:54:27 2022-12-15 12:54:27
+2          BOSA  2P100000051742566  ... 2022-12-15 12:54:32 2022-12-15 12:54:32
+3          BOSA  2P100000051286064  ... 2022-12-15 12:57:32 2022-12-15 12:57:32
+4          BOSA  2P100000051808235  ... 2022-12-15 12:59:52 2022-12-15 12:59:52
+5          BOSA  2P100000051202980  ... 2022-12-15 13:09:02 2022-12-15 13:09:02
+6          BOSA  2P100000051442738  ... 2022-12-15 13:09:12 2022-12-15 13:09:12
+7          BOSA  2P100000051684053  ... 2022-12-15 13:13:19 2022-12-15 13:13:19
+
+[8 rows x 6 columns]
+Email has been sent.
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

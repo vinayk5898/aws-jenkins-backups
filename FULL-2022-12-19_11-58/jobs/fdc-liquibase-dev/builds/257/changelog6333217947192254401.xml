@@ -1,0 +1,12 @@
+commit 21ef34189314460b6afc2bb89f9e34e0b00a61d1
+tree bcced4e790fc21ee3ea486cec1633afc4473ea04
+parent cc79faf98811132a8ae168989b417114adfbc288
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-18 19:26:04 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-18 19:26:04 +0530
+
+    Add index on fdc stage shipment table
+
+
+:000000 100644 0000000000000000000000000000000000000000 1c808340ddee5b62d7cc855a5bdfd5324ea65ca1 A	src/main/resources/db/changelog/20221118_add_index_in_fdc_stage_shipment_ext_tracking_id.yaml
+:100644 100644 d3fa0f918348ada4dfd5cc085a9b3cb59f7d9e2d 148c47ff110876ec6cb9f6e718d0fab5556ffe17 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 827a7318d290b630a545e6a562e39e6452f45dff A	src/main/resources/db/sql/add_index_in_fdc_stage_shipment_ext_tracking_id.sql

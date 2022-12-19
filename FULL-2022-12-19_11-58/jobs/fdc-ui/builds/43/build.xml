@@ -1,0 +1,486 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>releaseVersion</name>
+          <value>2022.11.02.0</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>fdcenv</name>
+          <description>Choose the environment you want to deploy to.</description>
+          <value>dev</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Git_Branch</name>
+          <description>Please mention required git branch
+Eg: develop
+       release/xxxx.xx.xx</description>
+          <value>release/2022.11.02</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>releaseVersion</string>
+        <string>fdcenv</string>
+        <string>Git_Branch</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>vkumar</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.10.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/release/2022.10.14</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>ea100fbcb10374f44bc969f596eb2bc94c7d17f5</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/release/2022.10.14</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>42</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/release/2022.09.28</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>163bbbfbcb1906f40048cc9c70c314bd6cba8ef5</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/release/2022.09.28</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>31</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>refs/remotes/origin/release/2022.11.02</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>2a0a101563b8f804b94bc436201619618b075edf</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/release/2022.11.02</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>43</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/ITMF-8-ui</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>e21605cad07c29ff72074b447df81fd9a33f4769</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/ITMF-8-ui</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>33</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+        <entry>
+          <string>origin/develop</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.10.0">
+              <sha1>dd87a1eedc16d2be3c2771f3e1d6a6b19e1e412c</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/develop</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision plugin="git-client@3.10.0">
+              <sha1 reference="../../marked/sha1"/>
+              <branches class="list">
+                <hudson.plugins.git.Branch reference="../../../marked/branches/hudson.plugins.git.Branch"/>
+              </branches>
+            </revision>
+            <hudsonBuildNumber>29</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry[3]/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/The-Frontdoor-Collective/fdc-ui.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.13">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/The-Frontdoor-Collective/fdc-ui.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@548.v9085a486966a">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.3">
+      <stagesUUID>f3ebdcfc-0903-4269-a556-f6baeed440a5</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.3">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Building docker image</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if (releaseVersion == &apos;latest&apos;) {
+                            dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+                        } else {
+                            dockerTag = &quot;${params.releaseVersion}&quot;
+                        }
+
+                  dockerImage = docker.build(&quot;837587249384.dkr.ecr.us-west-2.amazonaws.com/$imagename&quot;,&quot;--build-arg STRIPE_KEY=abc -f docker/Dockerfile .&quot;)</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Publishing docker Image</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">docker.withRegistry(ecrurl, ecrcredentials) {     
+                     dockerImage.push(dockerTag)
+
+                  }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Updating Parameter File</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">
+                      ImageTag=$(grep -A1 &quot;ImageTag&quot; ${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json | tail -1 | cut -d &quot;:&quot; -f2 | cut -d &quot;\&quot;&quot; -f2)
+                      if [ $releaseVersion = &quot;latest&quot; ]
+                      then
+                       sed -i &quot;s/$ImageTag/${dockerTag}/&quot; ${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json
+                      else
+                       sed -i &quot;s/$ImageTag/${releaseVersion}/&quot; ${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json
+                      fi
+                      </value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Deploying stack in ${fdcenv} environment</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">if (fdcenv == &apos;dev&apos;) {
+                               withAWS(roleAccount:&apos;051244547718&apos;, role:&apos;AllowAltirJenkins&apos;) {
+                                    sh &apos;cat fdc-svc-ui-${fdcenv}-parameter.json&apos;
+                                    sh &apos;aws cloudformation update-stack --stack-name fdc-svc-ui --region us-west-2 --template-body file://${WORKSPACE}/fdc-svc-ui.yml --parameters file://${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json --capabilities &quot;CAPABILITY_IAM&quot; &quot;CAPABILITY_NAMED_IAM&quot;&apos;
+                                    sh &apos;aws cloudformation wait stack-update-complete --stack-name fdc-svc-ui --region us-west-2&apos;
+                                }
+                    } else if (fdcenv == &apos;OnlyBuild&apos;) {
+                                    sh &apos;echo &quot;Build successful&quot;&apos;
+                    } else {
+                                    sh &apos;echo &quot;Please run this job for OnlyBuild or CI deployments&quot;&apos;
+                                    sh &apos;exit 1&apos;
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>f3ebdcfc-0903-4269-a556-f6baeed440a5</uuid>
+          </stages>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>imagename</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">fdc-ui</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>ecrurl</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">https://837587249384.dkr.ecr.us-west-2.amazonaws.com</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>ecrcredentials</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">ecr:us-west-2:aws-credentials</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>dockerTag</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                  <value class="string">&quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2633.v6baeedc13805">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.6.1">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+  </actions>
+  <queueId>106013</queueId>
+  <timestamp>1667560481459</timestamp>
+  <startTime>1667560481490</startTime>
+  <result>SUCCESS</result>
+  <duration>224277</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    environment {
+        imagename = &quot;fdc-ui&quot;
+        ecrurl = &quot;https://837587249384.dkr.ecr.us-west-2.amazonaws.com&quot;
+        ecrcredentials = &quot;ecr:us-west-2:aws-credentials&quot;
+        dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+       // AWS_DEFAULT_REGION = us-west-2
+    } 
+    agent any
+    stages {
+        stage(&apos;Building docker image&apos;) {
+            steps{
+                script {
+                        if (releaseVersion == &apos;latest&apos;) {
+                            dockerTag = &quot;latest-${BUILD_NUMBER}-${BUILD_TIMESTAMP}&quot;
+                        } else {
+                            dockerTag = &quot;${params.releaseVersion}&quot;
+                        }
+
+                  dockerImage = docker.build(&quot;837587249384.dkr.ecr.us-west-2.amazonaws.com/$imagename&quot;,&quot;--build-arg STRIPE_KEY=abc -f docker/Dockerfile .&quot;)
+                }
+            }
+        }
+        stage(&apos;Publishing docker Image&apos;) {
+            steps{
+                script {
+                  docker.withRegistry(ecrurl, ecrcredentials) {     
+                     dockerImage.push(dockerTag)
+
+                  }
+                }
+            }
+        }
+        stage (&apos;Updating Parameter File&apos;) {
+            steps {
+                sh &apos;&apos;&apos;
+                      ImageTag=$(grep -A1 &quot;ImageTag&quot; ${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json | tail -1 | cut -d &quot;:&quot; -f2 | cut -d &quot;\\&quot;&quot; -f2)
+                      if [ $releaseVersion = &quot;latest&quot; ]
+                      then
+                       sed -i &quot;s/$ImageTag/${dockerTag}/&quot; ${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json
+                      else
+                       sed -i &quot;s/$ImageTag/${releaseVersion}/&quot; ${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json
+                      fi
+                      &apos;&apos;&apos;
+            }
+        } 
+        stage(&apos;Deploying stack in ${fdcenv} environment&apos;) {
+            steps {
+                script {
+                    if (fdcenv == &apos;dev&apos;) {
+                               withAWS(roleAccount:&apos;051244547718&apos;, role:&apos;AllowAltirJenkins&apos;) {
+                                    sh &apos;cat fdc-svc-ui-${fdcenv}-parameter.json&apos;
+                                    sh &apos;aws cloudformation update-stack --stack-name fdc-svc-ui --region us-west-2 --template-body file://${WORKSPACE}/fdc-svc-ui.yml --parameters file://${WORKSPACE}/fdc-svc-ui-${fdcenv}-parameter.json --capabilities &quot;CAPABILITY_IAM&quot; &quot;CAPABILITY_NAMED_IAM&quot;&apos;
+                                    sh &apos;aws cloudformation wait stack-update-complete --stack-name fdc-svc-ui --region us-west-2&apos;
+                                }
+                    } else if (fdcenv == &apos;OnlyBuild&apos;) {
+                                    sh &apos;echo &quot;Build successful&quot;&apos;
+                    } else {
+                                    sh &apos;echo &quot;Please run this job for OnlyBuild or CI deployments&quot;&apos;
+                                    sh &apos;exit 1&apos;
+                    }     
+                }
+                
+            }
+    
+        }
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>2581506802</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>827329967</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>6709513804</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>182224969</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1313652137</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>70</iota>
+    <head>1:70</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.10.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/The-Frontdoor-Collective/fdc-ui.git</url>
+            <credentialsId>vinay-github</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>${Git_Branch}</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/fdc-ui@script</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" reference="../../org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout/scm"/>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/fdc-ui</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

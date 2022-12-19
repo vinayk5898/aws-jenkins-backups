@@ -1,0 +1,10 @@
+commit 10de78362b6012af08c0819965c47d5598551549
+tree b4495e7018347f50ef8db251da02775eb2707fdd
+parent 07d68379b102b1d3578bc7d66941b7065c66d7d3
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 16:27:04 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 16:27:04 +0530
+
+    Update XmlSenderServiceImpl.java
+
+
+:100644 100644 f0152d9575fbee552690bd49ff28eccb9831612f 58df6688700f1e79aa41e1f72999426600312d3e M	src/main/java/com/fdc/staplesadapter/service/impl/XmlSenderServiceImpl.java

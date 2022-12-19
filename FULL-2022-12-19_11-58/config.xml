@@ -1,0 +1,116 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>hudson.diagnosis.TooManyJobsButNoView</string>
+    <string>jenkins.diagnostics.ControllerExecutorsNoAgents</string>
+    <string>jenkins.security.QueueItemAuthenticatorMonitor</string>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
+  <version>2.303.1</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:fdc-jenkins-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:fdc-jenkins-developer</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:fdc-jenkins-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:fdc-jenkins-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:fdc-jenkins-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:fdc-jenkins-admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Computer.Build:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Computer.Configure:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Computer.Connect:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Computer.Create:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Computer.Delete:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Computer.Disconnect:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Hudson.Administer:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Hudson.Administer:vkumar</permission>
+    <permission>hudson.model.Hudson.Read:authenticated</permission>
+    <permission>hudson.model.Hudson.Read:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Hudson.Read:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Item.Build:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Build:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Item.Cancel:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Cancel:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Item.Configure:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Configure:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Item.Create:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Create:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Item.Delete:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Discover:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Move:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Read:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Read:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Item.Workspace:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Item.Workspace:fdc-jenkins-developer</permission>
+    <permission>hudson.model.Run.Delete:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Run.Replay:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Run.Update:fdc-jenkins-admin</permission>
+    <permission>hudson.model.Run.Update:fdc-jenkins-developer</permission>
+    <permission>hudson.model.View.Configure:fdc-jenkins-admin</permission>
+    <permission>hudson.model.View.Create:fdc-jenkins-admin</permission>
+    <permission>hudson.model.View.Delete:fdc-jenkins-admin</permission>
+    <permission>hudson.model.View.Read:fdc-jenkins-admin</permission>
+    <permission>hudson.model.View.Read:fdc-jenkins-developer</permission>
+    <permission>hudson.scm.SCM.Tag:fdc-jenkins-admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:fdc-jenkins-admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:fdc-jenkins-admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.View:fdc-jenkins-admin</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.Promote:fdc-jenkins-admin</permission>
+    <permission>org.jfrog.hudson.ArtifactoryPlugin.Release:fdc-jenkins-admin</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.LDAPSecurityRealm" plugin="ldap@2.7">
+    <disableMailAddressResolver>false</disableMailAddressResolver>
+    <configurations>
+      <jenkins.security.plugins.ldap.LDAPConfiguration>
+        <server>ldap.jumpcloud.com</server>
+        <rootDN></rootDN>
+        <inhibitInferRootDN>true</inhibitInferRootDN>
+        <userSearchBase>ou=Users,o=62cc6f30e1bb1f2277c111f0,dc=jumpcloud,dc=com</userSearchBase>
+        <userSearch>uid={0}</userSearch>
+        <groupSearchBase>ou=Users,o=62cc6f30e1bb1f2277c111f0,dc=jumpcloud,dc=com</groupSearchBase>
+        <groupSearchFilter>(&amp; (cn={0})(objectclass=groupOfNames))</groupSearchFilter>
+        <groupMembershipStrategy class="jenkins.security.plugins.ldap.FromGroupSearchLDAPGroupMembershipStrategy">
+          <filter>(member={0})</filter>
+        </groupMembershipStrategy>
+        <managerDN>uid=itsupport,ou=Users,o=62cc6f30e1bb1f2277c111f0,dc=jumpcloud,dc=com</managerDN>
+        <managerPasswordSecret>{AQAAABAAAAAQHiMW0Ln6qtrawqUeDWJsniJbxMNuJS1D5MDpKvWlfD4=}</managerPasswordSecret>
+        <displayNameAttributeName>cn</displayNameAttributeName>
+        <mailAddressAttributeName>mail</mailAddressAttributeName>
+        <ignoreIfUnavailable>false</ignoreIfUnavailable>
+      </jenkins.security.plugins.ldap.LDAPConfiguration>
+    </configurations>
+    <userIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
+    <groupIdStrategy class="jenkins.model.IdStrategy$CaseInsensitive"/>
+    <disableRolePrefixing>true</disableRolePrefixing>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>50000</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

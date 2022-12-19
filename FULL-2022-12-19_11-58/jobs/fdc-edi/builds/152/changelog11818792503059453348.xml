@@ -1,0 +1,11 @@
+commit be16a7ae77a67b2bcc188538f2e26dd32a796e56
+tree 0702e419c18f891e3597886380c7e0d8cc516f2d
+parent eb2b413fbbcaa7beee9b7c410ff315a267b214d2
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-14 12:10:05 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-14 13:39:49 +0530
+
+    support for .edi extension
+
+
+:100644 100644 2805276d8db03af15d8264fee344940eeb0c7af7 2ebe58f7824089877f0cc6e8fc4c07606247e05e M	src/main/java/com/fdc/adapter/config/FileExtensionFileListFilter.java
+:100644 100644 fa08fb5fd4d20933bbaf5d3696f167b1610ae2cf 5aff1aa221e16bc6cc12cd5c81596ff69d77096e M	src/main/java/com/fdc/adapter/config/SftpInboundConfig.java

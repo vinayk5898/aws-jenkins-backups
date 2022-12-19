@@ -1,0 +1,10 @@
+commit cb408423471f5cd642a7047b3175f80c7566213c
+tree aac6c9749d153aedd2b7c1f15b9247711f3ed571
+parent 831549800f33ddf830623b9acb99d8eb64cb4628
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-30 20:52:42 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-30 20:52:42 +0530
+
+    Corrected filter logic by adding datetime
+
+
+:100644 100644 ddedabd5559b4ab9ee8bf783912413638d1284ce afac70ae77b7c10f48b807d9f40fa5bafc181e88 M	python_scripts/Pandion_invoice_report_stage.py

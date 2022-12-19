@@ -1,0 +1,20 @@
+commit fba2a7ca393f333ceaba6b094f9afc72238645b5
+tree 16e140598358bac7b83a9872ad13c0ab3b870c89
+parent 2294aff4ff482adc88bf20ee2fac0354b02d14e9
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-17 14:39:08 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-17 14:39:08 +0530
+
+    Add check method for existing indexes
+
+
+:100644 100644 055b590527c21714da52f022b0a36ede18403b4f 63974fb667e467e3d5e302cf227a26ff11f63c9c M	src/main/resources/db/sql/add_index_in_event_tracking_number.sql
+commit 2294aff4ff482adc88bf20ee2fac0354b02d14e9
+tree 89d95ecd47673be89da43b43d48ae6592e6cc2a9
+parent a403f032e36bad0ae7607baf7ef100a0f4da62b6
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-16 17:27:04 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-16 17:27:04 +0530
+
+    Update add_index_in_event_tracking_number.sql
+
+
+:100644 100644 90093e7bb2ecff1a016091ffc139a073d80b4501 055b590527c21714da52f022b0a36ede18403b4f M	src/main/resources/db/sql/add_index_in_event_tracking_number.sql

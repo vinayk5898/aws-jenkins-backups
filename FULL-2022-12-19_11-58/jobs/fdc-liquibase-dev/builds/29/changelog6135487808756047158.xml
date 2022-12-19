@@ -1,0 +1,10 @@
+commit be076d2825cb8ea3d98100370cab257418a297fd
+tree 8f36351f3bfc231d15c62610572778f8fd6d57c5
+parent 5bb3cf8eed552c7bb5b373a88393556357385689
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-28 15:37:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-28 15:37:56 +0530
+
+    FDC-436:: fixed typo's
+
+
+:100644 100644 cd62b17f4b4e9cafe8103dfac85310af21153fca 1e64fca008008612a5d9a46225711be5e7f9d7f8 M	src/main/resources/db/changelog/2022-03-28-34-fdc-Pandion-Tech-Integration-Data-Model-Changes.yaml

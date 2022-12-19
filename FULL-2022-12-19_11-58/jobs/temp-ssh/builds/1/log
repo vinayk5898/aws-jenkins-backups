@@ -1,0 +1,10 @@
+Started by user [8mha:////4H9G1L0YXL6Xrgxr5ScBRM9Md/1fpGCQ5OyyRDWfh5YpAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZh/dLi1CL9XKB96Yk5iSmZeXmpABijBn7IAAAA[0mMadhavareddy Lingaladinne
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/temp-ssh
+[temp-ssh] $ /bin/sh -xe /tmp/jenkins2166413457990293335.sh
++ ssh ec2-user@10.1.7.82
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Host key verification failed.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

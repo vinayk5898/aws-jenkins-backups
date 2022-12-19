@@ -1,0 +1,52 @@
+commit bf7ca348eaacbace082deb04e73d438ac0fdd3d5
+tree 8a099d7e7aebca50741e45b961d5ecaf725b4316
+parent 5cc8f6df350bf0c9455a4185782f3c2e17d49b69
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-16 16:10:23 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-16 16:10:23 +0530
+
+    add condition Sort by Driver Id
+
+
+:100644 100644 d1fb3346af8858ffed65201312e201d9a758f798 b5a6a488f76fb0880f172203cd1aa61ac275627b M	python_scripts/daily_exceptions_report_by_fdp.py
+commit 8ab9e1138ab3edc5ff4690ceda659e8a285f63ca
+tree 9f4f44809e351575f4bb8a7e52899a5a479212a3
+parent da44ed33965e27a62ec1466a6fad27da26fae74e
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-16 13:23:07 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-16 13:23:07 +0530
+
+    Add email ids
+
+
+:100644 100644 294077934fb7cbde94eddd7ca5a840c68f1cbb93 26227a3dbfa0fd1ac92e73317c48b01db1de02a7 M	properties/mailTo.json
+:100644 100644 24c8a4ec327e2879c1f9f1bd7d896f89b38b5739 0cd070daa6a009a8b02c7dbe18ac59612239a8c9 M	python_scripts/Daily_Missing_Manifest_Report.py
+commit da44ed33965e27a62ec1466a6fad27da26fae74e
+tree 8168765ba172c5f0bc012d6de4577505258b85a8
+parent 4b0f7b0b22e4676e7c08ef445d51c38a65d39299
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-15 19:04:20 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-15 19:04:20 +0530
+
+    Update mailTo.json
+
+
+:100644 100644 2a4f5792a914a848f715621a28e576785da5f29a 294077934fb7cbde94eddd7ca5a840c68f1cbb93 M	properties/mailTo.json
+commit 4b0f7b0b22e4676e7c08ef445d51c38a65d39299
+tree baaeb3f3e6d1dc5fdb3ec9b45615c6e72efbade5
+parent 74f1173b9b7a5b5928738a1ef2b107d7cd0a8652
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-15 16:04:11 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-15 16:04:11 +0530
+
+    Add daily missing manifest report
+
+
+:100644 100644 10ab7b91e016bced3f6250cfc7fe89c862d86e5e 2a4f5792a914a848f715621a28e576785da5f29a M	properties/mailTo.json
+:000000 100644 0000000000000000000000000000000000000000 24c8a4ec327e2879c1f9f1bd7d896f89b38b5739 A	python_scripts/Daily_Missing_Manifest_Report.py
+commit b3aa0a86aa3cdb42e6042015cb9aa083f88e2f92
+tree 40d1cbe0e4387b9dfece0bc73a7aa0c22e80ddd9
+parent 266d7b6426b9751049ec6daf9538bdd9c14af998
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-14 15:04:39 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-14 15:04:39 +0530
+
+    remove ZPP from package exception
+
+
+:100644 100644 2c3e627c82084ccb4e080ba54d2afe777b3e18eb d1fb3346af8858ffed65201312e201d9a758f798 M	python_scripts/daily_exceptions_report_by_fdp.py

@@ -1,0 +1,18 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jfrog.hudson.ArtifactoryBuilder_-DescriptorImpl plugin="artifactory@3.13.2">
+  <useCredentialsPlugin>false</useCredentialsPlugin>
+  <jfrogInstances/>
+  <jfrogPipelinesServer>
+    <credentialsConfig>
+      <username>{AQAAABAAAAAQ7tknrcNtW+gqTzAYM+CSoYB+4wLvLRDtrIG/951AmEQ=}</username>
+      <password>{AQAAABAAAAAQdlmadtESm4A5Tsh6+KdMoYFPuiZpOuAecBJx3SM38lM=}</password>
+      <credentialsId></credentialsId>
+      <overridingCredentials>false</overridingCredentials>
+      <ignoreCredentialPluginDisabled>true</ignoreCredentialPluginDisabled>
+    </credentialsConfig>
+    <connectionRetries>3</connectionRetries>
+    <integrationUrl></integrationUrl>
+    <bypassProxy>false</bypassProxy>
+    <timeout>300</timeout>
+  </jfrogPipelinesServer>
+</org.jfrog.hudson.ArtifactoryBuilder_-DescriptorImpl>

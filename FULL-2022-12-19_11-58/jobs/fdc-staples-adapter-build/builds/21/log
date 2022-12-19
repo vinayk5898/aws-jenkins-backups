@@ -1,0 +1,103 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-staples-adapter-build
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-staples-adapter-build/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-staples-adapter.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-staples-adapter.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-staples-adapter.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision a57c8e8f812457fe45ab5601111a86c895bbc50d (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a57c8e8f812457fe45ab5601111a86c895bbc50d # timeout=10
+Commit message: "Update XmlSenderServiceImpl.java"
+ > git rev-list --no-walk bf5cbc070acc8c9d7b6c94f7c54cce6222093b38 # timeout=10
+[fdc-staples-adapter-build] $ /bin/sh -xe /tmp/jenkins17435513750942457566.sh
++ mvn clean package
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------< [0;36mcom.fdc:staplesadapter[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding staplesadapter 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;33mWARNING[m] The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/fdc-staples-adapter-build/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 5 resources
+[[1;34mINFO[m] Copying 4 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 30 source files to /var/jenkins_home/workspace/fdc-staples-adapter-build/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/fdc-staples-adapter-build/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /var/jenkins_home/workspace/fdc-staples-adapter-build/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.fdc.staplesadapter.[1mStaplesadapterApplicationTests[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.6.13)
+
+2022-12-07 11:27:36.952 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-07 11:27:37.649 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 614 ms. Found 5 JPA repository interfaces.
+2022-12-07 11:27:39.195 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-07 11:27:40.449 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-07 11:27:40.770 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-07 11:27:40.996 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-07 11:27:41.416 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-07 11:27:41.778 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-07 11:27:44.846 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-07 11:27:45.044 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 11:27:52.342 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.523 s - in com.fdc.staplesadapter.[1mStaplesadapterApplicationTests[m
+2022-12-07 11:27:57.365 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-07 11:27:57.438 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-12-07 11:27:57.534 dev ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Building jar: /var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.6.13:repackage[m [1m(repackage)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Replacing main artifact with repackaged archive
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:2.6.13:repackage[m [1m(default)[m @ [36mstaplesadapter[0;1m ---[m
+[[1;34mINFO[m] Replacing main artifact with repackaged archive
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:08 min
+[[1;34mINFO[m] Finished at: 2022-12-07T11:28:17Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

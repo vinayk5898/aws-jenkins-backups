@@ -1,0 +1,80 @@
+commit 1cded21f2725c37ff69bd93f401c752657dd284a
+tree 9d96fc6a4b7f8ee2d2bc825d2cf1367d51033127
+parent 747392f39715dfdff916ddaf2c80bf66b3fc7546
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-28 16:42:56 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-28 16:42:56 +0530
+
+    added api keys
+
+
+:000000 100644 0000000000000000000000000000000000000000 3bf9e4544f40b91c87418f49d44e26e9e5c5b328 A	src/main/resources/db/changelog/2022-10-28-insert-client-apikeys.yaml
+:100644 100644 12781029a8b9e5ed78026d76885559fb41e3c288 f3e3a70d282670d6903c281fac8c0cd8aaaf42bf M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 d2951bd15a89144342b6378be0b6558843fb5606 A	src/main/resources/db/sql/insert-client-api-keys.sql
+commit 46015360a6eac8aab3677610918f619a3de1c0fd
+tree d75dc3daf5de1da73730aab7c5b046c6b2df138e
+parent f8ff709a44d9336f9b99a66be82e2ca510352620
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-10-26 19:43:30 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-10-26 19:43:30 +0530
+
+    Update p_populating_fdpId_column.sql
+
+
+:100644 100644 127e91559fbcb7343069e48fd8b07f11556757f5 7322dcbd2b122504ee2f9b46a45948d6e7c199ba M	src/main/resources/db/sql/p_populating_fdpId_column.sql
+commit f8ff709a44d9336f9b99a66be82e2ca510352620
+tree 71f4bfb662a043d6ac7a8b5d77d8668f255dd0c5
+parent 17a5e9b035efd6f547e7a645a11b195a59b9bfd9
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-10-26 18:02:27 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-10-26 18:02:27 +0530
+
+    population of fdp_id column in package table
+
+
+:000000 100644 0000000000000000000000000000000000000000 861ab002f83391568e6ae5f76f8d6e8f3d63d343 A	src/main/resources/db/changelog/2022-10-26-populate_fdpId_column.yaml
+:100644 100644 826dcbf9b1375ab13cdeceec8cb837286852b564 12781029a8b9e5ed78026d76885559fb41e3c288 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 127e91559fbcb7343069e48fd8b07f11556757f5 A	src/main/resources/db/sql/p_populating_fdpId_column.sql
+commit 1e6f1fd504b06b22119009bf9cb61c8248872295
+tree 9d39241bcd98a1409dea55caac6076799bf5703e
+parent 78dc1bd0416c7b5e04b5e53db4edbc48245db20e
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-17 14:05:49 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-17 14:05:49 +0530
+
+    added indexes for heavy queries
+
+
+:000000 100644 0000000000000000000000000000000000000000 ed3b0869b90f7b26ca703f5a58cb7579b4a4c0a8 A	src/main/resources/db/changelog/2022-10-17_add_indexes_for_slow_queries.yaml
+:100644 100644 2a16fe409a2790b693a9ac72c0522113af988127 335357a51fe40faa377e38a8c679288d46a107bb M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 7a051c4e80bbe2bbe5acf0392589063f4dcde197 A	src/main/resources/db/sql/add_index_in_package_and_parcel_arrival.sql
+commit 78dc1bd0416c7b5e04b5e53db4edbc48245db20e
+tree 28e39dbb3dd75d3198f0452a3e1bb2082b9b530b
+parent 58b758e73ce4ec595791311dfe642666663dabdf
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-13 17:28:24 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-13 17:28:24 +0530
+
+    review fixed
+
+
+:100644 100644 df64d7362cd0cb3d2a873a99c51674041452aa3c bd526550b954b7f3c87c3ebfb23066cf167f0cda M	src/main/resources/db/sql/add_unique_constraint_on_rolename_and_username.sql
+commit 8026101d8d7aa36cff613f210def1157bec44fe8
+tree a242bd30f0855e224df96c54599caad58df83f02
+parent ce54149f1ce9838fdc5e1224aaebc19cf160e3e0
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-10-10 18:18:26 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-10-10 18:18:26 +0530
+
+    phlb added on invoice and trim opertion for pandion manifest fix
+
+
+:000000 100644 0000000000000000000000000000000000000000 d7983c4ba3b44faae0429cd4c1ce1e46a1c206f1 A	src/main/resources/db/changelog/2022-10-10_v_dell_view_and_pandion_manifest_update.yaml
+:100644 100644 29c09e91a12204b4c00cb88d46d5a866dc229e2a 69ff41f53e625e11afa001faa67b336d28166ec4 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 3341b54129d1f626f4c4502c69fc5fbf5a377d02 A	src/main/resources/db/sql/v_dell_invoice_modify.sql
+commit 58b758e73ce4ec595791311dfe642666663dabdf
+tree aeda1e0db54c0dad20ca2e9fcd14f666273db3d9
+parent ce54149f1ce9838fdc5e1224aaebc19cf160e3e0
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-30 12:59:37 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-30 12:59:37 +0530
+
+    added unique constraint in User and Role table
+
+
+:000000 100644 0000000000000000000000000000000000000000 94c38aa5350ba48b25b5cb464d0d387933bffe08 A	src/main/resources/db/changelog/2022-09-30-add-unique-contraint-in-user-and-role-table.yaml
+:100644 100644 29c09e91a12204b4c00cb88d46d5a866dc229e2a 2a16fe409a2790b693a9ac72c0522113af988127 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 df64d7362cd0cb3d2a873a99c51674041452aa3c A	src/main/resources/db/sql/add_unique_constraint_on_rolename_and_username.sql

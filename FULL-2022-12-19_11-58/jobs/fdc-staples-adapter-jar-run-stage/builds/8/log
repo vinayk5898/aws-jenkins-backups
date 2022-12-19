@@ -1,0 +1,52 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-staples-adapter-jar-run
+[fdc-staples-adapter-jar-run] $ /bin/sh -xe /tmp/jenkins12147580080835211339.sh
++ cd /var/jenkins_home/workspace/fdc-staples-adapter-build/target
++ java -jar -Dserver.port=8087 staplesadapter-0.0.1-SNAPSHOT.jar 5
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/log4j-slf4j-impl-2.17.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.6.13)
+
+2022-11-24 10:16:04.675  INFO 14189 --- [           main] c.f.s.StaplesadapterApplication          : Starting StaplesadapterApplication v0.0.1-SNAPSHOT using Java 11.0.12 on ip-10-10-0-21.us-west-2.compute.internal with PID 14189 (/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar started by jenkins in /var/jenkins_home/workspace/fdc-staples-adapter-build/target)
+2022-11-24 10:16:04.679  INFO 14189 --- [           main] c.f.s.StaplesadapterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-24 10:16:06.132  INFO 14189 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-24 10:16:06.551  INFO 14189 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 398 ms. Found 5 JPA repository interfaces.
+2022-11-24 10:16:08.064  INFO 14189 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2022-11-24 10:16:08.086  INFO 14189 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-24 10:16:08.087  INFO 14189 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-24 10:16:08.297  INFO 14189 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-24 10:16:08.297  INFO 14189 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3501 ms
+2022-11-24 10:16:09.419  INFO 14189 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-24 10:16:10.433  INFO 14189 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-24 10:16:10.620  INFO 14189 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-24 10:16:10.930  INFO 14189 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-24 10:16:11.542  INFO 14189 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-24 10:16:11.906  INFO 14189 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-24 10:16:13.390  INFO 14189 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-24 10:16:13.401  INFO 14189 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-24 10:16:14.610  WARN 14189 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-24 10:16:15.234  INFO 14189 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+2022-11-24 10:16:15.252  INFO 14189 --- [           main] c.f.s.StaplesadapterApplication          : Started StaplesadapterApplication in 11.532 seconds (JVM running for 12.836)
+2022-11-24 10:16:15.255  INFO 14189 --- [           main] c.f.s.StaplesadapterApplication          : CommandLineRunner starts running.
+2022-11-24 10:16:15.388  INFO 14189 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No. of unprocessed events found in the database : 0
+2022-11-24 10:16:15.389  INFO 14189 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No unprocessed events found.
+2022-11-24 10:16:15.389  INFO 14189 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Now, start processing all entries in DeliveryConfirmationStore with statuses NEW and FAILED.
+2022-11-24 10:16:15.442  INFO 14189 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No unprocessed entries found in DeliveryConfirmationStore.
+2022-11-24 10:16:15.450  INFO 14189 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-24 10:16:15.471  INFO 14189 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-24 10:16:15.473  INFO 14189 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-24 10:16:15.487  INFO 14189 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-24 10:16:15.488  INFO 14189 --- [           main] c.f.s.StaplesadapterApplication          : CommandLineRunner is terminated.
+Finished: SUCCESS

@@ -1,0 +1,20 @@
+commit da5880ff80bc0962515710436fa25f0fffc0179f
+tree 499d1e3ae5ec5b3216a2bb2bac3b451a707c5bda
+parent b25736857b921b43186d3d2cc7cac40381e977be
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 12:41:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 12:41:13 +0530
+
+    FDC-424 :: added additional column
+
+
+:100644 100644 89753523b28711b75fef7d0009821cedcf26ac0c 52a27e34736621bc8b27977a5300611005130d7a M	src/main/resources/db/changelog/2022-03-15-18-pitney-bowes-data-model-changes.yaml
+commit b25736857b921b43186d3d2cc7cac40381e977be
+tree 9b31f7fc5c05045f50cdc75f20665565a94981f9
+parent 6dcae119d275f9e3ab4126e30f0fb76de22d81d2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 12:29:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 12:29:29 +0530
+
+    FDC-424 :: added client id
+
+
+:100644 100644 d993208fa27924ffca6f0cb814c359ea99f4279f 89753523b28711b75fef7d0009821cedcf26ac0c M	src/main/resources/db/changelog/2022-03-15-18-pitney-bowes-data-model-changes.yaml

@@ -1,0 +1,10 @@
+commit 36c7bdabb8c6009dde421ba8b2ac92d1890fcda2
+tree fcdd86bf051bc7779a99ac5c44da40cecc7adb60
+parent 060367fae0339b052b98bf619964bf2bf1be0128
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-07-12 19:36:54 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-07-12 19:36:54 +0530
+
+    FDC-897: set process_batch_size for EDI_214 whether active or not
+
+
+:100644 100644 66e3055b6ac33825b549afbcaa421f9d1566da61 7fd8075020b7126bda04c50bd57460bc65f746ee M	src/main/resources/db/sql/client_sftp_dell_214_batch_jobtime_config.sql

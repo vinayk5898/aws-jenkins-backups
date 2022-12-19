@@ -1,0 +1,94 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.42">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers>
+        <string>jenkins.triggers.ReverseBuildTrigger</string>
+      </triggers>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <jenkins.triggers.ReverseBuildTrigger>
+          <spec></spec>
+          <upstreamProjects>Process_Received_Vendor_Events_Prod, </upstreamProjects>
+          <threshold>
+            <name>SUCCESS</name>
+            <ordinal>0</ordinal>
+            <color>BLUE</color>
+            <completeBuild>true</completeBuild>
+          </threshold>
+        </jenkins.triggers.ReverseBuildTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2633.v6baeedc13805">
+    <script>pipeline {
+    environment {
+        FDC_URL = &quot;http://internal-platform-prod-1661195643.us-west-2.elb.amazonaws.com/fdc/process/events/sync?type=Groundcloud&amp;retry-on-deadlock=1&amp;retry-on-error=5&quot;
+        
+        
+    }
+
+    agent any
+    options {
+        retry(10)
+    }
+
+
+    stages {
+        stage(&quot;first&quot;) {
+            steps {
+                script {
+                    tz = TimeZone.getTimeZone(&quot;America/New_York&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    def curlScript = &apos;curl -s -w &quot;\\n%{response_code}&quot; GET --header &quot;Authorization: ApiKey 06bd0656-0d96-11ed-9b93-0242c6062200&quot; ${FDC_URL}&apos;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;\n&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+triggers {
+  upstream &apos;Process_Received_Vendor_Events_Prod, &apos;
+}
+
+
+    post{
+        failure {
+            emailext to: &quot;vinay.kumar@frontdoorcorp.com, swadesh.behera@frontdoorcorp.com,nitish.kumar@frontdoorcorp.com,prashant.talan@frontdoorcorp.com&quot;,
+            subject: &quot;jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}&quot;,
+            body: &quot;${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}&quot;
+        }
+    }
+
+
+
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

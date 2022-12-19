@@ -1,0 +1,99 @@
+Started by user [8mha:////4H9G1L0YXL6Xrgxr5ScBRM9Md/1fpGCQ5OyyRDWfh5YpAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZh/dLi1CL9XKB96Yk5iSmZeXmpABijBn7IAAAA[0mMadhavareddy Lingaladinne
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-spring-boot-api-basics
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+Cloning the remote Git repository
+Cloning repository https://github.com/altirllc/fdc-spring-boot-api-basics.git
+ > git init /var/jenkins_home/workspace/fdc-spring-boot-api-basics # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-spring-boot-api-basics.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-spring-boot-api-basics.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/altirllc/fdc-spring-boot-api-basics.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/develop^{commit} # timeout=10
+Checking out Revision e8dce64e9073b65c6075bd6f7bed9dac3bfea8d9 (origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e8dce64e9073b65c6075bd6f7bed9dac3bfea8d9 # timeout=10
+Commit message: "FDC-534: first code check-in"
+ > git rev-list --no-walk e8dce64e9073b65c6075bd6f7bed9dac3bfea8d9 # timeout=10
+[fdc-spring-boot-api-basics] $ /bin/sh -xe /tmp/jenkins2704111294772757482.sh
++ mvn clean package
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36mcom.fdc:fdc-spring-boot-api-basics[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding FDC Spring Boot API Basics 1.0.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-checkstyle-plugin:3.1.2:check[m [1m(checkstyle)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Starting audit...
+Audit done.
+[[1;34mINFO[m] You have 0 Checkstyle violations.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mlombok-maven-plugin:1.18.20.0:delombok[m [1m(delombok-sources)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+warning: unknown enum constant javax.annotation.meta.When.MAYBE
+  reason: class file for javax.annotation.meta.When not found
+warning: unknown enum constant javax.annotation.meta.When.MAYBE
+  reason: class file for javax.annotation.meta.When not found
+warning: unknown enum constant javax.annotation.meta.When.MAYBE
+  reason: class file for javax.annotation.meta.When not found
+warning: unknown enum constant javax.annotation.meta.When.MAYBE
+  reason: class file for javax.annotation.meta.When not found
+warning: unknown enum constant javax.annotation.meta.When.MAYBE
+  reason: class file for javax.annotation.meta.When not found
+[[1;34mINFO[m] Delombok complete.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:resources[m [1m(default-resources)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 0 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:copy-resources[m [1m(copy-to-lombok-build)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:3.1.0:run[m [1m(delete-examples)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+[[1;34mINFO[m]    [delete] Deleting directory /var/jenkins_home/workspace/fdc-spring-boot-api-basics/target/delombok/com/fdc/api/basics/examples
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 7 source files to /var/jenkins_home/workspace/fdc-spring-boot-api-basics/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.2.0:testResources[m [1m(default-testResources)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered properties files.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/fdc-spring-boot-api-basics/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.2.2:jar[m [1m(default-jar)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Building jar: /var/jenkins_home/workspace/fdc-spring-boot-api-basics/target/fdc-spring-boot-api-basics-1.0.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-antrun-plugin:3.1.0:run[m [1m(generate-delomboked-sources-jar)[m @ [36mfdc-spring-boot-api-basics[0;1m ---[m
+[[1;34mINFO[m] Executing tasks
+[[1;34mINFO[m]       [jar] Building jar: /var/jenkins_home/workspace/fdc-spring-boot-api-basics/target/fdc-spring-boot-api-basics-1.0.0-SNAPSHOT-sources.jar
+[[1;34mINFO[m] Executed tasks
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  20.282 s
+[[1;34mINFO[m] Finished at: 2022-04-29T12:06:58Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Finished: SUCCESS

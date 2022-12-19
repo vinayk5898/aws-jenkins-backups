@@ -1,0 +1,26 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-milestone-stage
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-milestone-stage/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 3d10e1c178227dd360ff239f90c8ce5a9e8eb8d7 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3d10e1c178227dd360ff239f90c8ce5a9e8eb8d7 # timeout=10
+Commit message: "Fixed datetime"
+ > git rev-list --no-walk 3d10e1c178227dd360ff239f90c8ce5a9e8eb8d7 # timeout=10
+[fdc-pandion-milestone-stage] $ /bin/sh -xe /tmp/jenkins3033707913149738546.sh
++ cd python_scripts
++ python3 get_pandian_milestone_stage.py
+There are no events in last one hour
+0 events inserted
+Finished: SUCCESS

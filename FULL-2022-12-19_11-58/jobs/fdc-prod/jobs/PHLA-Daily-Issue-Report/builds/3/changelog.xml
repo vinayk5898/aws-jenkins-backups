@@ -1,0 +1,12 @@
+commit 9785f73a09b0b3725c1088559aeb299bc769cd00
+tree 07cfeca8f58328411a7cb697ec68062ffdfa8116
+parent a1eef3b1fb2da8c370ffbc149fb44d7214209c7a
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-10 18:15:46 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-10 18:15:46 +0530
+
+    tracking_id '2P1' issue fix
+
+
+:100644 100644 3897a36b633de624d8fbfa27d6975f8b034d0fb9 e3024ad77f67e0b9221ac512b0bfe94e94183046 M	python_scripts/standard_client_manifest.py
+:100644 100644 bca847c9177a1dbd6ed34e73edfe221152dd8ceb a29d622057ed8f37a63696d0f9190942fd9ccbd5 M	python_scripts/standard_client_manifest_prod.py
+:100644 100644 c49a15ccc2e798359797f377d86c87c96b0004c7 dc82f29046790b257f4c22893851e362a7ff1590 M	python_scripts/standard_client_manifest_stage.py

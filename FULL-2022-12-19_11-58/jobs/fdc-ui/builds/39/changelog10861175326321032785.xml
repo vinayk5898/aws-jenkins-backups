@@ -1,0 +1,21 @@
+commit a7743e57c6a0da2422c128839e533b7e4975390e
+tree 7cb6a32df3f4bff286d84a201dfa1507022b438e
+parent b6b44fc2b4b5d642be245090d854c1d71f7efba4
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-18 18:16:46 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-18 18:16:46 +0530
+
+    chaged ui design
+
+
+:100644 100644 45554492a55c466d1a67e25fd8a949d5f82f1f2d cfa60a9629e8a84bff26261910f50a3d1ca0419a M	src/pages/ManifestIngestion/ManifestIngestion.tsx
+commit b6b44fc2b4b5d642be245090d854c1d71f7efba4
+tree 3f97f1eb1391ed170761811286d349ec6b809acb
+parent 557a20a1ab0b7f06175963ff02fc0faf9499d47e
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-18 18:09:30 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-18 18:09:30 +0530
+
+    chaged ui design
+
+
+:100644 100644 1f536b8f490c27cf5125e60216bee59bf2c2b392 8ff218b9bb80d48f7057f805c416289027c9eb4c M	src/pages/ManifestIngestion/ManifestIngestion.styles.ts
+:100644 100644 614010850f8f6c5b7b43a2a694173ad44d574cf6 45554492a55c466d1a67e25fd8a949d5f82f1f2d M	src/pages/ManifestIngestion/ManifestIngestion.tsx

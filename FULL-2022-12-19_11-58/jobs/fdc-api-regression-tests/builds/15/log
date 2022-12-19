@@ -1,0 +1,1495 @@
+Started by user [8mha:////4EEU3YRk+b1MmgfKrpZubC3gJQ0vOcBlRPM10GFI9jZ7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYe/dLi1CL9jKT8nJxEALsRv1DBAAAA[0mHari Bolla
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-api-regression-tests
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-api-regression-tests/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-backend-tests.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-backend-tests.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-backend-tests.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/fdc_setup^{commit} # timeout=10
+Checking out Revision 59c03daf45d9b27e15fc1fa40c37219b5efae0b7 (refs/remotes/origin/feature/fdc_setup)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 59c03daf45d9b27e15fc1fa40c37219b5efae0b7 # timeout=10
+Commit message: "Fixed orders_requests_scenarios"
+ > git rev-list --no-walk 59c03daf45d9b27e15fc1fa40c37219b5efae0b7 # timeout=10
+[fdc-api-regression-tests] $ /bin/sh -xe /tmp/jenkins12149439624982188434.sh
++ mvn clean verify -P stage
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36morg.fdc:fdc-backend-tests[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding fdc-backend-tests 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/fdc-api-regression-tests/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/fdc-api-regression-tests/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:compile[m [1m(default-compile)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /var/jenkins_home/workspace/fdc-api-regression-tests/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 28 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.0:testCompile[m [1m(default-testCompile)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 19 source files to /var/jenkins_home/workspace/fdc-api-regression-tests/target/test-classes
+[[1;34mINFO[m] /var/jenkins_home/workspace/fdc-api-regression-tests/src/test/java/org/fdc/utils/GsonHelper.java: /var/jenkins_home/workspace/fdc-api-regression-tests/src/test/java/org/fdc/utils/GsonHelper.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /var/jenkins_home/workspace/fdc-api-regression-tests/src/test/java/org/fdc/utils/GsonHelper.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mfdc-backend-tests[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.fdc.[1mTestRunner[m
+Setting up the things....
+Using the Environment stage
+09:04:14.454 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': stage
+09:04:18.650 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:04:31.717 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:32.031 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 8: update_optimise_params_by_missing_required_filed_payload
+09:04:34.697 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"paramName":"max_cargo_volume","paramValue":5000}
+
+09:04:41.897 [main] DEBUG com.intuit.karate - response time in milliseconds: 7180
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:41 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 25
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 1c01e8eb-4b7f-4da5-b810-3d90f83a468f
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: Uu_9hGuAvHcFcSQ=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 56f4e529-fb78-11ec-8b2f-c7a64916de02
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:41 GMT
+["Request is not valid."]
+09:04:41.951 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:41.961 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 12: update_optimise_params_with_unknown_pc_payload
+09:04:42.011 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 76
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":32552355,"paramName":"max_cargo_volume","paramValue":5000}
+
+09:04:42.465 [main] DEBUG com.intuit.karate - response time in milliseconds: 454
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:42 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: c35e4a6d-8a07-41a4-84c3-8cc535ab2a07
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: Uu_-mEONPHcFzuA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 576b269a-fb78-11ec-8b2f-0709f4d7685f
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:42 GMT
+["ParcelCenter or param does not exist"]
+09:04:42.498 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:42.525 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 16: update_optimise_params_with_unknown_param_name_payload
+09:04:42.603 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 66
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"unknown_param","paramValue":5000}
+
+09:04:43.060 [main] DEBUG com.intuit.karate - response time in milliseconds: 451
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 40
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 15d8c453-9dca-4d81-9211-b3ae3b072506
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: Uu_-tH2sPHcF-gA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 57c888db-fb78-11ec-8b2f-190c7df3fea4
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:43 GMT
+["ParcelCenter or param does not exist"]
+09:04:43.086 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:43.101 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 20: update_optimise_params_with_invalid_value_format_payload
+09:04:43.144 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"max_cargo_volume","paramValue":true}
+
+09:04:43.413 [main] DEBUG com.intuit.karate - response time in milliseconds: 268
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 38
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 22eb370a-4a73-4a3e-9f8e-881c65577793
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: Uu_-yH-IPHcFRNQ=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 580850fc-fb78-11ec-8b2f-951c2965cadb
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:43 GMT
+["Invalid value for max_cargo_volume"]
+09:04:43.423 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:43.431 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 20: update_optimise_params_with_invalid_value_format_payload
+09:04:43.461 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"max_cargo_volume","paramValue":true}
+
+09:04:43.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 97
+1 < 401
+1 < Date: Mon, 04 Jul 2022 09:04:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 26
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 5f1641a5-8bb1-45b5-a3e7-1b828ab5bbd7
+1 < x-amzn-ErrorType: UnauthorizedException
+1 < x-amz-apigw-id: Uu_-1FMivHcF7qg=
+{"message":"Unauthorized"}
+09:04:43.586 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:43.597 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 24: update_optimise_param
+09:04:43.622 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"max_cargo_volume","paramValue":"5000"}
+
+09:04:43.987 [main] DEBUG com.intuit.karate - response time in milliseconds: 364
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:43 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: db306a6e-db04-4554-a7a2-d1e2febd364b
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 0
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: Uu_-2GuhvHcF_ew=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 584e0cc5-fb78-11ec-a74c-85be1996405b
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:43 GMT
+
+09:04:44.238 [main] DEBUG com.intuit.karate - request:
+2 > GET https://api-stage.frontdoorcorp.net/fdc/optimise/param/2
+2 > Authorization: client 120
+2 > Host: api-stage.frontdoorcorp.net
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:04:44.380 [main] DEBUG com.intuit.karate - response time in milliseconds: 141
+2 < 200
+2 < Date: Mon, 04 Jul 2022 09:04:44 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 231
+2 < Connection: keep-alive
+2 < x-amzn-RequestId: dad05765-d236-4d98-9da2-de2f26de9369
+2 < X-XSS-Protection: 1; mode=block
+2 < X-Frame-Options: DENY
+2 < x-amzn-Remapped-Connection: keep-alive
+2 < x-amz-apigw-id: Uu_-8FPHvHcFtGA=
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expires: 0
+2 < X-Content-Type-Options: nosniff
+2 < correlation_id: 58a331a6-fb78-11ec-a74c-cb901e9e38e1
+2 < Pragma: no-cache
+2 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:44 GMT
+{"max_cargo_volume":"5000","route_max_duration":"36000","min_parts":"1","route_time":"59400","parts":"7","max_tour_size":"150","vehicle_capacity":"300","round_trip":"TRUE","max_pieces_per_route":"200","manifest_cutoff_time":"0500"}
+09:04:44.572 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:44.582 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/common/update_optimise_params_requests.feature - call by tag at line 24: update_optimise_param
+09:04:44.605 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/optimise/param
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 62
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"parcelCenterId":2,"paramName":"api_key","paramValue":"5000"}
+
+09:04:44.758 [main] DEBUG com.intuit.karate - response time in milliseconds: 149
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:44 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 41
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ecf204a4-135c-4d8f-97c1-c2e128c15340
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: Uu__AErPPHcFniw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 58db7fb7-fb78-11ec-a74c-a199f1fa2b68
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:44 GMT
+["api_key is not allowed to be modified"]
+---------------------------------------------------------
+feature: classpath:org/fdc/tests/optimise_params_request_scenarios.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 12.7310
+---------------------------------------------------------
+
+09:04:52.758 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (0 remaining) classpath:org/fdc/tests/optimise_params_request_scenarios.feature
+09:04:52.780 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:53.867 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 10: create_shipment_without_package_payload
+09:04:53.903 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 432
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true}
+
+09:04:54.691 [main] DEBUG com.intuit.karate - response time in milliseconds: 785
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:54 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 21
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 6a4c1899-7b0e-48d9-821e-c786beb50f2d
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvAAdEZHPHcFiSA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 5e8e8b1f-fb78-11ec-8b2f-891331b1d85c
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:54 GMT
+["must not be empty"]
+09:04:54.705 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:54.727 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 14: create_shipment_with_empty_packages_payload
+09:04:54.767 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 446
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[]}
+
+09:04:55.068 [main] DEBUG com.intuit.karate - response time in milliseconds: 298
+1 < 400
+1 < Date: Mon, 04 Jul 2022 09:04:55 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 21
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: bfd03054-cc26-41a3-a4a4-4d2a15cfbae6
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvAAmHngPHcF9Og=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 5ef16ba0-fb78-11ec-8b2f-7142898079c7
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:55 GMT
+["must not be empty"]
+09:04:55.077 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:55.088 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 14: create_shipment_with_empty_packages_payload
+09:04:55.111 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 446
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[]}
+
+09:04:55.176 [main] DEBUG com.intuit.karate - response time in milliseconds: 48
+1 < 401
+1 < Date: Mon, 04 Jul 2022 09:04:55 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 26
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 3fdb977b-a57c-4366-91b1-ce2e1046d242
+1 < x-amzn-ErrorType: UnauthorizedException
+1 < x-amz-apigw-id: UvAApFvOPHcFtMA=
+{"message":"Unauthorized"}
+09:04:55.185 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:55.210 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:04:55.257 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090455","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090455","customAttributes":{}}]}
+
+09:04:55.902 [main] DEBUG com.intuit.karate - response time in milliseconds: 634
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:55 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 5c1bd526-f5b1-4a93-8220-2f31a11a9134
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvAArGDAPHcFY2w=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 5f374e7a-fb78-11ec-a74c-4feb3e55905a
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:55 GMT
+{"shipment":{"id":6120,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44747,"extPackageId":"EXT20220704090455","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090455","barcode":"BAT20220704090455"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:04:55.911 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/shipment_request_scenarios.feature:48
+Then match response.shipment.packages[0].extPackageNumber == payload.create_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:48
+09:04:55.939 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:55.969 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 24: create_shipment_without_trId_in_packages_payload
+09:04:55.995 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 646
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"GqN8v5wvGNxmnFu4Y","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","customAttributes":{}}]}
+
+09:04:56.135 [main] DEBUG com.intuit.karate - response time in milliseconds: 138
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:56 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 794
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: dd73b183-c256-4bdb-a83b-898fb871f925
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvAAyHXpvHcF6vg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 5fa5046b-fb78-11ec-a74c-99a1ecc60e0e
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:56 GMT
+{"shipment":{"id":6121,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Tracking id must not be null.","shipmentPackage":{"extPackageId":"GqN8v5wvGNxmnFu4Y","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:04:57.152 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:57.171 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 28: create_shipment_with_trId_as_null_in_packages_payload
+09:04:57.197 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 664
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"GqN8v5wvGNxmnFu4Y","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":null,"customAttributes":{}}]}
+
+09:04:57.749 [main] DEBUG com.intuit.karate - response time in milliseconds: 548
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:57 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 794
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: f817f138-0c61-43c0-af78-4ddf93d16c92
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvAA-F8gvHcFmHA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 6062d5f3-fb78-11ec-8b2f-b9ba3728bdf6
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:57 GMT
+{"shipment":{"id":6122,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Tracking id must not be null.","shipmentPackage":{"extPackageId":"GqN8v5wvGNxmnFu4Y","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:04:57.815 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:57.823 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 32: create_shipment_with_multiple_packages_payload
+09:04:57.839 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 847
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT2022070409045701","customAttributes":{}},{"extPackageNumber":9057,"weight":15.45,"length":8.0,"height":6.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37688.86","trackingId":"BAT2022070409045702","customAttributes":{}}]}
+
+09:04:58.404 [main] DEBUG com.intuit.karate - response time in milliseconds: 562
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:58 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 970
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 10bde459-3a89-4de8-987f-9ee73c0efa6d
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABEGVAvHcFa4w=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 60c73d14-fb78-11ec-8b2f-f1e72fda792b
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:58 GMT
+{"shipment":{"id":6123,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44748,"extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT2022070409045701","barcode":"BAT2022070409045701"},{"id":44749,"extPackageNumber":"9057","length":8.0,"width":1.0,"height":6.0,"weight":15.45,"packageContents":"DATA PROC MACHINES","packageValue":37688.86,"trackingId":"BAT2022070409045702","barcode":"BAT2022070409045702"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:04:58.423 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/shipment_request_scenarios.feature:109
+Then match response.shipment.packages[0].extPackageNumber == payload.create_mp_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:109
+09:04:58.434 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:58.443 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 38: create_shipment_with_duplicate_packages_payload
+09:04:58.460 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 846
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":false,"packages":[{"extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090458d","customAttributes":{}},{"extPackageNumber":9057,"weight":15.45,"length":8.0,"height":6.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37688.86","trackingId":"BAT20220704090458d","customAttributes":{}}]}
+
+09:04:58.595 [main] DEBUG com.intuit.karate - response time in milliseconds: 134
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:58 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 1015
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: d6c6f949-5e07-47d4-99dc-198b7487a281
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABKEgCPHcFQaA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 6117f55e-fb78-11ec-a74c-f139c2e14b10
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:58 GMT
+{"shipment":{"id":6124,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":false,"packages":[{"id":44750,"extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090458d","barcode":"BAT20220704090458d"}]},"rejectedPackages":[{"errorMessage":"Duplicate trackingId in request","shipmentPackage":{"extPackageNumber":"9057","length":8.0,"width":1.0,"height":6.0,"weight":15.45,"packageContents":"DATA PROC MACHINES","packageValue":37688.86,"trackingId":"BAT20220704090458d","customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:04:58.602 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/shipment_request_scenarios.feature:149
+Then match response.shipment.packages[0].extPackageNumber == payload.create_mp_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:149
+09:04:58.607 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:58.617 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 46: create_shipment_with_one_package_without_contains_tr_payload
+09:04:58.628 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 811
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090458w","customAttributes":{}},{"extPackageNumber":9057,"weight":15.45,"length":8.0,"height":6.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37688.86","customAttributes":{}}]}
+
+09:04:59.017 [main] DEBUG com.intuit.karate - response time in milliseconds: 386
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:59 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 978
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: e8f8dae4-12f6-4e3e-ae73-775d7c88f1bc
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABMHuVvHcFwqA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 613c4605-fb78-11ec-8b2f-2b3a83500001
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:59 GMT
+{"shipment":{"id":6125,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44751,"extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090458w","barcode":"BAT20220704090458w"}]},"rejectedPackages":[{"errorMessage":"Tracking id must not be null.","shipmentPackage":{"extPackageNumber":"9057","length":8.0,"width":1.0,"height":6.0,"weight":15.45,"packageContents":"DATA PROC MACHINES","packageValue":37688.86,"customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:04:59.027 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/shipment_request_scenarios.feature:178
+Then match response.shipment.packages[0].extPackageNumber == payload.create_mp_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:178
+09:04:59.034 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:59.042 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 52: create_shipment_with_one_package_contains_tr_as_null_payload
+09:04:59.065 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 829
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090459n","customAttributes":{}},{"extPackageNumber":9057,"weight":15.45,"length":8.0,"height":6.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37688.86","trackingId":null,"customAttributes":{}}]}
+
+09:04:59.207 [main] DEBUG com.intuit.karate - response time in milliseconds: 141
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:04:59 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 978
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 692f2f98-b95c-4fd5-bdd0-5f8a05fca20a
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABRE3qPHcFd5Q=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 6175f3df-fb78-11ec-a74c-d351580819c0
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:59 GMT
+{"shipment":{"id":6126,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44752,"extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090459n","barcode":"BAT20220704090459n"}]},"rejectedPackages":[{"errorMessage":"Tracking id must not be null.","shipmentPackage":{"extPackageNumber":"9057","length":8.0,"width":1.0,"height":6.0,"weight":15.45,"packageContents":"DATA PROC MACHINES","packageValue":37688.86,"customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:04:59.211 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/shipment_request_scenarios.feature:207
+Then match response.shipment.packages[0].extPackageNumber == payload.create_mp_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:207
+09:04:59.215 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:59.235 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 52: create_shipment_with_one_package_contains_tr_as_null_payload
+09:04:59.249 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 829
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090459n","customAttributes":{}},{"extPackageNumber":9057,"weight":15.45,"length":8.0,"height":6.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37688.86","trackingId":null,"customAttributes":{}}]}
+
+09:04:59.546 [main] DEBUG com.intuit.karate - response time in milliseconds: 290
+1 < 500
+1 < Date: Mon, 04 Jul 2022 09:04:59 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 38
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 7d653a66-7195-4503-a5e9-a10a6ef4e3ca
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 38
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABTG8KvHcFUzA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 619589d0-fb78-11ec-a74c-8f57d3abb63b
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:04:59 GMT
+To update shipment id can not be null.
+09:04:59.569 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:04:59.605 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 52: create_shipment_with_one_package_contains_tr_as_null_payload
+09:04:59.637 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 829
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090459n","customAttributes":{}},{"extPackageNumber":9057,"weight":15.45,"length":8.0,"height":6.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37688.86","trackingId":null,"customAttributes":{}}]}
+
+09:05:00.227 [main] DEBUG com.intuit.karate - response time in milliseconds: 579
+1 < 500
+1 < Date: Mon, 04 Jul 2022 09:05:00 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 38
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: f7417fd0-c753-4366-a3c6-7af8aa0ce08f
+1 < X-XSS-Protection: 1; mode=block
+1 < x-amzn-Remapped-Content-Length: 38
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABXHauPHcF_7A=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 61dea086-fb78-11ec-8b2f-79b27a3fcc58
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:00 GMT
+To update shipment id can not be null.
+09:05:00.233 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:00.240 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:00.260 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090500","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090500","customAttributes":{}}]}
+
+09:05:00.773 [main] DEBUG com.intuit.karate - response time in milliseconds: 513
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:00 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 8c54be27-d5b1-4dbf-bbfc-d55edeac2139
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABdEWmPHcFn0Q=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 623c50e7-fb78-11ec-8b2f-6369839f2cd1
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:00 GMT
+{"shipment":{"id":6127,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44753,"extPackageId":"EXT20220704090500","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090500","barcode":"BAT20220704090500"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:00.781 [main] DEBUG com.intuit.karate - request:
+2 > PUT https://api-stage.frontdoorcorp.net/fdc/shipment
+2 > Authorization: client 120
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 709
+2 > Host: api-stage.frontdoorcorp.net
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"UPDATED VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090500","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090500U","customAttributes":{},"id":44753}],"id":6127}
+
+09:05:00.998 [main] DEBUG com.intuit.karate - response time in milliseconds: 216
+2 < 200
+2 < Date: Mon, 04 Jul 2022 09:05:00 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 789
+2 < Connection: keep-alive
+2 < x-amzn-RequestId: 618a797b-edf5-4219-bd69-dbb0f2479ad3
+2 < X-XSS-Protection: 1; mode=block
+2 < X-Frame-Options: DENY
+2 < x-amzn-Remapped-Connection: keep-alive
+2 < x-amz-apigw-id: UvABiH-EPHcF9IQ=
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expires: 0
+2 < X-Content-Type-Options: nosniff
+2 < correlation_id: 627bcb21-fb78-11ec-a74c-1f520292a23e
+2 < Pragma: no-cache
+2 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:00 GMT
+{"shipment":{"id":6127,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"UPDATED VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44753,"extPackageId":"EXT20220704090500","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090500U","barcode":"BAT20220704090500U"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:01.015 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:01.028 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:01.062 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090501","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090501","customAttributes":{}}]}
+
+09:05:01.590 [main] DEBUG com.intuit.karate - response time in milliseconds: 514
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:01 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 08de175a-b291-475b-916e-5a0768435bf2
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvABlEMmPHcFQxA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 62b8d3e8-fb78-11ec-8b2f-979fbbc77c69
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:01 GMT
+{"shipment":{"id":6128,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44754,"extPackageId":"EXT20220704090501","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090501","barcode":"BAT20220704090501"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:01.624 [main] DEBUG com.intuit.karate - request:
+2 > PATCH https://api-stage.frontdoorcorp.net/fdc/shipment
+2 > Authorization: client 120
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 697
+2 > Host: api-stage.frontdoorcorp.net
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"UPDATED VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090501","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090501","customAttributes":{}}],"id":6128}
+
+09:05:01.920 [main] DEBUG com.intuit.karate - response time in milliseconds: 296
+2 < 200
+2 < Date: Mon, 04 Jul 2022 09:05:01 GMT
+2 < Content-Type: application/json
+2 < Content-Length: 1104
+2 < Connection: keep-alive
+2 < x-amzn-RequestId: a6cee107-e99d-451d-a6a2-cd1aaed241b6
+2 < X-XSS-Protection: 1; mode=block
+2 < X-Frame-Options: DENY
+2 < x-amzn-Remapped-Connection: keep-alive
+2 < x-amz-apigw-id: UvABrEcQPHcFfIQ=
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Expires: 0
+2 < X-Content-Type-Options: nosniff
+2 < correlation_id: 630e6e32-fb78-11ec-a74c-710f7dfa9748
+2 < Pragma: no-cache
+2 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:01 GMT
+{"shipment":{"id":6128,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"UPDATED VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44754,"extPackageId":"EXT20220704090501","extPackageNumber":"9056","length":6.00,"width":1.00,"height":4.00,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090501","barcode":"BAT20220704090501"}]},"rejectedPackages":[{"errorMessage":"Tracking id and packageId must not be null.","shipmentPackage":{"extPackageId":"EXT20220704090501","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090501","customAttributes":{}}}],"isError":false,"errorMessage":""}
+---------------------------------------------------------
+feature: classpath:org/fdc/tests/shipment_request_scenarios.feature
+scenarios: 14 | passed:  9 | failed:  5 | time: 8.9699
+---------------------------------------------------------
+
+09:05:03.776 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (0 remaining) classpath:org/fdc/tests/shipment_request_scenarios.feature
+09:05:03.801 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:03.839 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:03.839 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:03.858 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:03.968 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090503","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090503","customAttributes":{}}]}
+
+09:05:04.165 [main] DEBUG com.intuit.karate - response time in milliseconds: 192
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:04 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ae0ed11b-6392-4d45-8ec7-11ab77f6f67f
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACCFAHvHcFTWg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 64660ef3-fb78-11ec-a74c-5b380897a015
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:04 GMT
+{"shipment":{"id":6129,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44755,"extPackageId":"EXT20220704090503","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090503","barcode":"BAT20220704090503"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:04.172 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:16
+Then match response.shipment.packages[0].extPackageNumber == payload.create_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+09:05:04.173 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:04.185 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:04.196 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:04.196 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:04.209 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:04.233 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090504","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090504","customAttributes":{}}]}
+
+09:05:04.625 [main] DEBUG com.intuit.karate - response time in milliseconds: 392
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:04 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: f7100209-40b3-482d-8d48-e14b00c3fa38
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACEH9qvHcF5Vw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 64950df9-fb78-11ec-8b2f-51156c76d9df
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:04 GMT
+{"shipment":{"id":6130,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44756,"extPackageId":"EXT20220704090504","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090504","barcode":"BAT20220704090504"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:04.629 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:16
+Then match response.shipment.packages[0].extPackageNumber == payload.create_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+09:05:04.635 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:04.641 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:04.646 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:04.648 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:04.672 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:04.685 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090504","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090504","customAttributes":{}}]}
+
+09:05:04.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 305
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:04 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 900
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: a80173c7-8804-46f5-b399-9f008d10e9ff
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACJF6SvHcFjzg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 64d7e35a-fb78-11ec-8b2f-03054a5d3474
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:04 GMT
+{"shipment":{"id":6131,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Package with this combination of tracking id and barcode already exists.","shipmentPackage":{"extPackageId":"EXT20220704090504","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090504","barcode":"BAT20220704090504","customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:05:04.993 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:13
+Then match response.shipment.packages[0].id == '#number'
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+09:05:04.999 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:05.009 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:05.033 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:05.036 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:05.071 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:05.121 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090505","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090505","customAttributes":{}}]}
+
+09:05:05.308 [main] DEBUG com.intuit.karate - response time in milliseconds: 177
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: ef23cb80-2812-464f-aba3-d70e80667c63
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACOGSbvHcF_KA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 651bca64-fb78-11ec-a74c-4392c943ddd6
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:05 GMT
+{"shipment":{"id":6132,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44757,"extPackageId":"EXT20220704090505","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090505","barcode":"BAT20220704090505"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:05.355 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:16
+Then match response.shipment.packages[0].extPackageNumber == payload.create_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+09:05:05.361 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:05.380 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:05.388 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:05.391 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:05.409 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:05.436 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090505","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090505","customAttributes":{}}]}
+
+09:05:05.580 [main] DEBUG com.intuit.karate - response time in milliseconds: 141
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 900
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: a6644a0c-0ebd-4665-9c79-17d650c29b7d
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACRH_tvHcFrHA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 65476e45-fb78-11ec-a74c-d33a22ef92c9
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:05 GMT
+{"shipment":{"id":6133,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Package with this combination of tracking id and barcode already exists.","shipmentPackage":{"extPackageId":"EXT20220704090505","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090505","barcode":"BAT20220704090505","customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:05:05.587 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:13
+Then match response.shipment.packages[0].id == '#number'
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+09:05:05.588 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:05.593 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:05.599 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:05.601 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:05.611 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:05.622 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090505","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090505","customAttributes":{}}]}
+
+09:05:05.934 [main] DEBUG com.intuit.karate - response time in milliseconds: 312
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:05 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 900
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 154510ab-2100-4e7c-af96-18501a6fe06f
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACSG73vHcFidg=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 6568d8bb-fb78-11ec-8b2f-2557ff20cc58
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:05 GMT
+{"shipment":{"id":6134,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Package with this combination of tracking id and barcode already exists.","shipmentPackage":{"extPackageId":"EXT20220704090505","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090505","barcode":"BAT20220704090505","customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:05:05.939 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:13
+Then match response.shipment.packages[0].id == '#number'
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+09:05:05.939 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:05.946 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:05.951 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:05.951 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:05.964 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:05.980 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090505","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090505","customAttributes":{}}]}
+
+09:05:06.072 [main] DEBUG com.intuit.karate - response time in milliseconds: 90
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 900
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 196508aa-0deb-4ff7-ba85-76eb2c4143b9
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACWGZ4PHcF0Ng=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 6592f636-fb78-11ec-a74c-e1f0dcc91951
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:06 GMT
+{"shipment":{"id":6135,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Package with this combination of tracking id and barcode already exists.","shipmentPackage":{"extPackageId":"EXT20220704090505","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090505","barcode":"BAT20220704090505","customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:05:06.074 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:13
+Then match response.shipment.packages[0].id == '#number'
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+09:05:06.075 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:06.079 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:06.082 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:06.083 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:06.092 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:06.103 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090506","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090506","customAttributes":{}}]}
+
+09:05:06.495 [main] DEBUG com.intuit.karate - response time in milliseconds: 387
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 779
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: e67f950b-fe3b-43a3-b23c-87bccf001551
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACXENIvHcFzaA=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 65b01aec-fb78-11ec-8b2f-a5e7a44d8359
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:06 GMT
+{"shipment":{"id":6136,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[{"id":44758,"extPackageId":"EXT20220704090506","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090506","barcode":"BAT20220704090506"}]},"rejectedPackages":[],"isError":false,"errorMessage":""}
+09:05:06.498 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:16
+Then match response.shipment.packages[0].extPackageNumber == payload.create_request_body.packages[0].extPackageNumber
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+09:05:06.498 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+09:05:06.505 [main] INFO  com.intuit.karate - karate.env system property was: stage 
+09:05:06.511 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+09:05:06.513 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/common/shipmentHelper.feature - call by tag at line 4: create_shipment
+09:05:06.520 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:org/fdc/payloads/requests/shipment/shipment_post_requests.feature - call by tag at line 18: create_shipment_with_unique_trackingId_payload
+09:05:06.529 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api-stage.frontdoorcorp.net/fdc/shipment
+1 > Authorization: client 120
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 679
+1 > Host: api-stage.frontdoorcorp.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":8077372083,"recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryInstructions":"inside_delivery_IDL","deliveryDate":"2022-06-06","signatureRequired":true,"packages":[{"extPackageId":"EXT20220704090506","extPackageNumber":9056,"weight":13.92,"length":6.0,"height":4.0,"width":1.0,"packageContents":"DATA PROC MACHINES","packageValue":"37677.86","trackingId":"BAT20220704090506","customAttributes":{}}]}
+
+09:05:06.623 [main] DEBUG com.intuit.karate - response time in milliseconds: 92
+1 < 200
+1 < Date: Mon, 04 Jul 2022 09:05:06 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 900
+1 < Connection: keep-alive
+1 < x-amzn-RequestId: 2dc61b9a-b3cb-48d9-858d-d9858cf7327f
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Frame-Options: DENY
+1 < x-amzn-Remapped-Connection: keep-alive
+1 < x-amz-apigw-id: UvACbEMXvHcFbvw=
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < correlation_id: 65e5d127-fb78-11ec-a74c-194c94ad50bd
+1 < Pragma: no-cache
+1 < x-amzn-Remapped-Date: Mon, 04 Jul 2022 09:05:06 GMT
+{"shipment":{"id":6137,"externalOrderId":"2P100000014882177","externalPartnerShipmentId":"99M111111111000000027","externalShipmentId":"164573","recipientName":"Alice Bachert","recipientCompany":"VERT SOLUTIONS","recipientPhone":"8077372083","recipientAddressLine1":"141 LEWIS RD","recipientCity":"HAVERTOWN","recipientState":"PA","recipientZip":"19083-5413","deliveryDate":"2022-06-06","deliveryInstructions":"inside_delivery_IDL","signatureRequired":true,"packages":[]},"rejectedPackages":[{"errorMessage":"Package with this combination of tracking id and barcode already exists.","shipmentPackage":{"extPackageId":"EXT20220704090506","extPackageNumber":"9056","length":6.0,"width":1.0,"height":4.0,"weight":13.92,"packageContents":"DATA PROC MACHINES","packageValue":37677.86,"trackingId":"BAT20220704090506","barcode":"BAT20220704090506","customAttributes":{}}}],"isError":false,"errorMessage":""}
+09:05:06.624 [main] ERROR com.intuit.karate - classpath:org/fdc/common/shipmentHelper.feature:13
+Then match response.shipment.packages[0].id == '#number'
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+09:05:06.625 [main] ERROR com.intuit.karate - classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+* json shipment_response = callonce read('classpath:org/fdc/common/shipmentHelper.feature@create_shipment')
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+---------------------------------------------------------
+feature: classpath:org/fdc/tests/milestone_request_scenarios.feature
+scenarios:  9 | passed:  0 | failed:  9 | time: 2.7407
+---------------------------------------------------------
+
+09:05:07.660 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:org/fdc/tests/milestone_request_scenarios.feature
+09:05:07.673 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+Karate version: 1.1.0
+======================================================
+elapsed:  53.80 | threads:    1 | thread time: 24.44 
+features:     3 | skipped:    0 | efficiency: 0.45
+scenarios:   30 | passed:    16 | failed: 14
+======================================================
+>>> failed features:
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/common/shipmentHelper.feature:16
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+
+classpath:org/fdc/common/shipmentHelper.feature:13
+classpath:org/fdc/tests/milestone_request_scenarios.feature:6
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:48
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:109
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:149
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:178
+match failed: EQUALS
+  $ | data types don't match (STRING:NUMBER)
+  '9056'
+  9056
+
+classpath:org/fdc/tests/shipment_request_scenarios.feature:207
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.1.0
+file:///var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/karate-summary.html
+===================================================================
+
+Total Feature => 3
+Total Scenarios => 30
+Passed Scenarios => 16
+Jul 04, 2022 9:05:09 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/org.fdc.tests.shipment_request_scenarios.json' contains 1 features
+Jul 04, 2022 9:05:09 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/org.fdc.tests.milestone_request_scenarios.json' contains 1 features
+Jul 04, 2022 9:05:09 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/var/jenkins_home/workspace/fdc-api-regression-tests/target/karate-reports/org.fdc.tests.optimise_params_request_scenarios.json' contains 1 features
+Tearing down the things....
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 61.409 s[1;31m <<< FAILURE![m - in org.fdc.[1mTestRunner[m
+[[1;31mERROR[m] executeKarateTest  Time elapsed: 61.322 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: There are Some Failed Scenarios  ==> expected: <0> but was: <14>
+	at org.fdc.TestRunner.executeKarateTest(TestRunner.java:55)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  TestRunner.executeKarateTest:55 There are Some Failed Scenarios  ==> expected: <0> but was: <14>[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:46 min
+[[1;34mINFO[m] Finished at: 2022-07-04T09:05:14Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.2:test[m [1m(default-test)[m on project [36mfdc-backend-tests[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /var/jenkins_home/workspace/fdc-api-regression-tests/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Execute shell' marked build as failure
+[CucumberReport] Using Cucumber Reports version 5.6.1
+[CucumberReport] JSON report directory is ""
+[CucumberReport] Copied 3 properties files from workspace "/var/jenkins_home/workspace/fdc-api-regression-tests" to reports directory "/var/jenkins_home/jobs/fdc-api-regression-tests/builds/15/cucumber-html-reports/.cache"
+[CucumberReport] Copied 3 files from workspace "/var/jenkins_home/workspace/fdc-api-regression-tests" to reports directory "/var/jenkins_home/jobs/fdc-api-regression-tests/builds/15/cucumber-html-reports/.cache"
+[CucumberReport] Processing 3 json files:
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/15/cucumber-html-reports/.cache/target/karate-reports/org.fdc.tests.milestone_request_scenarios.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/15/cucumber-html-reports/.cache/target/karate-reports/org.fdc.tests.optimise_params_request_scenarios.json
+[CucumberReport] /var/jenkins_home/jobs/fdc-api-regression-tests/builds/15/cucumber-html-reports/.cache/target/karate-reports/org.fdc.tests.shipment_request_scenarios.json
+[CucumberReport] Found 2.900378 failed steps, while expected not more than 0.000000 percent
+[CucumberReport] Build status is left unchanged
+Finished: FAILURE

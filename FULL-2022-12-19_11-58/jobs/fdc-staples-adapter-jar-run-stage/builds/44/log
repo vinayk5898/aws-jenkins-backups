@@ -1,0 +1,70 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-staples-adapter-jar-run
+[fdc-staples-adapter-jar-run] $ /bin/sh -xe /tmp/jenkins12429558312595157214.sh
++ cd /var/jenkins_home/workspace/fdc-staples-adapter-build/target
++ java -jar -Dspring.profiles.active=stage staplesadapter-0.0.1-SNAPSHOT.jar 5 2000 5000
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.6.13)
+
+2022-12-08 16:03:35.437 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - Starting StaplesadapterApplication v0.0.1-SNAPSHOT using Java 11.0.12 on ip-10-10-0-21.us-west-2.compute.internal with PID 15529 (/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar started by jenkins in /var/jenkins_home/workspace/fdc-staples-adapter-build/target)
+2022-12-08 16:03:36.042 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - The following 1 profile is active: "stage"
+2022-12-08 16:03:38.203 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-08 16:03:38.902 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 645 ms. Found 5 JPA repository interfaces.
+2022-12-08 16:03:40.655 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2022-12-08 16:03:40.707 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2022-12-08 16:03:40.712 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-08 16:03:40.717 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-08 16:03:40.905 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-08 16:03:40.909 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4746 ms
+2022-12-08 16:03:42.221 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-08 16:03:42.881 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-08 16:03:43.018 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-08 16:03:43.234 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-08 16:03:43.662 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-08 16:03:43.937 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-08 16:03:46.014 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-08 16:03:46.031 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-08 16:03:47.340 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-08 16:03:47.949 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2022-12-08 16:03:47.981 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2022-12-08 16:03:47.997 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - Started StaplesadapterApplication in 13.618 seconds (JVM running for 15.797)
+2022-12-08 16:03:48.003 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - CommandLineRunner starts running.
+2022-12-08 16:03:48.155 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - No. of unprocessed events found in the database : 1
+2022-12-08 16:03:48.159 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Started processing event_id : 1016474
+2022-12-08 16:03:48.166 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-08 16:03:48.202 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   ERROR [main] org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:785) ~[spring-boot-2.6.13.jar!/:2.6.13]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:766) ~[spring-boot-2.6.13.jar!/:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.6.13.jar!/:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.13.jar!/:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.13.jar!/:2.6.13]
+	at com.fdc.staplesadapter.StaplesadapterApplication.main(StaplesadapterApplication.java:22) ~[classes!/:0.0.1-SNAPSHOT]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[staplesadapter-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108) ~[staplesadapter-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[staplesadapter-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) ~[staplesadapter-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.lang.NullPointerException
+	at com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl.generateAndSendXml(XmlSenderServiceImpl.java:92) ~[classes!/:0.0.1-SNAPSHOT]
+	at com.fdc.staplesadapter.StaplesadapterApplication.run(StaplesadapterApplication.java:38) ~[classes!/:0.0.1-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:782) ~[spring-boot-2.6.13.jar!/:2.6.13]
+	... 13 more
+2022-12-08 16:03:48.258 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-08 16:03:48.264 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-12-08 16:03:48.287 stage ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

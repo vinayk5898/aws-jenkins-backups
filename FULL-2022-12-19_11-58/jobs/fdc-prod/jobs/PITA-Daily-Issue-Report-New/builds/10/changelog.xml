@@ -1,0 +1,23 @@
+commit 59268cc051a731bc1c4d079949fe015c3fe69c5c
+tree e8e26c34a46922532c5f507b3e3f3e8f4e209479
+parent 2d39cfcab01f1f1708ce3e2eba4717d56588fbb8
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-15 15:07:15 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-15 15:07:15 +0530
+
+    app feature for file persist at sftp
+
+
+:000000 100644 0000000000000000000000000000000000000000 09244af4931d3184d2e0480d369581449a5b2ee2 A	python_scripts/generic_client_milestone_events.py
+:100644 000000 d226d9d3b254c79530e68e4d03177489e523f90d 0000000000000000000000000000000000000000 D	python_scripts/get_pandian_milestone_new.py
+commit 2d39cfcab01f1f1708ce3e2eba4717d56588fbb8
+tree 53640880babd4de532b002748fbbce1acbc2dc60
+parent 4f2de32edba1c9d1e7cfd533d968353a0f347bb5
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-14 13:45:42 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-14 13:45:42 +0530
+
+    Update process and rename file
+    
+    Add feature to process the file from tmp  dir. and Rename milestone CSV file.
+
+
+:000000 100644 0000000000000000000000000000000000000000 d226d9d3b254c79530e68e4d03177489e523f90d A	python_scripts/get_pandian_milestone_new.py

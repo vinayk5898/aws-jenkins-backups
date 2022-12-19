@@ -1,0 +1,10 @@
+commit ea504729070452b08241530bdcee8d5b850f9714
+tree cb528f7d52c93bc2bffcaa7c8246d6aeea6e6282
+parent aedd3bbfa9f1f0d8c54a577dd404c16c1dbf1326
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-17 17:18:39 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-17 17:18:39 +0530
+
+    Update db.changelog-master.yaml
+
+
+:100644 100644 935706f5d5d8bde46d4e1934b19bb3948395f2b8 fa2461d09c9a4a104e898d51fa5e69a7f6f1c793 M	src/main/resources/db/changelog/db.changelog-master.yaml

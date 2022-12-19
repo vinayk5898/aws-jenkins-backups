@@ -1,0 +1,10 @@
+commit 69dc6d6b188140b3f283fb8aaa33a1149e01f9fb
+tree f1029dc2e08c3252ab73cc6f66401c20cc2fa90c
+parent f60e43f96e0b691dd7e7a97c95601724d4d03ceb
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:53:14 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-24 23:53:14 +0530
+
+    FDC:N758
+
+
+:100644 100644 5996a1309f8eba3f51c771013755cea8a26e150f 666768331276af1c6e77b4f826f0545f4f2547e1 M	src/main/resources/db/sql/fdc_758_revert_script.sql

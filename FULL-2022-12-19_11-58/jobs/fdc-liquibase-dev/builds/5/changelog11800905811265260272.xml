@@ -1,0 +1,10 @@
+commit 40cc69425b296811f79047677fa154c40c3546c2
+tree 2b9963f5a2256f7710b6d4b9833f695b309aaa95
+parent 4bf39af37e6d336dd1ec37ccee452efcf20ac832
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-11 00:32:21 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-11 00:32:21 +0530
+
+    jenkinsfile change testing
+
+
+:100644 100644 c8cf766b9a79e0bbd167d899ce09bfa05c29ccfd ad71cedd63206c3100a03ed8f5accb5418632888 M	Jenkinsfile

@@ -1,0 +1,8 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/Clean_Processed_Events_Prod
+[Clean_Processed_Events_Prod] $ /bin/sh -xe /tmp/jenkins5130487730553337623.sh
++ docker run imega/mysql-client mysql --host=fdc.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=etluser --password=fl@tCurve17 --database=fdc --execute=DELETE FROM fdc.event_store WHERE deleted = '1' AND DATE(created_on) <= DATE(date_add(now(), INTERVAL -2 DAY))
+Got error: Plugin sha256_password could not be loaded: Error loading shared library /usr/lib/mariadb/plugin/sha256_password.so: No such file or directory
+Finished: SUCCESS

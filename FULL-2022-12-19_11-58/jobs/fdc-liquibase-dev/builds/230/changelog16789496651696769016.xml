@@ -1,0 +1,10 @@
+commit d17274359ded92a9571249a14d75b1e5094eb68a
+tree fd237e398d3e15e98473c7972845a755deb03672
+parent 3fedd8718d82927abcf614a3d5953013246b52c6
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-12 15:00:37 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-12 15:00:37 +0530
+
+    remove milestone changes
+
+
+:100644 100644 ed68737437bb6779520c7a86fb5b1424daea5287 2a598d1f1ace48095be937cd697d3df2752273aa M	src/main/resources/db/changelog/db.changelog-master.yaml

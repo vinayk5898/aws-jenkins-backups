@@ -1,0 +1,10 @@
+commit da085669a267aa2794ee6a1339fa239a45a274a4
+tree a86d7f661aaee417724155e5356670c2fdd3fe23
+parent 8de3f4858fa3cb6d82f6d083de99b48baa8deca4
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-15 21:30:40 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-15 21:30:40 +0530
+
+    Update StaplesadapterApplication.java
+
+
+:100644 100644 aa1b6e069e5e571ec33f7e194af75cf008c441a2 14f7ae50d0e5976796e37984282a59c5b578496e M	src/main/java/com/fdc/staplesadapter/StaplesadapterApplication.java

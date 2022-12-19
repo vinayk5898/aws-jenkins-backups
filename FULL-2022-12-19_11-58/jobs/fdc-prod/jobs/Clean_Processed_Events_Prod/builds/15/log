@@ -1,0 +1,8 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/Clean_Processed_Events_Prod
+[Clean_Processed_Events_Prod] $ /bin/sh -xe /tmp/jenkins11711314582525199932.sh
++ docker run imega/mysql-client mysql --host=fdc.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=etluser --password=fl@tCurve17 --database=fdc --execute=DELETE FROM fdc.event_store WHERE deleted = '1' AND DATE(created_on) <= DATE(date_add(now(), INTERVAL -7 DAY))
+Got error: Plugin caching_sha2_password could not be loaded: Error loading shared library /usr/lib/mariadb/plugin/caching_sha2_password.so: No such file or directory
+Finished: SUCCESS

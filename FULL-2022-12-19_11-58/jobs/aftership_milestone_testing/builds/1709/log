@@ -1,0 +1,37 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/aftership_milestone_testing
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/aftership_milestone_testing/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/ITDMF-114^{commit} # timeout=10
+Checking out Revision bf672937f819f74edc15c495601684be467162d0 (refs/remotes/origin/feature/ITDMF-114)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bf672937f819f74edc15c495601684be467162d0 # timeout=10
+Commit message: "added for stage, and dev"
+ > git rev-list --no-walk bf672937f819f74edc15c495601684be467162d0 # timeout=10
+[aftership_milestone_testing] $ /bin/sh -xe /tmp/jenkins18222249861149557840.sh
++ cd python_scripts
++ python3 aftership_milestone_prod.py 121,122
+ Select tracking_number AS 'Tracking Number', fdc_event_id AS 'FDC Event ID', event_code AS 'Client Event ID', event_name AS 'Event Name', event_details AS 'Event Details', DATE_FORMAT(event_timestamp, '%Y-%m-%dT%TZ') AS 'Event Timestamp', CONVERT_TZ(DATE_FORMAT(event_timestamp, '%Y-%m-%dT%T'), 'UTC', event_time_zone) AS 'Event Local Timestamp', event_time_zone AS 'Timezone', event_city AS 'City', event_state AS 'State', event_lat AS 'Event Latitude', event_long AS 'Event Longitude', proof_of_delivery_url AS 'Proof of Delivery URL', delivery_signature_url AS 'Delivery Signature URL' from fdc.v_get_aftership_client_milestone where client_id = 121 and updated_on >= '2022-12-01 02:56:07';
+at else start
+Number of records sent : 2377
+at else end
+Connection successfully established ... 
+update fdc.client_milestone_config set status = 0, updated_on= now(), cdc_timestamp ='2022-12-01 03:26:07' where client_id = 0;
+593 events inserted
+ Select tracking_number AS 'Tracking Number', fdc_event_id AS 'FDC Event ID', event_code AS 'Client Event ID', event_name AS 'Event Name', event_details AS 'Event Details', DATE_FORMAT(event_timestamp, '%Y-%m-%dT%TZ') AS 'Event Timestamp', CONVERT_TZ(DATE_FORMAT(event_timestamp, '%Y-%m-%dT%T'), 'UTC', event_time_zone) AS 'Event Local Timestamp', event_time_zone AS 'Timezone', event_city AS 'City', event_state AS 'State', event_lat AS 'Event Latitude', event_long AS 'Event Longitude', proof_of_delivery_url AS 'Proof of Delivery URL', delivery_signature_url AS 'Delivery Signature URL' from fdc.v_get_aftership_client_milestone where client_id = 122 and updated_on >= '2022-12-01 03:26:07';
+at if start
+There are no events in last one hour
+update fdc.client_milestone_config set status = 0, updated_on= now() where client_id = 0;
+at if end
+593 events inserted
+Finished: SUCCESS

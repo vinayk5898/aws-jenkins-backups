@@ -1,0 +1,28 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/testing-01-fdc-standard-manifest-processing-job
+The recommended git tool is: NONE
+using credential vinay-github
+Cloning the remote Git repository
+Cloning repository https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git init /var/jenkins_home/workspace/testing-01-fdc-standard-manifest-processing-job # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/feature/ITMF-27^{commit} # timeout=10
+Checking out Revision d8d2faeabbe68bd441466559b2367ace7211014a (refs/remotes/origin/feature/ITMF-27)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d8d2faeabbe68bd441466559b2367ace7211014a # timeout=10
+Commit message: "Create test.py"
+First time build. Skipping changelog.
+[testing-01-fdc-standard-manifest-processing-job] $ /bin/sh -xe /tmp/jenkins6987210002810441465.sh
++ cd python_scripts
++ python3 test.py
+connection established
+Finished: SUCCESS

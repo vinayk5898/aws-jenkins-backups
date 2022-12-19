@@ -1,0 +1,12 @@
+commit 3ead06cc043ebf4aaa0f81fb5ba96268abe0a494
+tree dde4aa19ff3490e697985826d3ed8dd5fb419f29
+parent 7df038f100780fdc30da25ffb65f9a97f51b6b63
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-18 12:50:32 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-18 12:50:32 +0530
+
+    adding index on route_snapshot table
+
+
+:100644 100644 2e92932679b65b63277c12f52e6b742d88fdcf8d cd321d8a1164c0244416a60d472f26113aa6d715 M	src/main/resources/db/changelog/2022-02-17-15-create-route-snapshot-table.yaml
+:000000 100644 0000000000000000000000000000000000000000 931a723bbf3bd72894abbdc3efbc410da9bef6cc A	src/main/resources/db/changelog/2022-02-18-16-create-index-rs-table.yaml
+:100644 100644 10f1fab44351562ecb2bfd2e23bb57c085f2d366 dbbb2e27107832ed3e6effe2c10dc7f89ec55961 M	src/main/resources/db/changelog/db.changelog-master.yaml

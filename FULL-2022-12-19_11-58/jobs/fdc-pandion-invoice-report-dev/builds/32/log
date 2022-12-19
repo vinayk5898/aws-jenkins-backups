@@ -1,0 +1,26 @@
+Started by user [8mha:////4AC5S4azLEpHoi1OgO8cWV5ITteFSnDXtWFX79HEl/oXAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgY+/dLi1CL9vPTSlJTEkkwAOjwbBMMAAAA=[0mNagababu Guddati
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-invoice-report-dev
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-invoice-report-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 512fa42d87c12b261b29b9d2ce002cfd2d5f239b (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 512fa42d87c12b261b29b9d2ce002cfd2d5f239b # timeout=10
+Commit message: "Merge pull request #6 from The-Frontdoor-Collective/feature/FDC-893"
+ > git rev-list --no-walk 512fa42d87c12b261b29b9d2ce002cfd2d5f239b # timeout=10
+[fdc-pandion-invoice-report-dev] $ /bin/sh -xe /tmp/jenkins17124313205770936020.sh
++ cd python_scripts
++ python3 Pandion_invoice_report.py
+Sunday 2022-07-24
+Saturday 2022-07-30
+Finished: SUCCESS

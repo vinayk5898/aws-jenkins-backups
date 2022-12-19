@@ -1,0 +1,17 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Checking out git https://github.com/The-Frontdoor-Collective/fdc-liquibase.git into /var/jenkins_home/workspace/fdc-liquibase-dev@script to read Jenkinsfile
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-liquibase-dev@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-liquibase.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-liquibase.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-liquibase.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/itdmf-118^{commit} # timeout=10
+ > git rev-parse origin/itdmf-118^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+ERROR: Maximum checkout retry attempts reached, aborting
+Finished: FAILURE

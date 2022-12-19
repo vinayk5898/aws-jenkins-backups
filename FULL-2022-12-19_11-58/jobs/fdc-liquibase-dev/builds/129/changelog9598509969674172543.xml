@@ -1,0 +1,10 @@
+commit 499c7ebd98296feac3d501ba3062921b5cc334af
+tree a18ec7697d536e6cae73d5874231bc9166b5ddde
+parent c2322552b46dde3d2626fbe52e2a865a562467d0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 12:51:54 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-03 12:51:54 +0530
+
+    FDC-768 :: corrected typo
+
+
+:100644 100644 82ca039aef54daf52a40294516b225f452b045d4 013024b78a8f78d4b184ea2db6ce4500faac88b7 M	src/main/resources/db/sql/fdc_769_ib_enhancement_changes.sql

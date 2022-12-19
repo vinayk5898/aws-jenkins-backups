@@ -1,0 +1,12 @@
+commit a5444230f4846365b540eede32ca034cd24aab86
+tree 237ee96459acc7d32bd88db036dd02a8e6cbd8eb
+parent 4f308cafc5e495fdde00e828d9133e908bb58701
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-12 15:23:50 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-12 15:23:50 +0530
+
+    added support for statusTimestamp
+
+
+:100644 100644 80b90e45c9aa163c1d09b1dcd7eae4062177c7d6 2b36ba3459be69ecd53caf53118fa9351172ac18 M	src/main/java/com/fdc/staplesadapter/model/jpa/DeliveryConfirmationStore.java
+:100644 100644 297bd78e657d19cf6de8bbaecb36d5c7bf1b0aca 9c09fd15e7f7c7b489958bb95bb4a89215832d5a M	src/main/java/com/fdc/staplesadapter/repository/EventRepository.java
+:100644 100644 5df2404e78a1de822460c0c6e2dcfb7f1c3aeaf6 fac735b2eb3089633765e77109a390245a54225e M	src/main/java/com/fdc/staplesadapter/service/impl/XmlSenderServiceImpl.java

@@ -1,0 +1,25 @@
+Started by user [8mha:////4P+/dDx6Qgzg5+JbUV+XyFeZ19ZCBQuvtUETu4RUHhvZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL93JTElFIA1sE1isAAAAA=[0mMohit Dadu
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-manifest-ingestion-new-dev
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-manifest-ingestion-new-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-161^{commit} # timeout=10
+Checking out Revision b709d14ceaa766ee35573dcc6778b06d36480f42 (refs/remotes/origin/ITDMF-161)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b709d14ceaa766ee35573dcc6778b06d36480f42 # timeout=10
+Commit message: "Add csv column exceptions handling"
+ > git rev-list --no-walk b709d14ceaa766ee35573dcc6778b06d36480f42 # timeout=10
+[fdc-pandion-manifest-ingestion-new-dev] $ /bin/sh -xe /tmp/jenkins12288292013309937219.sh
++ cd python_scripts
++ python3 standard_client_manifest_ingestion.py mysql-dev.frontdoorcorp.net etluser fl@tCurve17 fdc_stage 121
+previous run is in-progress
+Finished: SUCCESS

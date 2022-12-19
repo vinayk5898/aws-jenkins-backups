@@ -1,0 +1,10 @@
+commit 2b68d088c24830e213bf7ab659d4132e5d44816b
+tree 9031aed5b9659a4f055f6498865ab72184d2444a
+parent 408924f735feaa37633861fa93afb0e92abd06d1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 20:32:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-22 20:32:45 +0530
+
+    FDC-746 :: updated script to handle ib and pandion
+
+
+:100644 100644 0d3112ac01847ed7b4a1a1f5869922ac50c429bb b597e4621ce85efdfe633605ea6dcaf539c08933 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

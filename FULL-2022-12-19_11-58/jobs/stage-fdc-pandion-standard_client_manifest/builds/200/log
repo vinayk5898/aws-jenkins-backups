@@ -1,0 +1,27 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/stage-fdc-pandion-standard_client_manifest
+The recommended git tool is: git
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/stage-fdc-pandion-standard_client_manifest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/altirllc/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/altirllc/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/altirllc/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/FDC-758^{commit} # timeout=10
+Checking out Revision 3da4771d642d49500f5515abdb9831783bd2d970 (refs/remotes/origin/feature/FDC-758)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3da4771d642d49500f5515abdb9831783bd2d970 # timeout=10
+Commit message: "FDC-758:: fixed typos"
+ > git rev-list --no-walk 3da4771d642d49500f5515abdb9831783bd2d970 # timeout=10
+[stage-fdc-pandion-standard_client_manifest] $ /bin/sh -xe /tmp/jenkins7495416194289395240.sh
++ cd python_scripts
++ python3 standard_client_manifest_stage.py 121
+Connection successfully established ... 
+No csv files detected
+[8mha:////4AqXM8dCNBh0M6HSwYLD0L3KBAlBxuEkogkznYjRQKiSAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyFEgY1/az8JP3iksT0VN20lGTd5JzM1LwS3dzEvMy01OIS3cSc1KKSYn0AmzGq0NsAAAA=[0mstage-fdc-client-manifest-alerts is disabled. Triggering skipped
+Finished: SUCCESS

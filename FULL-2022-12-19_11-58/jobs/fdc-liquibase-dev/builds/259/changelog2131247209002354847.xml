@@ -1,0 +1,52 @@
+commit 6458d06f8c7a9f267a278560e8e367a55a55a566
+tree 54f67fb9c85999b4da312fa727a445a61a931040
+parent 59c1713ef1d09e120f8a2a3b8117a4cd804592d9
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-05 17:21:20 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-05 17:21:20 +0530
+
+    Added Indexes
+
+
+:000000 100644 0000000000000000000000000000000000000000 96beecb73ea6a79e1245394d296a48af1724bb93 A	src/main/resources/db/changelog/20221205_add_index_in_fdc_client_invoice_on_client_id_package_type_id.yaml
+:000000 100644 0000000000000000000000000000000000000000 8644cd47ab763c56c20b73bf0c0e1ff8450a492c A	src/main/resources/db/changelog/20221205_add_index_in_fdc_weight_rates_on_package_type_id.yaml
+:100644 100644 8d061dd779825eacfa9ed5322a249ce496d135ce 42d5ea90e04c353640a0056c9477d863a8a9aa49 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 1b3c45e754af93e13a27863f7b19298edc1e8ea9 A	src/main/resources/db/sql/add_index_in_fdc_client_invoice_on_client_id_package_type_id.sql
+:000000 100644 0000000000000000000000000000000000000000 efe81b8738a97d0e190cd82572b0694776bbec6d A	src/main/resources/db/sql/add_index_in_fdc_weight_rates_on_package_type_id.sql
+commit 6587a20167e8f18578cef92c94a94c0d171bd311
+tree 528c37adb90b56bd78329845d73a52441e640a5a
+parent 5c0aaec2a0fd81486a853dc90ebb8203d7ec8c33
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 17:10:27 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 17:10:27 +0530
+
+    webhook-test-trigger
+
+
+:000000 100644 0000000000000000000000000000000000000000 9afbe2a60b14671577b33cb52fb9d808288448e8 A	src/main/resources/db/changelog/2022-12-01_create_client_webhook_config.yaml
+:100644 100644 a28181af8395cd3970eec57983213dc86dd0f88d 8e3182e90aee54fb2f9b62ba7eca67f793ff03e0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 50cdc3c88f81ac1518e891f86e1fd89bc2660aa2 A	src/main/resources/db/sql/221201_create_client_webhook_config_table.sql
+commit 86a5e41c60530e2ff887422a15144ab9a8cd51ac
+tree 7c3fffeb21cefc80e854dcd8da8e70dd0c950083
+parent 90de188cc9d0e31d483694ce3838459d8d7f7b6c
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:22:20 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:22:20 +0530
+
+    add gc_reference_id in events table
+
+
+:000000 100644 0000000000000000000000000000000000000000 70338ee9394063f58049c605e4a3cdc2c5b003e9 A	src/main/resources/db/changelog/2022-12-01_add_gc_reference_id_event_table.yaml
+:100644 100644 148c47ff110876ec6cb9f6e718d0fab5556ffe17 a28181af8395cd3970eec57983213dc86dd0f88d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 1b29c87e34393fa5ab7e2bd99dffe552d2d88c92 A	src/main/resources/db/sql/221201_add_gc_reference_id_events_table.sql
+commit 59c1713ef1d09e120f8a2a3b8117a4cd804592d9
+tree b9dcaacb5c4ef6dde7568535910675ec93ce08f3
+parent 21ef34189314460b6afc2bb89f9e34e0b00a61d1
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-24 09:51:44 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-24 09:51:44 +0530
+
+    Add indexes to tables
+
+
+:000000 100644 0000000000000000000000000000000000000000 dc5f6c16b607ed23167f42075a14e28a77e45c48 A	src/main/resources/db/changelog/20221122_add_index_in_fdc_client_invoice_package_id copy.yaml
+:000000 100644 0000000000000000000000000000000000000000 717532e4ca8bcb4f321586bbe8c583c49ce4f65f A	src/main/resources/db/changelog/20221122_add_index_in_fdc_event_type_client_on_event_type_id_client_id.yaml
+:100644 100644 148c47ff110876ec6cb9f6e718d0fab5556ffe17 8d061dd779825eacfa9ed5322a249ce496d135ce M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 39de73d1a987a61fa8cb29c1c71fd5f84ed2e106 A	src/main/resources/db/sql/add_index_in_fdc_client_invoice_package_id.sql
+:000000 100644 0000000000000000000000000000000000000000 40c332c54881d90bbf8b988e04e05a2e430fb8c2 A	src/main/resources/db/sql/add_index_in_fdc_event_type_client_on_event_type_id_client_id.sql

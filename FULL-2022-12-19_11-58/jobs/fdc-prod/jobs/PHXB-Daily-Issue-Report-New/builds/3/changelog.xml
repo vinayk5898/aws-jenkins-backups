@@ -1,0 +1,20 @@
+commit a344f6b32ccee7507a08b1efac0985e1bd97eca6
+tree 7e8c4fefb441500d8729839a177906b578ac1d08
+parent eb797b64ba19be224fb4269f3877f726315f502c
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-01 20:19:34 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-01 20:19:34 +0530
+
+    Update daily_exceptions_report_prod.py
+
+
+:100644 100644 1bd6663a955938e41b83b39459570aaf99ed0abb f9413a1cdde1aaa2778a78dd08908749872e26b6 M	python_scripts/daily_exceptions_report_prod.py
+commit eb797b64ba19be224fb4269f3877f726315f502c
+tree 4eaf354148134f36f26eaa640b58894f6dc78cf2
+parent 49d1ad58f1880a3625a715cd44c51009724a8804
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-01 18:14:54 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-01 18:14:54 +0530
+
+    Add feature ITDMF-126
+
+
+:100644 100644 0bec7cf59d25bba4919aa14f013821f1ee078b4f 1bd6663a955938e41b83b39459570aaf99ed0abb M	python_scripts/daily_exceptions_report_prod.py

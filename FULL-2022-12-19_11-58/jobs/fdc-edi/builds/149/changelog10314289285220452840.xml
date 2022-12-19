@@ -1,0 +1,14 @@
+commit dfee8e5ca9abea23a1e5bd9d48c2a3feaf28d1a6
+tree 35157ff62aee3b3aac95b577d0a50402b10e5c9e
+parent 5ed3fa2a2f8c42d9a3dcb6eeb614ddf597580cb6
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-12 18:14:16 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-12 18:14:16 +0530
+
+    Revert "updated"
+    
+    This reverts commit 5ed3fa2a2f8c42d9a3dcb6eeb614ddf597580cb6.
+
+
+:100644 100644 987deffa0d93a26534a64bc1bf14d172b4102d69 a9d878ebbd75905c6bf728d5b23e68c7b167c8eb M	src/main/resources/application-dev.yml
+:100644 100644 4f200870028e4a43e257d9442c6e7a7dc54af43f a75ad44c511b0707c1abf4eefe368726111fb56c M	src/main/resources/application-prod.yml
+:100644 100644 b5b5794f7d01ae4fedf69a44bff99006f0b3dad6 3409bdadc6cfc9c7b59020f5b23aedcd868a10c1 M	src/main/resources/application-stage.yml

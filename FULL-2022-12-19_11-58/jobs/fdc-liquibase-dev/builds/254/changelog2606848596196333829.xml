@@ -1,0 +1,10 @@
+commit 78d4a4437d3d4e2e154924402bb84c3a189ddd83
+tree f9730a82d475fc1cd3d3f253acc128316bf024d7
+parent 9f700f93dd274043c2b07fdacc4ec290f817507d
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-18 14:42:24 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-18 14:42:24 +0530
+
+    Update procedure_create_index.sql
+
+
+:100644 100644 fc1b4bae2dd5e73c26cdfe85bd9aee3213a6c2c4 b9fb53cceda6657c11d2bdbdd9bd32e7459c42a2 M	src/main/resources/db/sql/procedure_create_index.sql

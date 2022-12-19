@@ -1,0 +1,11 @@
+commit 8de3f4858fa3cb6d82f6d083de99b48baa8deca4
+tree 20e158a762a993f16943275ad51f991fe81c7823
+parent f6f4eac33380aa1e75a3631706dcaf283ee0c899
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-14 13:13:55 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-14 13:14:13 +0530
+
+    consider only those events which are received till yesterday
+
+
+:100644 100644 c5a4fa484f1ccef34008e514eefe93376c9cd0ec f95f64a3dd0ba02767f68faecf7be67e4d800880 M	src/main/java/com/fdc/staplesadapter/repository/EventRepository.java
+:100644 100644 88309f13766b6343217b86978a2e8d6376614e2f 6e095e7167494103c8a93996e9811e830f5018bc M	src/main/java/com/fdc/staplesadapter/service/impl/XmlSenderServiceImpl.java

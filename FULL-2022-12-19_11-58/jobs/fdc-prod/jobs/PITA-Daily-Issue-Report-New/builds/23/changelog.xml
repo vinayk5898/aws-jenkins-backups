@@ -1,0 +1,10 @@
+commit a9498bfc7ea4f6bc6e8a2945b7d764c442267467
+tree bca4a717c2dcf1fcef47d031685d936e705c3462
+parent 51ec08ca771fd4bbc5f37102c274a5111fb6546e
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-23 20:07:38 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-23 20:07:38 +0530
+
+    Add new FDP ID emails list
+
+
+:100644 100644 a56c47537f35faf4fb17737a7ffc740e4f715f4a 10ab7b91e016bced3f6250cfc7fe89c862d86e5e M	properties/mailTo.json

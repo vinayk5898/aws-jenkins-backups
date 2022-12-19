@@ -1,0 +1,66 @@
+commit 73225616800adc736bddd3bc3480c91095ae2113
+tree a8e8ca50626c9b80b881c684df7c59e57077ca1b
+parent fddda703ad0d6c12be549fb94922a1120933fd0f
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-19 15:57:09 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-19 15:57:09 +0530
+
+    pointed api to replica db
+
+
+:000000 100644 0000000000000000000000000000000000000000 9c41f8193ebb2e0fa38e28dae97b7c81a79ba9b1 A	src/main/java/com/fdc/core/repository/ParentPcCustomAttrRepository.java
+:100644 100644 93d388ff2e18bd588f05117ba9daaba12936fd08 d33f9091bf6fb32ff1483934ff08f01de3e6f5fd M	src/main/java/com/fdc/core/repository/PcCustomAttributeRepository.java
+:000000 100644 0000000000000000000000000000000000000000 5a707884de46f6edfec9b0639ca531e0bcb55e44 A	src/main/java/com/fdc/core/repository/impl/PcCustomAttributesDal.java
+:000000 100644 0000000000000000000000000000000000000000 e51991d2aa1813c9dacb6abda7610e2bdeabf4be A	src/main/java/com/fdc/core/repository/replica/PcCustomAttributeReplica.java
+:100644 100644 cef4df9a86aa727fc1a96a7bd2f006289211399b 49fbb29d0a1ad687596deb7f4b7426d672c4d123 M	src/main/java/com/fdc/core/service/impl/PcCustomAttributesServiceImpl.java
+commit c8764cb327e155310fa53eb827d8b0332244a9a7
+tree 8c07e5f544973654db39f3c167bcdcd6e30b279e
+parent 03201011f729d14276270ade5f90c816b918a0de
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-15 10:50:18 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-15 10:50:18 +0530
+
+    added fix on error text
+
+
+:100644 100644 2a8b4ab3d12a2e028be5898b3262c90fe9a1f714 7f0a28be27853e44b51ddf409e42ffe2cc7c1281 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 03201011f729d14276270ade5f90c816b918a0de
+tree dbeda853aec96b8ed5e403d497c0e4d37788e910
+parent adbe8b0e1b81f4af140c779038c256cb026c55b3
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-15 10:48:28 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-15 10:48:28 +0530
+
+    added fix on auth
+
+
+:100644 100644 3b2707107b80262fc572476074d573387bd063f9 2a8b4ab3d12a2e028be5898b3262c90fe9a1f714 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit adbe8b0e1b81f4af140c779038c256cb026c55b3
+tree 8be1cefd494743d71024e9c5691c892fb6c6bf43
+parent ba4fa268d9f8ed551cb140845696033a9c8e3698
+author Prashant Talan <110808007+PrashantTalan@users.noreply.github.com> 2022-12-14 21:54:47 +0530
+committer GitHub <noreply@github.com> 2022-12-14 21:54:47 +0530
+
+    Update ShipmentServiceImpl.java
+
+:100644 100644 a79669ea705e4b92a195f138c519b18a7d17c851 3b2707107b80262fc572476074d573387bd063f9 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit ba4fa268d9f8ed551cb140845696033a9c8e3698
+tree ff29a81b4275f818886563a9da9064e9cd8b39a4
+parent aaf2d4a6eaa8983f83765c622ef79739ea4163de
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-14 10:06:25 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-14 10:06:25 +0530
+
+    added validation on mm
+
+
+:100644 100644 5958876359d30fadb526225dd7dbf38fa218c8a1 a79669ea705e4b92a195f138c519b18a7d17c851 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit aaf2d4a6eaa8983f83765c622ef79739ea4163de
+tree fab616805a248142728934b4d897dbd298ccc21d
+parent 66d7d5995c70473d98eb432447088356b628beff
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-13 16:40:23 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-13 16:40:23 +0530
+
+    added validation on mm
+
+
+:100644 100644 e13c5ffb09d79c9fd9a9601038c845f28c802ea0 db1495c5bc233d423add9f43c9c8aad8393c7409 M	src/main/java/com/fdc/core/mapper/impl/MissingManifestMapperImpl.java
+:000000 100644 0000000000000000000000000000000000000000 0bba61fbebb86f8d2853ce91cf8ecdf9031a6f9b A	src/main/java/com/fdc/core/model/jpa/ParcelArrival.java
+:000000 100644 0000000000000000000000000000000000000000 085bb008db8b4bc9eb93c5dc24d94d80cc9fdb67 A	src/main/java/com/fdc/core/repository/ParcelArrivalRepository.java
+:100644 100644 e5a017456209d10991cbddac8d8edb3ebd7cea84 5958876359d30fadb526225dd7dbf38fa218c8a1 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java

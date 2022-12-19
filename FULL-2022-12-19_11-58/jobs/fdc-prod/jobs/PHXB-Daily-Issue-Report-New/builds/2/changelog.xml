@@ -1,0 +1,10 @@
+commit 49d1ad58f1880a3625a715cd44c51009724a8804
+tree 6b735a96206887cbece65563a8a27f6d65dc5988
+parent ec9581162ba28c7ace7bf7abbf1c6292dcedae85
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-01 14:47:03 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-01 14:47:03 +0530
+
+    Add FDP name to Filename and mail subject
+
+
+:100644 100644 fbb8d1fe3aae1e3686ea1176fb22ee7e503cf5d6 c02d5ce2905a60e1e92a7fe5096c6567a6b30de6 M	python_scripts/daily_exceptions_report_prod_1.py

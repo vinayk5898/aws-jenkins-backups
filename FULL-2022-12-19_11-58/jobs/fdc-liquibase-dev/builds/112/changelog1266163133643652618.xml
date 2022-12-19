@@ -1,0 +1,24 @@
+commit f843a52ccd73938a2821b810a0f6925ab75e5b04
+tree 07048b3ab5d695d07b7f6c22a31a8334115e705c
+parent 337f221c047396d61b25b1d27dac63741199b137
+author Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-26 13:05:32 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-05-26 14:09:54 +0530
+
+    FDC-745: Changes to SFTP file tracking schema
+
+
+:000000 100644 0000000000000000000000000000000000000000 f0010b5911aa14960129b103d5871399956f3c02 A	src/main/resources/db/changelog/2022-05-25-63-client-sftp-file-tracking-alterations.yaml
+:100644 100644 2658a425bbf0f8a75541bc9b4c244c2782e152b0 92c90d2847dcd31801f781f97977329b0cb5beef M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 4461a5ba5db6192412e64d8f4d54de72f9c303a8 A	src/main/resources/db/sql/fdc_client_sftp_file_tracking_alteration.sql
+commit c1344e3c01be4f033098c5aae3f3f29255cad971
+tree 1fa8ac897793802c4d71f8a4493f5b9d4078a8f6
+parent 6a04870208cb26b3960fc26f7f53e44455cfa180
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-19 17:07:38 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-19 17:07:38 +0530
+
+    pc_cust_attribute is_active type boolean tinyint
+
+
+:000000 100644 0000000000000000000000000000000000000000 df61e9579184bedea4bce2aaf68edff4944bd44a A	src/main/resources/db/changelog/2022-05-19-32-make-pc-custom-attribute-active.yaml
+:100644 100644 2b24fe8c54fa13f7b6c6fc51e82b2d1f6ec4a1df 0292c9ea84963c662a667649c0eca46bccab8ce6 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 977d100fa0199b02bc830136d4b5e7282081d8cc A	src/main/resources/db/sql/fdc_pccustomattr_isactive_enable.sql

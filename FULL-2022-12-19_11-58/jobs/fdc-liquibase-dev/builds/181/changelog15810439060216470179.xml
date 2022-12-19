@@ -1,0 +1,10 @@
+commit 0321628f6cd7482357080feca1001afc271cc830
+tree 80214c8f24fd2cc75e85da1f20f96eb3fc1cc401
+parent 5739fdd47b3965531e931695e54df5ce273e9045
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 13:18:38 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 13:18:38 +0530
+
+    FDC-893 :: added day time value
+
+
+:100644 100644 fce59437e3a234059cd0763de21f182ac1f85ccc 023548ed63fbc50ecff838f0cd36354898195c7e M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml

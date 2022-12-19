@@ -1,0 +1,10 @@
+commit b3aa0a86aa3cdb42e6042015cb9aa083f88e2f92
+tree 40d1cbe0e4387b9dfece0bc73a7aa0c22e80ddd9
+parent 266d7b6426b9751049ec6daf9538bdd9c14af998
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-14 15:04:39 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-14 15:04:39 +0530
+
+    remove ZPP from package exception
+
+
+:100644 100644 2c3e627c82084ccb4e080ba54d2afe777b3e18eb d1fb3346af8858ffed65201312e201d9a758f798 M	python_scripts/daily_exceptions_report_by_fdp.py

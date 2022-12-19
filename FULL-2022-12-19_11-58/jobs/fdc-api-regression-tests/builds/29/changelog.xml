@@ -1,0 +1,10 @@
+commit 011a772b43e095fb861e73d66eda18fbaedd9342
+tree b1a53438a8f8c9df69c81e688b315f045c7f2d0e
+parent f955b09b4cf17ade580d2d8d02bf52a2fcedba14
+author RealName:Hari <hbolla@altir.co> 2022-08-08 18:47:51 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-08 18:47:51 +0530
+
+    Added instructions to run tests on local and jenkins
+
+
+:000000 100644 0000000000000000000000000000000000000000 59afed5df0082c36b57978c9a926b8130aee0210 A	README.md

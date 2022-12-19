@@ -1,0 +1,33 @@
+commit 78267fc69688580435a630f52461df30f3546da1
+tree 573cb5a740804ed6f5e4cc9b6debf0e1b35a7bd9
+parent 2c6051bff17da62dd9c948cc23fc9d78ccf8fdbe
+author swadeshbehera <108744735+swadeshbehera@users.noreply.github.com> 2022-09-23 18:36:21 +0530
+committer GitHub <noreply@github.com> 2022-09-23 18:36:21 +0530
+
+    Update 2022-09-22-update-in-manifest-config.yaml
+
+:100644 100644 3908c7f29ec405515d8e9c5459fc563657fd53c4 5b3b2430f320a97e46bdb7c6aefd98f7e8397a50 M	src/main/resources/db/changelog/2022-09-22-update-in-manifest-config.yaml
+commit ac72ff15d673a5dbb1fcb351460f5c912a68f956
+tree a6fe6e5e6717e9b113479126c4de2d42e8c333d2
+parent 43f689951462a0790a759d8d61347213768804fb
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-22 15:24:20 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-22 15:24:20 +0530
+
+    fixed pandian csv RecipientName mapping
+
+
+:000000 100644 0000000000000000000000000000000000000000 3908c7f29ec405515d8e9c5459fc563657fd53c4 A	src/main/resources/db/changelog/2022-09-22-update-in-manifest-config.yaml
+:100644 100644 478603acc646ed33a1955653984e2d1e919f0da1 b5cd54f2db1254582e02094a674d2438baa16796 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 5f31f20d171d602846803aa9ed861ba09b194f66 A	src/main/resources/db/sql/update_in_manifest_config_table.sql
+commit 49658292f1d371421572573bab70b1272558d294
+tree 059c0c1c47909c25b075ee83f5a7dcb0bf372a35
+parent 43f689951462a0790a759d8d61347213768804fb
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-09-21 14:55:59 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-09-21 14:55:59 +0530
+
+    added kip.boetel@frontdoorcorp.com for dell invoice
+
+
+:000000 100644 0000000000000000000000000000000000000000 45502e9e569e3ca1b9ed77d1a9c28008325597fa A	src/main/resources/db/changelog/2022-09-21-update_client_invoice_emails.yaml
+:100644 100644 478603acc646ed33a1955653984e2d1e919f0da1 c24bb05e610f35635a07ea1f1cabb41c0cb142d0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 6ec32269d5f8808c60cf6e1be65c0b908348d2b1 A	src/main/resources/db/sql/fdc_add_email_on_invoice_tab.sql

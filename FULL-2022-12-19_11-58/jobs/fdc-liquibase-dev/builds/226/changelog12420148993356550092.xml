@@ -1,0 +1,92 @@
+commit 30b4a71d77c331cb07cbb43566941479f5c7bed9
+tree bbac5012d5edecd2bfb74329bf7ebad56b8cd1bd
+parent 564b13fca7dcbc4ea75b839f1fd8b6f97692bcb1
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-09 11:54:29 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-09 11:54:29 +0530
+
+    added column in milestone view
+
+
+:000000 100644 0000000000000000000000000000000000000000 b6e82f8ff789fd59bc262d5c979e91ba0b936da4 A	src/main/resources/db/changelog/2022-09-08_change_column_in_pandian_view.yaml
+:100644 100644 f75d7ea53fada5d3414b29a4d3e0e3ea4088b570 ed68737437bb6779520c7a86fb5b1424daea5287 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 ca3ddeacf771cec2e04f9c18fb816b110f113d1e A	src/main/resources/db/sql/add_column_in_v_get_pandion_client_milestone_view
+commit 26c2436c6b4ee8c73a464d2c3ba34397ee496548
+tree bc3890127345526cd54a14a397931ae63e295f8a
+parent 3d7cb6c32c5ca1b7675312f2232b8c9a90fbc584
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-05 18:10:37 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-05 18:10:37 +0530
+
+    added vender token in route vendor
+
+
+:000000 100644 0000000000000000000000000000000000000000 2d2aeece70b56148ac6fb36d12afda991abf3f98 A	src/main/resources/db/changelog/2022-09-05_add_token_in_route_vendor.yaml
+:100644 100644 83b37c841579fdff6d8a084b97892f171434cabe f75d7ea53fada5d3414b29a4d3e0e3ea4088b570 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 052b0f49f60c1eaf5c0f8ef628baa22b84c81dfd A	src/main/resources/db/sql/add_token_column_in_vendor.sql
+commit df2ed743770ed19b00814437497adb1ed35ecfaa
+tree eece82d2039aae38fad6ecaa3c49dcf10518ccb1
+parent 433d774e94d9c4edc4f668821d3cfdbf274d2fb5
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-09-05 11:05:51 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-09-05 11:05:51 +0530
+
+    Merge branch 'develop' into feature/ITMF-16
+
+
+:000000 100644 0000000000000000000000000000000000000000 b75a3f78ef568c3d468619d47fa809ce6cb8c553 A	src/main/resources/db/changelog/2022-08-31-add-code-column-gc-mapping.yaml
+:100644 100644 5951c42cbc066206de25d447a933d7117ad9e559 83b37c841579fdff6d8a084b97892f171434cabe M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 7160ff29d14c0e5da66b7dcc5d5515a3c6e5b945 A	src/main/resources/db/sql/220831_add_code_column_groundcloud_event_mapping.sql
+:100644 100644 0ac938eb2886cfe9ba6c27eb486baf03b59da42c cb5306a35f720bcb6a201c0b33d7cb20b1e5cffd M	src/main/resources/db/sql/fdc_update_altir_email_to_fdc_email.sql
+:100644 100644 6149a37611ccf26b7ce472c76d30397529dd3406 955058bdf80e0f7b7d29a0bcbc12d811eb9647c1 M	src/main/resources/db/sql/gc-test-creation_groundcloud_mapping.sql
+commit fd1e201d45603989aac2b6d00763622533809640
+tree 3178926550c60a1b71c88349dbe73299a98541a0
+parent 5f207e4f8c42427251e65d6e27d4c896d09a7b8b
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-02 17:47:12 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-02 17:47:12 +0530
+
+    Update fdc_update_altir_email_to_fdc_email.sql
+
+
+:100644 100644 0ac938eb2886cfe9ba6c27eb486baf03b59da42c cb5306a35f720bcb6a201c0b33d7cb20b1e5cffd M	src/main/resources/db/sql/fdc_update_altir_email_to_fdc_email.sql
+commit b0e335071153f2027f45c27d454e9fc06ab98d23
+tree 64afdde91cf7241eecbd3b295de2473a9af0f9c7
+parent ef39afb4f6942699f53c014fbeffb092ecf72740
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-01 11:20:48 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-01 11:20:48 +0530
+
+    Update gc-test-creation_groundcloud_mapping.sql
+
+
+:100644 100644 b28fddb77ecc9ccc7d1383f366b52ac89b921384 955058bdf80e0f7b7d29a0bcbc12d811eb9647c1 M	src/main/resources/db/sql/gc-test-creation_groundcloud_mapping.sql
+commit ef39afb4f6942699f53c014fbeffb092ecf72740
+tree de46a88d8f13017a60f5913988ad275e6ae84b24
+parent cb6673e5319ad1119fe7dec00705cf9a6edf86bc
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-01 11:08:48 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-01 11:08:48 +0530
+
+    Update gc-test-creation_groundcloud_mapping.sql
+
+
+:100644 100644 6149a37611ccf26b7ce472c76d30397529dd3406 b28fddb77ecc9ccc7d1383f366b52ac89b921384 M	src/main/resources/db/sql/gc-test-creation_groundcloud_mapping.sql
+commit 433d774e94d9c4edc4f668821d3cfdbf274d2fb5
+tree 963065e62cc51ee0779c6b2a407e5f2a9e070372
+parent 9a984e7616b5a29e23b15f64a86a79a4bdd80b33
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-31 14:47:17 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-31 14:47:17 +0530
+
+    renamed file
+
+
+:100644 100644 fe9b0812530e8e7fea737f626f4697475c7ab2ee fdb01f30c5515285ca0d088f2639c46c991feb7a R063	src/main/resources/db/changelog/2022-08-31_dell_invoice_changes.yaml	src/main/resources/db/changelog/2022-08-31_dell_invoice_changes_v1.yaml
+:100644 100644 cdf43fc63c6e043c1359ba3379b5b540d7676bcb 5951c42cbc066206de25d447a933d7117ad9e559 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 f8045daab762bac5556d71238af7a3e7a061fc9a f8045daab762bac5556d71238af7a3e7a061fc9a R100	src/main/resources/db/sql/dell_invoice_modifications.sql	src/main/resources/db/sql/dell_invoice_modifications_v1.sql
+commit 9a984e7616b5a29e23b15f64a86a79a4bdd80b33
+tree 4df6c58d668eb5a13dde12c630f53139af33c7dc
+parent 5f3a40c0967cc744b03d7a4f948384da692bf4a3
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-31 12:56:09 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-08-31 12:56:09 +0530
+
+    dell invoice zone based calculation
+
+
+:000000 100644 0000000000000000000000000000000000000000 fe9b0812530e8e7fea737f626f4697475c7ab2ee A	src/main/resources/db/changelog/2022-08-31_dell_invoice_changes.yaml
+:100644 100644 9bf0d2279131fbdc95df0aa65223345557e7b73f cdf43fc63c6e043c1359ba3379b5b540d7676bcb M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 f8045daab762bac5556d71238af7a3e7a061fc9a A	src/main/resources/db/sql/dell_invoice_modifications.sql

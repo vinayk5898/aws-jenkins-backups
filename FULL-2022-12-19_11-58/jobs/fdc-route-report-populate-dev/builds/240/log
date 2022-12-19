@@ -1,0 +1,25 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-route-report-populate-dev
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-route-report-populate-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 9854a8f89bc01dcaf1900e7c1f922b2957e41854 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9854a8f89bc01dcaf1900e7c1f922b2957e41854 # timeout=10
+Commit message: "Merge pull request #29 from The-Frontdoor-Collective/ITDMF-184"
+ > git rev-list --no-walk 9854a8f89bc01dcaf1900e7c1f922b2957e41854 # timeout=10
+[fdc-route-report-populate-dev] $ /bin/sh -xe /tmp/jenkins12454292844845149489.sh
++ cd python_scripts
++ python3 route_report_populate.py
+0 record inserted
+Finished: SUCCESS

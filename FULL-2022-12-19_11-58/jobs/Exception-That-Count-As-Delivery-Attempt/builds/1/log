@@ -1,0 +1,28 @@
+Started by user [8mha:////4D2ybD+9yze/lftDsffRCyie6zqs0s51CR0ds/Fr9d61AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgZe/dLi1CL99MTkjMSiSgBFbg+YwgAAAA==[0mG Biswajeet Achary
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/Exception-That-Count-As-Delivery-Attempt
+The recommended git tool is: NONE
+using credential vinay-github
+Cloning the remote Git repository
+Cloning repository https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git init /var/jenkins_home/workspace/Exception-That-Count-As-Delivery-Attempt # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/max_attempt^{commit} # timeout=10
+Checking out Revision def0a368fbf07274b1fb574171c8d4f0753828de (refs/remotes/origin/max_attempt)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f def0a368fbf07274b1fb574171c8d4f0753828de # timeout=10
+Commit message: "renamed"
+First time build. Skipping changelog.
+[Exception-That-Count-As-Delivery-Attempt] $ /bin/sh -xe /tmp/jenkins11816183460761743126.sh
++ cd python_scripts
++ python3 max_attempt.py mysql-stage.frontdoorcorp.net etluser fl@tCurve17 fdc
+Invalid argument's provided
+Finished: SUCCESS

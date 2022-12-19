@@ -1,0 +1,10 @@
+commit 0ec29c68d1e6b95738957e1e08619b46dc824bf2
+tree 8809ec70820fb8469a90641f9b176d17c990f101
+parent bd1a229059ef7349961cfb588562090cf308f7c5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 17:33:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 17:33:40 +0530
+
+    FDC-156 :: added missing script
+
+
+:100644 100644 74d88a1ea0eb98ddf74a985f591ffe8571eab24d cdaf0d81af678506b50dad2588d6d7dddd33b5ab M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml

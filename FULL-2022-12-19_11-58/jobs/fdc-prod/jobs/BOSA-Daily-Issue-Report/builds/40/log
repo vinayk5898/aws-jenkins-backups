@@ -1,0 +1,31 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/BOSA-Daily-Issue-Report
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/BOSA-Daily-Issue-Report/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-118^{commit} # timeout=10
+Checking out Revision 22a3354bdde4ec456e818030af092023f0126ea0 (refs/remotes/origin/ITDMF-118)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 22a3354bdde4ec456e818030af092023f0126ea0 # timeout=10
+Commit message: "Add Daily exception summary report"
+ > git rev-list --no-walk 22a3354bdde4ec456e818030af092023f0126ea0 # timeout=10
+[BOSA-Daily-Issue-Report] $ /bin/sh -xe /tmp/jenkins13050800033851507156.sh
++ cd python_scripts
++ [ Stage = Dev ]
++ [ Stage = Stage ]
++ python3 daily_exceptions_report_by_fdp.py mysql-stage.frontdoorcorp.net etluser fl@tCurve17 fdc_stage 13
+Location Name :  BOSA
+fdp IDs :  ['44']
+loop Start for fdp ID:  44
+FDP Center name:  Sofu Trucking LLC
+No sheets found, no mail sent. 
+Finished: SUCCESS

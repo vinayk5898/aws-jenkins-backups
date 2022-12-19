@@ -1,0 +1,10 @@
+commit da44ed33965e27a62ec1466a6fad27da26fae74e
+tree 8168765ba172c5f0bc012d6de4577505258b85a8
+parent 4b0f7b0b22e4676e7c08ef445d51c38a65d39299
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-15 19:04:20 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-15 19:04:20 +0530
+
+    Update mailTo.json
+
+
+:100644 100644 2a4f5792a914a848f715621a28e576785da5f29a 294077934fb7cbde94eddd7ca5a840c68f1cbb93 M	properties/mailTo.json

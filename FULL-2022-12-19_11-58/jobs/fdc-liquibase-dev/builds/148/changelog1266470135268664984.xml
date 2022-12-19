@@ -1,0 +1,217 @@
+commit 1343b09468d17961f7c947b0b7201479273c8f22
+tree 037a3a1185938728347f37c0d37d5ea6374e913f
+parent 2efccc0535ddd14f9e93b93e44d10223313b70b0
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-20 12:50:06 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-06-20 12:50:06 +0530
+
+    FDC-849: change liquibase script order to fix prod issue
+
+
+:100644 100644 3a4e477a582ceccf4a2b13ff966f0fd30935d8d4 3f5d1a7ed0cd152acaf98fc4198ccb0a843bd5ff M	src/main/resources/db/changelog/2022-06-10-index-on-tracking-nums-pkg-table.yaml
+commit 10f9ab23a1048b171f93832e29a7b9582cb40c95
+tree 4d8a6a01d24aae4dabf528b1382af1fc664f0536
+parent abb1525f529682065911258b3e300d7cde86f91d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:12:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:12:41 +0530
+
+    FDC-156 :: fixed subject
+
+
+:100644 100644 0c7a6d6f915f39a5d3ba8818c526c9368b8cf1a2 6b4273fc25c735cd1e2be8bbfd80403239907037 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit abb1525f529682065911258b3e300d7cde86f91d
+tree 1afb25afb9d3cda4b7976d70559892b42ff87e96
+parent 430b9298b010f7b7e254b1d60d5cffe6cdb03bf3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:10:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:10:52 +0530
+
+    FDC-156 :: fixed statsu
+
+
+:100644 100644 3d7f18e415da327cb09cc5abea27af2bf9fc18ec 0c7a6d6f915f39a5d3ba8818c526c9368b8cf1a2 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 430b9298b010f7b7e254b1d60d5cffe6cdb03bf3
+tree f44a90e69e3e81a9e7214f1a92ea88beb25dbf3c
+parent ed999dc50a094e676bbc19cd286b4c545018416d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:03:01 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:03:01 +0530
+
+    FDC-156 :: reverted typo
+
+
+:100644 100644 9ee355612a59c2423fce4fd50ab37047607cfdc3 1fd72b5266625289e004dc208ce0117033fea50d M	pom.xml
+commit ed999dc50a094e676bbc19cd286b4c545018416d
+tree f894ce704f456708b40cbcf2d3ed7dedb1542140
+parent 3a6b9577ff8a67b697605540ce9e68da664df3a9
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:01:28 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 23:01:28 +0530
+
+    FDC-156 :: added missing script
+
+
+:100644 100644 1fd72b5266625289e004dc208ce0117033fea50d 9ee355612a59c2423fce4fd50ab37047607cfdc3 M	pom.xml
+:100644 100644 6829580384ffa060bb8de6b3a2ad777da5989fb5 3d7f18e415da327cb09cc5abea27af2bf9fc18ec M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 870105ca399bbf9fa2a11fd9d15d3ab125523404
+tree 0ffcb765c4280ceaabbef3b202a54ba0a94792d0
+parent 81ff7f3619c34d8783e1ac5ead722ca5348fb989
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 21:27:39 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 21:27:39 +0530
+
+    FDC-156 :: removed duplicate rate
+
+
+:100644 100644 b54013745753f80732b811efd0e34c00d4eacebb 6829580384ffa060bb8de6b3a2ad777da5989fb5 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 81ff7f3619c34d8783e1ac5ead722ca5348fb989
+tree 32b45d41476131ff78cef8ee62bb88774b896130
+parent 09d66c589b14548f7dffae0cd3a70ee43e9f258e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:30:48 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:30:48 +0530
+
+    FDC-156 :: Removed hardcoded id value
+
+
+:100644 100644 a0cb10cc822d0c2ad6591dcc2aca7e61bdcc227a b54013745753f80732b811efd0e34c00d4eacebb M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 09d66c589b14548f7dffae0cd3a70ee43e9f258e
+tree 846fe774c24cad9e96d2fe7b014305b9bb601382
+parent 30c74f33641c4425f98cda614a83927b442e9705
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:26:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:26:41 +0530
+
+    FDC-156 :: corrected typo
+
+
+:100644 100644 5ff412199263b2bc97efca98f2486a8fb82b7114 a0cb10cc822d0c2ad6591dcc2aca7e61bdcc227a M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 97d0a11359782f5b3df059685b61810ede785bb3
+tree 18975eca04f5a2f5db8eb0660faf5ce80dd97730
+parent f48cfe2bf917d0916496a5bc071af4335be6ca06
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-06-15 17:09:39 +0530
+committer GitHub <noreply@github.com> 2022-06-15 17:09:39 +0530
+
+    Support/fdc 849 (#30)
+    
+    * FDC-849: drop unique index track# prod, create indx in non-prod
+    
+    * FDC-849: remove unique index on track# prod for MPMD
+    
+    * FDC-849: unique index on pkg.track#, client_pickup, default 0 not null
+    
+    * FDC-849: unique index on pkg.track#, client_pickup, default 0 not null
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 3a4e477a582ceccf4a2b13ff966f0fd30935d8d4 A	src/main/resources/db/changelog/2022-06-10-index-on-tracking-nums-pkg-table.yaml
+:100644 100644 4b4493e0ef318508253b80d1619772088762d86c 2bd4405733aa5c7d015bb549a59c74e8b7b18539 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 b3d13ff8cd6b79920780fcd582f874f6d4b1027f A	src/main/resources/db/sql/fdc_pkg_clientpickup_notnull_default.sql
+:000000 100644 0000000000000000000000000000000000000000 a4245ee333bed129a9035fce444dcbb6a1625720 A	src/main/resources/db/sql/fdc_pkg_table_index_changes.sql
+commit 30c74f33641c4425f98cda614a83927b442e9705
+tree 19be8daf059edf3ea5d4bd21c666b99868703373
+parent 6f8c0f441749bb3f187820ab07eefb12b0485abf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:22:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:22:52 +0530
+
+    FDC-867 :: IB Invoice when dimensions are missing
+
+
+:100644 100644 a3245843c8f780e47812ad31c5a48c78a85ecdcd 5ff412199263b2bc97efca98f2486a8fb82b7114 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 6f8c0f441749bb3f187820ab07eefb12b0485abf
+tree aaae1cfd7d374196105e6bf08eea7eadd3e40ff2
+parent 8b428d3b9fb2ada8541ce42aa46d2369e7a688e6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:17:36 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 21:17:36 +0530
+
+    FDC-867 :: IB Invoice when dimensions are missing changes
+
+
+:100644 100644 3ca4db14da23f66940cf38e887fb5546c1399262 a3245843c8f780e47812ad31c5a48c78a85ecdcd M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:100644 100644 55ce692aac749919219c965c825338b975d4b81f 78e8c2a4ee5cd56b0efd8eb4bc662aeb6e7eeb86 M	src/main/resources/db/sql/v_get_client_invoice.sql
+commit 8b428d3b9fb2ada8541ce42aa46d2369e7a688e6
+tree b99852fba17defd0f18c4659fb6d4c2ad4e1a377
+parent 8ffddc460fec9fffb0efb88898f6fa523295ffb1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 17:51:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-14 17:51:24 +0530
+
+    FDC-867 :: IB Invoice when dimensions are missing
+
+
+:100644 100644 335f86054a1833f32999e1502e12633ba2b551ad 3ca4db14da23f66940cf38e887fb5546c1399262 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 8ffddc460fec9fffb0efb88898f6fa523295ffb1
+tree 7c3fa371046db047e1a5679f90ef9aad79c9aa7b
+parent bf8fc648219635cea76964e46d0056e6702bd9e5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-29 15:50:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-29 15:50:13 +0530
+
+    fdc-156 :: fixed typo
+
+
+:100644 100644 652de5cb6c9435c03695a50b116be623ac229636 335f86054a1833f32999e1502e12633ba2b551ad M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit bf8fc648219635cea76964e46d0056e6702bd9e5
+tree 0147e0be9d930481943296c54f8cbb39e6c9edeb
+parent 9ce319204af639584c93a4dcb831cf5c983aecf1
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-26 01:02:33 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-26 01:02:33 +0530
+
+    FDC-156 :: fixed column order
+
+
+:100644 100644 3cef07199974b64d57f66e6db22dae4dcab85385 652de5cb6c9435c03695a50b116be623ac229636 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:100644 100644 8fe663874158c062dda5ee42aaff7567abee7d70 55ce692aac749919219c965c825338b975d4b81f M	src/main/resources/db/sql/v_get_client_invoice.sql
+commit 9ce319204af639584c93a4dcb831cf5c983aecf1
+tree 74098f46ca8c4f8af90d4af43310ae12aa19861c
+parent 3c689b3ad238879270d9ab87b854b91dc86e5c52
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:31:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:31:52 +0530
+
+    fdc-156 :: fixed syntax issues
+
+
+:100644 100644 38b31303396b703e888d1f367e39f9e39687a0eb 3cef07199974b64d57f66e6db22dae4dcab85385 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 3c689b3ad238879270d9ab87b854b91dc86e5c52
+tree 8b62dfb1ce54d52df071e14df251cff7a234fd2d
+parent 60044e4bfe5d0ec5b8e4bf88f02985f1b3b2eec2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:04:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:04:31 +0530
+
+    changed datatype
+
+
+:100644 100644 b1e44f84e4b833fa87674700c4ed2e252b645e3f 38b31303396b703e888d1f367e39f9e39687a0eb M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 60044e4bfe5d0ec5b8e4bf88f02985f1b3b2eec2
+tree 7fe97af0595471df6cd0ce340e10fc25fc999b8b
+parent 0ec29c68d1e6b95738957e1e08619b46dc824bf2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 18:03:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 18:03:45 +0530
+
+    FDC-156 :: added view
+
+
+:100644 100644 cdaf0d81af678506b50dad2588d6d7dddd33b5ab b1e44f84e4b833fa87674700c4ed2e252b645e3f M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:000000 100644 0000000000000000000000000000000000000000 8fe663874158c062dda5ee42aaff7567abee7d70 A	src/main/resources/db/sql/v_get_client_invoice.sql
+commit 0ec29c68d1e6b95738957e1e08619b46dc824bf2
+tree 8809ec70820fb8469a90641f9b176d17c990f101
+parent bd1a229059ef7349961cfb588562090cf308f7c5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 17:33:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 17:33:40 +0530
+
+    FDC-156 :: added missing script
+
+
+:100644 100644 74d88a1ea0eb98ddf74a985f591ffe8571eab24d cdaf0d81af678506b50dad2588d6d7dddd33b5ab M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit bd1a229059ef7349961cfb588562090cf308f7c5
+tree 33e9d75f7a1c4502666b4b1fc73d5deeb42820ef
+parent 14463ea40642a4eed5c74cefa93556be01b0ca7b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 16:32:06 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 16:32:06 +0530
+
+    FDC-156 :: these two fields can be null so removed the constraint
+
+
+:100644 100644 3c5a13541ce2b46d93f576dd0af684fa04b8c631 74d88a1ea0eb98ddf74a985f591ffe8571eab24d M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 14463ea40642a4eed5c74cefa93556be01b0ca7b
+tree 82b2583a052f70725e8c3eb8fc56b25b2fd52ab0
+parent 7bca82233a1fa4fb32a103a420773d6d5ea0c717
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 00:19:15 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 00:19:15 +0530
+
+    FDC-156 :: dml & ddl script
+
+
+:000000 100644 0000000000000000000000000000000000000000 3c5a13541ce2b46d93f576dd0af684fa04b8c631 A	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+:100644 100644 93845ef3e8734ba4fd498d58868a3d558997ef66 8f8ed26df522dc515795bd886b1a195fabc09d2e M	src/main/resources/db/changelog/db.changelog-master.yaml

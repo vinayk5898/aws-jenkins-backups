@@ -1,0 +1,65 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-staples-adapter-jar-run
+[fdc-staples-adapter-jar-run] $ /bin/sh -xe /tmp/jenkins14913377352881519499.sh
++ cd /var/jenkins_home/workspace/fdc-staples-adapter-build/target
++ java -jar staplesadapter-0.0.1-SNAPSHOT.jar 5
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/log4j-slf4j-impl-2.17.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.6.13)
+
+2022-11-24 10:00:15.358  INFO 12115 --- [           main] c.f.s.StaplesadapterApplication          : Starting StaplesadapterApplication v0.0.1-SNAPSHOT using Java 11.0.12 on ip-10-10-0-21.us-west-2.compute.internal with PID 12115 (/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar started by jenkins in /var/jenkins_home/workspace/fdc-staples-adapter-build/target)
+2022-11-24 10:00:15.362  INFO 12115 --- [           main] c.f.s.StaplesadapterApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-24 10:00:16.684  INFO 12115 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-24 10:00:17.090  INFO 12115 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393 ms. Found 5 JPA repository interfaces.
+2022-11-24 10:00:18.507  INFO 12115 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-11-24 10:00:18.532  INFO 12115 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-24 10:00:18.532  INFO 12115 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-24 10:00:18.740  INFO 12115 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-24 10:00:18.740  INFO 12115 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3310 ms
+2022-11-24 10:00:19.519  INFO 12115 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-24 10:00:20.277  INFO 12115 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-24 10:00:20.386  INFO 12115 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-24 10:00:20.634  INFO 12115 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-24 10:00:21.190  INFO 12115 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-24 10:00:21.500  INFO 12115 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-24 10:00:23.466  INFO 12115 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-24 10:00:23.479  INFO 12115 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-24 10:00:24.697  WARN 12115 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-24 10:00:25.336  INFO 12115 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-11-24 10:00:25.357  INFO 12115 --- [           main] c.f.s.StaplesadapterApplication          : Started StaplesadapterApplication in 10.822 seconds (JVM running for 12.332)
+2022-11-24 10:00:25.360  INFO 12115 --- [           main] c.f.s.StaplesadapterApplication          : CommandLineRunner starts running.
+2022-11-24 10:00:25.541  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : No. of unprocessed events found in the database : 1
+2022-11-24 10:00:25.542  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Started processing event_id : 189404146812
+2022-11-24 10:00:25.542  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Uploading the images to Azure Storage for event_id : 189404146812
+2022-11-24 10:00:25.582  INFO 12115 --- [           main] c.a.c.i.jackson.JacksonVersion           : Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.33.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-11-24 10:00:26.576  INFO 12115 --- [           main] c.f.s.s.impl.UploadImageServiceImpl      : Started uploading the image for eventId: 189404146812 
+2022-11-24 10:00:27.749  INFO 12115 --- [           main] c.f.s.s.impl.UploadImageServiceImpl      : Image uploaded successfully to Azure Storage for eventId : 189404146812
+2022-11-24 10:00:27.749  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Generation of XML started for eventId : 189404146812
+2022-11-24 10:00:28.000  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : XML is generated for eventId : 189404146812 
+2022-11-24 10:00:28.388  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Saved entry for eventId : 189404146812 in DeliveryConfirmationStore with Id : 1
+2022-11-24 10:00:28.389  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Now, start processing all entries in DeliveryConfirmationStore with statuses NEW and FAILED.
+2022-11-24 10:00:28.416  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Preparing XML for dcsId : 1 , eventId : 189404146812 to be sent.
+2022-11-24 10:00:28.417  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Validating the existing token.
+2022-11-24 10:00:28.423  INFO 12115 --- [           main] c.f.s.s.impl.OauthTokenServiceImpl       : Updation of token required.
+2022-11-24 10:00:28.812  INFO 12115 --- [           main] c.f.s.s.impl.OauthTokenServiceImpl       : Token is updated.
+2022-11-24 10:00:28.812  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Token is validated.
+2022-11-24 10:00:30.530  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : Response Code : 200
+2022-11-24 10:00:30.620  INFO 12115 --- [           main] c.f.s.service.impl.XmlSenderServiceImpl  : DeliveryConfirmationStore is updated for Id : 1, TrackingNumber : 00000017021998 with status -> : SUCCESS , message - > null
+2022-11-24 10:00:30.668  INFO 12115 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-24 10:00:30.725  INFO 12115 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-24 10:00:30.731  INFO 12115 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-24 10:00:30.815  INFO 12115 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-24 10:00:30.817  INFO 12115 --- [           main] c.f.s.StaplesadapterApplication          : CommandLineRunner is terminated.
+Finished: SUCCESS

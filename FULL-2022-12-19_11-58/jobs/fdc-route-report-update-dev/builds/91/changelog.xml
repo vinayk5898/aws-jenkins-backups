@@ -1,0 +1,127 @@
+commit 2b94c1b2f6756ab414b032f980bb8a3df4930f9d
+tree 409d221c22b03033d563fd0014b375e30ee87dff
+parent 84766ec07687bb18700b69c56df880649210952e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-21 23:34:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-21 23:34:52 +0530
+
+    FDC-893 :: changed the filtering code logic to both daily and weekly logic
+
+
+:100644 100644 de535dfbd3ab3684e815a4b9105df8a4450e9c6f 07dc4cb8d06928fff528297c796287fb09585436 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 800f409a0ae5d6b40589f5604a5f255980f5eaf9 8573ac44549fdd5344ef02d39bf91f79ae03ca6e M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 5d7fccbb7a6ba29700f1ae8b0881cfec7a610e2f 3b4846f274c20c5b3c03bd08ee3a63d4f58d3131 M	python_scripts/Generic_Client_Invoice_stage.py
+commit 84766ec07687bb18700b69c56df880649210952e
+tree c5aed95069319af1861102d5b4d1fcf2ca93026d
+parent 68f10bbf0b4674dfb7cab7d5263331e1f62f2fef
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 19:36:26 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 19:36:26 +0530
+
+    FDC-893 :: changed dell code for prod version
+
+
+:100644 100644 f53aa6bd7ccbd6a6cc1d4f3b4eb0df2c56babf87 800f409a0ae5d6b40589f5604a5f255980f5eaf9 M	python_scripts/Generic_Client_Invoice_prod.py
+commit 68f10bbf0b4674dfb7cab7d5263331e1f62f2fef
+tree 3b3c6f8bec00fadce2ef20588e03fa08a4ed2f45
+parent 7df2f990fb50eb9f452f1027775b992fd59f6bcf
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:30:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:30:50 +0530
+
+    FDC-893:: calling stage script
+
+
+:100644 100644 4e0a433ab8d72de91de7c9b88dc00b908bad0f52 5d7fccbb7a6ba29700f1ae8b0881cfec7a610e2f M	python_scripts/Generic_Client_Invoice_stage.py
+commit 7df2f990fb50eb9f452f1027775b992fd59f6bcf
+tree a7ea9eeb21c42f8737f417ae66224f1c4e033c59
+parent 08f5a49dd29b96ae024520f04817fcc453585d5e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:29:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:29:09 +0530
+
+    FDC-893 :: changed credentials for prod and satge accordingly
+
+
+:100644 100644 b590c156832b16ed75b08d8005ac5eebc18244c6 e2073182cfdd4ea3c150fa2ff684451cb5018e80 M	python_scripts/get_dell_invoice_custom_report_generation_prod.py
+:100644 100644 b590c156832b16ed75b08d8005ac5eebc18244c6 b9796e6ac2cf817abda4e6e206bdf3b77b2aaa5f M	python_scripts/get_dell_invoice_custom_report_generation_stage.py
+commit 08f5a49dd29b96ae024520f04817fcc453585d5e
+tree d5340fecf6a974894a4af1def4e2bf1df1086d38
+parent 4e3ef73a586d66a9711a94069e317d78dd797cce
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:26:10 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 18:26:10 +0530
+
+    FDC-893 :: created dell related script for prod and stage
+
+
+:000000 100644 0000000000000000000000000000000000000000 b590c156832b16ed75b08d8005ac5eebc18244c6 A	python_scripts/get_dell_invoice_custom_report_generation_prod.py
+:000000 100644 0000000000000000000000000000000000000000 b590c156832b16ed75b08d8005ac5eebc18244c6 A	python_scripts/get_dell_invoice_custom_report_generation_stage.py
+commit 4e3ef73a586d66a9711a94069e317d78dd797cce
+tree af6cea66da686e77a3bfb03e37b029aaeb31d036
+parent 6332c2e8156e4f11b30b084e89f502ea818ccfb5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 17:09:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 17:09:41 +0530
+
+    FDC-893 :: applied dell invoice changes for stage script
+
+
+:100644 100644 1219ab199983bfb66e481ff1a296426b1d8edafc 4e0a433ab8d72de91de7c9b88dc00b908bad0f52 M	python_scripts/Generic_Client_Invoice_stage.py
+commit 6332c2e8156e4f11b30b084e89f502ea818ccfb5
+tree edd0a1b6df85b52e4c529ba5451a2e219cf2d158
+parent e36c9a1053a29615622d582cc88ef6b5926ae185
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 16:30:26 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 16:30:26 +0530
+
+    FDC-893
+
+
+:100644 100644 5a5d29dee3854b705db2c7928cef4d7b21c55df8 de535dfbd3ab3684e815a4b9105df8a4450e9c6f M	python_scripts/Generic_Client_Invoice.py
+commit e36c9a1053a29615622d582cc88ef6b5926ae185
+tree 8896fd5f651c93f6613813932117847693e1a0cd
+parent 384f93669c17a165e8a6c886c26d7eb635aad4b3
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-14 16:19:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-14 16:19:09 +0530
+
+    FDC-893 :: fixed typo
+
+
+:100644 100644 aacdc916dca87ed7cfa9c52e76cf5bf76fda6a89 b590c156832b16ed75b08d8005ac5eebc18244c6 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 384f93669c17a165e8a6c886c26d7eb635aad4b3
+tree 216fe37c508e559172586f830e9295aaeba0b297
+parent d51b6d3e432f0f955dbe6ef1c2fe2422947f5644
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 11:29:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 11:29:07 +0530
+
+    FDC-893 :: fixed typo
+
+
+:100644 100644 545f7f08fb6c68a139005cdf8ea354c240a18f68 aacdc916dca87ed7cfa9c52e76cf5bf76fda6a89 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit d51b6d3e432f0f955dbe6ef1c2fe2422947f5644
+tree ed33aa4951fafeb593262cce61c96ab681610b8d
+parent 958b4bcc857be1fc2aececafa4ebd56027dc0672
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 00:11:57 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-13 00:11:57 +0530
+
+    FDC-893 :: changed connection string
+
+
+:100644 100644 6c6fb26aa16b86975c27d95b1242b1e33ae61344 5a5d29dee3854b705db2c7928cef4d7b21c55df8 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 853ba3a141fb52a457a0ad91066cdb38de788e09 545f7f08fb6c68a139005cdf8ea354c240a18f68 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 958b4bcc857be1fc2aececafa4ebd56027dc0672
+tree 67504b4e09710c4f838a92b6f0db570fe1451398
+parent 6e4196ec2aa49cf12166fabfb071465b13191e00
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 15:29:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 15:29:52 +0530
+
+    FDC-893 :: added code for dell specific
+
+
+:100644 100644 3fbb296573a4c2f835d030aa8eb663ba36eeb1fd 6c6fb26aa16b86975c27d95b1242b1e33ae61344 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 d09362e6d0979244fede151d380ed0ede1fa0fdd 853ba3a141fb52a457a0ad91066cdb38de788e09 M	python_scripts/get_dell_invoice_custom_report_generation.py
+commit 6e4196ec2aa49cf12166fabfb071465b13191e00
+tree f7497309ae3aef15668eb7a2a7656648bf15bc18
+parent 52bf012063f5a8fab304d157760c77ef68694b48
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-09 23:47:51 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-09 23:47:51 +0530
+
+    FDC-893 :: added changes of dell invoice
+
+
+:100644 100644 1f8f9ffc0067cdff7be0a34016817591c54ddf8d 3fbb296573a4c2f835d030aa8eb663ba36eeb1fd M	python_scripts/Generic_Client_Invoice.py
+:000000 100644 0000000000000000000000000000000000000000 d09362e6d0979244fede151d380ed0ede1fa0fdd A	python_scripts/get_dell_invoice_custom_report_generation.py

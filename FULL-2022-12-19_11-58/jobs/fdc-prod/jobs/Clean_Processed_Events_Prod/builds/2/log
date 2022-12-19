@@ -1,0 +1,10 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/Clean_Processed_Events_Prod
+[Clean_Processed_Events_Prod] $ /bin/sh -xe /tmp/jenkins18034229536903878834.sh
++ docker run imega/mysql-client mysql --host=fdc-read.cmxnd7iy8yny.us-west-2.rds.amazonaws.com --user=etluser --password=fl@tCurve17 --database=fdc --execute=DELETE FROM fdc.event_store WHERE deleted = '1' AND DATE(created_on) <= DATE(date_add(now(), INTERVAL -2 DAY))
+Got error: Access denied for user 'root'@'10.10.0.21' (using password: NO)
+ERROR 1290 (HY000) at line 1: The MySQL server is running with the --read-only option so it cannot execute this statement
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,31 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-pandion-milestone-prod
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-pandion-milestone-prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision f8c6e805366e4d59477b0303d0362293fd0ac1db (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f8c6e805366e4d59477b0303d0362293fd0ac1db # timeout=10
+Commit message: "Merge pull request #23 from The-Frontdoor-Collective/ITDMF-119"
+ > git rev-list --no-walk 4f2de32edba1c9d1e7cfd533d968353a0f347bb5 # timeout=10
+[fdc-pandion-milestone-prod] $ /bin/sh -xe /tmp/jenkins7473416475363302485.sh
++ cd python_scripts
++ python3 generic_client_milestone_prod.py 121
+ Select tracking_number as "Pandion Tracking ID", facility_id as "Facility ID", event_code as "Pandion Event Code", event_name as "Pandion Event Name", event_details as "Event Details", DATE_FORMAT(event_timestamp, "%Y-%m-%dT%TZ") as "Event TimeStamp", event_date as "Event Date", event_time as "Event Local Time", event_time_zone as "Event Timezone", event_street as "Event Street", event_city as "Event City", event_state as "Event State", event_lat as "Event Lat", event_long as "Event Long", proof_of_delivery_url as "Proof of Delivery URL", delivery_signature_url as "Delivery Signature URL" from fdc.v_get_pandion_client_milestone where client_id = 121 and updated_on >= '2022-11-15 13:30:07';
+at else start
+Number of records sent : 1380
+at else end
+Connection successfully established ... 
+233 events inserted
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

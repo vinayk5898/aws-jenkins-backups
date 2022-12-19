@@ -1,0 +1,13 @@
+commit b303e88751a16dbf556cf8464b45b4d0ee957b66
+tree f99796147de21925e62ae5d1e3e2e6f7e3d88518
+parent bf83ca96ae428f91cb034327aec4c46c06676830
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-05 18:13:24 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-05 18:13:24 +0530
+
+    Added index
+
+
+:000000 100644 0000000000000000000000000000000000000000 d76384a151b31f09d1455cb41be7ff417328f2ff A	src/main/resources/db/changelog/20221122_add_index_in_fdc_event_type_client_on_client_id.yaml
+:100644 100644 813f5992b76b906c26619f11d22450677ab72e69 7251dd0c66957d60803baf05d64f3c482a84cbed M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 5321dc8bb724ef5b82805f6a679458a91645e0cf A	src/main/resources/db/sql/add_index_in_fdc_event_type_client_on_client_id.sql
+:100644 100644 40c332c54881d90bbf8b988e04e05a2e430fb8c2 8954f7a68fdad8405024aa7117bd7eb31babd966 M	src/main/resources/db/sql/add_index_in_fdc_event_type_client_on_event_type_id_client_id.sql

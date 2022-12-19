@@ -1,0 +1,11 @@
+commit ac39595864e72050455391b40c596a228779773d
+tree a7871789d9d783275db63d38bf29c80844c1fe5b
+parent c9a0f1f32966382c4713bab3aabfd1f27414d8c5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 20:21:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-26 20:21:41 +0530
+
+    FDC-746 :: final changes
+
+
+:100644 100644 bbaeaf2c9e8e0e86c36e25426e87148702c3f0e5 08a85c4e227ac648dd846dda837f8d1394214d49 M	python_scripts/generic_client_milestone.py
+:100644 000000 c81f59e885cff96fde0d757c7c321faaf4bd26cd 0000000000000000000000000000000000000000 D	python_scripts/standard_milestone.py

@@ -1,0 +1,29 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-dell-invoice-report-dev
+The recommended git tool is: NONE
+using credential fdaf6255-c33e-4004-b386-2d20682fd879
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-dell-invoice-report-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials Git_checkout_Token
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/feature/FDC-893^{commit} # timeout=10
+Checking out Revision 2b94c1b2f6756ab414b032f980bb8a3df4930f9d (refs/remotes/origin/feature/FDC-893)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2b94c1b2f6756ab414b032f980bb8a3df4930f9d # timeout=10
+Commit message: "FDC-893 :: changed the filtering code logic to both daily and weekly logic"
+ > git rev-list --no-walk 2b94c1b2f6756ab414b032f980bb8a3df4930f9d # timeout=10
+[fdc-dell-invoice-report-dev] $ /bin/sh -xe /tmp/jenkins18294691071095383893.sh
++ cd python_scripts
++ python3 Generic_Client_Invoice.py 120
+startdate 2022-07-21
+enddate 2022-07-21
+insert into fdc.client_invoice ( package_id,invoice_date,invoice_amount,invoice_status,client_invoice_number,account_number,status,Facility,PackageTrackingId,ContainerTrackingId,PackageLengthInches,PackageHeightInches,PackageWidthInches,PackageWeightLb,PackageArrivalDate,created_on,package_arrival_date,client_id ) select package_id,invoice_date,Invoice_Amount,invoice_status,client_invoice_number,Account_Number,status,parcel_center_id,PackageTrackingId,ContainerTrackingId,PackageLengthInches,PackageHeightInches,PackageWidthInches,PackageWeightLb,PackageArrivalDate,created_on,package_arrival_date,client_id from fdc_stage.dell_invoice_input where client_id = 120 and date(package_arrival_date) <= '2022-07-21'
+No of invoices generated :  0
+since the array list is empty skipping email step
+Finished: SUCCESS

@@ -1,0 +1,20 @@
+commit ae6576f860943fbe23101706a3331d37d588a02a
+tree 6f229ec269a258e5d4740078e8326ca3b2794731
+parent 74d3c578cea2dae415b5c5c999587f461b186c20
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-08 11:56:02 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-08 11:56:02 +0530
+
+    added few changes
+
+
+:100644 100644 86e5447b3e6a27f7c2f0beb687969d26e98731aa 43428eed52e6305e4cfa98731fd3062462f3d19d M	src/pages/ManifestIngestion/ManifestIngestion.tsx
+commit 74d3c578cea2dae415b5c5c999587f461b186c20
+tree 7e1672224bcc03f6de97734af13017ffb46dc5ec
+parent a0fc0c75d1f45c4901616c1cef83ce56490fbf4b
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-07 21:26:39 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-07 21:26:39 +0530
+
+    added few changes
+
+
+:100644 100644 b591254e209e1d548dc775406b53274451e7c4e1 86e5447b3e6a27f7c2f0beb687969d26e98731aa M	src/pages/ManifestIngestion/ManifestIngestion.tsx

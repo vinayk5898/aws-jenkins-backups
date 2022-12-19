@@ -1,0 +1,10 @@
+commit a70b6ec3c8eb652942199ea48a05c5761752c2fe
+tree 5cc256c4a77a68c304dac2f84302343514301d7b
+parent 5794cafd47f7031047cb048477fb6b5f04f827a5
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-07 11:29:08 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-09-07 11:29:08 +0530
+
+    removed auth from internal apis
+
+
+:100644 100644 be67a44323d121146673b09b49c4f9471a6c9269 5cf59e5d342eb135e965f883f07e14290cdcd918 M	src/main/java/com/fdc/authenticationserver/config/security/WebSecurityConfig.java

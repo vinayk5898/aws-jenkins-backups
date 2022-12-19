@@ -1,0 +1,10 @@
+commit 638d6d68d27a061693f0cb5a32f947168c07d38f
+tree d3027aa73c8146d6cf75c6fb9e105d4b8244add2
+parent b709d14ceaa766ee35573dcc6778b06d36480f42
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-06 13:05:34 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-06 13:05:34 +0530
+
+    Update standard_client_manifest_ingestion.py
+
+
+:100644 100644 5363028db82d288479dda4e9128b772d33581023 fae20f0ebeb7998b9af846178550e4d9395b333a M	python_scripts/standard_client_manifest_ingestion.py

@@ -1,0 +1,10 @@
+commit 870105ca399bbf9fa2a11fd9d15d3ab125523404
+tree 0ffcb765c4280ceaabbef3b202a54ba0a94792d0
+parent 81ff7f3619c34d8783e1ac5ead722ca5348fb989
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 21:27:39 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-17 21:27:39 +0530
+
+    FDC-156 :: removed duplicate rate
+
+
+:100644 100644 b54013745753f80732b811efd0e34c00d4eacebb 6829580384ffa060bb8de6b3a2ad777da5989fb5 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml

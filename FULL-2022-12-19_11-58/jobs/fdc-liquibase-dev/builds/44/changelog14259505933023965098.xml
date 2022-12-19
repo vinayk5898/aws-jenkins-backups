@@ -1,0 +1,12 @@
+commit a155ad0ffefff03f418a5b2973b7ca55ed37993d
+tree ca1d76b77e90d2948a78fd83a4431a428df55fa6
+parent a448d2e46333b3fd1308da0106757eef07a3c52e
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-11 13:08:07 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-11 13:08:07 +0530
+
+    update sftp creds, added active flag client_sftp
+
+
+:100644 100644 a0995cca09d1488e3d5182ac3068ecae67f0a502 691a360589196f9f0073b3cd8e4d0f299f335f9d M	.gitignore
+:000000 100644 0000000000000000000000000000000000000000 b6195715ebf94c0c3281acfcf299bcd176ba52ff A	src/main/resources/db/changelog/2022-04-11-24-add-active-flag-update-sftp-creds.yaml
+:100644 100644 03860f6d998b512f94d267c32ff3ce1fc30235ae 07b371bdf083c2f4119debbfedc352ffdcd6de6c M	src/main/resources/db/changelog/db.changelog-master.yaml

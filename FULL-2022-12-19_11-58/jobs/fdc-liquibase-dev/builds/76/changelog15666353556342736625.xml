@@ -1,0 +1,434 @@
+commit 7d75270e535cde1e49192341c908708c7a8b3dd4
+tree 5bc83cb0bab37a44ad608743c0c08633c79050c2
+parent ab832e6e177a0c4b420f7e09ddaf9d1d40f5f173
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 23:24:09 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 23:24:09 +0530
+
+    FDC-565 :: changed order of updates
+
+
+:100644 100644 731c2c92b80ee50b3b326bb830cbb57286f2b34f 82a7dd7b3f402b54ea192619e852719a0633adc6 M	src/main/resources/db/sql/fdc_FDC_565_update_script.sql
+commit ab832e6e177a0c4b420f7e09ddaf9d1d40f5f173
+tree f2f62e5c32c70b4a123f48f32aeec94fb5eb3279
+parent 5f975ea09ba7c408059daa88912907e64e1e385c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 23:13:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 23:13:45 +0530
+
+    FDC-565 :: reverted typo
+
+
+:100644 100644 9ee355612a59c2423fce4fd50ab37047607cfdc3 1fd72b5266625289e004dc208ce0117033fea50d M	pom.xml
+commit 5f975ea09ba7c408059daa88912907e64e1e385c
+tree 073f0d8c3ef9dc11739cd7324966be429ca9c27c
+parent 9f6accfc192a6062c422d9cd1947e30520105f42
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 23:12:19 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 23:12:19 +0530
+
+    FDC-565 :: handled code to skip if exists
+
+
+:100644 100644 1fd72b5266625289e004dc208ce0117033fea50d 9ee355612a59c2423fce4fd50ab37047607cfdc3 M	pom.xml
+:100644 100644 6166100582aa7e263a7f9655ce807af29133ab73 731c2c92b80ee50b3b326bb830cbb57286f2b34f M	src/main/resources/db/sql/fdc_FDC_565_update_script.sql
+commit 9f6accfc192a6062c422d9cd1947e30520105f42
+tree cf8912932098ab727616fa8cc160c5735da7ac88
+parent 5c7c6c0b467c7153c0ab5df979054afe50e6ae5c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 22:56:16 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-17 22:56:16 +0530
+
+    FDC-565 :: added update script
+
+
+:000000 100644 0000000000000000000000000000000000000000 1f51442c27e2fbe0ba0e14b98e529bb2375d4ed1 A	src/main/resources/db/changelog/2022-05-17-61-FDC-565-update-script.yaml
+:100644 100644 1eeb441a4f60ba4045c0f806d8a8627b6721ec8f 2b24fe8c54fa13f7b6c6fc51e82b2d1f6ec4a1df M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 6166100582aa7e263a7f9655ce807af29133ab73 A	src/main/resources/db/sql/fdc_FDC_565_update_script.sql
+commit 4f216dedaf122d4c0ba458110974122ae3e779ed
+tree f2ddb04c44f9cfd1f3078327665ce69c157436d5
+parent acd8182d5e872968936f4bfe3512b24ab767bcec
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-16 23:13:17 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-16 23:13:17 +0530
+
+    fdc-551
+
+
+:000000 100644 0000000000000000000000000000000000000000 da4eb5590e7cc3b9f17f5118017bd99932fdc46b A	src/main/resources/db/changelog/2022-05-16-60-route-report-populate-v1.yaml
+:100644 100644 d16d8d6af1bd0cbc1ab992bd5ae350f449f26c5b a1fb59356aa51e4613e60b33f4a6a81943f4e674 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 6d5d269da13b8c45fdea37e218dd1d315cfda4dc A	src/main/resources/db/sql/route_report_populate_v1.sql
+commit acd8182d5e872968936f4bfe3512b24ab767bcec
+tree f51d425b87a8f1e8afbd148a432322e0324bb84c
+parent 95bbc372f24907eac58d452a2f59e2d0855d55a8
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-16 22:33:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-16 22:33:40 +0530
+
+    FDC-551
+
+
+:100644 100644 ee15a82b8f192394f60fe7b55b36c7c666197f0d d16d8d6af1bd0cbc1ab992bd5ae350f449f26c5b M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 95bbc372f24907eac58d452a2f59e2d0855d55a8
+tree 15e6297a4f349ceba7f30927b68e9339c2505861
+parent 58ece098d006ad030c235fee5e992beb8e23cb96
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-16 22:26:58 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-16 22:26:58 +0530
+
+    FDC-551
+
+
+:000000 100644 0000000000000000000000000000000000000000 104e92267c9c294b0d24e73d4acaa7549df675fd A	src/main/resources/db/changelog/2022-05-16-59-fdc-551-ddl-changes.yaml
+:000000 100644 0000000000000000000000000000000000000000 16548337de7bd2f9352a33b1d1cf12e84ae83793 A	src/main/resources/db/sql/fdc_FDC-551_ddl_changes.sql
+commit 660eb7ad3e2be66a8e94baf2062f963fb58f1325
+tree 66f2ea8f5232c66319d711d198b5c94b15d2599f
+parent 3ea473c90ca92d32abb0187e01725c97c4b764c7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 23:53:32 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 23:53:32 +0530
+
+    FDC-557 :: as mentioned in ticket changed to holiday
+
+
+:100644 100644 4c231517fdcdcc74ce48bda8d3ef8e872ef010b1 0464461960329d0771989956c07fdac06d028271 M	src/main/resources/db/sql/fdc_update_script_of_FDC-557.sql
+commit 3ea473c90ca92d32abb0187e01725c97c4b764c7
+tree 545fd04178fabea3feed819e407cd519492e822b
+parent 0b98ae5f10ea9c11231e82aac066dcaf9abd7745
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 00:13:42 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-13 00:13:42 +0530
+
+    FDC-557 :: added proc and update statements
+
+
+:000000 100644 0000000000000000000000000000000000000000 7bda38b30eff63e6052485b8525a4e84c2d01b4f A	src/main/resources/db/changelog/2022-05-11-59-fdc-populate_update_events-procedure-changes.yaml
+:000000 100644 0000000000000000000000000000000000000000 3844ce32cba20f588aedf6da0851e210e215dea8 A	src/main/resources/db/changelog/2022-05-12-58-fdc-update-script-of-FDC-557.yaml
+:100644 100644 306018b2e0d2ac01c2bec8d86a2217ff3af01bfc ee15a82b8f192394f60fe7b55b36c7c666197f0d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 f91521c43d8e687bdeb1c7f2827ad8aadfd791b7 A	src/main/resources/db/sql/fdc_propulate_event_procedure_changes_V1.sql
+:000000 100644 0000000000000000000000000000000000000000 4c231517fdcdcc74ce48bda8d3ef8e872ef010b1 A	src/main/resources/db/sql/fdc_update_script_of_FDC-557.sql
+commit 371298eba91ee3c2b5ba02e25d9271e173d0f11a
+tree e677afa7323978d63370072ce5fc4369933ec1b8
+parent ab7e396e2a6461bee5a6cbb3efe4bffa2ef1dbae
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:54:38 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:54:38 +0530
+
+    table name fix
+
+
+:100644 100644 45891afe393a3c601481f8b672026884c282a800 236e08ba5da55b2bf387b926f19a65bc9e2c94f7 M	src/main/resources/db/changelog/2022-05-12-30-insert-NSL-exception-eventtype.yaml
+commit ab7e396e2a6461bee5a6cbb3efe4bffa2ef1dbae
+tree af218463d1590f421e1bdbd7cacc9aa37fd8c66c
+parent 0b98ae5f10ea9c11231e82aac066dcaf9abd7745
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:17:50 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-05-12 19:17:50 +0530
+
+    insert NSL exception code, updation description for HOL exception
+
+
+:000000 100644 0000000000000000000000000000000000000000 45891afe393a3c601481f8b672026884c282a800 A	src/main/resources/db/changelog/2022-05-12-30-insert-NSL-exception-eventtype.yaml
+:100644 100644 306018b2e0d2ac01c2bec8d86a2217ff3af01bfc 3b9be0d1c8646330a36410a99a2d168e7384a8cf M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit d6cdd78b3ba43509d52ecb105a0d19f96eccb1c2
+tree 108681a9b8dd961eb3f338c7a4e0cd0e6ad551b9
+parent 1952caacf08f8490eec041b6e07de6046c9e99d6
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 22:25:20 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 22:25:20 +0530
+
+    FDC-434 :: resolved conflicts
+
+
+:100644 100644 97771b42f106196a581becd9c6c6dbb694569010 54d5fae67de9c9c24921c9a6f342bc7f7ebe2021 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit ad451d708d2feea04402d404e72033bd1ea76aa7
+tree 6e054390ccffc39748b0d73413212f17dbc4f3b2
+parent 6061f42dea02232d1366127a0f8857e160bb663d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 20:31:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 20:31:24 +0530
+
+    FDC-531 :: added script
+
+
+:100644 100644 6b2e48218fd90fd8590b2f5711df63d98fdc5c6b 8cadb4417eda63731f406255f468ba24dfe02ed3 R096	src/main/resources/db/changelog/2022-04-12-49-fdc-fdc-generic-client-load-procedureV1.yaml	src/main/resources/db/changelog/2022-04-29-55-fdc-fdc-generic-client-load-procedure_V1.yaml
+:100644 100644 2db9fe3514bc518be3cbfc2ae4bf2b26b431db94 9fb8c87b4ebd2fa3ff677d5d07da310602ee89e7 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 3ce37ca1b1a2c3e59a029d4e95dc430baa1f3c72 b768de2e0fba0fc922933ea7eb6a9b57421f6801 M	src/main/resources/db/sql/fdc_generic_client_load_procedureV1.sql
+commit 6061f42dea02232d1366127a0f8857e160bb663d
+tree fd35d0a0d5698e76b1272b208dd70e44d3717535
+parent c00a0b2ddb05f623b80c93d942625d7dfb802fb5
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 20:00:37 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 20:00:37 +0530
+
+    FDC-531 :: added script
+
+
+:000000 100644 0000000000000000000000000000000000000000 6b2e48218fd90fd8590b2f5711df63d98fdc5c6b A	src/main/resources/db/changelog/2022-04-12-49-fdc-fdc-generic-client-load-procedureV1.yaml
+:000000 100644 0000000000000000000000000000000000000000 3ce37ca1b1a2c3e59a029d4e95dc430baa1f3c72 A	src/main/resources/db/sql/fdc_generic_client_load_procedureV1.sql
+commit c00a0b2ddb05f623b80c93d942625d7dfb802fb5
+tree a4df60e6b8c8b388a2a60934c2af02f337c0861d
+parent 16736114a552df5e82709dace0883541b15c6788
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 19:39:55 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-29 19:39:55 +0530
+
+    FDC-531 :: added script
+
+
+:000000 100644 0000000000000000000000000000000000000000 4d435b588e9435d87f6b455d87fbc6c3dee1a75f A	src/main/resources/db/changelog/2022-04-29-55-fdc-route-job-ddl.yaml
+:000000 100644 0000000000000000000000000000000000000000 de3fc8105e26fcc8ee667c5b019cb8cfad170b2f A	src/main/resources/db/changelog/2022-04-29-55-fdc-route-job-procedures.yaml
+:100644 100644 325f9e9c185c5752e400011ac6a15854b7dea68e 2db9fe3514bc518be3cbfc2ae4bf2b26b431db94 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 8cc4e5032df33969773afb7f7cceecb8ad78568f c5cdbbb4fdffc0d1d9c658d88b4b7115696ab233 M	src/main/resources/db/sql/fdc_pandion_invoice_report_dml.sql
+:000000 100644 0000000000000000000000000000000000000000 71fbde506d2b49618c0f13c12671126bc56b170d A	src/main/resources/db/sql/fdc_route_job_ddl_changes.sql
+:000000 100644 0000000000000000000000000000000000000000 a0787f728b8aaa5994bde74a47c08248701381b4 A	src/main/resources/db/sql/fdc_route_job_procedures.sql
+commit 16736114a552df5e82709dace0883541b15c6788
+tree d4d00d0058440409711b782df6e28954ffa9cbff
+parent 16878a9278fd024774e03542c593426445ece69c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-28 13:17:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-28 13:17:40 +0530
+
+    FDC-536 :: added ddl changes
+
+
+:000000 100644 0000000000000000000000000000000000000000 22bccb0b276df5e8b489897bcfc66b7df62a3b4c A	src/main/resources/db/changelog/2022-04-28-53-fdc-pandion-invoice-report-dml.yaml
+:100644 100644 6d6d7102db46145ade791a3c30d3180c761fb896 325f9e9c185c5752e400011ac6a15854b7dea68e M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 8cc4e5032df33969773afb7f7cceecb8ad78568f A	src/main/resources/db/sql/fdc_pandion_invoice_report_dml.sql
+commit 1952caacf08f8490eec041b6e07de6046c9e99d6
+tree 40884017118a52ab92f5af1406f802008a1fa079
+parent e9a866e9d6eea1c7d12db69b9d6e55dec7381ebc
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-27 21:17:17 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-27 21:17:17 +0530
+
+    FDC-434 :: fixed typos
+
+
+:100644 100644 4d442eb91920f55ebd5bd219a9c2c0b0c3523d2f 67b1bef8f0a79a7c5c4f6bd3e138df8d263fe99c R095	src/main/resources/db/changelog/2022-04-27_49-fdc-pc-member-changes.yaml	src/main/resources/db/changelog/2022-04-27_52-fdc-pc-member-changes.yaml
+:100644 100644 aef5d399393990faa4a3b3b85735a70d34f4e01c 97771b42f106196a581becd9c6c6dbb694569010 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 4a440fe2f1537a2e59fb46e6cbebfc7c3eeff448
+tree 09d3a6e8f277104efff2f5266297e0d53e1d037e
+parent a16117400270a5c367674ebeb6da885f9cc601da
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-27 20:53:36 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-27 20:53:36 +0530
+
+    created client_config table, set updated_on trigger, insert del_date offset
+
+
+:000000 100644 0000000000000000000000000000000000000000 1a4bfe17912e82eae5a46e44fb3b8d136093399d A	src/main/resources/db/changelog/2022-04-27-26-create-client-config-table.yaml
+:000000 100644 0000000000000000000000000000000000000000 2bf5eef5351cfeb348f94d350ed9286d7d4e8cc7 A	src/main/resources/db/changelog/2022-04-27-27-insert-delivery-date-offset-client-config.yaml
+:100644 100644 868dedf09bd7505c6720d8720029577586f18874 18d7a05bf53924368c54a841a0fe01f7ebfe4136 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 3624b55e2d8ed3169804e2e56931652018ce7d5d A	src/main/resources/db/sql/fdc_client_config_updated_on_trigger.sql
+commit e9a866e9d6eea1c7d12db69b9d6e55dec7381ebc
+tree bb3bebd0899392f10a0277d3673d3602c281359c
+parent a16117400270a5c367674ebeb6da885f9cc601da
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-27 18:55:28 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-27 18:55:28 +0530
+
+    FDC-434 :: added pc_member inserts
+
+
+:000000 100644 0000000000000000000000000000000000000000 4d442eb91920f55ebd5bd219a9c2c0b0c3523d2f A	src/main/resources/db/changelog/2022-04-27_49-fdc-pc-member-changes.yaml
+:100644 100644 868dedf09bd7505c6720d8720029577586f18874 aef5d399393990faa4a3b3b85735a70d34f4e01c M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 db5bf7fbe962b3cd088dbb88392efa012ee8dd4a A	src/main/resources/db/sql/fdc_pc_member_changes.sql
+commit 79c21e725c1d462ad0b96f188db4b6a89b80e046
+tree 3e9c3e7552dff999b22bfb8b2f36fbe4005e8ae2
+parent ca7c2e14d45da246b361421f5c82a7bc742d606b
+author snssrinivas <snssrinivas@users.noreply.github.com> 2022-04-25 10:28:22 -0700
+committer GitHub <noreply@github.com> 2022-04-25 10:28:22 -0700
+
+    Update fdc_create_max_attempts_event_procedure.sql
+
+:100644 100644 eaba5f2022dccbd80bc1bfa5255a883f9e6dad0f d6b30d7e125c43a4fbf75bca05de966543ac3f09 M	src/main/resources/db/sql/fdc_create_max_attempts_event_procedure.sql
+commit a6e56149e6b56252782a397b2ff8b20387382ee3
+tree adfcb994f09cd930724056126666c6b978b10f1e
+parent 7fa99590d26d43d5c5c456660ae73235734ad3ef
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-22 00:44:57 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-22 00:44:57 +0530
+
+    FDC-434 :: added script to skip if exists
+
+
+:100644 100644 a38286ef725f469dc07438bbee659c0bf36a1741 5960621ed8ffe21b5139185633df0454a7fd8cba M	src/main/resources/db/sql/fdc_Pandion_ddl_changes.sql
+:100644 100644 a3ea69e0cca6e54594c9eae17cec71e7743ffc26 eaba5f2022dccbd80bc1bfa5255a883f9e6dad0f M	src/main/resources/db/sql/fdc_create_max_attempts_event_procedure.sql
+commit 7fa99590d26d43d5c5c456660ae73235734ad3ef
+tree 3a6644b6f2c3d5023445c440e88abd63fd36ad8b
+parent b5ae68b8b0c40e4deeeba569588c378a31d82ded
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 23:52:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 23:52:56 +0530
+
+    fdc-434:: corrected file path
+
+
+:100644 100644 25994a41aac1e897b410b7958f8228c56b475435 08019b5fd33ffc1164ee41236e1bb1907c7f3c76 M	src/main/resources/db/changelog/2022-04-12-46-fdc-etl-Pandion-ddl-changes.yaml
+commit b5ae68b8b0c40e4deeeba569588c378a31d82ded
+tree 4e3ca50287e9ffb3dd14286f08158d1cfd78cc14
+parent 3fee0ef7981ebbbf10982b78f1cb08a57faae9a0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 23:43:14 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 23:43:14 +0530
+
+    FDC-434 :: updated with accurate dbchange log id's
+
+
+:100644 100644 b6bcaee194adf8e374ad1c7c9114de16b0783721 8aeb799b10e834ef83223a950a29756ec2b7094a R097	src/main/resources/db/changelog/2022-04-12-25-fdc-pandian-and-pitney-bowes-ddl-changes.yaml	src/main/resources/db/changelog/2022-04-12-30-fdc-pandian-and-pitney-bowes-ddl-changes.yaml
+:100644 100644 a690458a5d7439aeeab94e9cb8ecdf6921015600 25994a41aac1e897b410b7958f8228c56b475435 R095	src/main/resources/db/changelog/2022-04-12-25-fdc-etl-client-config-tables.yaml	src/main/resources/db/changelog/2022-04-12-46-fdc-etl-Pandion-ddl-changes.yaml
+:000000 100644 0000000000000000000000000000000000000000 d8c914100ef89a18e9d48cdef83495f111e5f188 A	src/main/resources/db/changelog/2022-04-12-47-fdc-etl-client-config-tables.yaml
+:100644 100644 d2cf2107d8c986e257df82a0fa617d1629b22fe0 871dbb696e69b37163498bb5ae06a747fb336038 R095	src/main/resources/db/changelog/2022-04-12-14-fdc-PitneyBowes-Initial-Procedures_script.yaml	src/main/resources/db/changelog/2022-04-12-48-fdc-PitneyBowes-Initial-Procedures_script.yaml
+:100644 100644 8baf30ceb0b2d3fa8190df242f0e3ecd32a7f65d 84f214d43622fa9ae172e002c3c0a5d8a501a9a4 R095	src/main/resources/db/changelog/2022-04-12-14-fdc-fdc-generic-client-load-procedure.yaml	src/main/resources/db/changelog/2022-04-12-49-fdc-fdc-generic-client-load-procedure.yaml
+:000000 100644 0000000000000000000000000000000000000000 036d5edc0646de8a85bbb2a8d47bc72c53da3527 A	src/main/resources/db/changelog/2022-04-12-50-fdc-fdc-create-max-attempts-event-procedure.yaml
+:100644 100644 aaa3e9f213999af9f326a67a004c929ed5ea77df b7b801c6bcf4cd4ed7932c8898a34da534b50b85 R096	src/main/resources/db/changelog/2022-04-12-14-fdc-client-location-updated-on-trigger.yaml	src/main/resources/db/changelog/2022-04-12-51-fdc-client-location-updated-on-trigger.yaml
+:100644 100644 399cfe34780eb1bac2781586c4a44ba582aa42f6 868dedf09bd7505c6720d8720029577586f18874 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 6bd69ae1ad804ea00cd5e5ec1ea7e3a69df6eabc a38286ef725f469dc07438bbee659c0bf36a1741 M	src/main/resources/db/sql/fdc_Pandion_ddl_changes.sql
+:000000 100644 0000000000000000000000000000000000000000 a3ea69e0cca6e54594c9eae17cec71e7743ffc26 A	src/main/resources/db/sql/fdc_create_max_attempts_event_procedure.sql
+commit 3fee0ef7981ebbbf10982b78f1cb08a57faae9a0
+tree 0d5859caa22bec38a8982cf55f9d0e6e0febe279
+parent f67fcef44cd5a4d227d9c40e4c45495f728d7ed9
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 17:18:23 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 17:18:23 +0530
+
+    FDC-434 :: added new fields
+
+
+:100644 100644 7e6edbf7f526db643d03222bceb47c0dcb138ad1 6bd69ae1ad804ea00cd5e5ec1ea7e3a69df6eabc M	src/main/resources/db/sql/fdc_Pandion_ddl_changes.sql
+commit f67fcef44cd5a4d227d9c40e4c45495f728d7ed9
+tree a68dd62a03bf050e2661cfb0a960d8a80d411f2b
+parent 7bda557e164ddb45672ac16cd69d4157dfc86925
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 10:39:07 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-21 10:39:07 +0530
+
+    FDC-434 ::: Added Missing script
+
+
+:000000 100644 0000000000000000000000000000000000000000 7e6edbf7f526db643d03222bceb47c0dcb138ad1 A	src/main/resources/db/sql/fdc_Pandion_ddl_changes.sql
+:100644 100644 cde103e48254babe4a2a503abbec79365bf7293a 1a290df9ada854871baad8bed46cb4e0e57982aa M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit 7bda557e164ddb45672ac16cd69d4157dfc86925
+tree eca8da2bc2d41fe5f34e4a841ae862a756e74786
+parent ae4262f601037d5c67e3444a91cb1183b1848760
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-19 15:57:19 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-19 15:57:19 +0530
+
+    fdc-434 :: fixed typo
+
+
+:100644 100644 8e0cca5578ee3405a3c02f95cb3374d2d6ec2a48 cde103e48254babe4a2a503abbec79365bf7293a M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit ae4262f601037d5c67e3444a91cb1183b1848760
+tree d06a2460cc88133f04f7890f396ee936e633e447
+parent 0f9a8fa05a9dad48d9fbf9c7ef4b9e9ab8200d46
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-19 11:02:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-19 11:02:41 +0530
+
+    FDC-434 :: added new fields in event table
+
+
+:100644 100644 84080cd8b57887a0d020aac75b4c7a1310e54c27 8e0cca5578ee3405a3c02f95cb3374d2d6ec2a48 M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit 0f9a8fa05a9dad48d9fbf9c7ef4b9e9ab8200d46
+tree b207d5eb6522658d9388686e21204a5db2feb9e6
+parent bb915cacf4e18abe4ec6924154121916cd2a2c0d
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-19 00:52:38 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-19 00:52:38 +0530
+
+    fdc-434 added country fields and set package status to new only for pandion client
+
+
+:100644 100644 67c87aca2d515967ba0c533b7d9c45e3a6bb41a0 84080cd8b57887a0d020aac75b4c7a1310e54c27 M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit bb915cacf4e18abe4ec6924154121916cd2a2c0d
+tree fee6c5b976ae06d5c1b3de9fdbad9eda6d6702b3
+parent a0eef80cf9c34196815bb5fac1f7874ee0e287ea
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-18 23:32:41 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-18 23:32:41 +0530
+
+    FDC-434 :: added  logic to change the received and delivery date
+
+
+:100644 100644 8c056f0cce5fb08292cddef6e0fff95ac07a511c 67c87aca2d515967ba0c533b7d9c45e3a6bb41a0 M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit a0eef80cf9c34196815bb5fac1f7874ee0e287ea
+tree 7713a8b2061c8729360cf5fced807305e8d422c8
+parent 2be04f81948993495d712ba76bbe875076871a0b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 23:44:22 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 23:44:22 +0530
+
+    FDC-434V1 ::  increased field size
+
+
+:100644 100644 b8d43d814e5f300417cb1c5ecee39545317f9e60 e8cc0aa8ad698849438b4a09cfef5b406dc4797b M	src/main/resources/db/sql/fdc_etl_client_config_tables.sql
+commit d5edcd4aca3612df7e85e135eaf2ddaa690ff54d
+tree 874a74d96adf6732373c08cb88242de9e48acec4
+parent a155ad0ffefff03f418a5b2973b7ca55ed37993d
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-13 17:22:31 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-04-13 17:22:31 +0530
+
+    functional index on event_local_time for faster query
+
+
+:000000 100644 0000000000000000000000000000000000000000 c1ae2ccdd14349d4d260679e1971f8c4e606a4a6 A	src/main/resources/db/changelog/2022-04-13-26-event-local-time-fn-index.yaml
+:100644 100644 07b371bdf083c2f4119debbfedc352ffdcd6de6c 50f667ef9ba0592ca114a895dbbda53f9f9b138e M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 2be04f81948993495d712ba76bbe875076871a0b
+tree 453322f928bcc4b8d3f5e4ea369e9ddd61d9d18a
+parent 802e2e0a4550d5e4d9c52b3c9f2f045100f66435
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 01:08:44 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 01:08:44 +0530
+
+    FDC-434 :: added new changes of milestone extracts
+
+
+:100644 100644 7bbdbedae6a505a7854c966dd36ca45437382093 8c056f0cce5fb08292cddef6e0fff95ac07a511c M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit 802e2e0a4550d5e4d9c52b3c9f2f045100f66435
+tree 464d4bcffff3f9f5ff941abe3d732f19885b1d57
+parent 4097d41e587c570a85478bbe77e1189b0882b484
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 00:36:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 00:36:40 +0530
+
+    FDC-434 :: fixed typo
+
+
+:100644 100644 9bddc62b6a5d7348f280fa9d7a5a7bf572c73140 b8d43d814e5f300417cb1c5ecee39545317f9e60 M	src/main/resources/db/sql/fdc_etl_client_config_tables.sql
+commit 4097d41e587c570a85478bbe77e1189b0882b484
+tree f8f5b45daeda5fda8f8d9ce84bd49273e615df1a
+parent 96644846fafbe4976a01249bf770fa40e9fa60f7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 00:30:13 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 00:30:13 +0530
+
+    FDC-434 :: added new changes of milestone extracts
+
+
+:100644 100644 6315762f640100f3570b841f9df1609f47e63ccd 9bddc62b6a5d7348f280fa9d7a5a7bf572c73140 M	src/main/resources/db/sql/fdc_etl_client_config_tables.sql
+:100644 100644 16f9c8c00621917bb309b36aac549585911701f2 7bbdbedae6a505a7854c966dd36ca45437382093 M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit 96644846fafbe4976a01249bf770fa40e9fa60f7
+tree f84e591918efd2e3a85bdde3fe659a9df0d038e6
+parent 4df2638062711176997fd95f80901dbe2ace461f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 19:28:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 19:28:56 +0530
+
+    FDC-434 :: changed id for local exeution
+
+
+:100644 100644 71a928040a3916bea74aee8f57859eef9bec3431 aaa3e9f213999af9f326a67a004c929ed5ea77df M	src/main/resources/db/changelog/2022-04-12-14-fdc-client-location-updated-on-trigger.yaml
+:100644 100644 ce4c7852aebeef65b97b0495af985580f0fa3f49 b6bcaee194adf8e374ad1c7c9114de16b0783721 M	src/main/resources/db/changelog/2022-04-12-25-fdc-pandian-and-pitney-bowes-ddl-changes.yaml
+:100644 100644 5a75a995be940ab310cf27dad907899bcec144e1 399cfe34780eb1bac2781586c4a44ba582aa42f6 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 2c755de131b18533d7a2b0b1e4ef501ad4f33f2e 6315762f640100f3570b841f9df1609f47e63ccd M	src/main/resources/db/sql/fdc_etl_client_config_tables.sql
+:100644 100644 06d86abf79c6faaaf4df3715055471e5a9d85e4a 16f9c8c00621917bb309b36aac549585911701f2 M	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql
+commit 4df2638062711176997fd95f80901dbe2ace461f
+tree 913016514df2588ec66e6a07e4edddce6513daea
+parent 86e7b256932f2e8b775953cfb526b527642ffc3c
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 18:45:58 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 18:45:58 +0530
+
+    FDC-434 :: changed id for local exeution
+
+
+:100644 100644 e0b971899f68fa6f4909040578c6b767a6cd0de0 5a75a995be940ab310cf27dad907899bcec144e1 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 86e7b256932f2e8b775953cfb526b527642ffc3c
+tree 9ac49fd249f609594950d66c55076746658be069
+parent 16eb118e372436a6e5a0178f5ad32f18b0cb74aa
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 18:44:18 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 18:44:18 +0530
+
+    FDC-434 :: changed id for local exeution
+
+
+:100644 100644 5fa70bd41f819ea25e30e9521470ac2f060acbbc d2cf2107d8c986e257df82a0fa617d1629b22fe0 M	src/main/resources/db/changelog/2022-04-12-14-fdc-PitneyBowes-Initial-Procedures_script.yaml
+:100644 100644 f126c827cc237f7d85d72b03030a2099e56597aa 8baf30ceb0b2d3fa8190df242f0e3ecd32a7f65d M	src/main/resources/db/changelog/2022-04-12-14-fdc-fdc-generic-client-load-procedure.yaml
+:100644 100644 2ec93947b48b974913adc3290e7fe992eadec65a a690458a5d7439aeeab94e9cb8ecdf6921015600 M	src/main/resources/db/changelog/2022-04-12-25-fdc-etl-client-config-tables.yaml
+commit 16eb118e372436a6e5a0178f5ad32f18b0cb74aa
+tree 8ff05c083dc997ce228650b95c3781007302e75e
+parent 642b24d2907127f27d2af1cf17fe7bca52118123
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 16:14:46 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-12 16:14:46 +0530
+
+    FDC-434 ::  complete script for pandian & pitney bowes
+
+
+:000000 100644 0000000000000000000000000000000000000000 5fa70bd41f819ea25e30e9521470ac2f060acbbc A	src/main/resources/db/changelog/2022-04-12-14-fdc-PitneyBowes-Initial-Procedures_script.yaml
+:000000 100644 0000000000000000000000000000000000000000 71a928040a3916bea74aee8f57859eef9bec3431 A	src/main/resources/db/changelog/2022-04-12-14-fdc-client-location-updated-on-trigger.yaml
+:000000 100644 0000000000000000000000000000000000000000 f126c827cc237f7d85d72b03030a2099e56597aa A	src/main/resources/db/changelog/2022-04-12-14-fdc-fdc-generic-client-load-procedure.yaml
+:000000 100644 0000000000000000000000000000000000000000 2ec93947b48b974913adc3290e7fe992eadec65a A	src/main/resources/db/changelog/2022-04-12-25-fdc-etl-client-config-tables.yaml
+:000000 100644 0000000000000000000000000000000000000000 ce4c7852aebeef65b97b0495af985580f0fa3f49 A	src/main/resources/db/changelog/2022-04-12-25-fdc-pandian-and-pitney-bowes-ddl-changes.yaml
+:100644 100644 07b371bdf083c2f4119debbfedc352ffdcd6de6c e0b971899f68fa6f4909040578c6b767a6cd0de0 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 fad6e2ffd8b3f58926eb5a9e2be757ac445e01de A	src/main/resources/db/sql/PitneyBowes_Initial_Procedures_script.sql
+:000000 100644 0000000000000000000000000000000000000000 7969c139acc9d6d97eefad6ee44da41c72b1fa13 A	src/main/resources/db/sql/fdc_client_location_updated_on_trigger.sql
+:000000 100644 0000000000000000000000000000000000000000 2c755de131b18533d7a2b0b1e4ef501ad4f33f2e A	src/main/resources/db/sql/fdc_etl_client_config_tables.sql
+:000000 100644 0000000000000000000000000000000000000000 06d86abf79c6faaaf4df3715055471e5a9d85e4a A	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql

@@ -1,0 +1,337 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+            <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+            <upstreamBuild>210174</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                <upstreamBuild>210173</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UpstreamCause>
+                    <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                    <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                    <upstreamBuild>210172</upstreamBuild>
+                    <upstreamCauses>
+                      <hudson.model.Cause_-UpstreamCause>
+                        <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                        <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                        <upstreamBuild>210171</upstreamBuild>
+                        <upstreamCauses>
+                          <hudson.model.Cause_-UpstreamCause>
+                            <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                            <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                            <upstreamBuild>210170</upstreamBuild>
+                            <upstreamCauses>
+                              <hudson.model.Cause_-UpstreamCause>
+                                <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                <upstreamBuild>210169</upstreamBuild>
+                                <upstreamCauses>
+                                  <hudson.model.Cause_-UpstreamCause>
+                                    <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                    <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                    <upstreamBuild>210168</upstreamBuild>
+                                    <upstreamCauses>
+                                      <hudson.model.Cause_-UpstreamCause>
+                                        <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                        <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                        <upstreamBuild>210167</upstreamBuild>
+                                        <upstreamCauses>
+                                          <hudson.model.Cause_-UpstreamCause>
+                                            <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                            <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                            <upstreamBuild>210166</upstreamBuild>
+                                            <upstreamCauses>
+                                              <hudson.model.Cause_-UpstreamCause>
+                                                <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                                <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                                <upstreamBuild>210165</upstreamBuild>
+                                                <upstreamCauses>
+                                                  <hudson.model.Cause_-UpstreamCause>
+                                                    <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                                    <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                                    <upstreamBuild>210164</upstreamBuild>
+                                                    <upstreamCauses>
+                                                      <hudson.model.Cause_-UpstreamCause>
+                                                        <upstreamProject>fdc-prod/Process_Received_Vendor_Events_Prod</upstreamProject>
+                                                        <upstreamUrl>job/fdc-prod/job/Process_Received_Vendor_Events_Prod/</upstreamUrl>
+                                                        <upstreamBuild>210163</upstreamBuild>
+                                                        <upstreamCauses>
+                                                          <hudson.model.Cause_-UpstreamCause_-DeeplyNestedUpstreamCause/>
+                                                        </upstreamCauses>
+                                                      </hudson.model.Cause_-UpstreamCause>
+                                                    </upstreamCauses>
+                                                  </hudson.model.Cause_-UpstreamCause>
+                                                </upstreamCauses>
+                                              </hudson.model.Cause_-UpstreamCause>
+                                            </upstreamCauses>
+                                          </hudson.model.Cause_-UpstreamCause>
+                                        </upstreamCauses>
+                                      </hudson.model.Cause_-UpstreamCause>
+                                    </upstreamCauses>
+                                  </hudson.model.Cause_-UpstreamCause>
+                                </upstreamCauses>
+                              </hudson.model.Cause_-UpstreamCause>
+                            </upstreamCauses>
+                          </hudson.model.Cause_-UpstreamCause>
+                        </upstreamCauses>
+                      </hudson.model.Cause_-UpstreamCause>
+                    </upstreamCauses>
+                  </hudson.model.Cause_-UpstreamCause>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@548.v9085a486966a">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.3">
+      <stagesUUID>0bd2a286-b663-414f-bc19-e1df9c8c897c</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.3">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>first</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">tz = TimeZone.getTimeZone(&quot;America/New_York&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    def curlScript = &apos;curl -s -w &quot;\\n%{response_code}&quot; GET --header &quot;Authorization: ApiKey 06bd0656-0d96-11ed-9b93-0242c6062200&quot; ${FDC_URL}&apos;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;\n&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>0bd2a286-b663-414f-bc19-e1df9c8c897c</uuid>
+          </stages>
+          <postBuild>
+            <conditions>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+                <condition>failure</condition>
+                <branch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>emailext</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>to</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">vinay.kumar@frontdoorcorp.com, swadesh.behera@frontdoorcorp.com,nitish.kumar@frontdoorcorp.com,prashant.talan@frontdoorcorp.com</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>subject</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>body</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                              <value class="string">&quot;${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}&quot;</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </branch>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBuildCondition>
+            </conditions>
+          </postBuild>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>FDC_URL</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">http://internal-platform-prod-1661195643.us-west-2.elb.amazonaws.com/fdc/process/events/sync?type=Groundcloud&amp;retry-on-deadlock=1&amp;retry-on-error=5</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+          <options>
+            <options>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+                <name>retry</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="int">10</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTOption>
+            </options>
+            <inStage>false</inStage>
+          </options>
+          <triggers>
+            <triggers>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTrigger>
+                <name>upstream</name>
+                <args>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">Process_Received_Vendor_Events_Prod, </value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </args>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTrigger>
+            </triggers>
+          </triggers>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+  </actions>
+  <queueId>554919</queueId>
+  <timestamp>1670651200849</timestamp>
+  <startTime>1670651200886</startTime>
+  <result>SUCCESS</result>
+  <duration>2846</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    environment {
+        FDC_URL = &quot;http://internal-platform-prod-1661195643.us-west-2.elb.amazonaws.com/fdc/process/events/sync?type=Groundcloud&amp;retry-on-deadlock=1&amp;retry-on-error=5&quot;
+        
+        
+    }
+
+    agent any
+    options {
+        retry(10)
+    }
+
+
+    stages {
+        stage(&quot;first&quot;) {
+            steps {
+                script {
+                    tz = TimeZone.getTimeZone(&quot;America/New_York&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    def curlScript = &apos;curl -s -w &quot;\\n%{response_code}&quot; GET --header &quot;Authorization: ApiKey 06bd0656-0d96-11ed-9b93-0242c6062200&quot; ${FDC_URL}&apos;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;\n&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+triggers {
+  upstream &apos;Process_Received_Vendor_Events_Prod, &apos;
+}
+
+
+    post{
+        failure {
+            emailext to: &quot;vinay.kumar@frontdoorcorp.com, swadesh.behera@frontdoorcorp.com,nitish.kumar@frontdoorcorp.com,prashant.talan@frontdoorcorp.com&quot;,
+            subject: &quot;jenkins build:${currentBuild.currentResult}: ${env.JOB_NAME}&quot;,
+            body: &quot;${currentBuild.currentResult}: Job ${env.JOB_NAME}\nMore Info can be found here: ${env.BUILD_URL}&quot;
+        }
+    }
+
+
+
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>971889166</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>160166959</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2051413862</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>450868188</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>337333444</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>26</iota>
+    <head>1:26</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

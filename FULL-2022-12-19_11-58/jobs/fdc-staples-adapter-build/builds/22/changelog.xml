@@ -1,0 +1,12 @@
+commit db5706ed72bc8cc3327de0a6693d7226c3b6f138
+tree 4887f913bfc742bd498ed07140f9d52130b19a29
+parent a57c8e8f812457fe45ab5601111a86c895bbc50d
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 17:09:44 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-07 17:09:44 +0530
+
+    added delayBetweenImageUploadAndPostCalls
+
+
+:100644 100644 a846999df23e04b7f93dbabc83ebcca189ce74ca aa1b6e069e5e571ec33f7e194af75cf008c441a2 M	src/main/java/com/fdc/staplesadapter/StaplesadapterApplication.java
+:100644 100644 92e6e4620da2ca39fbc06d43cd5558d27f2502de 147053c5b7921f4fcc2ddda52d11a44f47d6f425 M	src/main/java/com/fdc/staplesadapter/service/XmlSenderService.java
+:100644 100644 240f19e129e3015ba4f8820c5c22ebdac0c1814e d8952f927bcfc5650976cc62885e159eb537b26b M	src/main/java/com/fdc/staplesadapter/service/impl/XmlSenderServiceImpl.java

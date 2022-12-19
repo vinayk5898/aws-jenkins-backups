@@ -1,0 +1,12 @@
+commit b81f72f5fb41afd9d2556aefadc40794d214bdf5
+tree 78522e1f1813c43b6fd2ed1f15a2822e667bc9c1
+parent 43f689951462a0790a759d8d61347213768804fb
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-23 09:47:10 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-09-23 09:47:10 +0530
+
+    added additional gc event codes
+
+
+:000000 100644 0000000000000000000000000000000000000000 460ec44d246126e0908bb90510265b38f068fbed A	src/main/resources/db/changelog/2022-09-23-additional-gc-event-mapping.yaml
+:100644 100644 478603acc646ed33a1955653984e2d1e919f0da1 58576f789fae067fdf0bc2b559b72d11a6225020 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 4c95a47763a249457105cffea5e91500e4499ebb A	src/main/resources/db/sql/220923_insert_additional_gc_event_mapping.sql

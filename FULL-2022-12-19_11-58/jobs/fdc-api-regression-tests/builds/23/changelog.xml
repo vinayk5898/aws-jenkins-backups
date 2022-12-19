@@ -1,0 +1,10 @@
+commit b29cd6b44e35d6e3042304221e3d4c321982c508
+tree 1f1f9b9008b821e13507a4e9ff6ab0658aae7051
+parent b8272f56a1bfb362e46adc3ee92dd6393729d249
+author RealName:Hari <hbolla@altir.co> 2022-08-02 18:18:27 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-02 18:18:27 +0530
+
+    Fixed config file
+
+
+:100644 100644 4115d90f49e0ee5fef115ab8ca681df91098e752 f56271eab566163e6219460f8b13e7bfeb37f88f M	src/test/java/karate-config.js

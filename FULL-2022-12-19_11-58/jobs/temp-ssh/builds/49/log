@@ -1,0 +1,42 @@
+Started by user [8mha:////4H9G1L0YXL6Xrgxr5ScBRM9Md/1fpGCQ5OyyRDWfh5YpAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZh/dLi1CL9XKB96Yk5iSmZeXmpABijBn7IAAAA[0mMadhavareddy Lingaladinne
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/temp-ssh
+[SSH] executing pre build script:
+kjb_script="R4me_Gen.kjb"
+HOME="/var/jenkins_home"
+
+pwd
+whoami
+docker ps
+echo ${kjb_script}
+#docker run -d -e /bin/sh  837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-41-2021-12-16_06-18-25 sh -c '$PENTAHO_HOME/data-integration/kitchen.sh -file:"${PENTAHO_HOME}/scripts/${kjb_script}"'
+######################
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 837587249384.dkr.ecr.us-west-2.amazonaws.com
+docker pull 837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-61-2021-12-17_03-37-46
+docker run -d -e /bin/sh  837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-61-2021-12-17_03-37-46 sh -c '$PENTAHO_HOME/data-integration/kitchen.sh -file:"${PENTAHO_HOME}/scripts/R4me_Gen.kjb"'
+docker ps
+/home/ec2-user
+ec2-user
+CONTAINER ID   IMAGE                            COMMAND    CREATED       STATUS                 PORTS     NAMES
+24b166eab54a   amazon/amazon-ecs-agent:latest   "/agent"   11 days ago   Up 11 days (healthy)             ecs-agent
+R4me_Gen.kjb
+WARNING! Your password will be stored unencrypted in /var/jenkins_home/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Error saving credentials: mkdir /var/jenkins_home: permission denied
+Error response from daemon: Head "https://837587249384.dkr.ecr.us-west-2.amazonaws.com/v2/fdc-etl/manifests/latest-61-2021-12-17_03-37-46": no basic auth credentials
+Unable to find image '837587249384.dkr.ecr.us-west-2.amazonaws.com/fdc-etl:latest-61-2021-12-17_03-37-46' locally
+docker: Error response from daemon: Head "https://837587249384.dkr.ecr.us-west-2.amazonaws.com/v2/fdc-etl/manifests/latest-61-2021-12-17_03-37-46": no basic auth credentials.
+See 'docker run --help'.
+CONTAINER ID   IMAGE                            COMMAND    CREATED       STATUS                 PORTS     NAMES
+24b166eab54a   amazon/amazon-ecs-agent:latest   "/agent"   11 days ago   Up 11 days (healthy)             ecs-agent
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

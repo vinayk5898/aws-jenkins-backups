@@ -1,0 +1,11 @@
+commit 59268cc051a731bc1c4d079949fe015c3fe69c5c
+tree e8e26c34a46922532c5f507b3e3f3e8f4e209479
+parent 2d39cfcab01f1f1708ce3e2eba4717d56588fbb8
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-15 15:07:15 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-15 15:07:15 +0530
+
+    app feature for file persist at sftp
+
+
+:000000 100644 0000000000000000000000000000000000000000 09244af4931d3184d2e0480d369581449a5b2ee2 A	python_scripts/generic_client_milestone_events.py
+:100644 000000 d226d9d3b254c79530e68e4d03177489e523f90d 0000000000000000000000000000000000000000 D	python_scripts/get_pandian_milestone_new.py

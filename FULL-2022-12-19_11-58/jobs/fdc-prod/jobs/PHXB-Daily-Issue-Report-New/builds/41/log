@@ -1,0 +1,29 @@
+Started by timer
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/PHXB-Daily-Issue-Report-New
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/PHXB-Daily-Issue-Report-New/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+Checking out Revision 9854a8f89bc01dcaf1900e7c1f922b2957e41854 (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9854a8f89bc01dcaf1900e7c1f922b2957e41854 # timeout=10
+Commit message: "Merge pull request #29 from The-Frontdoor-Collective/ITDMF-184"
+ > git rev-list --no-walk 74f1173b9b7a5b5928738a1ef2b107d7cd0a8652 # timeout=10
+[PHXB-Daily-Issue-Report-New] $ /bin/sh -xe /tmp/jenkins6285350314397316683.sh
++ cd python_scripts
++ python3 daily_exceptions_report_by_fdp.py mysql-prod.frontdoorcorp.net etluser fl@tCurve17 fdc_stage 15
+Location Name :  PHXB
+fdp IDs :  ['2']
+loop Start for fdp ID:  2
+FDP Center name:  PinDrop
+No sheets found, no mail sent. 
+Finished: SUCCESS

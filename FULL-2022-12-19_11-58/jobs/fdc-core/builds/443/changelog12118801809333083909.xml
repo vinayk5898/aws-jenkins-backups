@@ -1,0 +1,664 @@
+commit a4c1be12f0ca9e9aac3c05a4cd0473ec063a039f
+tree 6632d4a5e44b3b8dacb053e8488fac1ca2600e39
+parent ab1d2566f81f999247943e37c6ce4d9ecff6e74f
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-06 14:35:13 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-06 14:35:13 +0530
+
+    default value to signatureName for EDI 214
+
+
+:100644 100644 9630447303fad0d4d9ef38d6c50aab2651cf1d4a 4347d88062788d3fc8ae0836bba79d2902bda632 M	src/main/java/com/fdc/core/dto/ActivityTimelineDto.java
+:100644 100644 ce261841d068d5fc5c0a0cf2d50ffa3743fb63dd c71e6a657bb09ed8a18deaacf36541a1ba692ffb M	src/main/java/com/fdc/core/mapper/mapstruct/MileStoneInfoMapper.java
+commit 4b033163fa5071424d3af1e2dbaa671c52de62d9
+tree 73c942d59cb9c7ec10d8222dcbbe800e58c9f2c1
+parent 5eeab7cb72da6eba69f75831bded7eef80704035
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 18:39:22 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 18:39:22 +0530
+
+    added checksryle
+
+
+:100644 100644 df61ad875a505d49d0224c15181507fdd2524cb3 39247c5aeeea49e1a1675f4fc5dbd3b93b7daf0e M	src/main/java/com/fdc/core/model/jpa/ClientUserRole.java
+commit 558e47225eef5bb15eebfc464e86d03dafda4f50
+tree 9304198d3ec03c01f82492c4e55a47d54e419538
+parent c4af0ff76035eb89bc58074ee2b07c097a4f9b79
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 17:45:29 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 17:45:29 +0530
+
+    implemented retry logic
+
+
+:100644 100644 780f1f9c4522bdd8abff688f0e3ae4d08130e0cb aac238900973fc11866489605436862c553675f0 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 5c80a93b6621f33ac9460164ca3a4aff1681f213
+tree bceec1d0f7a407fecc789d52faa80460bf13dafb
+parent 2b7c3b4a5d80f1733f6e8bf2d733ff26637fcdad
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 17:39:24 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 17:39:24 +0530
+
+    implemented retry logic
+
+
+:100644 100644 f01076f3decd1029e11c43efc2d25e0ef8a7c8a3 a4607359409eb639052360dde87b6840c0043191 M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+commit 2b7c3b4a5d80f1733f6e8bf2d733ff26637fcdad
+tree c44cedaf3b4579606aea265ccad121cfe1d6c460
+parent 7488cb18e9fa0c2183e883a370f13b9018e86bf1
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 17:15:28 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 17:15:28 +0530
+
+    implemented retry logic
+
+
+:100644 100644 518592317f968340c95c1f56a13791c587bf6d2f f01076f3decd1029e11c43efc2d25e0ef8a7c8a3 M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+:100644 100644 e18fabca832d12fbb1a705cdcdab41f8af177f92 9af0eca9aa225749213ba28fb2cd7a3309f4c381 M	src/main/java/com/fdc/core/event/processor/GroundcloudEventProcessor.java
+:100644 100644 465c7274990498c5a393b2caaad0207297f17b4a 748bf413ce4ef06b488c0cb0081f34c9cacad6d3 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 29437ad7188525de4ac46a0745850631db3c946f 5e0c8ce5bfea7fc2e5ff112bac618c1c210d74ad M	src/main/java/com/fdc/core/service/ActivityConsumerService.java
+:100644 100644 61cdf7a03a4fea60385c4cc3351d154b834337e6 966a7ddd2b59aa12ed6d88fa15e6808c54d4c224 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 52d53c551ddf6e8bdbfa7fcf57ccf694313a80ba 897f9a8ea835b54dc31620c3e4da8e12eaf03267 M	src/main/java/com/fdc/core/service/impl/EventStoreServiceImpl.java
+:100644 100644 851e9b46789c46ac85d5a723e0ed387173acccc8 5824e0a687bc81be88ebbfafb09c0cdddfce11e1 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit 7488cb18e9fa0c2183e883a370f13b9018e86bf1
+tree f3069f3bbfa8cbc2a65746a0eae40d86198bf6be
+parent ca4eeb6a30f1d56d780fa5ddfa62e45860709b69
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 15:37:57 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-05 15:37:57 +0530
+
+    implemented retry logic
+
+
+:100644 100644 b9d6eb7ee1822fb85bd26bd1cb532a6af60ac449 465c7274990498c5a393b2caaad0207297f17b4a M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 f5b7011af9eb6fbb04075258c21434e61d27b2f3 76dde83008d6c4b5c28335fbab10e1f337c819e0 M	src/main/java/com/fdc/core/model/jpa/EventStore.java
+:100644 100644 661031495bb73229d5296c825b6485515d92c4fd 4d7ce9723c954ae7f1d764f50ad4e15d714bbad8 M	src/main/java/com/fdc/core/service/EventStoreService.java
+:100644 100644 a28d6a6c4ca4bc3b3fbe47e0ae41823f5959ebb3 61cdf7a03a4fea60385c4cc3351d154b834337e6 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 b84f3e45209914669c2416174f1e49abe01165ef 52d53c551ddf6e8bdbfa7fcf57ccf694313a80ba M	src/main/java/com/fdc/core/service/impl/EventStoreServiceImpl.java
+commit bc48d2d6a40ede79bb16be52ce8228408ffc54db
+tree 8f318ddb42e48560e331c76dc84c35eea44c145f
+parent e9d5b443c30b9e25be34cce78a5abc58adc28ecc
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-05 14:56:46 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-05 14:56:46 +0530
+
+    Revert "fixed checkstyle violations"
+    
+    This reverts commit e9d5b443c30b9e25be34cce78a5abc58adc28ecc.
+
+
+:100644 100644 b108fc03ef583cf9630977e1a36a9737556139bf 9dc47c1831df12bc3964e8352263cff1f5ec1485 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+commit 6493135c666c19967b0657e5dce79c59d4ebb944
+tree 43939e14fe51e04746adb5602e400b53d9a7956a
+parent ca4eeb6a30f1d56d780fa5ddfa62e45860709b69
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-05 13:06:03 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-05 13:06:03 +0530
+
+    null check for Timestamp
+
+
+:100644 100644 b9d6eb7ee1822fb85bd26bd1cb532a6af60ac449 9a9bad99e9281876986765e36b2917d73ff19f27 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 0b82e1a7c506b21ef2600dc77784e89466804537
+tree 599c16c02cca0b001fe035f3275d2b9b976ec050
+parent 7f42d329284b5de47aa3a9c27335ea87e7742bf0
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-03 10:44:30 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-03 10:44:30 +0530
+
+    added one change
+
+
+:100644 100644 c73869a8c0f55c1144003c09fc500635ef97267c e8e78514223a1558641c212bf54a8122acb43736 M	src/main/java/com/fdc/core/security/JwtAuthenticationProvider.java
+commit e9d5b443c30b9e25be34cce78a5abc58adc28ecc
+tree 2a5a53d0dc5f5ffb29087b93d6aab85fec7272e1
+parent 5e7fc114a5320ad9eafde05c7495b8203a67ac7a
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-02 19:25:31 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-02 19:25:31 +0530
+
+    fixed checkstyle violations
+
+
+:100644 100644 9dc47c1831df12bc3964e8352263cff1f5ec1485 b108fc03ef583cf9630977e1a36a9737556139bf M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+commit 7f42d329284b5de47aa3a9c27335ea87e7742bf0
+tree 9940325ce0a0020c1f3357511cfa619a27df82e2
+parent ca4eeb6a30f1d56d780fa5ddfa62e45860709b69
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-02 12:42:20 +0000
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-02 12:42:20 +0000
+
+    added new auth features
+
+
+:000000 100644 0000000000000000000000000000000000000000 21e0818e06a38513dabc731f15bdd3620cdaaa9c A	src/main/java/com/fdc/core/model/jpa/ClientUser.java
+:000000 100644 0000000000000000000000000000000000000000 df61ad875a505d49d0224c15181507fdd2524cb3 A	src/main/java/com/fdc/core/model/jpa/ClientUserRole.java
+:000000 100644 0000000000000000000000000000000000000000 b45b7eaf39609dc3b4df9262eb76ce8310a3d6cb A	src/main/java/com/fdc/core/repository/ClientUserRepository.java
+:100644 100644 bdebfff355613b5c12abc7d3b824069aa3d13bea 40149cfa6606cc52fe7965f3e72205a0ab286865 M	src/main/java/com/fdc/core/security/FdcClientDetails.java
+:100644 100644 d3f5ca49cf5a15bf6db05e5e6660e2f339dc9c7f c73869a8c0f55c1144003c09fc500635ef97267c M	src/main/java/com/fdc/core/security/JwtAuthenticationProvider.java
+commit 3644acef897ab5d87cf24ce81e37d863493fa157
+tree 780fff0d6b2da1cf1edd2491534d50e1a117b966
+parent ba006487dd08f358b4594c415d144460cd84c1a8
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-02 13:30:58 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-02 13:30:58 +0530
+
+    Optimized pickup logic specific to R4ME
+
+
+:100644 100644 def86eae6e9cb027751ad1eb48f188fb14ff2cf8 665c148e07bb1eea2e14a6d39bb4f15e857bc1b8 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+:100644 100644 e899f64b8e766785b735a93cd166706ca9d276a6 2f8c679b715284f4462166ae8cff781d9c98ab42 M	src/test/java/com/fdc/core/controller/ShipmentControllerIntTest.java
+:100644 100644 531d0bc751282b3a047bf2eee92360f8f33048a1 5da7881131046c32f00297f7c4375d1f56fcd412 M	src/test/java/com/fdc/core/util/TestUtils.java
+commit 8d302eb32f7185004617c93b9f8aadecb10f4a43
+tree 7e750ac489eec63572ff6fc56c13e7d993938397
+parent cbca692918e1be793b94c5a6966c8c6f44cae91d
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-02 07:14:50 +0000
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-02 07:14:50 +0000
+
+    testing completed and added some corrections
+
+
+:100644 100644 e704a4e3ab0f15514c8c3a24ca506d905aec09e4 b9d6eb7ee1822fb85bd26bd1cb532a6af60ac449 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 c83f3994b9ee5d452e4b1dca08c77291f14e83f7 a28d6a6c4ca4bc3b3fbe47e0ae41823f5959ebb3 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 105297c5ed663a34e1f93484b376c9e20a8ee3fb 851e9b46789c46ac85d5a723e0ed387173acccc8 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit cbca692918e1be793b94c5a6966c8c6f44cae91d
+tree 45d1b8205392f88079d7c0c550fb36fbef4b6633
+parent d00a819491ab41fe55eb4ddd9552b350615a119d
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 18:27:21 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 18:27:21 +0530
+
+    checkstyle fixes
+
+
+:100644 100644 521bd2b955cd18276d797227b09eded38d7f34a9 e704a4e3ab0f15514c8c3a24ca506d905aec09e4 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 59883a810d3821e378181c6dc3a66e6f6d4663c0 c83f3994b9ee5d452e4b1dca08c77291f14e83f7 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+commit 0cd77ee77e99de4608de90d8d165a0d1a0627da8
+tree c8dcc4c9d79287ba8c5a9f90369c44c63907cdab
+parent 5ddf594ef257b733702e441e8e6352d8e60b6399
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 18:09:53 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 18:09:53 +0530
+
+    added logic to handle multiple delivered events, if may
+
+
+:100644 100644 8efdc54e9487074f6f5731fb089f5aebff745517 6c69a53c8be88b36467d77f3e1f061c66bc228fc M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit ba006487dd08f358b4594c415d144460cd84c1a8
+tree b3da1600a18d9e9d0d576ccb944ee1e5d41d66ab
+parent 05e94d84091d62c52376467ce5e849769f188dbe
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-01 17:25:37 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-01 17:25:37 +0530
+
+    Update ExceptionController.java
+
+
+:100644 100644 f7af8d486d7c2cf0bac77d4805dc17f3d25b31aa 6d26ba128c7c5a3f3ea2ff553b2242ff03ce2f26 M	src/main/java/com/fdc/core/controller/ExceptionController.java
+commit 5ddf594ef257b733702e441e8e6352d8e60b6399
+tree 89da9f792465655a05a0734e20f6cfd6f7508f32
+parent 9789d501003cdad7deff928922e0e2829657c315
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-01 17:22:25 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-01 17:22:25 +0530
+
+    verified retry logic
+
+
+:100644 100644 1107abba521e96475a87f8085da957f3b229ae92 08e952e0777295fce3ea0933d7e28c7615c97884 M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+:100644 100644 856ef9b87978f7b7f4b3735a770e8e8c7c9adedd 105297c5ed663a34e1f93484b376c9e20a8ee3fb M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit 6d6e5b73e351f99d796ee65a8c56316732b2eb83
+tree 096863917d90e48ccc45111e30598950acd147e9
+parent 0fd41e9c58748ca4a427764ed3e87b21dd7e7c8a
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 17:10:44 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 17:10:44 +0530
+
+    added ApiKey auth
+
+
+:100644 100644 5c4877f0c8695a07991905930bc06aefeedeb50d cf78ddd149f0e7db431e67b1c7a4f8e89f1617a6 M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+:100644 100644 3ba894b295e196d5b120fe4e21c3b5d051977407 5feca7bd0ee83e45e867f514f243b1ad20f76849 M	src/main/java/com/fdc/core/dto/TriggerWebhookDto.java
+:000000 100644 0000000000000000000000000000000000000000 4ad2e6c083d3340e4a4ce2c194aa8ca5ac0f9ac1 A	src/main/java/com/fdc/core/model/jpa/ClientWebhookConfig.java
+:000000 100644 0000000000000000000000000000000000000000 3339a85e7dff0756690bb4171e63c105ee7d5d82 A	src/main/java/com/fdc/core/repository/ClientWebhookConfigRepository.java
+:100644 100644 0b0fdeca10fca33bb2245029884df8863ca0cda7 481f4ee4685707afb4d4b885b2e9412ff54b5cbc M	src/main/java/com/fdc/core/service/ActivityConsumerService.java
+:100644 100644 1a77a00cfd47972c58da353690fa5513da9f9d9b 9dc47c1831df12bc3964e8352263cff1f5ec1485 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+commit bdcd524a7159d7023486cf99950ca7ef069da626
+tree 7092348c1486b63a624a980220ad38cd5298c1a4
+parent 1f2951bcf3bea5073d49dbd4ceb54bad84d04db8
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:41:27 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:41:27 +0530
+
+    added filter for localtime_mandatory
+
+
+:100644 100644 9c74b3e5ac611b3ef8c6494ac15e97e98964917e 6da574cf7d3f6e3ac5a1bf5b468c817a922bc40f M	src/main/java/com/fdc/core/mapper/impl/PackageTrackingMapperImpl.java
+commit 1f2951bcf3bea5073d49dbd4ceb54bad84d04db8
+tree eebf7916f07d360d81d318c7021a83d0e3975d63
+parent 2553213d1a664e03b5732bce32caf97798574d6f
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:11:16 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-01 15:11:16 +0530
+
+    addition of gcReferenceId.
+
+
+:100644 100644 fc278ed239f01d341ebfe682b89072bba4721950 631415f6545f803153aef76ad7e1dd473cfbdb88 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 dac98178b91335d5c7f22aa241499fb57764ef07 b46502b5cf2171eccdbba9b0a951ada52c0da6e2 M	src/main/java/com/fdc/core/model/jpa/Event.java
+commit 06694bc2b0318180809326dc1597f2e5da80efb6
+tree 0bef7934fc4817cb6653714123b6c4f3d597f8de
+parent 976d403378d843db87124aaae1de71c9de338ff8
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-30 16:44:28 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-30 16:44:28 +0530
+
+    added query param to handle deadlock
+
+
+:100644 100644 c32391804f44bf85d91ddfa1f2c347bcb4b518d2 f5d6314b04c5d827c2971a0d515088fdd32ec0a5 M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+:100644 100644 770c87463153153779d11c52dafe3055249cf514 8e95b59aefc052fbaca96a07e131795551be0aa9 M	src/main/java/com/fdc/core/service/ActivityConsumerService.java
+:100644 100644 9464969cc3bbb1491b4e81c88fe13629e6c367f7 0152b1bd8ea1883a50c8ac8bd50dd74a1180a868 M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+commit 976d403378d843db87124aaae1de71c9de338ff8
+tree e4abb3c57ef0aff2e89c8fdcdedfc299e69e2561
+parent df6df0abf84f8bba46444e0416d8d5cd8e523d1c
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-30 14:32:55 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-30 14:32:55 +0530
+
+    fixed uts
+
+
+:100644 100644 a8ff758de412f986f64d0fa5d246638383de9765 8efdc54e9487074f6f5731fb089f5aebff745517 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 38a003119a4f59c2cd1e3998a9e3e7acec6679bf 34bbf1a4c0989f331c943792b5b1f897d417f26d M	src/test/java/com/fdc/core/service/impl/ShipmentServiceImplClientPickupTest.java
+:100644 100644 4fee89a0598047af0cba25e4ead9df3b8febeae9 05ff23bf4b1d36ba2e3ecc569b18c3fc0a8d4348 M	src/test/java/com/fdc/core/service/impl/ShipmentServiceImplUnitTest.java
+commit df6df0abf84f8bba46444e0416d8d5cd8e523d1c
+tree ae3cd4eea26002443e0a68714428d5f53ccdcf58
+parent af539ea6b3da70cd119aeb37a47844a288b33b60
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-29 20:54:34 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-29 20:54:34 +0530
+
+    updated event processing logic for info_received and departed_from_origin
+
+
+:100644 100644 fc278ed239f01d341ebfe682b89072bba4721950 a8ff758de412f986f64d0fa5d246638383de9765 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit af539ea6b3da70cd119aeb37a47844a288b33b60
+tree 19c7558ad3846fef22b47aa63496eb9f360d6dfc
+parent e1c8ff28cea3abf2e54e9de44b685fd561c53ad0
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-29 19:52:01 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-29 19:52:01 +0530
+
+    solun for deadlock
+
+
+:100644 100644 fb0f199cf56a6784987a311f6b248849b55f9a72 d119fa2a015b71cc34ea38770549b0040175013b M	src/main/java/com/fdc/core/dto/groundcloud/GroundcloudEventDto.java
+:100644 100644 def86eae6e9cb027751ad1eb48f188fb14ff2cf8 6db3abc1d2b6f4cd222d9d8cd2f8b25224d29897 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 0fd41e9c58748ca4a427764ed3e87b21dd7e7c8a
+tree 0a5fc70a4db0ece44be4c76b0aaada76f8b4ff63
+parent 1a33780aa6ff8773a897e173929b5bafebdc3351
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-29 19:27:23 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-29 19:27:23 +0530
+
+    Update application.yml
+
+
+:100644 100644 f5974107c20cc0f14375437118eeb157b5b81b82 2cb11935e7988324ce903a6e07bde96e5a3c6495 M	src/main/resources/application.yml
+commit 1a33780aa6ff8773a897e173929b5bafebdc3351
+tree 47466e19bad30d2403f7f615fbdc7896c4907960
+parent 4f3bd7c277e9ba1c64a6b2cd6b9e62e83b576c36
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-29 15:35:13 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-29 15:35:13 +0530
+
+    added profiling
+
+
+:100644 100644 276bb7c5420d2ee374f982c7237cf49acb354cc2 5c4877f0c8695a07991905930bc06aefeedeb50d M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+:100644 100644 263ac806e1e398b4fc7f2cdc3f28ccc8705ea2ab 3ba894b295e196d5b120fe4e21c3b5d051977407 M	src/main/java/com/fdc/core/dto/TriggerWebhookDto.java
+:100644 100644 fdb27b50f7f7603211ea327dd12de7083fb9d3e8 54dceace1a1e89eb02df2de37bc459b776332321 M	src/main/java/com/fdc/core/dto/WebhookLocationDto.java
+:100644 100644 3a50829763ce9e79f0988fcd01d116a04b39ffeb 20eae9bf64161209fd8e8b445067b5d5e18ea3a8 M	src/main/java/com/fdc/core/dto/WebhookResponseDto.java
+commit 4f3bd7c277e9ba1c64a6b2cd6b9e62e83b576c36
+tree 7df6e59df07841790d592e98ca980d29084a155d
+parent e1c8ff28cea3abf2e54e9de44b685fd561c53ad0
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-28 21:04:02 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-28 21:04:02 +0530
+
+    added endpoint
+
+
+:100644 100644 c32391804f44bf85d91ddfa1f2c347bcb4b518d2 276bb7c5420d2ee374f982c7237cf49acb354cc2 M	src/main/java/com/fdc/core/controller/ActivityConsumeController.java
+:000000 100644 0000000000000000000000000000000000000000 263ac806e1e398b4fc7f2cdc3f28ccc8705ea2ab A	src/main/java/com/fdc/core/dto/TriggerWebhookDto.java
+:000000 100644 0000000000000000000000000000000000000000 fdb27b50f7f7603211ea327dd12de7083fb9d3e8 A	src/main/java/com/fdc/core/dto/WebhookLocationDto.java
+:000000 100644 0000000000000000000000000000000000000000 3a50829763ce9e79f0988fcd01d116a04b39ffeb A	src/main/java/com/fdc/core/dto/WebhookResponseDto.java
+:100644 100644 0d5a25519d6393601435d2536a3a3671ae01f74e e491347d9545cdadf0f52dba22730b237322c847 M	src/main/java/com/fdc/core/dto/groundcloud/ProofOfDeliveryImageDto.java
+:100644 100644 770c87463153153779d11c52dafe3055249cf514 0b0fdeca10fca33bb2245029884df8863ca0cda7 M	src/main/java/com/fdc/core/service/ActivityConsumerService.java
+:100644 100644 9464969cc3bbb1491b4e81c88fe13629e6c367f7 1a77a00cfd47972c58da353690fa5513da9f9d9b M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+commit e1c8ff28cea3abf2e54e9de44b685fd561c53ad0
+tree 2840a2609734ef517375c5b5cd39e1841ad695a7
+parent 58d7ac195106814ae3bba3a630bbb5679aa48400
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-24 12:53:25 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-24 12:53:25 +0530
+
+    Update ShipmentServiceImpl.java
+
+
+:100644 100644 0f4553c0a8e5f73383c4d6defda68f86fba0fdee def86eae6e9cb027751ad1eb48f188fb14ff2cf8 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 207cf1e480f14ea04ff1493719787d8345652c48
+tree ed5a64cba28b8b851e1dd5d98ca8050260d49c1c
+parent 06ca0fb3c19721650a23197d071e1459dbd09920
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-23 16:11:35 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-23 16:11:35 +0530
+
+    added stacktrace
+
+
+:100644 100644 a353f185bf2ca2f8d1455f811ffacad7dc378551 fc278ed239f01d341ebfe682b89072bba4721950 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 06ca0fb3c19721650a23197d071e1459dbd09920
+tree 4059b7be3c1cbde518e4e63e7b960ffc757af747
+parent a12d91ba0205432bdedfa46ac82d4028a1ad6aa6
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-23 14:47:32 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-23 14:47:32 +0530
+
+    added  stacktrace
+
+
+:100644 100644 828e8489003ba291ec38c933434d9488fb76258d a353f185bf2ca2f8d1455f811ffacad7dc378551 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 60e519bb5e4edbdbe6083ba348f787cf2886981c
+tree 3cc24fcacf6ace90dbcd8ce0134e30fc693354e4
+parent c5085b83bcafc16e15314828c21c9c11ff78c427
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-22 16:25:57 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-22 16:25:57 +0530
+
+    added zip validation and removed unsed validation
+
+
+:100644 100644 9c5935a3c09377756d96bb44735e99ee8d124d7f eca74810ff6ffc58672876607c1f56b5ede6927e M	src/main/java/com/fdc/core/validation/ShipmentMandatoryFieldsValidator.java
+commit a12d91ba0205432bdedfa46ac82d4028a1ad6aa6
+tree 57705436337074be7c6afdb3f56ed507d68bac33
+parent d3d6180ee33d13f058fae1ae634b6b5ca9fc77f1
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-22 14:23:02 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-22 14:23:02 +0530
+
+    null check for PackagePlanned::Driver
+
+
+:100644 100644 260c082b2b75d02a2a1df2de4cb0947f6f15e4ae 828e8489003ba291ec38c933434d9488fb76258d M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit 48281fce9208b5ebc7382066f1ae48a2885c3cff
+tree 079119518eaf4aa6dddf3cb37718d7d3b844f351
+parent 067942770b1d1ba75193cd83f45ebf9f55031838
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-22 14:16:24 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-22 14:16:24 +0530
+
+    added no_service as service type mappings
+
+
+:100644 100644 0d3302008e8742fd0f59c4e9e1a84f7da4132ca7 b2ff872ae68e29509e6e9cc9b6faab4338b18622 M	src/main/java/com/fdc/core/model/jpa/Package.java
+:100644 100644 214771d8133ee51494365e5e7f40c00762d4e47f 0f4553c0a8e5f73383c4d6defda68f86fba0fdee M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 6ba1817645b97bf29ab9479681e2519d1e863bd2
+tree 2c5a3de674ceb022acb1f19acac3e1c8a05d49e0
+parent c4ef0b9b78e65581062bcc959f44b18cbd06a68a
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-22 10:42:14 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-22 10:42:14 +0530
+
+    Update MissingManifestMapperImpl.java
+
+
+:100644 100644 0cbdb93915e3e63a0030803e941a39e8f75d9308 f6fc312e68678049cd4a149701ca0d51c06479c6 M	src/main/java/com/fdc/core/mapper/impl/MissingManifestMapperImpl.java
+commit c4ef0b9b78e65581062bcc959f44b18cbd06a68a
+tree c2103c74a581f2144e011501537eb5238edcae2d
+parent ea6867a02d48282a2aecd3dedccdf69223ecc93c
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-22 10:36:02 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-22 10:36:02 +0530
+
+    hot fix for null pointer exception
+
+
+:100644 100644 64b672306828d4df62fa07ebd993580ca0186dfe bffdb67138e1b524426a3a3d6019a509d32c3bf6 M	src/main/java/com/fdc/core/repository/PackagesRepository.java
+:100644 100644 76767ce5bd81b2bcc3fe29aaf0fc87ad487f0991 214771d8133ee51494365e5e7f40c00762d4e47f M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 30db1e4a7795f7412166e6c09a534cb7af40ba3e
+tree 0df4b2f018e90b3d2a75c582edd047d284ac76f7
+parent ea6867a02d48282a2aecd3dedccdf69223ecc93c
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-21 19:22:04 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-21 19:22:04 +0530
+
+    Update PackagesRepository.java
+
+
+:100644 100644 64b672306828d4df62fa07ebd993580ca0186dfe bffdb67138e1b524426a3a3d6019a509d32c3bf6 M	src/main/java/com/fdc/core/repository/PackagesRepository.java
+commit c5085b83bcafc16e15314828c21c9c11ff78c427
+tree 3da54f8aa8898628bf6c4b3dcf2072e6bebe97ff
+parent 73543505b59efe01e5dd3f3129c1fe771fc4181f
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-18 14:16:47 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-18 14:16:47 +0530
+
+    added package type in package dto
+
+
+:100644 100644 714b7a129131ec601e9b1bd8c354c5b822d5024f ece059d0be371b4379a70417e0cddb13780f9edd M	src/main/java/com/fdc/core/dto/MissingManifestDto.java
+:100644 100644 292d509d82f5bfdd63f5b7acac9ab30c544e3346 0cbdb93915e3e63a0030803e941a39e8f75d9308 M	src/main/java/com/fdc/core/mapper/impl/MissingManifestMapperImpl.java
+commit 73543505b59efe01e5dd3f3129c1fe771fc4181f
+tree 4cd2afb759a9627733cb28642e4efe8f7f184786
+parent 8f24904bf170421f48ac8bf30aa095b898ae0062
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-18 11:34:06 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-18 11:34:06 +0530
+
+    fixed the validation of dtos fields
+
+
+:100644 100644 0bdb130a364a1f55df56c0c6f209830db2e61e5d 9c5935a3c09377756d96bb44735e99ee8d124d7f M	src/main/java/com/fdc/core/validation/ShipmentMandatoryFieldsValidator.java
+commit 8f24904bf170421f48ac8bf30aa095b898ae0062
+tree 41afbb26e978c4024a60cb3fea3630820344e3e4
+parent 262060b9e4cd0e2faca2400a438fb50034c0fe98
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-18 11:23:42 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-18 11:23:42 +0530
+
+    fixed the validation of dtos fields
+
+
+:100644 100644 9d931f026b4f306f1812192cf0c82fa3ca995ae2 113d163aefcf89f9f4be4bd8a7fd16cdb7d59c69 M	src/main/java/com/fdc/core/dto/PackageDto.java
+:100644 100644 597cf239ba9224fd119b77181679b945837b3265 1425a0dd4a9e3adfa7641e2daa0909ee7bcdb57f M	src/main/java/com/fdc/core/dto/ShipmentDto.java
+commit 75493261ecda51be3806844ace87cb5f0bb8e103
+tree b2b80ec43b1d50cd69c001a1fb07e733b2bdb6c4
+parent d7579324d2ac6d5a01d64f7e19d976ca477ca754
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-18 10:52:54 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-18 10:52:54 +0530
+
+    chkstyle issues
+
+
+:100644 100644 79122a5dd7ae8ff18cbdf83d613bc41b4f81e8f9 64b672306828d4df62fa07ebd993580ca0186dfe M	src/main/java/com/fdc/core/repository/PackagesRepository.java
+:100644 100644 9bea84f3291719a0061b7375f00a9d0661a392d6 856ef9b87978f7b7f4b3735a770e8e8c7c9adedd M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit d7579324d2ac6d5a01d64f7e19d976ca477ca754
+tree a4f85816b44e17d5dc5136ee7afd7708373aad23
+parent fb54f5092790412296389f048aca71e0a7b781b0
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-17 22:23:21 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-17 22:23:21 +0530
+
+    updation of R4mesyncstatus only on planned event
+
+
+:100644 100644 1aa3efef58cf7ab04ab9b15d7114a3ee61ca22ca 260c082b2b75d02a2a1df2de4cb0947f6f15e4ae M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 7ec999dd0b2661f6f0e5038647630cc663e7a3bb 79122a5dd7ae8ff18cbdf83d613bc41b4f81e8f9 M	src/main/java/com/fdc/core/repository/PackagesRepository.java
+:100644 100644 294c807778327f716f7a2cc523c5ea394c0a7b69 9bea84f3291719a0061b7375f00a9d0661a392d6 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit fb54f5092790412296389f048aca71e0a7b781b0
+tree b57da779d6d34aca613cf1e6236c45677922983c
+parent a0371b404d2ab35388cbbb80e6cc64452b40cfed
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-17 22:09:50 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-17 22:09:50 +0530
+
+    changes for PLANNED event
+
+
+:100644 100644 ce298a35b0013e369487b95a96e2ad0316614bc5 af25b8ccd2d5f4933af5bd50f877cdd8291c748f M	src/main/java/com/fdc/core/config/Constant.java
+:100644 100644 33afaff423593000a84515c9bb3e773a1a08e152 1aa3efef58cf7ab04ab9b15d7114a3ee61ca22ca M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+commit f2e3153cbbd317fa4cd24827d6eb27773736e6fc
+tree a1d86f9d14fdebde27fcf3f2527f84043a31eebe
+parent 707b88927e649d874ad443e20c00fe6f74b17c9d
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-17 15:14:52 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-17 15:14:52 +0530
+
+    Update ShipmentServiceImpl.java
+
+
+:100644 100644 5650f8d9727dd6032231e833c453ca953dc7619a 76767ce5bd81b2bcc3fe29aaf0fc87ad487f0991 M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 707b88927e649d874ad443e20c00fe6f74b17c9d
+tree bb6fb7409b702e157b63adfda3366970cedb1eb8
+parent 07bb6c91398ede08761b2983f0b58cb33d2fe518
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-17 15:11:12 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-17 15:11:12 +0530
+
+    Update ShipmentServiceImpl.java
+
+
+:100644 100644 bb009608c9525bd88bc9e12790c18d3192d081ef 5650f8d9727dd6032231e833c453ca953dc7619a M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit 07bb6c91398ede08761b2983f0b58cb33d2fe518
+tree 8a13843f1ca04605dd9d164702774ad209bd70a2
+parent 81ccb1fd10b4054eecb7380c5cdc0b2264801ce0
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-17 12:27:59 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-17 12:27:59 +0530
+
+    Update Package.java
+
+
+:100644 100644 9c8f5f62eeb411d9a27ff0286f79d8d5d8e33a7c 0d3302008e8742fd0f59c4e9e1a84f7da4132ca7 M	src/main/java/com/fdc/core/model/jpa/Package.java
+commit 81ccb1fd10b4054eecb7380c5cdc0b2264801ce0
+tree 9d96163511b1e62ce27a4a3acf43547a52a98e3a
+parent d259c400c9a63650adcf7de9f0f91bba0e115fce
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-16 18:41:43 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-16 18:41:43 +0530
+
+    Mapped To Service Type
+
+
+:100644 100644 9b3e0b7ca94f49b451bb6a0e9332df80572b4c7e 9c8f5f62eeb411d9a27ff0286f79d8d5d8e33a7c M	src/main/java/com/fdc/core/model/jpa/Package.java
+:100644 100644 6e94700961530c659fbf3947079a0487bbf5dcf1 bb009608c9525bd88bc9e12790c18d3192d081ef M	src/main/java/com/fdc/core/service/impl/ShipmentServiceImpl.java
+commit b3b160e4d06a6861c4448120ed7c01f5a882a4e9
+tree a41183732644c69293c5f7728ff9b935d7365ac3
+parent 996f41d8dae8fa6ce9378a3ed4bd5e422bd0e376
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-16 13:43:49 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-16 13:43:49 +0530
+
+    resolved conflicts
+
+
+:100644 100644 7dfc055ac7e6293d476a8ab7f818893f123dc6a8 e18fabca832d12fbb1a705cdcdab41f8af177f92 M	src/main/java/com/fdc/core/event/processor/GroundcloudEventProcessor.java
+:100644 100644 45d860905e4718acbcd2951e45d5aff5ffa2d989 33afaff423593000a84515c9bb3e773a1a08e152 M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 42e7a32760680536d359ac4421dff756d25b3c87 294c807778327f716f7a2cc523c5ea394c0a7b69 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit 8c530b0b623e121e5b40b1f9fed66b7124c976bd
+tree abb84b08d6524369b45a6c41ff5a30cec2f8884a
+parent b09c0df6ab26d32f8d1c782c874e10c6b90d2059
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-16 13:26:28 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-16 13:26:28 +0530
+
+    added sync support for updation of packages
+
+
+:100644 100644 d19f7ed1badfb16c0e16f0dacea4225d41c1d348 fb0589f7fc66d214d7a8a88710d0b1d2f3bfd793 M	src/main/java/com/fdc/core/event/processor/GroundcloudEventProcessor.java
+:100644 100644 86259d07d301675398e170edf36c3c7a1643d60a 6d7d09f24a2f16bd528d43ed4991c309fe73929a M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 decc57cae52e469475ee6daf64bbf84706c67f8e 1412e1fec060ce36e9db4963133eed8fbba1d0aa M	src/main/java/com/fdc/core/service/PackageService.java
+:100644 100644 9a02c8eabe2f22f7ef6cc28fd50a23b651884f98 6c49c894800b0509d30fd4bb8137446a7b4d9ece M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 e6dbc5a108012f60d6a70940694936eb0fdded0a 42e7a32760680536d359ac4421dff756d25b3c87 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit 68e87a3952ef9b1fd60d7496de49b35df1e9f46c
+tree 01640338b70459caf84689f09f573436fa34dbe0
+parent a063da4d732af0c61cf2efd1939ebb38719426e7
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-16 13:12:54 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-16 13:12:54 +0530
+
+    fixed the events issue
+
+
+:100644 100644 d19f7ed1badfb16c0e16f0dacea4225d41c1d348 922f3d651d800b51e1887cf93e724968771666fc M	src/main/java/com/fdc/core/event/processor/GroundcloudEventProcessor.java
+:100644 100644 4fb7117c00dbf7cf1bcece6b57191ab7adfb7ff6 29d4de710e9aba0b9149ee5d0b3b92969c41c02d M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 dd54d56edc9fb08e4955c0340a30b4a8ea061d4e 661031495bb73229d5296c825b6485515d92c4fd M	src/main/java/com/fdc/core/service/EventStoreService.java
+:100644 100644 9a02c8eabe2f22f7ef6cc28fd50a23b651884f98 8d3327e8208f4910fb995f5c693443aa84792ada M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java
+:100644 100644 cd4f5cdcbd5e8f0ae2060b3f7c835f9f8a246b36 b84f3e45209914669c2416174f1e49abe01165ef M	src/main/java/com/fdc/core/service/impl/EventStoreServiceImpl.java
+commit 15141f143783f6f56a00ee6b07ce0fbf745ef3a2
+tree c09e59514bfdac752279d1fbd2c1a9e8fa2bb253
+parent e2757cfff9e2bce0c5bb1b056ddac9cb8f490913
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-15 22:00:20 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-15 22:00:20 +0530
+
+    Update MileStoneInfoMapper.java
+
+
+:100644 100644 e4371d303d73675135be219ce458ec93b6d4c46d ce261841d068d5fc5c0a0cf2d50ffa3743fb63dd M	src/main/java/com/fdc/core/mapper/mapstruct/MileStoneInfoMapper.java
+commit f6b7252876d43a18173b298e8f196f14fd607e47
+tree 06e503723dc5e28f6e123c8ebe1626e5ccf83c8b
+parent 28b250f8dab72da597dfc0893932a87d895dd022
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-15 20:31:09 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-15 20:31:09 +0530
+
+    fxed chkstyl issues
+
+
+:100644 100644 a67e9eff2e6708a0b46e39a3439ef41c7c2609cf decc57cae52e469475ee6daf64bbf84706c67f8e M	src/main/java/com/fdc/core/service/PackageService.java
+:100644 100644 c172ced78cd60c4b0f9768c075731c6613940b00 e6dbc5a108012f60d6a70940694936eb0fdded0a M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit 28b250f8dab72da597dfc0893932a87d895dd022
+tree 3075ed5a2bb49542a5442b1a30b93a6b0cbf0c03
+parent ccc655f0975650ec0dbc7940539cdc176348a01a
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-15 14:48:42 +0000
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-15 14:48:42 +0000
+
+    removed logs
+
+
+:100644 100644 9addc3f0ba941941c11d256af5808e0413e0ed72 c172ced78cd60c4b0f9768c075731c6613940b00 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+commit ccc655f0975650ec0dbc7940539cdc176348a01a
+tree 0e50935cf731b8935780059f566306537c2deaac
+parent a063da4d732af0c61cf2efd1939ebb38719426e7
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-15 14:29:08 +0000
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-11-15 14:29:08 +0000
+
+    added locks
+
+
+:100644 100644 4fb7117c00dbf7cf1bcece6b57191ab7adfb7ff6 86259d07d301675398e170edf36c3c7a1643d60a M	src/main/java/com/fdc/core/event/processor/groundcloud/impl/GenericEventProcessor.java
+:100644 100644 ae12f9557be4268ce5d498ccf3f121aa875fe42b a67e9eff2e6708a0b46e39a3439ef41c7c2609cf M	src/main/java/com/fdc/core/service/PackageService.java
+:100644 100644 02707cd4c372e98f3d068077faae5b094ca9c1aa 9addc3f0ba941941c11d256af5808e0413e0ed72 M	src/main/java/com/fdc/core/service/impl/PackageServiceImpl.java
+:100644 100644 4342450f882c8479565ff8a3f638139a7ee2cdc2 f5974107c20cc0f14375437118eeb157b5b81b82 M	src/main/resources/application.yml
+commit a063da4d732af0c61cf2efd1939ebb38719426e7
+tree 82986e9f96e7fdecca41adff9b6a97c5f9539aba
+parent c271ce4df9aa9d710246922378ecbef9d5ee65e3
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-15 15:58:25 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-15 15:58:25 +0530
+
+    added aws parameter
+
+
+:100644 100644 78906d26d06322f04f1f507f46219096628c50a2 0064f9f166c008144ed2f6c58db3e50c0386c4c3 M	fdc-svc-api-dev-parameter.json
+:100644 100644 edfe140671b36e2f8a52ac2577cbfa37fc7bb663 143eecc646b60b7545dbf1c16f5e2208bb966db3 M	fdc-svc-api-prod-parameter.json
+:100644 100644 09222c14540e02bc1e53c3100fb2658df0e24135 186187be902539e7734cc306d601ec9833a2a5be M	fdc-svc-api-stage-parameter.json
+:100644 100644 6b28d78ffcd62579ee4b8338ac615a5010cb9a41 3e55b5dafca49fd52de0b5db87fe989d828dc28a M	fdc-svc-api.yml
+:100644 100644 a0e9e3d7011745fe2caa60a33f1642f544648872 4342450f882c8479565ff8a3f638139a7ee2cdc2 M	src/main/resources/application.yml
+commit c271ce4df9aa9d710246922378ecbef9d5ee65e3
+tree 109f2bcb4b6916666ba3183e04c0a40807bdf661
+parent 34864a4d283f10acb1f8f96a81d7abba5a143829
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-15 15:51:25 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-11-15 15:51:25 +0530
+
+    added aws parameter
+
+
+:100644 100644 64a7f1f9c98c3efed818e102064db7f4d0cd8cd3 78906d26d06322f04f1f507f46219096628c50a2 M	fdc-svc-api-dev-parameter.json
+:100644 100644 a9197ed8e69e5bc1061fffa75bfa9f398f055aa5 edfe140671b36e2f8a52ac2577cbfa37fc7bb663 M	fdc-svc-api-prod-parameter.json
+:100644 100644 1c1868384588f3f93177e802efd176dfcdb5b419 09222c14540e02bc1e53c3100fb2658df0e24135 M	fdc-svc-api-stage-parameter.json
+commit e2757cfff9e2bce0c5bb1b056ddac9cb8f490913
+tree 2522bbc5067965ad864d803410ff7516f184bcc2
+parent aa6a3fb5a13e3c693ff4daf645efc1b0d1efa025
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-14 15:16:11 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-14 15:16:11 +0530
+
+    Update TrackingServiceImpl.java
+
+
+:100644 100644 93ef21788382f7afe17cee397a84558fd54e7540 2191eee509ba1f4c872faef0c241eb408150b6f0 M	src/main/java/com/fdc/core/service/impl/TrackingServiceImpl.java
+commit 88c110853dd3c2956901b281f9f562b93867f176
+tree 3ebdfb44d6b3427f033d9dcc3bf971372fe00fcd
+parent d2ba9cb7693d7d36e546811a727391cab663145d
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-11 13:58:06 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-11 13:58:06 +0530
+
+    added latitude and longitude
+
+
+:100644 100644 b039975debfbb81245965910b698c4b8e0f85d8b 9630447303fad0d4d9ef38d6c50aab2651cf1d4a M	src/main/java/com/fdc/core/dto/ActivityTimelineDto.java
+:100644 100644 14953526f8f5f476658645856cce3c39e7e23b2e e4371d303d73675135be219ce458ec93b6d4c46d M	src/main/java/com/fdc/core/mapper/mapstruct/MileStoneInfoMapper.java
+commit d2ba9cb7693d7d36e546811a727391cab663145d
+tree 2ea25e8f1c7e85436ae777f8a9e360422ce271c3
+parent dac25f0bc5b0117c4bdfe3d824f40dfb75559b7a
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-10 12:15:38 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-10 12:15:38 +0530
+
+    Update DellShipmentAsyncPostProcessingRunner.java
+
+
+:100644 100644 2ac0c62448304e9006b2504856bcc4f858f62d3d c86906b47386f136111222cdbde26dfd4ec2c279 M	src/main/java/com/fdc/core/shipment/processing/post/async/dell/DellShipmentAsyncPostProcessingRunner.java
+commit dac25f0bc5b0117c4bdfe3d824f40dfb75559b7a
+tree 7fbba33493b608f5c48b6247ed2789be0f66a389
+parent f8e665a759815c477e91bfd51ae8fbdfeaa187b8
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-09 16:19:55 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-09 16:19:55 +0530
+
+    added recipientCompany
+
+
+:100644 100644 602ae7d0fa8e69a151db8b179b26ca0628bbe1f6 6714b115f5b8c689fbd9624e385307c7ed1a35a5 M	src/main/java/com/fdc/core/dto/TrackingResponseDto.java
+:100644 100644 5ff7f6b79ca09226ec0ebb69f17bbf130d6a93bb b104c0a32c2920b091ff8a494045ddfc340fe6c2 M	src/main/java/com/fdc/core/mapper/mapstruct/PackageMapper.java

@@ -1,0 +1,10 @@
+commit bf7ca348eaacbace082deb04e73d438ac0fdd3d5
+tree 8a099d7e7aebca50741e45b961d5ecaf725b4316
+parent 5cc8f6df350bf0c9455a4185782f3c2e17d49b69
+author mdadu <mohitd@mindfiresolutions.com> 2022-12-16 16:10:23 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-12-16 16:10:23 +0530
+
+    add condition Sort by Driver Id
+
+
+:100644 100644 d1fb3346af8858ffed65201312e201d9a758f798 b5a6a488f76fb0880f172203cd1aa61ac275627b M	python_scripts/daily_exceptions_report_by_fdp.py

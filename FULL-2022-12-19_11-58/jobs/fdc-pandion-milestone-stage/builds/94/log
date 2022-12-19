@@ -1,0 +1,28 @@
+Started by user [8mha:////4P+/dDx6Qgzg5+JbUV+XyFeZ19ZCBQuvtUETu4RUHhvZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL93JTElFIA1sE1isAAAAA=[0mMohit Dadu
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-milestone-stage
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-milestone-stage/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-119^{commit} # timeout=10
+Checking out Revision 59268cc051a731bc1c4d079949fe015c3fe69c5c (refs/remotes/origin/ITDMF-119)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 59268cc051a731bc1c4d079949fe015c3fe69c5c # timeout=10
+Commit message: "app feature for file persist at sftp"
+First time build. Skipping changelog.
+[fdc-pandion-milestone-stage] $ /bin/sh -xe /tmp/jenkins5570961133556743085.sh
++ cd python_scripts
++ python3 generic_client_milestone_events.py mysql-stage.frontdoorcorp.net etluser fl@tCurve17 fdc_stage 121
+ Select tracking_number as "Pandion Tracking ID", facility_id as "Facility ID", event_code as "Pandion Event Code", event_name as "Pandion Event Name", event_details as "Event Details", DATE_FORMAT(event_timestamp, "%Y-%m-%dT%TZ") as "Event TimeStamp", event_date as "Event Date", event_time as "Event Local Time", event_time_zone as "Event Timezone", event_street as "Event Street", event_city as "Event City", event_state as "Event State", event_lat as "Event Lat", event_long as "Event Long", proof_of_delivery_url as "Proof of Delivery URL", delivery_signature_url as "Delivery Signature URL" from fdc.v_get_pandion_client_milestone where client_id = 121 and updated_on >= '2022-09-19 17:40:46';
+Number of records sent : 1000
+Connection successfully established ... 
+4 events inserted
+Finished: SUCCESS

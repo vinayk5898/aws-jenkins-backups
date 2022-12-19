@@ -1,0 +1,12 @@
+commit e49843007a3303f989692693896989112dc98047
+tree 6075a6480bb9ecc8ab2e12cce6e93e307fad4e1c
+parent 7c37f27906e46750ff00f09931c8f9eb1a641540
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-15 20:15:42 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-12-15 20:15:42 +0530
+
+    added access token
+
+
+:000000 100644 0000000000000000000000000000000000000000 00debfa3e1613949d17fd21014c53ccc5f394c1d A	src/main/resources/db/changelog/2022-12-15-add-access-token-in-client-user.yaml
+:100644 100644 e1bb7d5ca71f53bd950e073c6b406853355cf4c8 1074fe108074f5a98ff971daed28691f76b8dfba M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 0864cb7eb23755979c0656dcbeca035c9d15200f A	src/main/resources/db/sql/add_access_token_in_client_user_table.sql

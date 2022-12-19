@@ -1,0 +1,21 @@
+commit 1defd4b1fa142e484a9686cd18b54669d1a9e082
+tree e3656f5f01c7c47a7095fc00a3bad41f902335dd
+parent 92a19fdddaf1ea414ab7a45515ffe3697ac6ab3c
+author RealName:Hari <hbolla@altir.co> 2022-08-19 11:49:20 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-19 11:49:20 +0530
+
+    Removed EDI feature
+
+
+:100644 100644 1841a76079c17846884c92ead87b7ac787527c41 27c9f98ee8c171fc9ed19ac5e75b653435edc783 M	src/test/java/org/fdc/TestRunner.java
+commit 92a19fdddaf1ea414ab7a45515ffe3697ac6ab3c
+tree c535c1f042eb1606ec24e30f0c6db9d7bda0a1e3
+parent 491772520e34c473b822eee62cdcbe257ae59e49
+author RealName:Hari <hbolla@altir.co> 2022-08-11 12:13:33 +0530
+committer RealName:Hari <hbolla@altir.co> 2022-08-11 12:13:33 +0530
+
+    Fixed all the specs according to response standardise template fix
+
+
+:100644 100644 3deb0a3c20784ef8900d99ca82f7e9e9643aa916 efe5a469bc16a404433fc215aeaafbafc10d1aaf M	src/test/java/org/fdc/tests/orders_crud_scenarios.feature
+:100644 100644 50c7436a2b8ab7bf3c132ab225bd3061c757cfec 28efb55c5baa2b06b9b2e5b15ba1bf37961b4548 M	src/test/java/org/fdc/tests/shipment_request_scenarios.feature

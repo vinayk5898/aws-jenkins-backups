@@ -1,0 +1,22 @@
+commit e60ae2d14e60cfa896ffc95c54ebac0dc1a583f3
+tree 40707cf371e1cddbea5be0333ed53cddb8bd8723
+parent 48a021155bb93118759de507bf1268b97a46af8c
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-21 15:00:25 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-21 15:00:25 +0530
+
+    optimized the code and added more functionalities
+
+
+:100644 100644 df8367f43049683eeee9e96f5bfc00b4f9317ca8 38080746ae9f38d41e1a6a70c37d5ca09e0024f4 M	src/services/manigestIngestion.service.ts
+commit 48a021155bb93118759de507bf1268b97a46af8c
+tree 82bf1a0baa4a086cda1b12df933e1d9f5d2881c5
+parent 6acef543ea8d2322c3535a896264f2f88051d34a
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-21 13:48:10 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-21 13:48:10 +0530
+
+    optimized the code and added more functionalities
+
+
+:100644 100644 1793c64de93f1d8f5bf3dfe5aedf2d4219e1c402 564d1fe79fb0ad9ee14abc29f2f8321b40ef3e1d M	src/configs/routes/landing-routes.ts
+:100644 100644 338beaf0f73fb281ad33c060466e30c2ca122eb5 4b3c8882226e8b8014348121cdccd62a39aecbb3 M	src/pages/ManifestIngestion/ManifestIngestion.styles.ts
+:100644 100644 4b519d609f06b7454c2ab4aa15a44384688ebc98 000619fbe0d218fb12ede875d23621887cf2f9ca M	src/pages/ManifestIngestion/ManifestIngestion.tsx

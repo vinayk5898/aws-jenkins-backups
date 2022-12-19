@@ -1,0 +1,106 @@
+commit f03dfad185c66b47bc07c4ba82c49a192b590eaf
+tree c1bcb9416cc67a2b5bc466410fa2012a15433b72
+parent 79bb3bdb5daaabc1ad66192b6cd4a11e70a292e2
+author Jitendra Kumar <jkumar@altir.co> 2022-07-20 11:35:42 +0530
+committer Jitendra Kumar <97093953+jkumar-altir@users.noreply.github.com> 2022-07-20 11:49:23 +0530
+
+    Enable CloudSort integration for Dell by client config
+
+
+:000000 100644 0000000000000000000000000000000000000000 80b2dc2aa57688f3b872f422286001b4cef9c17b A	src/main/resources/db/changelog/220720_client_config_dell_cloudsort_integration.yaml
+:100644 100644 ac6ffc3d88603e88c5f0a33c398b3a716d050c78 807893a5efb7dc1f4d49981ea6e5a08305e7f93a M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit 0321628f6cd7482357080feca1001afc271cc830
+tree 80214c8f24fd2cc75e85da1f20f96eb3fc1cc401
+parent 5739fdd47b3965531e931695e54df5ce273e9045
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 13:18:38 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 13:18:38 +0530
+
+    FDC-893 :: added day time value
+
+
+:100644 100644 fce59437e3a234059cd0763de21f182ac1f85ccc 023548ed63fbc50ecff838f0cd36354898195c7e M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+commit 5739fdd47b3965531e931695e54df5ce273e9045
+tree d88cebf522bbf2a6ffe982acc6f385c43dcd75f1
+parent 2a503c32ed231de7a0236e138b2c60e677e60d99
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 13:04:48 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 13:04:48 +0530
+
+    FDC-893 :: As Suggested using tracking number as invoice number instead of package id
+
+
+:100644 100644 5983282a520ae1bcb403138a16a7dde1e25d5f8b 2f65d4cf6158c5287e73b66dee297692ea23e984 M	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit b493b2ed21eed1ebc4a9bf0e353c159dc8fa2ee3
+tree 9c239cd893021deff98b84bd90adde7b7fa36cf3
+parent 2cf5983097710b4be2846d2b6da6ec51a7ebea33
+author atadiboyina-altir <93377938+atadiboyina-altir@users.noreply.github.com> 2022-07-19 12:20:56 +0530
+committer GitHub <noreply@github.com> 2022-07-19 12:20:56 +0530
+
+    FDC-898: middle_mile ETA events for dell EDI 214 (#56)
+    
+    Co-authored-by: Avinash1765 <33092303+Avinash1765@users.noreply.github.com>
+
+:000000 100644 0000000000000000000000000000000000000000 4756d7e4602cb68a5e75f1493b47a4970c19941d A	src/main/resources/db/changelog/220719_edi_missing_status_codes.yaml
+:100644 100644 d71df0c4c0635a53575c300bcda54e9ca3470515 444757099d787a14f20018d845d6a405f4aa4372 M	src/main/resources/db/changelog/db.changelog-master.yaml
+commit a0921cae6508a6a852f56ceb11bc6e03c85ba48d
+tree a5962eabc64537d6c6da733132ab5e7a96f0c651
+parent 63a1277c5c83fcc0ecf91fbeef14a95895aee6b7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 12:06:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-19 12:06:45 +0530
+
+    FDC-893 ::  As Suggested using tracking number as invoice number instead of package id
+
+
+:100644 100644 5983282a520ae1bcb403138a16a7dde1e25d5f8b 2f65d4cf6158c5287e73b66dee297692ea23e984 M	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit 63a1277c5c83fcc0ecf91fbeef14a95895aee6b7
+tree 9e32be53dc399190a70e6b3c6538d64d63c3a396
+parent d6be7c4fb6c49d921beb98c387160614c9e4f724
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-18 23:11:20 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-18 23:11:20 +0530
+
+    FDC-893 :: Parameterised cut off time
+
+
+:100644 100644 9452a6c08054d1073ce10319d4f319c964f857d4 e677620b9e493c97cb6083b5be2ec61873baafa7 M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+:100644 100644 3b8ba0b7dd23ce04bef5c408062c787859632f31 5983282a520ae1bcb403138a16a7dde1e25d5f8b M	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit d6be7c4fb6c49d921beb98c387160614c9e4f724
+tree 5c01c55d719859ed4f98e9a3c13af973966864a9
+parent cccb0e276b08f164c17e873cdc6690aaa1b082b0
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-15 16:41:59 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-15 16:41:59 +0530
+
+    FDC-893 changed logic with updated fields
+
+
+:100644 100644 da7b86e996ba405def81c9b64f635df2b3ac0cff 3b8ba0b7dd23ce04bef5c408062c787859632f31 M	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit cccb0e276b08f164c17e873cdc6690aaa1b082b0
+tree 57f8770e5809bce8955c46cf256d0359f0e7a135
+parent dd85a3dee845a4b44727614a0a3300bf2f3e0ff2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 23:42:46 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 23:42:46 +0530
+
+    FDC-893 :: added views related script
+
+
+:100644 100644 05fc8bff4bad9cf0dace6a3141c35ff3c0948bdd 9452a6c08054d1073ce10319d4f319c964f857d4 M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+:000000 100644 0000000000000000000000000000000000000000 da7b86e996ba405def81c9b64f635df2b3ac0cff A	src/main/resources/db/sql/fdc_dell_invoice_dml_ddl_changes.sql
+commit dd85a3dee845a4b44727614a0a3300bf2f3e0ff2
+tree 17f21cbaaa0a11bb6e248c5f37cfc7506385a6d0
+parent c6138f9f8c86843e4d0815c80093a876b4e17f92
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 22:24:29 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 22:24:29 +0530
+
+    FDC-893 :: fixed value
+
+
+:100644 100644 301a16dfffcdbe87de13d14452c5f5fb365ce17f 05fc8bff4bad9cf0dace6a3141c35ff3c0948bdd M	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+commit c6138f9f8c86843e4d0815c80093a876b4e17f92
+tree dac04e04ebd82b109c597eea5f579d38d50e13c6
+parent 9f24ce08e2aa72fbf6de238b11b679bfe017224b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 15:29:11 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-12 15:29:11 +0530
+
+    FDC-893 :: added a field to distinguish the customized file creation
+
+
+:000000 100644 0000000000000000000000000000000000000000 301a16dfffcdbe87de13d14452c5f5fb365ce17f A	src/main/resources/db/changelog/2022-07-07-Dell-Invoice-Configuration.yaml
+:100644 100644 b23de76f246b5dcd5853f08c5464702e5992512a 6e13e4335c7e858701a15a846154486c650d0438 M	src/main/resources/db/changelog/db.changelog-master.yaml

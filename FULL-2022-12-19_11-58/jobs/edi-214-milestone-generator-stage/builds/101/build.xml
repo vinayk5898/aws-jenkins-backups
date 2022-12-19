@@ -1,0 +1,157 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@548.v9085a486966a">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.3">
+      <stagesUUID>feb6aee2-67fa-4fe0-b7a9-afa9ebd7432a</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.3">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>first</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">def curlScript = &quot;curl -s -w &apos;####%{response_code}&apos; --location --request POST ${FDC_URL} --header \&quot;Authorization: Client 120\&quot;&quot;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;####&quot;)
+                    
+                    if (responseStatusCode != 200) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody + &apos; and status code: &apos; + responseStatusCode
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>feb6aee2-67fa-4fe0-b7a9-afa9ebd7432a</uuid>
+          </stages>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>FDC_URL</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">https://api-stage.frontdoorcorp.net/edi/milestone/generate-file</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2633.v6baeedc13805">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>51659</queueId>
+  <timestamp>1660943340909</timestamp>
+  <startTime>1660943340976</startTime>
+  <result>SUCCESS</result>
+  <duration>10325</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    environment {
+        FDC_URL = &apos;https://api-stage.frontdoorcorp.net/edi/milestone/generate-file&apos;
+    }
+
+    agent any
+
+    stages {
+        stage(&quot;first&quot;) {
+            steps {
+                script {
+                    def curlScript = &quot;curl -s -w &apos;####%{response_code}&apos; --location --request POST ${FDC_URL} --header \&quot;Authorization: Client 120\&quot;&quot;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;####&quot;)
+                    
+                    if (responseStatusCode != 200) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody + &apos; and status code: &apos; + responseStatusCode
+                    }
+                }
+            }
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>754754287</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>387670198</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1953582850</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>31483141</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>316357812</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>22</iota>
+    <head>1:22</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

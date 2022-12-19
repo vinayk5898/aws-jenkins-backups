@@ -1,0 +1,10 @@
+commit 11b3481410aeaa47037d9f76c64735d670ef28a1
+tree 49e2a4bdc4e42f4896b1c8f76cb5f6df4bc8713b
+parent e2a6dcc52bfb8b2bcdbfac6bf27635b38ad09344
+author Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-11 11:45:32 +0530
+committer Avinash1765 <33092303+Avinash1765@users.noreply.github.com> 2022-02-11 11:45:32 +0530
+
+    removing clone repo stage
+
+
+:100644 100644 b06bfdbfb12d6d15602ece3bfe45ed47673d7e45 ed6973861d39b5c036287437a32f74a36664c648 M	Jenkinsfile

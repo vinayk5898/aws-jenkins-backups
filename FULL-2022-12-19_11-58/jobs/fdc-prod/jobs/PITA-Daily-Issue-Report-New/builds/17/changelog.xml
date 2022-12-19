@@ -1,0 +1,12 @@
+commit 6b7c9d7b78b5f92d16998cf4e9b6ae6704d7cd1c
+tree 38c8daf37815e34dbca617ffed567ad7284e55a8
+parent f8c6e805366e4d59477b0303d0362293fd0ac1db
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-21 17:47:34 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-11-21 17:47:34 +0530
+
+    Pandion invoice fix
+
+
+:100644 100644 5bdbe3d479c5ef62b3efbce64521397beb356600 2840a38b26f16afe632f7ee7ee242e0e3e16a3e9 M	python_scripts/Generic_Client_Invoice.py
+:100644 100644 37826b707785117c595f71ec73dc16c1458a4b5a 5b39678d256c18c7279a31b95c4a4be2ad5b0e0e M	python_scripts/Generic_Client_Invoice_prod.py
+:100644 100644 3fcfb7ad380c40c5a238c0d5674b864748272f79 3d2fb3c55e2ce45f6f19934937027a00b572317c M	python_scripts/Generic_Client_Invoice_stage.py

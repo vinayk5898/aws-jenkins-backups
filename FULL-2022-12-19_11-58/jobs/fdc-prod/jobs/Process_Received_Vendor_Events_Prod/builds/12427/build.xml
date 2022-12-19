@@ -1,0 +1,167 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.42">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@548.v9085a486966a">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.9.3">
+      <stagesUUID>532b176e-0cad-4a87-bede-e4bcd0018284</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.9.3">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>first</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">tz = TimeZone.getTimeZone(&quot;America/New_York&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    def curlScript = &quot;curl -s -w &apos;\\n%{response_code}&apos;  GET --header &apos;Authorization: ApiKey 06bd0656-0d96-11ed-9b93-0242c6062200&apos; ${FDC_URL}&quot;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;\n&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202 &amp;&amp; responseStatusCode != 504) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>532b176e-0cad-4a87-bede-e4bcd0018284</uuid>
+          </stages>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>FDC_URL</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">https://api.frontdoorcorp.com/fdc/process/events?type=Groundcloud</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2633.v6baeedc13805">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>145523</queueId>
+  <timestamp>1668277200386</timestamp>
+  <startTime>1668277200428</startTime>
+  <result>SUCCESS</result>
+  <duration>3022</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline {
+    environment {
+        FDC_URL = &apos;https://api.frontdoorcorp.com/fdc/process/events?type=Groundcloud&apos;
+        }
+
+    agent any
+
+    stages {
+        stage(&quot;first&quot;) {
+            steps {
+                script {
+                    tz = TimeZone.getTimeZone(&quot;America/New_York&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    def curlScript = &quot;curl -s -w &apos;\\n%{response_code}&apos;  GET --header &apos;Authorization: ApiKey 06bd0656-0d96-11ed-9b93-0242c6062200&apos; ${FDC_URL}&quot;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;\n&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202 &amp;&amp; responseStatusCode != 504) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }
+                }
+                
+            }
+        }
+    }
+
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1038690685</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>617579490</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2425125070</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>22175012</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>416106097</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>22</iota>
+    <head>1:22</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

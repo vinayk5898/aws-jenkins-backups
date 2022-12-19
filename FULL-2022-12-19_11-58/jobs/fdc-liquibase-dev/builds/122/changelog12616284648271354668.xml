@@ -1,0 +1,10 @@
+commit 773db8485d81e7fcbdbe6a7c1e9b219403342ab9
+tree 5f3aa12b83510d65d9a49c5fa84b52ccdf4358ac
+parent 1496f454fb9b6aa30bd2d54122f237ff69fe5369
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 22:42:24 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-31 22:42:24 +0530
+
+    FDC-746 :: removed spaces in columns
+
+
+:100644 100644 9597555d5152112379fb6ec57f23ed1066c42860 cc2ca6dd1acfb44cf23cf7e3bd7c870a7ce60fb0 M	src/main/resources/db/sql/fdc_generic_milestone_config_changes.sql

@@ -1,0 +1,11 @@
+commit a403f032e36bad0ae7607baf7ef100a0f4da62b6
+tree 7d89b45262f07d251122fee4a310b588a39b9b1d
+parent b71964e5071e4ea2b6fe6a5333351826dc355557
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-16 17:16:33 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-16 17:16:33 +0530
+
+    add index in event table
+
+
+:100644 100644 b1e117c03f89b26918f0854fea08dba9a2f391e8 b1e117c03f89b26918f0854fea08dba9a2f391e8 R100	src/main/resources/db/changelog/20221103_create_package_exception_tracking_table copy.yaml	src/main/resources/db/changelog/20221116_add_index_in_event_tracking_number.yaml
+:100644 100644 877230bea34a5e1db5f4752e338cb46f159b930e bf87b55f4738ca99d661638355c6b5b1af13cc9f M	src/main/resources/db/changelog/db.changelog-master.yaml

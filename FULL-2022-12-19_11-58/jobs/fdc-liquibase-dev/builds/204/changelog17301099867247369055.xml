@@ -1,0 +1,10 @@
+commit 2a22793681fb372990107de6efcff9d8aef4bf64
+tree a1158420a7df13449be8c7a96f0b14e3c01195aa
+parent 9b03a907dd2196671294c0f279fa4ff3fe84eda7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:10:35 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-28 11:10:35 +0530
+
+    FDC-1031 :: fixed the EXT_PARTNER_SHIPMENT_ID alerts
+
+
+:100644 100644 3041ba1ce29919d04fb2b20fc7246229eac8b301 4eb2b6db975e85803014ec05a85b9d5f54a77043 M	src/main/resources/db/sql/fdc-ib_standard_manifest_dev_stage_changes.sql

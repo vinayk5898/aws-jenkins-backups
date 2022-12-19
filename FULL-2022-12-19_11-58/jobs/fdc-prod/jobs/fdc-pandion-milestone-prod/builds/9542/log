@@ -1,0 +1,28 @@
+Started by user [8mha:////4P+/dDx6Qgzg5+JbUV+XyFeZ19ZCBQuvtUETu4RUHhvZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL93JTElFIA1sE1isAAAAA=[0mMohit Dadu
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-pandion-milestone-prod
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-prod/fdc-pandion-milestone-prod/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-177^{commit} # timeout=10
+Checking out Revision 4b0f7b0b22e4676e7c08ef445d51c38a65d39299 (refs/remotes/origin/ITDMF-177)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4b0f7b0b22e4676e7c08ef445d51c38a65d39299 # timeout=10
+Commit message: "Add daily missing manifest report"
+First time build. Skipping changelog.
+[fdc-pandion-milestone-prod] $ /bin/sh -xe /tmp/jenkins12123884154031650323.sh
++ cd python_scripts
++ python3 Daily_Missing_Manifest_Report.py mysql-stage.frontdoorcorp.net etluser fl@tCurve17 fdc_stage
+database connection successfully
+dataframe Created
+No data found, No mail sent.
+[Office365connector] Matched status 'SUCCESS' for webhook with name 'null'.
+Finished: SUCCESS

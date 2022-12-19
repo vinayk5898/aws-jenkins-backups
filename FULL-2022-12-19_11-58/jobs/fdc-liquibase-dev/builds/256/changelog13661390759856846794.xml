@@ -1,0 +1,13 @@
+commit cc79faf98811132a8ae168989b417114adfbc288
+tree d3d5d8650e40dab8153a12e624a35cb4c8f8fb03
+parent c8d8f783b8de3c044b54cd138773439cba2d2bce
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-18 18:28:27 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-18 18:28:27 +0530
+
+    add procedure to create index
+
+
+:000000 100644 0000000000000000000000000000000000000000 2f33121e09b02d509ea7f4eb2bc5399da56f5bdf A	src/main/resources/db/changelog/20221118_procedure_create_index.yaml
+:100644 100644 0411d96b4cadd6cb7a192db80e7b293265b20da4 d3fa0f918348ada4dfd5cc085a9b3cb59f7d9e2d M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 63974fb667e467e3d5e302cf227a26ff11f63c9c eda893422121add0eae2a6293e9d178c3450abc4 M	src/main/resources/db/sql/add_index_in_event_tracking_number.sql
+:000000 100644 0000000000000000000000000000000000000000 b0b241fd4b788a993eb5105556874a8fa9240393 A	src/main/resources/db/sql/procedure_create_index.sql

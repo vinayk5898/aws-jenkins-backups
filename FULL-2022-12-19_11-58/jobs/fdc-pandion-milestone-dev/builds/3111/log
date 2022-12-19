@@ -1,0 +1,27 @@
+Started by user [8mha:////4O5w+OaAptdi7odsaoFP8wcP+nT6NA/Vmg4juysBMOCzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL9suzS3MQiAO9jbcXBAAAA[0mVinay Kumar
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-milestone-dev
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-milestone-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-119^{commit} # timeout=10
+Checking out Revision 2d39cfcab01f1f1708ce3e2eba4717d56588fbb8 (refs/remotes/origin/ITDMF-119)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2d39cfcab01f1f1708ce3e2eba4717d56588fbb8 # timeout=10
+Commit message: "Update process and rename file"
+First time build. Skipping changelog.
+[fdc-pandion-milestone-dev] $ /bin/sh -xe /tmp/jenkins4597903546798850768.sh
++ cd python_scripts
++ python3 get_pandian_milestone_new.py pandionstagingfilerepo.blob.core.windows.net pandionstagingfilerepo.fdc /L1a+3/wAHX84QI8wxwAXZfDoyoxHLmJGZq6ckT12/x3kmEte4AXR88xrh05RAt2DY4i0LrdDlqLJy/JPAahJg== fdc.cw4jtwdt36yd.us-west-2.rds.amazonaws.com etluser fl@tCurve17 fdc_stage
+Connection successfully established ... 
+Number of records sent : 0
+0 events inserted
+Finished: SUCCESS

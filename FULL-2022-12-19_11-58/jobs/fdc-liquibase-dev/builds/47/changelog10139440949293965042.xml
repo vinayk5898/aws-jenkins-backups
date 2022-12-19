@@ -1,0 +1,14 @@
+commit bee083986449c9490b5748f26bb9323e6b686e22
+tree 61c5584c2228515e7ad3fee30acaa3cd9332ffb6
+parent 7bc7ebf2ef09841c6890cc1d16c4123a5a16eab7
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 01:21:50 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-13 01:21:50 +0530
+
+    Test insert
+
+
+:000000 100644 0000000000000000000000000000000000000000 8baf30ceb0b2d3fa8190df242f0e3ecd32a7f65d A	src/main/resources/db/changelog/2022-04-12-14-fdc-fdc-generic-client-load-procedure.yaml
+:000000 100644 0000000000000000000000000000000000000000 a690458a5d7439aeeab94e9cb8ecdf6921015600 A	src/main/resources/db/changelog/2022-04-12-25-fdc-etl-client-config-tables.yaml
+:100644 100644 f96bbbea25cfd997157810c42939e30f2444f1f0 07bb378419914f46d1a64269fc71350e79448e3f M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 64a7e8ff6f9f5d6d9c2ea279bced87c6d0fbab84 A	src/main/resources/db/sql/fdc_etl_client_config_tables.sql
+:000000 100644 0000000000000000000000000000000000000000 8c056f0cce5fb08292cddef6e0fff95ac07a511c A	src/main/resources/db/sql/fdc_generic_client_load_procedure.sql

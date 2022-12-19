@@ -1,0 +1,555 @@
+Started by user [8mha:////4P+/dDx6Qgzg5+JbUV+XyFeZ19ZCBQuvtUETu4RUHhvZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL93JTElFIA1sE1isAAAAA=[0mMohit Dadu
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-pandion-manifest-ingestion-new-dev
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fdc-pandion-manifest-ingestion-new-dev/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/ITDMF-161^{commit} # timeout=10
+Checking out Revision b709d14ceaa766ee35573dcc6778b06d36480f42 (refs/remotes/origin/ITDMF-161)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b709d14ceaa766ee35573dcc6778b06d36480f42 # timeout=10
+Commit message: "Add csv column exceptions handling"
+ > git rev-list --no-walk b709d14ceaa766ee35573dcc6778b06d36480f42 # timeout=10
+[fdc-pandion-manifest-ingestion-new-dev] $ /bin/sh -xe /tmp/jenkins4011464258818280120.sh
++ cd python_scripts
++ python3 standard_client_manifest_ingestion.py mysql-stage.frontdoorcorp.net etluser fl@tCurve17 fdc_stage 121
+SFTP Connection successfully established ... 
+files started loading
+0e7b5fc2-628f-4c44-9021-1fe5ac0ffc88_20221124094111.csv Processing In-Progress
+True
+Manifest 0e7b5fc2-628f-4c44-9021-1fe5ac0ffc88_20221124094111.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/0e7b5fc2-628f-4c44-9021-1fe5ac0ffc88_20221124094111.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '0e7b5fc2-628f-4c44-9021-1fe5ac0ffc88_20221124094111.csv';
+1 record inserted
+10fdf46d-4f5d-42c8-bc65-61d6e74de40b_20221206043205.csv Processing In-Progress
+True
+Manifest 10fdf46d-4f5d-42c8-bc65-61d6e74de40b_20221206043205.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/10fdf46d-4f5d-42c8-bc65-61d6e74de40b_20221206043205.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '10fdf46d-4f5d-42c8-bc65-61d6e74de40b_20221206043205.csv';
+1 record inserted
+118697a5-097a-493c-a5ee-f5a5b9e182c7_20221129075651.csv Processing In-Progress
+True
+Manifest 118697a5-097a-493c-a5ee-f5a5b9e182c7_20221129075651.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/118697a5-097a-493c-a5ee-f5a5b9e182c7_20221129075651.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '118697a5-097a-493c-a5ee-f5a5b9e182c7_20221129075651.csv';
+1 record inserted
+11f243b7-6eee-4755-a771-cc169796ddd9_20221201043600.csv Processing In-Progress
+True
+Manifest 11f243b7-6eee-4755-a771-cc169796ddd9_20221201043600.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/11f243b7-6eee-4755-a771-cc169796ddd9_20221201043600.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '11f243b7-6eee-4755-a771-cc169796ddd9_20221201043600.csv';
+1 record inserted
+121fc044-e280-4cfd-b5da-c4d6c6dc360e_20221128042423.csv Processing In-Progress
+True
+Manifest 121fc044-e280-4cfd-b5da-c4d6c6dc360e_20221128042423.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/121fc044-e280-4cfd-b5da-c4d6c6dc360e_20221128042423.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '121fc044-e280-4cfd-b5da-c4d6c6dc360e_20221128042423.csv';
+2 record inserted
+135194bf-706e-4aa7-a8ae-119d8cc16c6e_20221117105621.csv Processing In-Progress
+True
+Manifest 135194bf-706e-4aa7-a8ae-119d8cc16c6e_20221117105621.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/135194bf-706e-4aa7-a8ae-119d8cc16c6e_20221117105621.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '135194bf-706e-4aa7-a8ae-119d8cc16c6e_20221117105621.csv';
+1 record inserted
+14765773-4cc2-4432-b8cc-8ffaad2764c8_20221110135727.csv Processing In-Progress
+True
+Manifest 14765773-4cc2-4432-b8cc-8ffaad2764c8_20221110135727.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/14765773-4cc2-4432-b8cc-8ffaad2764c8_20221110135727.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '14765773-4cc2-4432-b8cc-8ffaad2764c8_20221110135727.csv';
+1600 record inserted
+170c023c-e6d5-4528-a396-081e891f2104_20221122041714.csv Processing In-Progress
+True
+Manifest 170c023c-e6d5-4528-a396-081e891f2104_20221122041714.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/170c023c-e6d5-4528-a396-081e891f2104_20221122041714.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '170c023c-e6d5-4528-a396-081e891f2104_20221122041714.csv';
+1 record inserted
+18c5ada9-031c-4144-85d1-6bab0b3a1a7d_20221116045407.csv Processing In-Progress
+True
+Manifest 18c5ada9-031c-4144-85d1-6bab0b3a1a7d_20221116045407.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/18c5ada9-031c-4144-85d1-6bab0b3a1a7d_20221116045407.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '18c5ada9-031c-4144-85d1-6bab0b3a1a7d_20221116045407.csv';
+1 record inserted
+212d67ea-21e9-49c4-9bf4-f73669d209be_20221125115426.csv Processing In-Progress
+True
+Manifest 212d67ea-21e9-49c4-9bf4-f73669d209be_20221125115426.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/212d67ea-21e9-49c4-9bf4-f73669d209be_20221125115426.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '212d67ea-21e9-49c4-9bf4-f73669d209be_20221125115426.csv';
+1 record inserted
+25c03fd3-4bfc-4f78-8921-dd33b48b4150_20221118044019.csv Processing In-Progress
+True
+Manifest 25c03fd3-4bfc-4f78-8921-dd33b48b4150_20221118044019.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/25c03fd3-4bfc-4f78-8921-dd33b48b4150_20221118044019.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '25c03fd3-4bfc-4f78-8921-dd33b48b4150_20221118044019.csv';
+1 record inserted
+2a6af5de-3dfb-429c-8727-c4c7b30af269_20221130123353.csv Processing In-Progress
+True
+Manifest 2a6af5de-3dfb-429c-8727-c4c7b30af269_20221130123353.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/2a6af5de-3dfb-429c-8727-c4c7b30af269_20221130123353.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '2a6af5de-3dfb-429c-8727-c4c7b30af269_20221130123353.csv';
+1 record inserted
+2c13993d-1117-4b4f-bd4c-3a2174d6a09b_20221123010421.csv Processing In-Progress
+True
+Manifest 2c13993d-1117-4b4f-bd4c-3a2174d6a09b_20221123010421.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/2c13993d-1117-4b4f-bd4c-3a2174d6a09b_20221123010421.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '2c13993d-1117-4b4f-bd4c-3a2174d6a09b_20221123010421.csv';
+1 record inserted
+2c282026-f8f4-4188-aa57-88420f4ddc30_20221115085050.csv Processing In-Progress
+True
+Manifest 2c282026-f8f4-4188-aa57-88420f4ddc30_20221115085050.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/2c282026-f8f4-4188-aa57-88420f4ddc30_20221115085050.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '2c282026-f8f4-4188-aa57-88420f4ddc30_20221115085050.csv';
+1 record inserted
+2cce83b4-8ec3-45cd-b660-41fc7ad3f3fc_20221125122850.csv Processing In-Progress
+True
+Manifest 2cce83b4-8ec3-45cd-b660-41fc7ad3f3fc_20221125122850.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/2cce83b4-8ec3-45cd-b660-41fc7ad3f3fc_20221125122850.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '2cce83b4-8ec3-45cd-b660-41fc7ad3f3fc_20221125122850.csv';
+120 record inserted
+30bbc837-5887-4c9b-8546-d7ab3f242b47_20221128100442.csv Processing In-Progress
+True
+Manifest 30bbc837-5887-4c9b-8546-d7ab3f242b47_20221128100442.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/30bbc837-5887-4c9b-8546-d7ab3f242b47_20221128100442.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '30bbc837-5887-4c9b-8546-d7ab3f242b47_20221128100442.csv';
+2 record inserted
+31b958fd-b6a7-4ae4-b7fa-994dba45dd4d_20221111045018.csv Processing In-Progress
+True
+Manifest 31b958fd-b6a7-4ae4-b7fa-994dba45dd4d_20221111045018.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/31b958fd-b6a7-4ae4-b7fa-994dba45dd4d_20221111045018.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '31b958fd-b6a7-4ae4-b7fa-994dba45dd4d_20221111045018.csv';
+1 record inserted
+338f6a9e-2d5c-42a8-b9c4-e8339143bdba_20221124132637.csv Processing In-Progress
+True
+Manifest 338f6a9e-2d5c-42a8-b9c4-e8339143bdba_20221124132637.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/338f6a9e-2d5c-42a8-b9c4-e8339143bdba_20221124132637.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '338f6a9e-2d5c-42a8-b9c4-e8339143bdba_20221124132637.csv';
+2 record inserted
+36a298b6-db8b-4a86-9178-542395cbec5c_20221114045621.csv Processing In-Progress
+True
+Manifest 36a298b6-db8b-4a86-9178-542395cbec5c_20221114045621.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/36a298b6-db8b-4a86-9178-542395cbec5c_20221114045621.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '36a298b6-db8b-4a86-9178-542395cbec5c_20221114045621.csv';
+1 record inserted
+38f18103-f6b3-4600-b5bc-c1a80b1a9e01_20221128081803.csv Processing In-Progress
+True
+Manifest 38f18103-f6b3-4600-b5bc-c1a80b1a9e01_20221128081803.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/38f18103-f6b3-4600-b5bc-c1a80b1a9e01_20221128081803.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '38f18103-f6b3-4600-b5bc-c1a80b1a9e01_20221128081803.csv';
+40 record inserted
+39568fab-ebb8-404d-8c4e-e6c3e7ffab7a_20221128120147.csv Processing In-Progress
+True
+Manifest 39568fab-ebb8-404d-8c4e-e6c3e7ffab7a_20221128120147.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/39568fab-ebb8-404d-8c4e-e6c3e7ffab7a_20221128120147.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '39568fab-ebb8-404d-8c4e-e6c3e7ffab7a_20221128120147.csv';
+1 record inserted
+443da02e-c469-4d25-ad03-0252794b95ed_20221115100206.csv Processing In-Progress
+True
+Manifest 443da02e-c469-4d25-ad03-0252794b95ed_20221115100206.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/443da02e-c469-4d25-ad03-0252794b95ed_20221115100206.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '443da02e-c469-4d25-ad03-0252794b95ed_20221115100206.csv';
+1280 record inserted
+46a081f0-2279-4bed-9068-b52e1a44a7a4_20221111045123.csv Processing In-Progress
+True
+Manifest 46a081f0-2279-4bed-9068-b52e1a44a7a4_20221111045123.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/46a081f0-2279-4bed-9068-b52e1a44a7a4_20221111045123.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '46a081f0-2279-4bed-9068-b52e1a44a7a4_20221111045123.csv';
+1 record inserted
+4764893c-8b74-47b2-8fa4-ae914692a8d9_20221128043731.csv Processing In-Progress
+True
+Manifest 4764893c-8b74-47b2-8fa4-ae914692a8d9_20221128043731.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/4764893c-8b74-47b2-8fa4-ae914692a8d9_20221128043731.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '4764893c-8b74-47b2-8fa4-ae914692a8d9_20221128043731.csv';
+1 record inserted
+47d6c02c-3b76-443b-9da1-0515f2c236ad_20221130043614.csv Processing In-Progress
+True
+Manifest 47d6c02c-3b76-443b-9da1-0515f2c236ad_20221130043614.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/47d6c02c-3b76-443b-9da1-0515f2c236ad_20221130043614.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '47d6c02c-3b76-443b-9da1-0515f2c236ad_20221130043614.csv';
+1 record inserted
+4b719f0f-9147-47ec-b6ce-384b2ef7d2b3_20221116045406.csv Processing In-Progress
+True
+Manifest 4b719f0f-9147-47ec-b6ce-384b2ef7d2b3_20221116045406.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/4b719f0f-9147-47ec-b6ce-384b2ef7d2b3_20221116045406.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '4b719f0f-9147-47ec-b6ce-384b2ef7d2b3_20221116045406.csv';
+1 record inserted
+4c2d19a9-d2b0-4c1f-8e13-2743cd464472_20221124043625.csv Processing In-Progress
+True
+Manifest 4c2d19a9-d2b0-4c1f-8e13-2743cd464472_20221124043625.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/4c2d19a9-d2b0-4c1f-8e13-2743cd464472_20221124043625.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '4c2d19a9-d2b0-4c1f-8e13-2743cd464472_20221124043625.csv';
+1 record inserted
+4c72733c-df90-44dc-9d4f-1f570d46d031_20221123043606.csv Processing In-Progress
+True
+Manifest 4c72733c-df90-44dc-9d4f-1f570d46d031_20221123043606.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/4c72733c-df90-44dc-9d4f-1f570d46d031_20221123043606.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '4c72733c-df90-44dc-9d4f-1f570d46d031_20221123043606.csv';
+1 record inserted
+4d55b200-0616-4888-9095-8a919f6b11ba_20221122123423.csv Processing In-Progress
+True
+Manifest 4d55b200-0616-4888-9095-8a919f6b11ba_20221122123423.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/4d55b200-0616-4888-9095-8a919f6b11ba_20221122123423.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '4d55b200-0616-4888-9095-8a919f6b11ba_20221122123423.csv';
+951 record inserted
+4da6af75-10ec-43ec-b4de-448d70c782b4_20221130042331.csv Processing In-Progress
+True
+Manifest 4da6af75-10ec-43ec-b4de-448d70c782b4_20221130042331.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/4da6af75-10ec-43ec-b4de-448d70c782b4_20221130042331.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '4da6af75-10ec-43ec-b4de-448d70c782b4_20221130042331.csv';
+2 record inserted
+5217a392-a327-4951-a026-950994a763dd_20221201043700.csv Processing In-Progress
+True
+Manifest 5217a392-a327-4951-a026-950994a763dd_20221201043700.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/5217a392-a327-4951-a026-950994a763dd_20221201043700.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '5217a392-a327-4951-a026-950994a763dd_20221201043700.csv';
+1 record inserted
+535751f5-d72a-4717-9b3a-1da9e5a3f3ae_20221202043802.csv Processing In-Progress
+True
+Manifest 535751f5-d72a-4717-9b3a-1da9e5a3f3ae_20221202043802.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/535751f5-d72a-4717-9b3a-1da9e5a3f3ae_20221202043802.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '535751f5-d72a-4717-9b3a-1da9e5a3f3ae_20221202043802.csv';
+1 record inserted
+55206613-a6a9-4084-9508-b29ac74a3da4_20221117044109.csv Processing In-Progress
+True
+Manifest 55206613-a6a9-4084-9508-b29ac74a3da4_20221117044109.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/55206613-a6a9-4084-9508-b29ac74a3da4_20221117044109.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '55206613-a6a9-4084-9508-b29ac74a3da4_20221117044109.csv';
+1 record inserted
+5766e535-d7f0-4688-ae9b-2a579f5a3c51_20221206043236.csv Processing In-Progress
+True
+Manifest 5766e535-d7f0-4688-ae9b-2a579f5a3c51_20221206043236.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/5766e535-d7f0-4688-ae9b-2a579f5a3c51_20221206043236.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '5766e535-d7f0-4688-ae9b-2a579f5a3c51_20221206043236.csv';
+1 record inserted
+58f71b62-f9a4-42a8-a164-cc643f06b954_20221128081556.csv Processing In-Progress
+True
+Manifest 58f71b62-f9a4-42a8-a164-cc643f06b954_20221128081556.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/58f71b62-f9a4-42a8-a164-cc643f06b954_20221128081556.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '58f71b62-f9a4-42a8-a164-cc643f06b954_20221128081556.csv';
+40 record inserted
+5d7dd28a-92f9-4673-b76a-d764030f0579_20221123124042.csv Processing In-Progress
+True
+Manifest 5d7dd28a-92f9-4673-b76a-d764030f0579_20221123124042.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/5d7dd28a-92f9-4673-b76a-d764030f0579_20221123124042.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '5d7dd28a-92f9-4673-b76a-d764030f0579_20221123124042.csv';
+1 record inserted
+5f457441-3579-4807-bfab-08124c729bfb_20221123124142.csv Processing In-Progress
+True
+Manifest 5f457441-3579-4807-bfab-08124c729bfb_20221123124142.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/5f457441-3579-4807-bfab-08124c729bfb_20221123124142.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '5f457441-3579-4807-bfab-08124c729bfb_20221123124142.csv';
+1 record inserted
+63d2d5ae-6d41-443d-9367-357b4a6e0f32_20221122094613.csv Processing In-Progress
+True
+Manifest 63d2d5ae-6d41-443d-9367-357b4a6e0f32_20221122094613.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/63d2d5ae-6d41-443d-9367-357b4a6e0f32_20221122094613.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '63d2d5ae-6d41-443d-9367-357b4a6e0f32_20221122094613.csv';
+1 record inserted
+67b3a5bb-5d46-4c38-b1df-c128287488c7_20221121160633.csv Processing In-Progress
+True
+Manifest 67b3a5bb-5d46-4c38-b1df-c128287488c7_20221121160633.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/67b3a5bb-5d46-4c38-b1df-c128287488c7_20221121160633.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '67b3a5bb-5d46-4c38-b1df-c128287488c7_20221121160633.csv';
+360 record inserted
+68e72338-82ee-459c-bfdc-c30de82b092d_20221124111703.csv Processing In-Progress
+True
+Manifest 68e72338-82ee-459c-bfdc-c30de82b092d_20221124111703.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/68e72338-82ee-459c-bfdc-c30de82b092d_20221124111703.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '68e72338-82ee-459c-bfdc-c30de82b092d_20221124111703.csv';
+1 record inserted
+696a410b-627f-4e6c-96b0-dba5bd6615db_20221128101559.csv Processing In-Progress
+True
+Manifest 696a410b-627f-4e6c-96b0-dba5bd6615db_20221128101559.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/696a410b-627f-4e6c-96b0-dba5bd6615db_20221128101559.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '696a410b-627f-4e6c-96b0-dba5bd6615db_20221128101559.csv';
+1 record inserted
+6aad37d2-0ef4-4156-b54a-ade9d8e867bb_20221206043054.csv Processing In-Progress
+True
+Manifest 6aad37d2-0ef4-4156-b54a-ade9d8e867bb_20221206043054.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/6aad37d2-0ef4-4156-b54a-ade9d8e867bb_20221206043054.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '6aad37d2-0ef4-4156-b54a-ade9d8e867bb_20221206043054.csv';
+1 record inserted
+6ae04a02-17c0-48f8-86cb-bc1a5617145d_20221124133422.csv Processing In-Progress
+True
+Manifest 6ae04a02-17c0-48f8-86cb-bc1a5617145d_20221124133422.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/6ae04a02-17c0-48f8-86cb-bc1a5617145d_20221124133422.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '6ae04a02-17c0-48f8-86cb-bc1a5617145d_20221124133422.csv';
+1 record inserted
+6b16c949-4af9-4183-936f-00b4d3c6a959_20221202043628.csv Processing In-Progress
+True
+Manifest 6b16c949-4af9-4183-936f-00b4d3c6a959_20221202043628.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/6b16c949-4af9-4183-936f-00b4d3c6a959_20221202043628.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '6b16c949-4af9-4183-936f-00b4d3c6a959_20221202043628.csv';
+1 record inserted
+6c154f2f-3aa3-47c6-8882-97d39840a8a2_20221128101620.csv Processing In-Progress
+True
+Manifest 6c154f2f-3aa3-47c6-8882-97d39840a8a2_20221128101620.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/6c154f2f-3aa3-47c6-8882-97d39840a8a2_20221128101620.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '6c154f2f-3aa3-47c6-8882-97d39840a8a2_20221128101620.csv';
+1 record inserted
+727557d0-9c07-495a-b8c4-843c626295ff_20221125095335.csv Processing In-Progress
+True
+Manifest 727557d0-9c07-495a-b8c4-843c626295ff_20221125095335.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/727557d0-9c07-495a-b8c4-843c626295ff_20221125095335.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '727557d0-9c07-495a-b8c4-843c626295ff_20221125095335.csv';
+6 record inserted
+74f27b02-bb42-4ae5-b096-706a03748828_20221125115127.csv Processing In-Progress
+True
+Manifest 74f27b02-bb42-4ae5-b096-706a03748828_20221125115127.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/74f27b02-bb42-4ae5-b096-706a03748828_20221125115127.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '74f27b02-bb42-4ae5-b096-706a03748828_20221125115127.csv';
+1 record inserted
+75c957fe-5821-40a7-b4fb-dce5cadc1423_20221121162113.csv Processing In-Progress
+True
+Manifest 75c957fe-5821-40a7-b4fb-dce5cadc1423_20221121162113.csv have all mandatory fields, will be loaded.
+LOAD DATA LOCAL INFILE '/tmp/outbound/dispatch_manifest/75c957fe-5821-40a7-b4fb-dce5cadc1423_20221121162113.csv' INTO TABLE  fdc_stage.shipment 
+                                FIELDS TERMINATED BY ',' 
+                                OPTIONALLY ENCLOSED BY '"'  
+                                lines terminated by '\n'
+                                IGNORE 1 LINES 
+                                (@EXT_TRACKING_ID,EXT_PARTNER_SHIPMENT_ID,EXT_PACKAGE_ID,recipient_name,recipient_company,recipient_address_line_1,recipient_address_line_2,recipient_city,Recipient_State,RECIPIENT_COUNTRY,RECIPIENT_ZIPCODE,recipient_phone,sender_name,sender_company,sender_address_line_1,sender_address_line_2,sender_city,sender_state,sender_country,sender_zip,@PACKAGE_LENGTH,@PACKAGE_HEIGHT,@PACKAGE_WIDTH,@PACKAGE_WEIGHT,RouteDestinationExternalId,RouteDestinationAddressStreet,RouteDestinationAddressCity,RouteDestinationAddressIsoSubdivisionCode,RouteDestinationAddressIsoCountryCode,RouteDestinationAddressPostalCode,@signature_required) 
+                                SET file_line_number = @row_no:=@row_no+1, updated_on = '2022-12-06 07:28:58' ,client_id = 121  , ext_order_id = trim(@EXT_TRACKING_ID), EXT_TRACKING_ID = trim(@EXT_TRACKING_ID), PACKAGE_WEIGHT = case when coalesce(trim(@PACKAGE_WEIGHT) ,'')  ='' then null else trim(@PACKAGE_WEIGHT) end, PACKAGE_LENGTH = case when coalesce(trim(@PACKAGE_LENGTH) ,'')  ='' then null else trim(@PACKAGE_LENGTH) end, PACKAGE_HEIGHT = case when coalesce(trim(@PACKAGE_HEIGHT) ,'')  ='' then null else trim(@PACKAGE_HEIGHT) end,PACKAGE_WIDTH  = case when coalesce(trim(@PACKAGE_WIDTH)  ,'') ='' then null else trim(@PACKAGE_WIDTH)  end, recipient_name = case when coalesce(recipient_company,'') <>'' and recipient_name ='Recipient Name Missing' then recipient_company else recipient_name end, signature_required = case when left( trim(@signature_required) ,1) in( 'Y','N') then upper(left( trim(@signature_required) , 1)) else 'N' end,filename = '75c957fe-5821-40a7-b4fb-dce5cadc1423_20221121162113.csv';Terminated
+Build was aborted
+Aborted by [8mha:////4P+/dDx6Qgzg5+JbUV+XyFeZ19ZCBQuvtUETu4RUHhvZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgZu/dLi1CL93JTElFIA1sE1isAAAAA=[0mMohit Dadu
+Finished: ABORTED

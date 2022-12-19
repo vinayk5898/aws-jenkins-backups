@@ -1,0 +1,12 @@
+commit ae31c625bb571803977706fefdf1059bf4e3467f
+tree dc51f46c461e4cc4b8370e5d46d2e14d008d30bf
+parent be16a7ae77a67b2bcc188538f2e26dd32a796e56
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-12 17:26:14 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-18 11:34:28 +0530
+
+    urls change
+
+
+:100644 100644 11e07657b1dede508df9834656822bca0ce61885 a9d878ebbd75905c6bf728d5b23e68c7b167c8eb M	src/main/resources/application-dev.yml
+:100644 100644 ac08160a4c824484842bdc334cfddaedcf72bbe2 a75ad44c511b0707c1abf4eefe368726111fb56c M	src/main/resources/application-prod.yml
+:100644 100644 1a28b4458e10d86a0b9df49ee8f0bcae3a6eb5cd 3409bdadc6cfc9c7b59020f5b23aedcd868a10c1 M	src/main/resources/application-stage.yml

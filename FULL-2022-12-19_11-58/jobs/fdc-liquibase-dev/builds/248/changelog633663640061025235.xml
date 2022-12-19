@@ -1,0 +1,11 @@
+commit 804b6a6ede766dd5131577b712aad898ac4451d6
+tree 1da080f11a29f89f39a254fa8c013bcf27a354ea
+parent fba2a7ca393f333ceaba6b094f9afc72238645b5
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-17 15:06:32 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-17 15:06:32 +0530
+
+    Add procedure to create index
+
+
+:100644 100644 63974fb667e467e3d5e302cf227a26ff11f63c9c 3832dd4420f23406ecdf3b85a844ba065d437291 M	src/main/resources/db/sql/add_index_in_event_tracking_number.sql
+:000000 100644 0000000000000000000000000000000000000000 fc1b4bae2dd5e73c26cdfe85bd9aee3213a6c2c4 A	src/main/resources/db/sql/procedure_create_index

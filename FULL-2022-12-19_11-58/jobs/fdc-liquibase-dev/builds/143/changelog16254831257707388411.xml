@@ -1,0 +1,10 @@
+commit 81ff7f3619c34d8783e1ac5ead722ca5348fb989
+tree 32b45d41476131ff78cef8ee62bb88774b896130
+parent 09d66c589b14548f7dffae0cd3a70ee43e9f258e
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:30:48 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-06-15 22:30:48 +0530
+
+    FDC-156 :: Removed hardcoded id value
+
+
+:100644 100644 a0cb10cc822d0c2ad6591dcc2aca7e61bdcc227a b54013745753f80732b811efd0e34c00d4eacebb M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml

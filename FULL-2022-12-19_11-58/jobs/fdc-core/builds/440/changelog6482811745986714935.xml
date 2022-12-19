@@ -1,0 +1,10 @@
+commit e9d5b443c30b9e25be34cce78a5abc58adc28ecc
+tree 2a5a53d0dc5f5ffb29087b93d6aab85fec7272e1
+parent 5e7fc114a5320ad9eafde05c7495b8203a67ac7a
+author gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-02 19:25:31 +0530
+committer gbiswajeet <biswajeeta@mindfiresolutions.com> 2022-12-02 19:25:31 +0530
+
+    fixed checkstyle violations
+
+
+:100644 100644 9dc47c1831df12bc3964e8352263cff1f5ec1485 b108fc03ef583cf9630977e1a36a9737556139bf M	src/main/java/com/fdc/core/service/impl/ActivityConsumeServiceImpl.java

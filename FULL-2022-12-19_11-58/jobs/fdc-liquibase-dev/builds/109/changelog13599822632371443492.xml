@@ -1,0 +1,20 @@
+commit 9ce319204af639584c93a4dcb831cf5c983aecf1
+tree 74098f46ca8c4f8af90d4af43310ae12aa19861c
+parent 3c689b3ad238879270d9ab87b854b91dc86e5c52
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:31:52 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:31:52 +0530
+
+    fdc-156 :: fixed syntax issues
+
+
+:100644 100644 38b31303396b703e888d1f367e39f9e39687a0eb 3cef07199974b64d57f66e6db22dae4dcab85385 M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml
+commit 3c689b3ad238879270d9ab87b854b91dc86e5c52
+tree 8b62dfb1ce54d52df071e14df251cff7a234fd2d
+parent 60044e4bfe5d0ec5b8e4bf88f02985f1b3b2eec2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:04:31 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-05-25 23:04:31 +0530
+
+    changed datatype
+
+
+:100644 100644 b1e44f84e4b833fa87674700c4ed2e252b645e3f 38b31303396b703e888d1f367e39f9e39687a0eb M	src/main/resources/db/changelog/2022-05-24-64-fdc-generic-invoice-report-ddl-dml-changes.yaml

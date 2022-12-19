@@ -1,0 +1,12 @@
+commit aedd3bbfa9f1f0d8c54a577dd404c16c1dbf1326
+tree 601f8682d79669855820fd8126f87be19f67a5cc
+parent 804b6a6ede766dd5131577b712aad898ac4451d6
+author mdadu <mohitd@mindfiresolutions.com> 2022-11-17 15:39:46 +0530
+committer mdadu <mohitd@mindfiresolutions.com> 2022-11-17 15:39:46 +0530
+
+    update call index
+
+
+:000000 100644 0000000000000000000000000000000000000000 2f33121e09b02d509ea7f4eb2bc5399da56f5bdf A	src/main/resources/db/changelog/20221117_procedure_create_index.yaml
+:100644 100644 bf87b55f4738ca99d661638355c6b5b1af13cc9f 935706f5d5d8bde46d4e1934b19bb3948395f2b8 M	src/main/resources/db/changelog/db.changelog-master.yaml
+:100644 100644 3832dd4420f23406ecdf3b85a844ba065d437291 2a918ba3cad13545f3deca14b11da23265a32bcc M	src/main/resources/db/sql/add_index_in_event_tracking_number.sql

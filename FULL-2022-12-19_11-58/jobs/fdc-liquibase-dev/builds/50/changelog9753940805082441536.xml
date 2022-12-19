@@ -1,0 +1,30 @@
+commit 0ca92b15a90857f34160f948a3bb447eb65866e9
+tree 7f3e72322ef17803990f973942e3075deefcda7c
+parent 8b9fe36120a3d095eef8f43c55b2b147402fde3b
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-04 12:51:05 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-04-04 12:51:05 +0530
+
+    FDC-434 :: Added a field which differentiates client file transfer
+
+
+:100644 100644 3203de440abdcbee57b20ce1708924c4b9530c7d 0db465a1c12af8a426bd5dc88abfeeb719f9be60 M	src/main/resources/db/sql/fdc_generic_load_job_table_script.sql
+commit 8b9fe36120a3d095eef8f43c55b2b147402fde3b
+tree c5401b68963214d4f9c5cac3d6053bb2a766147c
+parent 1069a2ed58929a1c0beeb8523ac63614a174a32f
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 11:48:40 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-30 11:48:40 +0530
+
+    FDC-434 :: added field separator for more support
+
+
+:100644 100644 35cf5daacc25f961bfd8d83f04d08eb787fe4ef5 3203de440abdcbee57b20ce1708924c4b9530c7d M	src/main/resources/db/sql/fdc_generic_load_job_table_script.sql
+commit 1069a2ed58929a1c0beeb8523ac63614a174a32f
+tree 853bd0ae28b5fe0ab3d009c1555df4bf5a9b52ce
+parent f419508e7fa9ff59078fddefb0de65f256b14732
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-28 00:07:39 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-03-28 00:07:39 +0530
+
+    FDC-434:: Added enhanced features related fields
+
+
+:100644 100644 bb46ab01dc4685a6c5d8f4415f7d62da372bc09f 35cf5daacc25f961bfd8d83f04d08eb787fe4ef5 M	src/main/resources/db/sql/fdc_generic_load_job_table_script.sql

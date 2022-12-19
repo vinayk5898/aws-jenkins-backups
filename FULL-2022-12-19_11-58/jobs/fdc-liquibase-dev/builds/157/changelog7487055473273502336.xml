@@ -1,0 +1,20 @@
+commit 7f4ee1b07435535a3cb3ee0da431bced27837895
+tree 27b63f0478a1a026f2b6639af015289a5ea86770
+parent 4b036672670518d91bf2411697d4c130bda71bb2
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:32:45 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:32:45 +0530
+
+    FDC:N758 removed typos
+
+
+:100644 100644 9c903fd97def8942dfa5785407f1210ed3f5e476 b6fb238d475445f2f2a57b21df62564a0f2a9d92 M	src/main/resources/db/sql/fdc_758_revert_script.sql
+commit 4b036672670518d91bf2411697d4c130bda71bb2
+tree 3386d65b4ffe043c3f82b2bdba43b7c3b0490f42
+parent 69dc6d6b188140b3f283fb8aaa33a1149e01f9fb
+author nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:24:56 +0530
+committer nguddati-altir <96386291+nguddati-altir@users.noreply.github.com> 2022-07-01 00:24:56 +0530
+
+    FDC:N758
+
+
+:100644 100644 666768331276af1c6e77b4f826f0545f4f2547e1 9c903fd97def8942dfa5785407f1210ed3f5e476 M	src/main/resources/db/sql/fdc_758_revert_script.sql

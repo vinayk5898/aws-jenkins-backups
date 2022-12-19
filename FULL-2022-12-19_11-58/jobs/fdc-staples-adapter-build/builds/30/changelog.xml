@@ -1,0 +1,12 @@
+commit 145e6d8b8c695c3e44c8de015c9e3f6dcd3e7c94
+tree d28f89b188eaf043f92340c3483e413b5f4a075f
+parent da085669a267aa2794ee6a1339fa239a45a274a4
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-16 14:06:44 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-12-16 14:06:44 +0530
+
+    added logs
+
+
+:100644 100644 7132578ccd3b5d2a65af6e6aea31ab6b3eaae531 c9d61df4ad0181d4c941150119a81105b15fa50b M	src/main/java/com/fdc/staplesadapter/service/impl/OauthTokenServiceImpl.java
+:100644 100644 93f89a5d9781b182f31db04c0e4002c5b5d392ac 9cf729f9ad92d988ce1450cf83857a29badf8b1a M	src/main/java/com/fdc/staplesadapter/service/impl/UploadImageServiceImpl.java
+:100644 100644 6e095e7167494103c8a93996e9811e830f5018bc 49f34bbc9fea8041323a993e2de5ad35387467f8 M	src/main/java/com/fdc/staplesadapter/service/impl/XmlSenderServiceImpl.java

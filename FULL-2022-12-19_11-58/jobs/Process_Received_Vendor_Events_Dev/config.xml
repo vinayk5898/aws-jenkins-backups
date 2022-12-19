@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.42">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>10</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.TimerTrigger>
+          <spec>*/3 * * * *</spec>
+        </hudson.triggers.TimerTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2633.v6baeedc13805">
+    <script>pipeline {
+    environment {
+        FDC_URL = &apos;https://api-dev.frontdoorcorp.net/fdc/process/events?type=Groundcloud&apos;
+    }
+
+    agent any
+
+    stages {
+        stage(&quot;first&quot;) {
+            steps {
+                script {
+                    tz = TimeZone.getTimeZone(&quot;America/New_York&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    def curlScript = &quot;curl -s -w &apos;\\n%{response_code}&apos;  GET --header &apos;Authorization: ApiKey 06bd0656-0d96-11ed-9b93-0242c6062200&apos; ${FDC_URL}&quot;
+                    echo curlScript
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${curlScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;\n&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }
+                }
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>true</disabled>
+</flow-definition>

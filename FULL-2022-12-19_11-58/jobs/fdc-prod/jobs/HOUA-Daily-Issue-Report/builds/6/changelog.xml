@@ -1,0 +1,12 @@
+commit 2a6e39d1cc7aec16ea050c10b2167030316405e7
+tree 7033f4a90d729e1bbf17e6cac1a6d8ace818d18e
+parent 10aea6fb96cb57d61717db3b5601e917088a2b9b
+author swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-15 12:51:50 +0530
+committer swadeshbehera <swadeshb@mindfiresolutions.com> 2022-10-15 12:51:50 +0530
+
+    added packages without delivery query
+
+
+:100644 100644 f77017d406f537f70b14426d22328e378a8ca664 248afbb40ba8b95bdb4521dcd081d81e9eeffe61 M	python_scripts/daily_exceptions_report.py
+:100644 100644 fe76383f170d2912a1a6d3ba5b6d58e30fccb2bb 0bec7cf59d25bba4919aa14f013821f1ee078b4f M	python_scripts/daily_exceptions_report_prod.py
+:100644 100644 8827d7c923e8eb5314764dd53a8baa1ffac835b7 88b188904774bad228840e91e04212aa141983ce M	python_scripts/daily_exceptions_report_stage.py

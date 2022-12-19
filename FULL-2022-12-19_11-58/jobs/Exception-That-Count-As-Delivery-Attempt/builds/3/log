@@ -1,0 +1,26 @@
+Started by user [8mha:////4D2ybD+9yze/lftDsffRCyie6zqs0s51CR0ds/Fr9d61AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgZe/dLi1CL99MTkjMSiSgBFbg+YwgAAAA==[0mG Biswajeet Achary
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/Exception-That-Count-As-Delivery-Attempt
+The recommended git tool is: NONE
+using credential vinay-github
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Exception-That-Count-As-Delivery-Attempt/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/The-Frontdoor-Collective/fdc-etl.git # timeout=10
+Fetching upstream changes from https://github.com/The-Frontdoor-Collective/fdc-etl.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials vinay-github
+ > git fetch --tags --force --progress -- https://github.com/The-Frontdoor-Collective/fdc-etl.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/max_attempt^{commit} # timeout=10
+Checking out Revision 48e399f9415882442b5005a1186d754b9595ff38 (refs/remotes/origin/max_attempt)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 48e399f9415882442b5005a1186d754b9595ff38 # timeout=10
+Commit message: "Update max_attempt.py"
+ > git rev-list --no-walk 48e399f9415882442b5005a1186d754b9595ff38 # timeout=10
+[Exception-That-Count-As-Delivery-Attempt] $ /bin/sh -xe /tmp/jenkins10394941973826428027.sh
++ cd python_scripts
++ python3 max_attempt.py mysql-stage.frontdoorcorp.net etluser fl@tCurve17 fdc
+Connected to DB at:  2022-12-07 10:32:06
+Closed DB connection at:  2022-12-07 10:32:06
+Finished: SUCCESS

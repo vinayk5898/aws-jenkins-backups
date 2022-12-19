@@ -1,0 +1,12 @@
+commit 1e6f1fd504b06b22119009bf9cb61c8248872295
+tree 9d39241bcd98a1409dea55caac6076799bf5703e
+parent 78dc1bd0416c7b5e04b5e53db4edbc48245db20e
+author Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-17 14:05:49 +0530
+committer Prashant Talan <mfsi.prashant.talan@gmail.com> 2022-10-17 14:05:49 +0530
+
+    added indexes for heavy queries
+
+
+:000000 100644 0000000000000000000000000000000000000000 ed3b0869b90f7b26ca703f5a58cb7579b4a4c0a8 A	src/main/resources/db/changelog/2022-10-17_add_indexes_for_slow_queries.yaml
+:100644 100644 2a16fe409a2790b693a9ac72c0522113af988127 335357a51fe40faa377e38a8c679288d46a107bb M	src/main/resources/db/changelog/db.changelog-master.yaml
+:000000 100644 0000000000000000000000000000000000000000 7a051c4e80bbe2bbe5acf0392589063f4dcde197 A	src/main/resources/db/sql/add_index_in_package_and_parcel_arrival.sql

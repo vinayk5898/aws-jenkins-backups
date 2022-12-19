@@ -1,0 +1,94 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.42">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.9.3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.9.3">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>10</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>parcelCentreId</name>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>2</string>
+              <string>3</string>
+              <string>4</string>
+              <string>5</string>
+              <string>6</string>
+              <string>8</string>
+              <string>9</string>
+              <string>10</string>
+              <string>11</string>
+              <string>12</string>
+              <string>13</string>
+              <string>14</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers/>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2633.v6baeedc13805">
+    <script>pipeline {
+    environment {
+        FDC_URL = &apos;https://api-dev.frontdoorcorp.net/fdc/route/optimise/final&apos;
+    }
+
+    agent any
+
+    stages {
+        stage(&quot;first&quot;) {
+            steps {
+                script {
+                    tz = TimeZone.getTimeZone(&quot;America/Chicago&quot;)
+                    def outputDateFormat = &quot;yyyy-MM-dd&quot;
+                    def now = new Date() + 1
+                    def convertedDate = now.format(outputDateFormat, tz)
+                    
+                    def curlScript = &quot;curl -s -w &apos;####%{response_code}&apos; --location --request POST ${FDC_URL}&quot;
+                    def finalScript = &quot;${curlScript}&quot; + 
+                    &quot; --header &apos;Authorization: ApiKey fa05debd-f830-11ec-ba19-02428eaeed82&apos; --header &apos;Content-Type: application/json&apos;&quot; + 
+                    &quot; --data-raw &apos;{ \&quot;parcelCenterIds\&quot;: [${parcelCentreId}], \&quot;deliveryDate\&quot;: \&quot;${convertedDate}\&quot;}&apos;&quot;
+                    echo finalScript
+                    echo convertedDate
+
+                    def (String responseBody, int responseStatusCode) = sh(
+                        script: &quot;${finalScript}&quot;,
+                        returnStdout: true
+                    ).trim()
+                    .tokenize(&quot;####&quot;)
+                    
+                    if (responseStatusCode != 200 &amp;&amp; responseStatusCode != 202) {
+                        error(&quot;Returned status code = ${responseStatusCode} when calling ${FDC_URL}. Response body: ${responseBody}&quot;)
+                    } else {
+                        echo &apos;HTTP Response body: &apos; + responseBody
+                    }
+                }
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

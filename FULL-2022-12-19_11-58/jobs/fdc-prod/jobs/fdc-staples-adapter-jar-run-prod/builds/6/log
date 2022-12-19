@@ -1,0 +1,110 @@
+Started by user [8mha:////4K7SonDTAuGL7kSjRxIwkgedPGlCQunhdvEn8vXX5ES2AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL94qTUjNSiRAAwkGaUwgAAAA==[0mSwadesh Behera
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building in workspace /var/jenkins_home/workspace/fdc-prod/fdc-staples-adapter-jar-run-prod
+[fdc-staples-adapter-jar-run-prod] $ /bin/sh -xe /tmp/jenkins11381391656891538867.sh
++ cd /var/jenkins_home/workspace/fdc-staples-adapter-build/target
++ java -jar -Dspring.profiles.active=prod staplesadapter-0.0.1-SNAPSHOT.jar 5 2000 5000
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.6.13)
+
+2022-12-15 16:37:28.512 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - Starting StaplesadapterApplication v0.0.1-SNAPSHOT using Java 11.0.12 on ip-10-10-0-21.us-west-2.compute.internal with PID 9323 (/var/jenkins_home/workspace/fdc-staples-adapter-build/target/staplesadapter-0.0.1-SNAPSHOT.jar started by jenkins in /var/jenkins_home/workspace/fdc-staples-adapter-build/target)
+2022-12-15 16:37:29.711 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - The following 1 profile is active: "prod"
+2022-12-15 16:37:31.792 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 16:37:32.456 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 550 ms. Found 5 JPA repository interfaces.
+2022-12-15 16:37:33.672 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-12-15 16:37:34.467 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-12-15 16:37:34.718 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 16:37:34.966 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-15 16:37:35.437 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 16:37:35.691 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-12-15 16:37:36.984 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 16:37:37.068 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 16:37:38.844 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - Started StaplesadapterApplication in 11.526 seconds (JVM running for 13.465)
+2022-12-15 16:37:38.913 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - CommandLineRunner starts running.
+2022-12-15 16:37:39.153 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - No. of unprocessed events found in the database : 5
+2022-12-15 16:37:39.237 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Started processing event_id : 5168255 , with timestamp : 2022-12-15T16:27:49Z
+2022-12-15 16:37:39.317 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Uploading the images to Azure Storage for event_id : 5168255
+2022-12-15 16:37:39.472 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.azure.core.implementation.jackson.JacksonVersion - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4-2, jackson-dataformat-xml=2.13.4, jackson-datatype-jsr310=2.13.4, azure-core=1.33.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+2022-12-15 16:37:40.238 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Started uploading the image for eventId: 5168255 
+2022-12-15 16:37:41.391 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Image uploaded successfully to Azure Storage for eventId : 5168255
+2022-12-15 16:37:41.496 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Generation of XML started for eventId : 5168255
+2022-12-15 16:37:41.736 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - XML is generated for eventId : 5168255 
+2022-12-15 16:37:41.963 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Saved entry for eventId : 5168255 in DeliveryConfirmationStore with Id : 5
+2022-12-15 16:37:42.060 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Started processing event_id : 5168256 , with timestamp : 2022-12-15T16:27:49Z
+2022-12-15 16:37:42.153 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Uploading the images to Azure Storage for event_id : 5168256
+2022-12-15 16:37:42.390 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Started uploading the image for eventId: 5168256 
+2022-12-15 16:37:43.581 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Image uploaded successfully to Azure Storage for eventId : 5168256
+2022-12-15 16:37:43.658 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Generation of XML started for eventId : 5168256
+2022-12-15 16:37:43.764 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - XML is generated for eventId : 5168256 
+2022-12-15 16:37:43.870 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Saved entry for eventId : 5168256 in DeliveryConfirmationStore with Id : 6
+2022-12-15 16:37:43.953 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Started processing event_id : 5168257 , with timestamp : 2022-12-15T16:27:49Z
+2022-12-15 16:37:44.034 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Uploading the images to Azure Storage for event_id : 5168257
+2022-12-15 16:37:44.195 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Started uploading the image for eventId: 5168257 
+2022-12-15 16:37:44.386 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Image uploaded successfully to Azure Storage for eventId : 5168257
+2022-12-15 16:37:47.493 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Generation of XML started for eventId : 5168257
+2022-12-15 16:37:47.605 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - XML is generated for eventId : 5168257 
+2022-12-15 16:37:50.717 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Saved entry for eventId : 5168257 in DeliveryConfirmationStore with Id : 7
+2022-12-15 16:37:50.814 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Started processing event_id : 5168258 , with timestamp : 2022-12-15T16:27:49Z
+2022-12-15 16:37:50.899 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Uploading the images to Azure Storage for event_id : 5168258
+2022-12-15 16:37:51.088 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Started uploading the image for eventId: 5168258 
+2022-12-15 16:37:51.255 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Image uploaded successfully to Azure Storage for eventId : 5168258
+2022-12-15 16:37:51.341 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Generation of XML started for eventId : 5168258
+2022-12-15 16:37:51.448 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - XML is generated for eventId : 5168258 
+2022-12-15 16:37:51.553 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Saved entry for eventId : 5168258 in DeliveryConfirmationStore with Id : 8
+2022-12-15 16:37:51.619 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Started processing event_id : 5168817 , with timestamp : 2022-12-15T16:31:09Z
+2022-12-15 16:37:51.695 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Uploading the images to Azure Storage for event_id : 5168817
+2022-12-15 16:37:51.969 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Started uploading the image for eventId: 5168817 
+2022-12-15 16:37:52.222 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.UploadImageServiceImpl - Image uploaded successfully to Azure Storage for eventId : 5168817
+2022-12-15 16:37:52.314 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Generation of XML started for eventId : 5168817
+2022-12-15 16:37:52.460 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - XML is generated for eventId : 5168817 
+2022-12-15 16:37:52.567 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Saved entry for eventId : 5168817 in DeliveryConfirmationStore with Id : 9
+2022-12-15 16:37:53.662 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Now, start processing all entries in DeliveryConfirmationStore with statuses NEW and FAILED.
+2022-12-15 16:37:53.751 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Waiting for 5000 milliseconds as a delay between image upload and post calls. 
+2022-12-15 16:37:58.868 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Waiting for 2000 milliseconds to process next dcsEntry.
+2022-12-15 16:38:01.223 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Preparing XML for dcsId : 5 , eventId : 5168255 to be sent.
+2022-12-15 16:38:01.316 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Validating the existing token.
+2022-12-15 16:38:01.419 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.OauthTokenServiceImpl - Updation of token required.
+2022-12-15 16:38:02.249 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.OauthTokenServiceImpl - Token is updated.
+2022-12-15 16:38:05.340 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Token is validated.
+2022-12-15 16:38:06.047 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Response Code : 200
+2022-12-15 16:38:06.146 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - DeliveryConfirmationStore is updated for Id : 5, TrackingNumber : 00000004729999999990 with status -> : SUCCESS , message - > null
+2022-12-15 16:38:06.246 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Waiting for 2000 milliseconds to process next dcsEntry.
+2022-12-15 16:38:08.330 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Preparing XML for dcsId : 6 , eventId : 5168256 to be sent.
+2022-12-15 16:38:08.433 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Validating the existing token.
+2022-12-15 16:38:08.533 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.OauthTokenServiceImpl - Token is valid.
+2022-12-15 16:38:08.628 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Token is validated.
+2022-12-15 16:38:12.509 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Response Code : 200
+2022-12-15 16:38:12.648 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - DeliveryConfirmationStore is updated for Id : 6, TrackingNumber : 00000004729999999991 with status -> : SUCCESS , message - > null
+2022-12-15 16:38:12.742 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Waiting for 2000 milliseconds to process next dcsEntry.
+2022-12-15 16:38:14.838 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Preparing XML for dcsId : 7 , eventId : 5168257 to be sent.
+2022-12-15 16:38:14.942 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Validating the existing token.
+2022-12-15 16:38:15.039 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.OauthTokenServiceImpl - Token is valid.
+2022-12-15 16:38:15.128 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Token is validated.
+2022-12-15 16:38:15.475 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Response Code : 200
+2022-12-15 16:38:15.579 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - DeliveryConfirmationStore is updated for Id : 7, TrackingNumber : 00006860099999999990 with status -> : SUCCESS , message - > null
+2022-12-15 16:38:15.651 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Waiting for 2000 milliseconds to process next dcsEntry.
+2022-12-15 16:38:17.729 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Preparing XML for dcsId : 8 , eventId : 5168258 to be sent.
+2022-12-15 16:38:17.803 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Validating the existing token.
+2022-12-15 16:38:17.886 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.OauthTokenServiceImpl - Token is valid.
+2022-12-15 16:38:17.962 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Token is validated.
+2022-12-15 16:38:18.485 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Response Code : 200
+2022-12-15 16:38:18.596 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - DeliveryConfirmationStore is updated for Id : 8, TrackingNumber : 00006860099999999991 with status -> : SUCCESS , message - > null
+2022-12-15 16:38:18.679 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Waiting for 2000 milliseconds to process next dcsEntry.
+2022-12-15 16:38:20.762 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Preparing XML for dcsId : 9 , eventId : 5168817 to be sent.
+2022-12-15 16:38:20.848 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Validating the existing token.
+2022-12-15 16:38:20.952 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.OauthTokenServiceImpl - Token is valid.
+2022-12-15 16:38:21.048 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Token is validated.
+2022-12-15 16:38:21.413 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - Response Code : 200
+2022-12-15 16:38:21.518 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.service.impl.XmlSenderServiceImpl - DeliveryConfirmationStore is updated for Id : 9, TrackingNumber : 00000352999999999990 with status -> : SUCCESS , message - > null
+2022-12-15 16:38:21.601 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 16:38:21.702 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-12-15 16:38:21.788 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-12-15 16:38:21.861 prod ip-10-10-0-21.us-west-2.compute.internal fdc-staples-adapter   INFO [main] com.fdc.staplesadapter.StaplesadapterApplication - CommandLineRunner is terminated.
+Finished: SUCCESS
